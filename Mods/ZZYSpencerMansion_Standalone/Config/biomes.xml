@@ -1,0 +1,35 @@
+<config>
+
+<set xpath="/worldgeneration/biomes/biome[2]/subbiome[1]/layers/layer[3]//resource[1]/@prob">0</set>
+<set xpath="/worldgeneration/biomes/biome[2]/subbiome[1]/decorations//decoration[1]/@prob">0</set>
+<set xpath="/worldgeneration/biomes/biome[2]/subbiome[2]/layers/layer[3]//resource[1]/@prob">0</set>
+<set xpath="/worldgeneration/biomes/biome[2]/subbiome[2]/decorations//decoration[1]/@prob">0</set>
+<set xpath="/worldgeneration/biomes/biome[2]/subbiome[2]/decorations//decoration[4]/@prob">0</set>
+<set xpath="/worldgeneration/biomes/biome[2]/subbiome[2]/decorations//decoration[5]/@prob">0</set>
+<set xpath="/worldgeneration/biomes/biome[2]/subbiome[2]/decorations//decoration[6]/@prob">0</set>
+<set xpath="/worldgeneration/biomes/biome[2]/subbiome[3]/layers/layer[4]//resource[1]/@prob">0</set>
+<set xpath="/worldgeneration/biomes/biome[2]/subbiome[3]/decorations//decoration[1]/@prob">0</set>
+<set xpath="/worldgeneration/biomes/biome[2]/subbiome[3]/decorations//decoration[7]/@prob">0</set>
+<set xpath="/worldgeneration/biomes/biome[2]/subbiome[3]/decorations//decoration[5]/@prob">0</set>
+<set xpath="/worldgeneration/biomes/biome[2]/subbiome[3]/decorations//decoration[6]/@prob">0</set>
+<set xpath="/worldgeneration/biomes/biome[2]/subbiome[3]/decorations//decoration[21]/@prob">0</set>
+<set xpath="/worldgeneration/biomes/biome[2]/subbiome[4]/layers/layer[4]//resource[1]/@prob">0</set>
+<set xpath="/worldgeneration/biomes/biome[2]/subbiome[4]/decorations//decoration[1]/@prob">0</set>
+<set xpath="/worldgeneration/biomes/biome[2]/subbiome[4]/decorations//decoration[5]/@prob">0</set>
+<set xpath="/worldgeneration/biomes/biome[2]/subbiome[4]/decorations//decoration[6]/@prob">0</set>
+<set xpath="/worldgeneration/biomes/biome[2]/subbiome[4]/decorations//decoration[7]/@prob">0</set>
+<set xpath="/worldgeneration/biomes/biome[2]/subbiome[4]/decorations//decoration[21]/@prob">0</set>
+<set xpath="/worldgeneration/biomes/biome[2]/subbiome[5]/layers/layer[4]//resource[1]/@prob">0</set>
+<set xpath="/worldgeneration/biomes/biome[2]/subbiome[5]/decorations//decoration[1]/@prob">0</set>
+<set xpath="/worldgeneration/biomes/biome[2]/subbiome[5]/decorations//decoration[5]/@prob">0</set>
+<set xpath="/worldgeneration/biomes/biome[2]/subbiome[5]/decorations//decoration[6]/@prob">0</set>
+<set xpath="/worldgeneration/biomes/biome[2]/layers/layer[3]//resource[1]/@prob">0</set>
+<set xpath="/worldgeneration/biomes/biome[2]/decorations//decoration[1]/@prob">0</set>
+<set xpath="/worldgeneration/biomes/biome[2]/decorations//decoration[5]/@prob">0</set>
+<set xpath="/worldgeneration/biomes/biome[2]/decorations//decoration[6]/@prob">0</set>
+<set xpath="/worldgeneration/biomes/biome[2]/decorations//decoration[7]/@prob">0</set>
+<set xpath="/worldgeneration/biomes/biome[2]/decorations//decoration[20]/@prob">0</set>
+<set xpath="/worldgeneration/biomes/biome[2]/decorations//decoration[21]/@prob">0</set>
+
+</config>
+
