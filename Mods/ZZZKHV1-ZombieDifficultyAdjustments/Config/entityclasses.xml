@@ -1,0 +1,60 @@
+<configs>
+	<!-- XML adjustable damage dealt by pleyer and received by player -->
+	<append xpath="/entity_classes/entity_class[@name='playerMale']">
+		<effect_group>
+            <passive_effect name="DamageModifier" operation="perc_add" value="-0.75">
+                <requirement name="EntityTagCompare" target="other" tags="zombie"/>
+                <requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="0"/>
+                <requirement name="IsAlive" target="other"/>
+            </passive_effect>
+            
+			<passive_effect name="DamageModifier" operation="perc_add" value="-0.5" tags="head">
+			<requirement name="EntityTagCompare" target="other" tags="zombie"/>
+                <requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="0"/>
+                <requirement name="IsAlive" target="other"/>
+            </passive_effect>
+			
+            <passive_effect name="DamageModifier" operation="perc_add" value="-0.5">
+                <requirement name="EntityTagCompare" target="other" tags="zombie"/>
+                <requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="1"/>
+                <requirement name="IsAlive" target="other"/>
+            </passive_effect>
+                
+			<passive_effect name="DamageModifier" operation="perc_add" value="-0.33" tags="head">
+			<requirement name="EntityTagCompare" target="other" tags="zombie"/>
+                <requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="1"/>
+                <requirement name="IsAlive" target="other"/>
+            </passive_effect>
+				
+            <!-- <passive_effect name="DamageModifier" operation="perc_add" value="-0.75">
+                <requirement name="EntityTagCompare" target="other" tags="zombie"/>
+                <requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="5"/>
+                <requirement name="IsAlive" target="other"/>
+            </passive_effect> -->
+			
+			<passive_effect name="GeneralDamageResist" operation="base_add" value="-.6">
+				<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="0"/>
+			</passive_effect>
+			
+			<!-- <passive_effect name="GeneralDamageResist" operation="base_add" value="-0.333">
+				<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="1"/>
+			</passive_effect> -->
+			
+			<passive_effect name="GeneralDamageResist" operation="base_add" value="-0.5">
+				<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="2"/>
+			</passive_effect>
+			
+			<passive_effect name="GeneralDamageResist" operation="base_add" value="-1">
+				<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="3"/>
+			</passive_effect>
+
+			<passive_effect name="GeneralDamageResist" operation="base_add" value="-1.5">
+				<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="4"/>
+			</passive_effect>
+
+			<passive_effect name="GeneralDamageResist" operation="base_add" value="-2">
+				<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="5"/>
+			</passive_effect>			
+		</effect_group>
+	</append>	
+</configs>
