@@ -1,0 +1,133 @@
+<configs>
+
+	<remove xpath="/windows/window[@name='newsWindow']"/>
+	<set xpath="/windows/window[@name='mainMenuLogo']/texture[@depth='3']/@anchor_bottom">#cam,0.5,-550</set>
+	<set xpath="/windows/window[@name='mainMenuLogo']/texture[@depth='3']/@anchor_top">#cam,0.5,-280</set>
+	
+	<set xpath="/windows/window[@name='mainMenu']">
+	
+		
+			<mainmenubutton name="btnNewGame" anchor="LeftBottom" pivot="center" pos="800,-270" width="160" height="50" caption_key="xuiNewGame" />
+			<mainmenubutton name="btnContinueGame" anchor="LeftBottom" pivot="center" pos="800,-330" width="220" height="50" caption_key="xuiContinueGame" />
+			<mainmenubutton name="btnConnectToServer" anchor="LeftBottom" pivot="center" pos="-800,-1450" width="190" height="50" caption_key="xuiConnectToServer" />
+			<mainmenubutton name="btnEditingTools" anchor="LeftTop" pivot="center" pos="-800,-3000" width="200" height="50" caption_key="xuiEditingTools" />
+			<mainmenubutton name="btnOptions" anchor="RightBottom" pivot="center" pos="810,-390" width="160" height="50" caption_key="xuiOptions" />
+			<mainmenubutton name="btnCredits" anchor="LeftTop" pivot="center" pos="-800,1500" width="160" height="50" caption_key="xuiCredits" />
+			<rect />
+			<mainmenubutton name="btnQuit" anchor="RightBottom" pivot="center" pos="810,-450" width="120" height="50" caption_key="xuiQuit" />
+		
+	
+	</set>
+	
+<!-- <append xpath="/windows">
+	
+	<window name="mainMenu" pos="0,0" width="1050" height="780" controller="MainMenu" cursor_area="true">
+		
+			<mainmenubutton anchor="LeftBottom" pivot="center" pos="-800,-330" name="btnNewGame" width="400" height="50" caption_key="xuiNewGame" />
+			<mainmenubutton name="btnContinueGame" anchor="LeftBottom" pivot="center" pos="-800,-390" width="400" height="50" caption_key="xuiContinueGame" />
+			<mainmenubutton name="btnConnectToServer" anchor="LeftBottom" pivot="center" pos="-800,-450" width="400" height="50" caption_key="xuiConnectToServer" />
+			<mainmenubutton name="btnEditingTools" anchor="LeftTop" pivot="center" pos="-800,1800" width="400" height="50" caption_key="xuiEditingTools" />
+			<mainmenubutton name="btnOptions" anchor="RightBottom" pivot="center" pos="850,-390"  width="400" height="50" caption_key="xuiOptions" />
+			<mainmenubutton name="btnCredits" anchor="LeftTop" pivot="center" pos="-800,1500" width="400" height="50" caption_key="xuiCredits" />
+			<rect />
+			<mainmenubutton name="btnQuit" anchor="RightBottom" pivot="center" pos="850,-450" width="400" height="50" caption_key="xuiQuit" />
+		
+	</window>
+	
+</append> -->	
+	
+	
+	<!-- General tab -->
+	<set xpath="/windows/window[@name='newContinueGame']/rect[2]/rect[2]/rect[1]/grid[@pos='6,-77']//gameoption[@name='GameDifficulty']/@title">goDifficultyRE</set>
+	<set xpath="/windows/window[@name='newContinueGame']/rect[2]/rect[2]/rect[1]/grid[@pos='6,-77']//gameoption[@name='GameDifficulty']/@display_names">goDifficulty1RE,goDifficulty2RE,goDifficulty3RE,goDifficulty4RE,goDifficulty5RE,goDifficulty6RE</set>
+	<set xpath="/windows/window[@name='newContinueGame']/rect[2]/rect[2]/rect[1]/grid[@pos='6,-77']//gameoption[@name='DayNightLength']/@title">goDayLengthRE</set>
+	<set xpath="/windows/window[@name='newContinueGame']/rect[2]/rect[2]/rect[1]/grid[@pos='6,-77']//gameoption[@name='DayNightLength']/@values">120</set>
+	<set xpath="/windows/window[@name='newContinueGame']/rect[2]/rect[2]/rect[1]/grid[@pos='6,-77']//gameoption[@name='DayLightLength']/@title">goDayLightLengthRE</set>
+	<set xpath="/windows/window[@name='newContinueGame']/rect[2]/rect[2]/rect[1]/grid[@pos='6,-77']//gameoption[@name='DayLightLength']/@values">0</set>
+	<set xpath="/windows/window[@name='newContinueGame']/rect[2]/rect[2]/rect[1]/grid[@pos='6,-77']//gameoption[@name='ServerEnabled']/@display_names">goServerEnabledOff</set>
+	<!-- <remove xpath="/windows/window[@name='newContinueGame']/rect[2]/rect[2]/rect[1]/grid[@pos='6,-77']//gameoption[@name='Region']"/> -->
+	<!-- <remove xpath="/windows/window[@name='newContinueGame']/rect[2]/rect[2]/rect[1]/grid[@pos='6,-77']//gameoption[@name='ServerVisibility']"/> -->
+	<!-- <remove xpath="/windows/window[@name='newContinueGame']/rect[2]/rect[2]/rect[1]/grid[@pos='6,-77']//gameoption[@name='ServerPassword']"/> -->
+	<!-- <remove xpath="/windows/window[@name='newContinueGame']/rect[2]/rect[2]/rect[1]/grid[@pos='6,-77']//gameoption[@name='ServerMaxPlayerCount']"/> -->
+	<set xpath="/windows/window[@name='newContinueGame']/rect[2]/rect[2]/rect[1]/grid[@pos='6,-77']//gameoption[@name='ServerMaxPlayerCount']/@values">1</set>/>
+	<remove xpath="/windows/window[@name='newContinueGame']/rect[2]/rect[2]/rect[1]/grid[@pos='6,-77']//gameoption[@name='DayNightLength']"/>
+	<remove xpath="/windows/window[@name='newContinueGame']/rect[2]/rect[2]/rect[1]/grid[@pos='6,-77']//gameoption[@name='DayLightLength']"/>
+	
+	
+	
+	<!-- Basic tab -->
+	<set xpath="/windows/window[@name='newContinueGame']/rect[2]/rect[2]/rect[2]/grid[@pos='6,-77']//gameoption[@name='BloodMoonFrequency']/@title">goBloodMoonFrequencyRE</set>
+	<set xpath="/windows/window[@name='newContinueGame']/rect[2]/rect[2]/rect[2]/grid[@pos='6,-77']//gameoption[@name='BloodMoonFrequency']/@values">0</set>
+	<set xpath="/windows/window[@name='newContinueGame']/rect[2]/rect[2]/rect[2]/grid[@pos='6,-77']//gameoption[@name='ZombieMoveNight']/@title">goZombieMoveNightRE</set>
+	<set xpath="/windows/window[@name='newContinueGame']/rect[2]/rect[2]/rect[2]/grid[@pos='6,-77']//gameoption[@name='ZombieMoveNight']/@display_names">goZMWalk,goZMJog,goZMRun,goZMSprint</set>
+	<remove xpath="/windows/window[@name='newContinueGame']/rect[2]/rect[2]/rect[2]/grid[@pos='6,-77']//gameoption[@name='BloodMoonFrequency']"/>
+	<remove xpath="/windows/window[@name='newContinueGame']/rect[2]/rect[2]/rect[2]/grid[@pos='6,-77']//gameoption[@name='BloodMoonRange']"/>
+	<remove xpath="/windows/window[@name='newContinueGame']/rect[2]/rect[2]/rect[2]/grid[@pos='6,-77']//gameoption[@name='BloodMoonWarning']"/>
+	<remove xpath="/windows/window[@name='newContinueGame']/rect[2]/rect[2]/rect[2]/grid[@pos='6,-77']//gameoption[@name='BloodMoonEnemyCount']"/>
+	<remove xpath="/windows/window[@name='newContinueGame']/rect[2]/rect[2]/rect[2]/grid[@pos='6,-77']//gameoption[@name='ZombieMove']"/>
+	<remove xpath="/windows/window[@name='newContinueGame']/rect[2]/rect[2]/rect[2]/grid[@pos='6,-77']//gameoption[@name='ZombieFeralMove']"/>
+	<remove xpath="/windows/window[@name='newContinueGame']/rect[2]/rect[2]/rect[2]/grid[@pos='6,-77']//gameoption[@name='ZombieBMMove']"/>
+	<remove xpath="/windows/window[@name='newContinueGame']/rect[2]/rect[2]/rect[2]/grid[@pos='6,-77']//gameoption[@name='ZombieFeralSense']"/>
+	<remove xpath="/windows/window[@name='newContinueGame']/rect[2]/rect[2]/rect[1]/grid[@pos='6,-77']//gameoption[@name='PersistentPlayerProfiles']"/>
+	<remove xpath="/windows/window[@name='newContinueGame']/rect[2]/rect[2]/rect[1]/grid[@pos='6,-77']//gameoption[@name='XPMultiplier']"/>
+	<remove xpath="/windows/window[@name='newContinueGame']/rect[2]/rect[2]/rect[2]/grid[@pos='6,-77']//gameoption[@name='ZombieMoveNight']"/>
+	
+	
+	<!-- Advenced tab -->
+	<remove xpath="/windows/window[@name='newContinueGame']/rect[2]/rect[2]/rect[3]/grid[@pos='6,-77']//gameoption[@name='BlockDamagePlayer']"/>
+	<remove xpath="/windows/window[@name='newContinueGame']/rect[2]/rect[2]/rect[3]/grid[@pos='6,-77']//gameoption[@name='BlockDamageAI']"/>
+	<remove xpath="/windows/window[@name='newContinueGame']/rect[2]/rect[2]/rect[3]/grid[@pos='6,-77']//gameoption[@name='BlockDamageAIBM']"/>
+	<remove xpath="/windows/window[@name='newContinueGame']/rect[2]/rect[2]/rect[3]/grid[@pos='6,-77']//gameoption[@name='LootAbundance']"/>	
+	<remove xpath="/windows/window[@name='newContinueGame']/rect[2]/rect[2]/rect[3]/grid[@pos='6,-77']//gameoption[@name='DeathPenalty']"/>
+	<set xpath="/windows/window[@name='newContinueGame']/rect[2]/rect[2]/rect[3]/grid[@pos='6,-77']//gameoption[@name='LootRespawnDays']/@title">goLootRespawnDaysRE</set>
+	<set xpath="/windows/window[@name='newContinueGame']/rect[2]/rect[2]/rect[3]/grid[@pos='6,-77']//gameoption[@name='LootRespawnDays']/@values">0</set>
+	<remove xpath="/windows/window[@name='newContinueGame']/rect[2]/rect[2]/rect[3]/grid[@pos='6,-77']//gameoption[@name='LootRespawnDays']"/>
+
+	<remove xpath="/windows/window[@name='newContinueGame']/rect[2]/rect[2]/rect[3]/grid[@pos='6,-77']//gameoption[@name='MaxChunkAge']"/>
+	<remove xpath="/windows/window[@name='newContinueGame']/rect[2]/rect[2]/rect[3]/grid[@pos='6,-77']//gameoption[@name='DropOnDeath']"/>
+	<remove xpath="/windows/window[@name='newContinueGame']/rect[2]/rect[2]/rect[3]/grid[@pos='6,-77']//gameoption[@name='DropOnQuit']"/>
+	<remove xpath="/windows/window[@name='newContinueGame']/rect[2]/rect[2]/rect[3]/grid[@pos='6,-77']//gameoption[@name='EnemySpawnMode']"/>
+	<set xpath="/windows/window[@name='newContinueGame']/rect[2]/rect[2]/rect[2]/grid[@pos='6,-77']//gameoption[@name='AirDropFrequency']/@title">goAirDropFrequencyRE</set>
+	<set xpath="/windows/window[@name='newContinueGame']/rect[2]/rect[2]/rect[2]/grid[@pos='6,-77']//gameoption[@name='AirDropFrequency']/@values">0</set>	
+	<remove xpath="/windows/window[@name='newContinueGame']/rect[2]/rect[2]/rect[3]/grid[@pos='6,-77']//gameoption[@name='BuildCreate']"/>
+	<remove xpath="/windows/window[@name='newContinueGame']/rect[2]/rect[2]/rect[2]/grid[@pos='6,-77']//gameoption[@name='AirDropMarker']"/>
+	<remove xpath="/windows/window[@name='newContinueGame']/rect[2]/rect[2]/rect[2]/grid[@pos='6,-77']//gameoption[@name='AirDropFrequency']"/>	
+	<remove xpath="/windows/window[@name='newContinueGame']/rect[2]/rect[2]/rect[3]/grid[@pos='6,-77']//gameoption[@name='QuestProgressionDailyLimit']"/>
+	
+	
+	<!-- Multiplayer tab --> 
+	<remove xpath="/windows/window[@name='newContinueGame']/rect[2]/rect[2]/rect[4]/grid[@pos='6,-77']//gameoption[@name='ServerPort']"/>
+	<remove xpath="/windows/window[@name='newContinueGame']/rect[2]/rect[2]/rect[4]/grid[@pos='6,-77']//gameoption[@name='PlayerKillingMode']"/>
+	<remove xpath="/windows/window[@name='newContinueGame']/rect[2]/rect[2]/rect[4]/grid[@pos='6,-77']//gameoption[@name='LandClaimSize']"/>
+	<remove xpath="/windows/window[@name='newContinueGame']/rect[2]/rect[2]/rect[4]/grid[@pos='6,-77']//gameoption[@name='LandClaimDeadZone']"/>
+	<remove xpath="/windows/window[@name='newContinueGame']/rect[2]/rect[2]/rect[4]/grid[@pos='6,-77']//gameoption[@name='LandClaimExpiryTime']"/>
+	<remove xpath="/windows/window[@name='newContinueGame']/rect[2]/rect[2]/rect[4]/grid[@pos='6,-77']//gameoption[@name='LandClaimDecayMode']"/>
+	<remove xpath="/windows/window[@name='newContinueGame']/rect[2]/rect[2]/rect[4]/grid[@pos='6,-77']//gameoption[@name='LandClaimOnlineDurabilityModifier']"/>
+	<remove xpath="/windows/window[@name='newContinueGame']/rect[2]/rect[2]/rect[4]/grid[@pos='6,-77']//gameoption[@name='LandClaimOfflineDurabilityModifier']"/>
+	<remove xpath="/windows/window[@name='newContinueGame']/rect[2]/rect[2]/rect[4]/grid[@pos='6,-77']//gameoption[@name='LandClaimOfflineDelay']"/>
+	<remove xpath="/windows/window[@name='newContinueGame']/rect[2]/rect[2]/rect[4]/grid[@pos='6,-77']//gameoption[@name='BedrollDeadZoneSize']"/>
+	<remove xpath="/windows/window[@name='newContinueGame']/rect[2]/rect[2]/rect[4]/grid[@pos='6,-77']//gameoption[@name='BedrollExpiryTime']"/>
+	<remove xpath="/windows/window[@name='newContinueGame']/rect[2]/rect[2]/rect[4]/grid[@pos='6,-77']//gameoption[@name='PartySharedKillRange']"/>
+	
+	<remove xpath="/windows/window[@name='newContinueGame']/rect[2]/rect[2]/rect[@tab_key='xuiGameSettingsBasic']"/>
+	<remove xpath="/windows/window[@name='newContinueGame']/rect[2]/rect[2]/rect[@tab_key='xuiGameSettingsAdvanced']"/>
+	<remove xpath="/windows/window[@name='newContinueGame']/rect[2]/rect[2]/rect[@tab_key='xuiGameSettingsMultiplayer']"/>
+	
+	<insertafter xpath="/windows/window[@name='newContinueGame']/rect[2]/rect[2]/rect[1]/grid[@pos='6,-77']//gameoption[@name='GameDifficulty']">
+		<gameoption name="ZombieMoveNight" title="goZombieMoveNightRE" value_wrap="false" value_type="int" values="" display_names="goZMWalk,goZMJog,goZMRun,goZMSprint" value_localization_prefix="" />
+		<!-- <gameoption name="BloodMoonFrequency" title="goBloodMoonFrequencyRE" value_wrap="false" value_type="int" values="0" display_names="goDisabled" value_localization_prefix="goDay" /> -->
+		<!-- <gameoption name="LootRespawnDays" title="goLootRespawnDaysRE" value_wrap="false" value_type="int" values="-1" display_names="goDisabled" value_localization_prefix="goLootRespawnDaysValue" /> -->
+		<!-- <gameoption name="BloodMoonRange" title="goBloodMoonRange" value_wrap="false" value_type="int" values="0" display_names="" value_localization_prefix="goDay" /> -->
+		<rect/><rect/><rect/><rect/><rect/><rect/><rect/><rect/><rect/><rect/><rect/><rect/><rect/><rect/><rect/><rect/>
+		<rect/><rect/><rect/><rect/><rect/><rect/><rect/><rect/><rect/><rect/><rect/><rect/><rect/><rect/><rect/><rect/>
+		<gameoption name="ServerPort" title="goPort" value_wrap="false" value_type="int" values="" display_names="" value_localization_prefix="" is_textinput="true" character_limit="5"/>
+	</insertafter>
+	
+	<set xpath="/windows/window[@name='newContinueGame']/rect[3]//simplebutton[@name='btnDefaults']/@pos">960, -2000</set>
+	
+	<!-- <insertafter xpath="/windows/window[@name='spawnselection']/rect[2]//simplebutton[3]">
+		<simplebutton name="btnExit" depth="3" pos="200,-250" pivot="center" width="400" height="42" font_size="36" caption_key="xuiMenuExit" />
+	</insertafter> -->
+	
+</configs>
+
