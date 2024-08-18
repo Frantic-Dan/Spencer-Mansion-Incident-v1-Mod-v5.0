@@ -2287,7 +2287,7 @@
 	<property name="CreativeMode" value="None"/>
 	<property name="Tags" value="ammo,perkDemolitionsExpert"/>
 	<property name="DisplayType" value="ammoGrenadeExplosive"/>
-	<property name="CustomIcon" value="ammoRocketFrag"/>
+	<property name="CustomIcon" value="grenade-shells"/>
 	<property name="DescriptionKey" value="GrenadeExplosiveDesc"/>
 	<property name="Meshfile" value="@:Other/Items/Weapons/Ranged/RocketLauncher/rocketPrefab.prefab"/>
 	<property name="HoldType" value="45"/>
@@ -2329,7 +2329,7 @@
 	<property name="CreativeMode" value="None"/>
 	<property name="Tags" value="ammo,perkDemolitionsExpert,livingEntity"/>
 	<property name="DisplayType" value="ammoGrenadeAcid"/>
-	<property name="CustomIcon" value="ammoRocketHE"/>
+	<property name="CustomIcon" value="acid-shells"/>
 	<property name="DescriptionKey" value="GrenadeAcidDesc"/>
 	<property name="Meshfile" value="@:Other/Items/Weapons/Ranged/RocketLauncher/rocketPrefab.prefab"/>
 	<property name="HoldType" value="45"/>
@@ -2392,7 +2392,7 @@
 	<property name="CreativeMode" value="None"/>
 	<property name="Tags" value="ammo,perkDemolitionsExpert"/>
 	<property name="DisplayType" value="ammoGrenadeFlame"/>
-	<property name="CustomIcon" value="ammoFlameGrenade"/>
+	<property name="CustomIcon" value="incendiary-shells"/>
 	<property name="DescriptionKey" value="GrenadeFlameDesc"/>
 	<property name="Meshfile" value="@:Other/Items/Weapons/Ranged/RocketLauncher/rocketPrefab.prefab"/>
 	<property name="HoldType" value="45"/>
