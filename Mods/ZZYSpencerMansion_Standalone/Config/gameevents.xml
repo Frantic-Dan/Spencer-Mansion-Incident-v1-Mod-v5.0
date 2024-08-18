@@ -1,0 +1,556 @@
+<FranticDan>
+
+<!-- <set xpath="/gameevents/action_sequence[@name='game_first_spawn']/action['AddJournalTip']//property['tip_name']/@value">SpencerMansionSpawnText</set>
+<set xpath="/gameevents/action_sequence[@name='game_first_spawn']/action['AddQuest']//property['quest']/@value">SpencerMansionQuest</set> -->
+
+<set xpath="/gameevents/action_sequence[@name='game_first_spawn']/action[@class='Delay']/property[@name='time']/@value">4</set>
+
+<insertafter xpath="/gameevents/action_sequence[@name='game_first_spawn']/action[@class='Delay']">
+		<action class="ShowMessageWindow">
+			<property name="message" value="SpencerMansionSpawnText" />
+			<property name="title" value="Spencer Mansion Incident" />
+			<property name="phase" value="1" />
+		</action>
+
+		<action class="Delay">
+			<property name="time" value="1" />
+			<property name="phase" value="2" />
+		</action>
+
+		<action class="SetItemSlots">
+				<property name="items_location" value="Equipment" />
+				<property name="items" value="armorJillOutfit,armorJillGloves,armorJillBoots" />
+				<property name="item_counts" value="1-1,1-1,1-1" />
+			</action>
+
+		<action class="AddQuest">
+			<property name="quest" value="SpencerMansionQuest" />
+			<property name="phase" value="3" />
+		</action>
+</insertafter>
+
+		
+
+
+<!-- <set xpath="/gameevents/action_sequence[@name='game_first_spawn']/action[@class='AddJournalTip']/property[@name='tip_name']/@value">SpencerMansionSpawnText</set>
+<set xpath="/gameevents/action_sequence[@name='game_first_spawn']/action[@class='AddQuest']/property[@name='quest']/@value">SpencerMansionQuest</set> -->
+
+<append xpath="/gameevents">
+
+	<action_sequence name="EventClassicModeJill">
+		<property name="action_type" value="Game" />
+
+		<action class="SetItemSlots">
+			<property name="items_location" value="Toolbelt" />
+			<property name="items" value="ClassicModeInventoryBlocker,ClassicModeInventoryBlocker" />
+			<property name="item_counts" value="1,1" />
+			<property name="slot_numbers" value="8,9" />
+		</action>
+	</action_sequence>
+
+		<action_sequence name="EventClassicModeChris">
+		<property name="action_type" value="Game" />
+
+		<action class="SetItemSlots">
+			<property name="items_location" value="Toolbelt" />
+			<property name="items" value="ClassicModeInventoryBlocker,ClassicModeInventoryBlocker,ClassicModeInventoryBlocker,ClassicModeInventoryBlocker" />
+			<property name="item_counts" value="1,1,1,1" />
+			<property name="slot_numbers" value="6,7,8,9" />
+		</action>
+	</action_sequence>
+		
+	<action_sequence name="action_FuelSupplyCapsule_Explode">
+		<property name="action_type" value="Game" />
+
+			<action class="PlaySound">
+				<property name="sound" value="twitch_countdown_tick" />
+				<property name="phase" value="1" />
+			</action>
+			
+			<action class="Delay">
+				<property name="time" value="1" />
+			</action>
+			
+			<action class="RemoveItems">
+				<property name="items_location" value="Toolbelt" />
+				<property name="items_tags" value="FuelSupplyCapsule"/>
+				<property name="count_type" value="Items"/>
+				<property name="count" value="1"/>			
+			</action>
+		
+		<action class="ExplodeTarget">
+			<property name="phase" value="2" />
+			<property name="blast_power" value="75" />
+			<property name="entity_damage" value="50000" />
+			<property name="entity_radius" value="6" />
+			<!-- <property name="target_group" value="targets" /> -->
+		</action>
+		
+	</action_sequence>
+
+	<action_sequence name="reverse_Time">
+		<property name="action_type" value="Game" />
+		
+		<action class="SetDayTime" >
+			<property name="day" value="-1" />
+			<property name="hours" value="7" />
+			<property name="minutes" value="1" />
+		</action>	
+	</action_sequence>	
+	
+	<action_sequence name="BeatGame">
+		
+		<action class="Delay">
+			<property name="time" value="4" />
+			<property name="phase" value="1" />
+		</action>
+		
+		<action class="AddBuff">
+			<property name="phase" value="2" />
+			<property name="buff_name" value="buffDontMove" />
+			<property name="duration" value="300" />
+		</action>
+		
+		<action class="SetScreenEffect">
+			<property name="phase" value="3" />
+			<property name="screen_effect" value="FadeToBlack" />
+			<property name="intensity" value="1" />
+			<property name="fade_time" value="4" />
+		</action>
+		
+		<action class="Delay">
+			<property name="time" value="5" />
+			<property name="phase" value="4" />
+		</action>
+		
+		<action class="ShowMessageWindow" >
+			<property name="message" value="Completion_desc"/>
+			<property name="title" value="Quest_Completion_tip_title"/>
+			<property name="phase" value="5"/>
+		</action>
+	
+	</action_sequence>
+
+
+    <action_sequence name="RemoveSwordKey">
+        <property name="category" value="twitch_actions" />
+        <property name="target_type" value="Block" />
+        
+        <action class="RemoveItems">
+            <property name="items_location" value="Toolbelt" />
+            <property name="items_tags" value="SwordKey"/>
+			<property name="count_type" value="Items"/>
+			<property name="count" value="1"/>			
+        </action>
+    </action_sequence>
+
+	<action_sequence name="RemoveArmourKey">
+        <property name="category" value="twitch_actions" />
+        <property name="target_type" value="Block" />
+        
+        <action class="RemoveItems">
+            <property name="items_location" value="Toolbelt" />
+            <property name="items_tags" value="ArmourKey"/>
+			<property name="count_type" value="Items"/>
+			<property name="count" value="1"/>			
+        </action>
+    </action_sequence>
+	
+	<action_sequence name="RemoveShieldKey">
+        <property name="category" value="twitch_actions" />
+        <property name="target_type" value="Block" />
+        
+        <action class="RemoveItems">
+            <property name="items_location" value="Toolbelt" />
+            <property name="items_tags" value="ShieldKey"/>
+			<property name="count_type" value="Items"/>
+			<property name="count" value="1"/>			
+        </action>
+    </action_sequence>
+	
+	<action_sequence name="RemoveHelmetKey">
+        <property name="category" value="twitch_actions" />
+        <property name="target_type" value="Block" />
+        
+        <action class="RemoveItems">
+            <property name="items_location" value="Toolbelt" />
+            <property name="items_tags" value="HelmetKey"/>
+			<property name="count_type" value="Items"/>
+			<property name="count" value="1"/>			
+        </action>
+    </action_sequence>
+	
+	<action_sequence name="RemoveMaskAllThree">
+        <property name="category" value="twitch_actions" />
+        <property name="target_type" value="Block" />
+        
+        <action class="RemoveItems">
+            <property name="items_location" value="Toolbelt" />
+            <property name="items_tags" value="DeathMaskWithoutAllThree"/>
+			<property name="count_type" value="Items"/>
+			<property name="count" value="1"/>			
+        </action>
+    </action_sequence>	
+	
+	<action_sequence name="RemoveMaskSmell">
+        <property name="category" value="twitch_actions" />
+        <property name="target_type" value="Block" />
+        
+        <action class="RemoveItems">
+            <property name="items_location" value="Toolbelt" />
+            <property name="items_tags" value="DeathMaskWithoutNose"/>
+			<property name="count_type" value="Items"/>
+			<property name="count" value="1"/>			
+        </action>
+    </action_sequence>
+	
+	<action_sequence name="RemoveMaskSpeak">
+        <property name="category" value="twitch_actions" />
+        <property name="target_type" value="Block" />
+        
+        <action class="RemoveItems">
+            <property name="items_location" value="Toolbelt" />
+            <property name="items_tags" value="DeathMaskWithoutMouth"/>
+			<property name="count_type" value="Items"/>
+			<property name="count" value="1"/>			
+        </action>
+    </action_sequence>
+	
+	<action_sequence name="RemoveMaskSee">
+        <property name="category" value="twitch_actions" />
+        <property name="target_type" value="Block" />
+        
+        <action class="RemoveItems">
+            <property name="items_location" value="Toolbelt" />
+            <property name="items_tags" value="DeathMaskWithoutEyes"/>
+			<property name="count_type" value="Items"/>
+			<property name="count" value="1"/>			
+        </action>
+    </action_sequence>
+	
+	<action_sequence name="RemoveHerbicide">
+        <property name="category" value="twitch_actions" />
+        <property name="target_type" value="Block" />
+        
+        <action class="RemoveItems">
+            <property name="items_location" value="Toolbelt" />
+            <property name="items_tags" value="Herbicide"/>
+			<property name="count_type" value="Items"/>
+			<property name="count" value="1"/>			
+        </action>
+    </action_sequence>
+	
+	<action_sequence name="RemoveBrokenShotgun">
+        <property name="category" value="twitch_actions" />
+        <property name="target_type" value="Block" />
+        
+        <action class="RemoveItems">
+            <property name="items_location" value="Toolbelt" />
+            <property name="items_tags" value="BrokenShotgun"/>
+			<property name="count_type" value="Items"/>
+			<property name="count" value="1"/>			
+        </action>
+    </action_sequence>
+	
+	<action_sequence name="RemoveWindCrest">
+        <property name="category" value="twitch_actions" />
+        <property name="target_type" value="Block" />
+        
+        <action class="RemoveItems">
+            <property name="items_location" value="Toolbelt" />
+            <property name="items_tags" value="WindCrest"/>
+			<property name="count_type" value="Items"/>
+			<property name="count" value="1"/>			
+        </action>
+    </action_sequence>
+	
+	<action_sequence name="RemoveMoonCrest">
+        <property name="category" value="twitch_actions" />
+        <property name="target_type" value="Block" />
+        
+        <action class="RemoveItems">
+            <property name="items_location" value="Toolbelt" />
+            <property name="items_tags" value="MoonCrest"/>
+			<property name="count_type" value="Items"/>
+			<property name="count" value="1"/>			
+        </action>
+    </action_sequence>
+	
+	<action_sequence name="RemoveStarCrest">
+        <property name="category" value="twitch_actions" />
+        <property name="target_type" value="Block" />
+        
+        <action class="RemoveItems">
+            <property name="items_location" value="Toolbelt" />
+            <property name="items_tags" value="StarCrest"/>
+			<property name="count_type" value="Items"/>
+			<property name="count" value="1"/>			
+        </action>
+    </action_sequence>
+	
+	<action_sequence name="RemoveSunCrest">
+        <property name="category" value="twitch_actions" />
+        <property name="target_type" value="Block" />
+        
+        <action class="RemoveItems">
+            <property name="items_location" value="Toolbelt" />
+            <property name="items_tags" value="SunCrest"/>
+			<property name="count_type" value="Items"/>
+			<property name="count" value="1"/>			
+        </action>
+    </action_sequence>
+	
+	<action_sequence name="RemoveRoom001Key">
+        <property name="category" value="twitch_actions" />
+        <property name="target_type" value="Block" />
+        
+        <action class="RemoveItems">
+            <property name="items_location" value="Toolbelt" />
+            <property name="items_tags" value="KeytoRoom001"/>
+			<property name="count_type" value="Items"/>
+			<property name="count" value="1"/>			
+        </action>
+    </action_sequence>
+	
+	<action_sequence name="RemoveRoom003Key">
+        <property name="category" value="twitch_actions" />
+        <property name="target_type" value="Block" />
+        
+        <action class="RemoveItems">
+            <property name="items_location" value="Toolbelt" />
+            <property name="items_tags" value="KeytoRoom003"/>
+			<property name="count_type" value="Items"/>
+			<property name="count" value="1"/>			
+        </action>
+    </action_sequence>
+	
+	<action_sequence name="RemoveGalleryKey">
+        <property name="category" value="twitch_actions" />
+        <property name="target_type" value="Block" />
+        
+        <action class="RemoveItems">
+            <property name="items_location" value="Toolbelt" />
+            <property name="items_tags" value="GalleryKey"/>
+			<property name="count_type" value="Items"/>
+			<property name="count" value="1"/>			
+        </action>
+    </action_sequence>
+	
+	<action_sequence name="RemoveControlRoomKey">
+        <property name="category" value="twitch_actions" />
+        <property name="target_type" value="Block" />
+        
+        <action class="RemoveItems">
+            <property name="items_location" value="Toolbelt" />
+            <property name="items_tags" value="ControlRoomKey"/>
+			<property name="count_type" value="Items"/>
+			<property name="count" value="1"/>			
+        </action>
+    </action_sequence>	
+	
+	<action_sequence name="RemoveV-Jolt">
+        <property name="category" value="twitch_actions" />
+        <property name="target_type" value="Block" />
+        
+        <action class="RemoveItems">
+            <property name="items_location" value="Toolbelt" />
+            <property name="items_tags" value="V-Jolt"/>
+			<property name="count_type" value="Items"/>
+			<property name="count" value="1"/>			
+        </action>
+    </action_sequence>	
+	
+	<action_sequence name="RemoveUnprintedBook">
+        <property name="category" value="twitch_actions" />
+        <property name="target_type" value="Block" />
+        
+        <action class="RemoveItems">
+            <property name="items_location" value="Toolbelt" />
+            <property name="items_tags" value="UnprintedBook"/>
+			<property name="count_type" value="Items"/>
+			<property name="count" value="1"/>			
+        </action>
+    </action_sequence>
+	
+	<action_sequence name="RemoveEmblemKey">
+        <property name="category" value="twitch_actions" />
+        <property name="target_type" value="Block" />
+        
+        <action class="RemoveItems">
+            <property name="items_location" value="Toolbelt" />
+            <property name="items_tags" value="EmblemKey"/>
+			<property name="count_type" value="Items"/>
+			<property name="count" value="1"/>			
+        </action>
+    </action_sequence>
+	
+	<action_sequence name="RemoveCylinderShaft">
+        <property name="category" value="twitch_actions" />
+        <property name="target_type" value="Block" />
+        
+        <action class="RemoveItems">
+            <property name="items_location" value="Toolbelt" />
+            <property name="items_tags" value="CylinderShaft"/>
+			<property name="count_type" value="Items"/>
+			<property name="count" value="1"/>			
+        </action>
+    </action_sequence>
+	
+	<action_sequence name="RemoveTerraceKey">
+        <property name="category" value="twitch_actions" />
+        <property name="target_type" value="Block" />
+        
+        <action class="RemoveItems">
+            <property name="items_location" value="Toolbelt" />
+            <property name="items_tags" value="TerraceKey"/>
+			<property name="count_type" value="Items"/>
+			<property name="count" value="1"/>			
+        </action>
+    </action_sequence>	
+
+	<action_sequence name="RemoveClosetKey">
+        <property name="category" value="twitch_actions" />
+        <property name="target_type" value="Block" />
+        
+        <action class="RemoveItems">
+            <property name="items_location" value="Toolbelt" />
+            <property name="items_tags" value="ClosetKey"/>
+			<property name="count_type" value="Items"/>
+			<property name="count" value="1"/>			
+        </action>
+    </action_sequence>
+	
+	<action_sequence name="RemoveStoneandMetalObject">
+        <property name="category" value="twitch_actions" />
+        <property name="target_type" value="Block" />
+        
+        <action class="RemoveItems">
+            <property name="items_location" value="Toolbelt" />
+            <property name="items_tags" value="StoneandMetalObject"/>
+			<property name="count_type" value="Items"/>
+			<property name="count" value="1"/>			
+        </action>
+    </action_sequence>	
+	
+	<action_sequence name="RemoveMetalObject">
+        <property name="category" value="twitch_actions" />
+        <property name="target_type" value="Block" />
+        
+        <action class="RemoveItems">
+            <property name="items_location" value="Toolbelt" />
+            <property name="items_tags" value="MetalObject"/>
+			<property name="count_type" value="Items"/>
+			<property name="count" value="1"/>			
+        </action>
+    </action_sequence>
+	
+	<action_sequence name="RemoveWolfMedal">
+        <property name="category" value="twitch_actions" />
+        <property name="target_type" value="Block" />
+        
+        <action class="RemoveItems">
+            <property name="items_location" value="Toolbelt" />
+            <property name="items_tags" value="WolfMedal"/>
+			<property name="count_type" value="Items"/>
+			<property name="count" value="1"/>			
+        </action>
+    </action_sequence>
+	
+	<action_sequence name="RemoveEagleMedal">
+        <property name="category" value="twitch_actions" />
+        <property name="target_type" value="Block" />
+        
+        <action class="RemoveItems">
+            <property name="items_location" value="Toolbelt" />
+            <property name="items_tags" value="EagleMedal"/>
+			<property name="count_type" value="Items"/>
+			<property name="count" value="1"/>			
+        </action>
+    </action_sequence>
+	
+	<action_sequence name="RemoveBattery">
+        <property name="category" value="twitch_actions" />
+        <property name="target_type" value="Block" />
+        
+        <action class="RemoveItems">
+            <property name="items_location" value="Toolbelt" />
+            <property name="items_tags" value="Battery"/>
+			<property name="count_type" value="Items"/>
+			<property name="count" value="1"/>			
+        </action>
+    </action_sequence>
+	
+	<action_sequence name="RemoveWD-40Spray">
+        <property name="category" value="twitch_actions" />
+        <property name="target_type" value="Block" />
+        
+        <action class="RemoveItems">
+            <property name="items_location" value="Toolbelt" />
+            <property name="items_tags" value="WD-40Spray"/>
+			<property name="count_type" value="Items"/>
+			<property name="count" value="1"/>			
+        </action>
+    </action_sequence>
+	
+	<action_sequence name="RemoveMODisc">
+        <property name="category" value="twitch_actions" />
+        <property name="target_type" value="Block" />
+        
+        <action class="RemoveItems">
+            <property name="items_location" value="Toolbelt" />
+            <property name="items_tags" value="MODisc"/>
+			<property name="count_type" value="Items"/>
+			<property name="count" value="1"/>			
+        </action>
+    </action_sequence>
+
+	<action_sequence name="RemoveLaboratoryKey">
+        <property name="category" value="twitch_actions" />
+        <property name="target_type" value="Block" />
+        
+        <action class="RemoveItems">
+            <property name="items_location" value="Toolbelt" />
+            <property name="items_tags" value="LaboratoryKey"/>
+			<property name="count_type" value="Items"/>
+			<property name="count" value="1"/>			
+        </action>
+    </action_sequence>	
+	
+	<action_sequence name="RemoveFuelSupplyCapsule">
+        <property name="category" value="twitch_actions" />
+        <property name="target_type" value="Block" />
+        
+        <action class="RemoveItems">
+            <property name="items_location" value="Toolbelt" />
+            <property name="items_tags" value="FuelSupplyCapsule"/>
+			<property name="count_type" value="Items"/>
+			<property name="count" value="1"/>			
+        </action>
+    </action_sequence>
+	
+	<action_sequence name="RemoveMasterKey">
+        <property name="category" value="twitch_actions" />
+        <property name="target_type" value="Block" />
+        
+        <action class="RemoveItems">
+            <property name="items_location" value="Toolbelt" />
+            <property name="items_tags" value="MasterKey"/>
+			<property name="count_type" value="Items"/>
+			<property name="count" value="1"/>			
+        </action>
+    </action_sequence>
+	
+	<action_sequence name="RemoveGyrocopter">
+        <property name="category" value="twitch_actions" />
+        <property name="target_type" value="Block" />
+        
+        <action class="RemoveItems">
+            <property name="items_location" value="Toolbelt" />
+            <property name="items_tags" value="GyrocopterRE"/>
+			<property name="count_type" value="Items"/>
+			<property name="count" value="1"/>			
+        </action>
+    </action_sequence>
+
+	</append>
+</FranticDan>
