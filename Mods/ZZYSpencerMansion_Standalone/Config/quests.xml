@@ -1,0 +1,466 @@
+<FranticDan>
+<append xpath="/quests">
+
+	<!-- Automatically completed quest -->
+	<quest id="SpencerMansionQuest">
+		<property name="group_name_key" value="quest_BasicSurvival"/>
+		<property name="name_key" value="The Spencer Mansion Challenge"/>
+		<property name="subtitle_key" value="Enter The Survival Horror"/>
+		<property name="description_key" value="questStartup_desc"/>
+		<property name="icon" value="ui_game_symbol_map_house"/>
+		<property name="category_key" value="The Story"/>
+		<property name="difficulty" value="veryeasy"/>
+		<property name="offer_key" value="questStartup_offer"/>
+		<property name="shareable" value="false"/>
+
+		<!-- <reward type="Item" id="VoidInventory" value="45"/> -->	
+		<reward type="Quest" id="Quest_Achievements"/>
+		<reward type="Quest" id="Quest_TrainingInformation"/>
+		<reward type="Quest" id="Quest_MeleeCombatTip"/>
+		<reward type="Quest" id="Escape"/>
+	</quest>
+	
+	<quest id="Quest_Achievements">
+		<property name="group_name_key" value="AchievementsTip_title"/>
+		<property name="name_key" value="AchievementsTip_title"/>
+		<property name="subtitle_key" value="AchievementsTip_title"/>
+		<property name="description_key" value="AchievementsTip"/>
+		<property name="icon" value="ui_game_symbol_perk"/>
+		<property name="category_key" value="Information"/>
+		<property name="difficulty" value="veryeasy"/>
+		<property name="shareable" value="false"/>
+	</quest>
+	
+	<quest id="Quest_TrainingInformation">
+		<property name="group_name_key" value="TrainingInformationTip_title"/>
+		<property name="name_key" value="TrainingInformationTip_title"/>
+		<property name="subtitle_key" value="TrainingInformationTip_title"/>
+		<property name="description_key" value="TrainingInformationTip"/>
+		<property name="icon" value="ui_game_symbol_book"/>
+		<property name="category_key" value="Information"/>
+		<property name="difficulty" value="veryeasy"/>
+		<property name="shareable" value="false"/>
+	</quest>
+	
+	<quest id="Quest_MeleeCombatTip">
+		<property name="group_name_key" value="MeleeCombatTip_title"/>
+		<property name="name_key" value="MeleeCombatTip_title"/>
+		<property name="subtitle_key" value="MeleeCombatTip_title"/>
+		<property name="description_key" value="MeleeCombatTip"/>
+		<property name="icon" value="ui_game_symbol_book"/>
+		<property name="category_key" value="Information"/>
+		<property name="difficulty" value="veryeasy"/>
+		<property name="shareable" value="false"/>
+	</quest>
+	
+	<quest id="Quest_ReloadingTool">
+		<property name="group_name_key" value="AmmoCraftingTip_title"/>
+		<property name="name_key" value="AmmoCraftingTip_title"/>
+		<property name="subtitle_key" value="AmmoCraftingTip_title"/>
+		<property name="description_key" value="AmmoCraftingTip"/>
+		<property name="icon" value="ui_game_symbol_book"/>
+		<property name="offer_key" value="AmmoCraftingTip"/>
+		<property name="category_key" value="Information"/>
+		<property name="difficulty" value="veryeasy"/>
+
+		<property name="shareable" value="false"/>
+		
+		<reward type="Item" id="ReloadingTool" value="1"/>
+	</quest>
+
+	<quest id="quest_BookOfCurses">
+		<property name="name_key" value="BookofCurses"/>
+		<property name="subtitle_key" value="BookofCurses"/>
+		<property name="description_key" value="BookOfCurses_offer"/>
+		<property name="icon" value="ui_game_symbol_book"/>
+		<property name="offer_key" value="BookOfCurses_offer"/>
+		<property name="category" value="Book"/>
+		<property name="difficulty" value="veryeasy"/>
+		<property name="shareable" value="false"/>
+
+		<reward type="Item" id="SwordKey" value="4"/>
+		<reward type="Quest" id="Quest_Miscellaneous"/>
+	</quest>
+	
+	<quest id="Quest_Miscellaneous">
+		<property name="group_name_key" value="MiscellaneousTip_title"/>
+		<property name="name_key" value="MiscellaneousTip_title"/>
+		<property name="subtitle_key" value="MiscellaneousTip_title"/>
+		<property name="description_key" value="MiscellaneousTip"/>
+		<property name="icon" value="ui_game_symbol_book"/>
+		<property name="category_key" value="Information"/>
+		<property name="difficulty" value="veryeasy"/>
+		<property name="shareable" value="false"/>
+	</quest>
+
+	<quest id="Dog_Whistle">
+		<property name="name_key" value="DogWhistle"/>
+		<property name="subtitle_key" value="DogWhistle"/>
+		<property name="description_key" value="DogWhistle_offer"/>
+		<property name="icon" value="ui_game_symbol_book"/>
+		<property name="repeatable" value="false"/>
+		<property name="category" value="Memo"/>
+		<property name="offer_key" value="DogWhistle_offer"/>
+		<property name="difficulty" value="medium"/>
+		<property name="shareable" value="false"/>
+		
+		<reward type="Item" id="TerraceKey" value="1"/>	
+	</quest>
+	
+	<quest id="Quest_BotanyBook">
+		<property name="name_key" value="BotanyBook"/>
+		<property name="subtitle_key" value="BotanyBook"/>
+		<property name="description_key" value="BotanyBookTip"/>
+		<property name="icon" value="ui_game_symbol_book"/>
+		<property name="repeatable" value="false"/>
+		<property name="category" value="Journal"/>
+		<property name="offer_key" value="BotanyBookTip"/>
+		<property name="difficulty" value="medium"/>
+		<property name="shareable" value="false"/>
+		
+		<reward type="Item" id="resourcePaper" value="8"/>
+		<reward type="Quest" id="Quest_Herbs"/>		
+	</quest>
+
+	<quest id="Quest_Herbs">
+		<property name="group_name_key" value="HerbsTip_title"/>
+		<property name="name_key" value="HerbsTip_title"/>
+		<property name="subtitle_key" value="HerbsTip_title"/>
+		<property name="description_key" value="HerbsTip"/>
+		<property name="icon" value="ui_game_symbol_book"/>
+		<property name="category_key" value="Information"/>
+		<property name="difficulty" value="veryeasy"/>
+		<property name="shareable" value="false"/>
+	</quest>
+	
+	<quest id="Quest_BodyDisposal">
+		<property name="name_key" value="BodyDisposalTip_title"/>
+		<property name="subtitle_key" value="BodyDisposalTip_title"/>
+		<property name="description_key" value="BodyDisposalTip"/>
+		<property name="icon" value="ui_game_symbol_book"/>
+		<property name="repeatable" value="false"/>
+		<property name="category" value="Journal"/>
+		<property name="offer_key" value="BodyDisposalTip"/>
+		<property name="difficulty" value="medium"/>
+		<property name="shareable" value="false"/>
+		
+		<reward type="Item" id="resourcePaper" value="8"/>
+		<reward type="Quest" id="Quest_CrimsonPrevention"/>		
+	</quest>
+	
+	<quest id="Quest_CrimsonPrevention">
+		<property name="group_name_key" value="CrimsonPreventionTip_title"/>
+		<property name="name_key" value="CrimsonPreventionTip_title"/>
+		<property name="subtitle_key" value="CrimsonPreventionTip_title"/>
+		<property name="description_key" value="CrimsonPreventionTip"/>
+		<property name="icon" value="ui_game_symbol_book"/>
+		<property name="category_key" value="Information"/>
+		<property name="difficulty" value="veryeasy"/>
+		<property name="shareable" value="false"/>
+	</quest>
+	
+	<quest id="Quest_ResearcherWill">
+		<property name="name_key" value="ResearcherWillTip_title"/>
+		<property name="subtitle_key" value="ResearcherWillTip_title"/>
+		<property name="description_key" value="ResearcherWillTip"/>
+		<property name="icon" value="ui_game_symbol_book"/>
+		<property name="repeatable" value="false"/>
+		<property name="category" value="Journal"/>
+		<property name="offer_key" value="ResearcherWillTip"/>
+		<property name="difficulty" value="medium"/>
+		<property name="shareable" value="false"/>
+		
+		<reward type="Item" id="resourcePaper" value="8"/>	
+	</quest>
+	
+	<quest id="Quest_TrevorsDiary1">
+		<property name="name_key" value="TrevorDiaryTip_title"/>
+		<property name="subtitle_key" value="TrevorDiaryTip_title"/>
+		<property name="description_key" value="TrevorDiaryTip"/>
+		<property name="icon" value="ui_game_symbol_book"/>
+		<property name="repeatable" value="false"/>
+		<property name="category" value="Journal"/>
+		<property name="offer_key" value="TrevorDiaryTip"/>
+		<property name="difficulty" value="medium"/>
+		<property name="shareable" value="false"/>
+		
+		<reward type="Item" id="resourcePaper" value="8"/>	
+	</quest>
+	
+	<quest id="Quest_TrevorsDiary2">
+		<property name="name_key" value="TrevorDiaryTip2_title"/>
+		<property name="subtitle_key" value="TrevorDiaryTip2_title"/>
+		<property name="description_key" value="TrevorDiaryTip2"/>
+		<property name="icon" value="ui_game_symbol_book"/>
+		<property name="repeatable" value="false"/>
+		<property name="category" value="Journal"/>
+		<property name="offer_key" value="TrevorDiaryTip2"/>
+		<property name="difficulty" value="medium"/>
+		<property name="shareable" value="false"/>
+		
+		<reward type="Item" id="resourcePaper" value="8"/>	
+	</quest>
+	
+	<quest id="Quest_TrevorsDiary3">
+		<property name="name_key" value="TrevorDiaryTip3_title"/>
+		<property name="subtitle_key" value="TrevorDiaryTip3_title"/>
+		<property name="description_key" value="TrevorDiaryTip3"/>
+		<property name="icon" value="ui_game_symbol_book"/>
+		<property name="repeatable" value="false"/>
+		<property name="category" value="Journal"/>
+		<property name="offer_key" value="TrevorDiaryTip3"/>
+		<property name="difficulty" value="medium"/>
+		<property name="shareable" value="false"/>
+		
+		<reward type="Item" id="resourcePaper" value="8"/>	
+	</quest>
+	
+	<quest id="Quest_SuicideNote">
+		<property name="name_key" value="SuicideNoteTip_title"/>
+		<property name="subtitle_key" value="SuicideNoteTip_title"/>
+		<property name="description_key" value="SuicideNoteTip"/>
+		<property name="icon" value="ui_game_symbol_book"/>
+		<property name="repeatable" value="false"/>
+		<property name="category" value="Journal"/>
+		<property name="offer_key" value="SuicideNoteTip"/>
+		<property name="difficulty" value="medium"/>
+		<property name="shareable" value="false"/>
+		
+		<reward type="Item" id="resourcePaper" value="8"/>	
+	</quest>
+	
+	<quest id="Quest_Plant42Report">
+		<property name="name_key" value="Plant42ReportTip_title"/>
+		<property name="subtitle_key" value="Plant42ReportTip_title"/>
+		<property name="description_key" value="Plant42ReportTip"/>
+		<property name="icon" value="ui_game_symbol_book"/>
+		<property name="repeatable" value="false"/>
+		<property name="category" value="Journal"/>
+		<property name="offer_key" value="Plant42ReportTip"/>
+		<property name="difficulty" value="medium"/>
+		<property name="shareable" value="false"/>
+		
+		<reward type="Item" id="resourcePaper" value="8"/>	
+	</quest>
+	
+	<quest id="Quest_OrganicChemistryLabExperiment">
+		<property name="name_key" value="OrganicChemistryLabExperimentTip_title"/>
+		<property name="subtitle_key" value="OrganicChemistryLabExperimentTip_title"/>
+		<property name="description_key" value="OrganicChemistryLabExperimentTip"/>
+		<property name="icon" value="ui_game_symbol_book"/>
+		<property name="repeatable" value="false"/>
+		<property name="category" value="Journal"/>
+		<property name="offer_key" value="OrganicChemistryLabExperimentTip"/>
+		<property name="difficulty" value="medium"/>
+		<property name="shareable" value="false"/>
+		
+		<reward type="Item" id="resourcePaper" value="8"/>	
+	</quest>
+	
+	<quest id="Quest_FamilyPictureandNotes">
+		<property name="name_key" value="FamilyPicture1Tip_title"/>
+		<property name="subtitle_key" value="FamilyPicture1Tip_title"/>
+		<property name="description_key" value="FamilyPicture1Tip"/>
+		<property name="icon" value="ui_game_symbol_book"/>
+		<property name="repeatable" value="false"/>
+		<property name="category" value="Journal"/>
+		<property name="offer_key" value="FamilyPicture1Tip"/>
+		<property name="difficulty" value="medium"/>
+		<property name="shareable" value="false"/>
+		
+		<reward type="Item" id="resourcePaper" value="8"/>	
+	</quest>
+	
+	<quest id="Quest_LisasJournal">
+		<property name="name_key" value="FamilyPicture2Tip_title"/>
+		<property name="subtitle_key" value="FamilyPicture2Tip_title"/>
+		<property name="description_key" value="FamilyPicture2Tip"/>
+		<property name="icon" value="ui_game_symbol_book"/>
+		<property name="repeatable" value="false"/>
+		<property name="category" value="Journal"/>
+		<property name="offer_key" value="FamilyPicture2Tip"/>
+		<property name="difficulty" value="medium"/>
+		<property name="shareable" value="false"/>
+		
+		<reward type="Item" id="resourcePaper" value="8"/>	
+	</quest>
+	
+	<quest id="Quest_JessicasLetter">
+		<property name="name_key" value="FamilyPicture3Tip_title"/>
+		<property name="subtitle_key" value="FamilyPicture3Tip_title"/>
+		<property name="description_key" value="FamilyPicture3Tip"/>
+		<property name="icon" value="ui_game_symbol_book"/>
+		<property name="repeatable" value="false"/>
+		<property name="category" value="Journal"/>
+		<property name="offer_key" value="FamilyPicture3Tip"/>
+		<property name="difficulty" value="medium"/>
+		<property name="shareable" value="false"/>
+		
+		<reward type="Item" id="resourcePaper" value="8"/>	
+	</quest>
+	
+	<quest id="Quest_V-ACT">
+		<property name="name_key" value="VACTTip_title"/>
+		<property name="subtitle_key" value="VACTTip_title"/>
+		<property name="description_key" value="VACTTip"/>
+		<property name="icon" value="ui_game_symbol_book"/>
+		<property name="repeatable" value="false"/>
+		<property name="category" value="Journal"/>
+		<property name="offer_key" value="VACTTip"/>
+		<property name="difficulty" value="medium"/>
+		<property name="shareable" value="false"/>
+		
+		<reward type="Item" id="resourcePaper" value="8"/>	
+	</quest>
+	
+	<quest id="Quest_FAX">
+		<property name="name_key" value="FAXTip_title"/>
+		<property name="subtitle_key" value="FAXTip_title"/>
+		<property name="description_key" value="FAXTip"/>
+		<property name="icon" value="ui_game_symbol_book"/>
+		<property name="repeatable" value="false"/>
+		<property name="category" value="Journal"/>
+		<property name="offer_key" value="FAXTip"/>
+		<property name="difficulty" value="medium"/>
+		<property name="shareable" value="false"/>
+		
+		<reward type="Item" id="resourcePaper" value="8"/>	
+	</quest>
+	
+	<quest id="Quest_SecurityProtocols">
+		<property name="name_key" value="SecurityProtocolsTip_title"/>
+		<property name="subtitle_key" value="SecurityProtocolsTip_title"/>
+		<property name="description_key" value="SecurityProtocolsTip"/>
+		<property name="icon" value="ui_game_symbol_book"/>
+		<property name="repeatable" value="false"/>
+		<property name="category" value="Journal"/>
+		<property name="offer_key" value="SecurityProtocolsTip"/>
+		<property name="difficulty" value="medium"/>
+		<property name="shareable" value="false"/>
+		
+		<reward type="Item" id="resourcePaper" value="8"/>	
+	</quest>
+	
+	<quest id="Quest_KeepersDiary">
+		<property name="name_key" value="KeeperDiaryTip_title"/>
+		<property name="subtitle_key" value="KeeperDiaryTip_title"/>
+		<property name="description_key" value="KeeperDiaryTip"/>
+		<property name="icon" value="ui_game_symbol_book"/>
+		<property name="repeatable" value="false"/>
+		<property name="category" value="Journal"/>
+		<property name="offer_key" value="KeeperDiaryTip"/>
+		<property name="difficulty" value="medium"/>
+		<property name="shareable" value="false"/>
+		
+		<reward type="Item" id="resourcePaper" value="8"/>	
+	</quest>
+	
+	<quest id="Quest_Scrapbook">
+		<property name="name_key" value="ScrapbookTip_title"/>
+		<property name="subtitle_key" value="ScrapbookTip_title"/>
+		<property name="description_key" value="ScrapbookTip"/>
+		<property name="icon" value="ui_game_symbol_book"/>
+		<property name="repeatable" value="false"/>
+		<property name="category" value="Journal"/>
+		<property name="offer_key" value="ScrapbookTip"/>
+		<property name="difficulty" value="medium"/>
+		<property name="shareable" value="false"/>
+		
+		<reward type="Item" id="resourcePaper" value="8"/>	
+	</quest>
+	
+	<quest id="Quest_MailtotheChiefofSecurity">
+		<property name="name_key" value="MailToTheChiefOfSecurityTip_title"/>
+		<property name="subtitle_key" value="MailToTheChiefOfSecurityTip_title"/>
+		<property name="description_key" value="MailToTheChiefOfSecurityTip"/>
+		<property name="icon" value="ui_game_symbol_book"/>
+		<property name="repeatable" value="false"/>
+		<property name="category" value="Journal"/>
+		<property name="offer_key" value="MailToTheChiefOfSecurityTip"/>
+		<property name="difficulty" value="medium"/>
+		<property name="shareable" value="false"/>
+		
+		<reward type="Item" id="resourcePaper" value="8"/>	
+	</quest>
+	
+	<quest id="Quest_ResearchersLetter">
+		<property name="name_key" value="ResearcherLetterTip_title"/>
+		<property name="subtitle_key" value="ResearcherLetterTip_title"/>
+		<property name="description_key" value="ResearcherLetterTip"/>
+		<property name="icon" value="ui_game_symbol_book"/>
+		<property name="repeatable" value="false"/>
+		<property name="category" value="Journal"/>
+		<property name="offer_key" value="ResearcherLetterTip"/>
+		<property name="difficulty" value="medium"/>
+		<property name="shareable" value="false"/>
+		
+		<reward type="Item" id="resourcePaper" value="8"/>	
+	</quest>
+	
+	<quest id="Quest_ObservationNote">
+		<property name="name_key" value="ObservationNoteTip_title"/>
+		<property name="subtitle_key" value="ObservationNoteTip_title"/>
+		<property name="description_key" value="ObservationNoteTip"/>
+		<property name="icon" value="ui_game_symbol_book"/>
+		<property name="repeatable" value="false"/>
+		<property name="category" value="Journal"/>
+		<property name="offer_key" value="ObservationNoteTip"/>
+		<property name="difficulty" value="medium"/>
+		<property name="shareable" value="false"/>
+		
+		<reward type="Item" id="resourcePaper" value="8"/>	
+	</quest>
+
+	<quest id="Escape">
+		<property name="name_key" value="Build a Gyrocopter"/>
+		<property name="subtitle_key" value="Escape The Spencer Mansion"/>
+		<property name="description_key" value="Scavenge the mansion for parts and put together a gyrocopter. Then escape to the helipad."/>
+		<property name="icon" value="ui_game_symbol_gyrocopter"/>
+		<property name="category" value="Mission"/>
+		<property name="difficulty" value="hard"/>
+		<property name="offer_key" value="quest_BasicSurvival_offer"/>
+		<property name="shareable" value="false"/>
+
+		<objective type="FetchKeep" id="GyrocopterRE" value="1" phase="1"/>
+
+		<reward type="Quest" id="FinalEscape"/>
+	</quest>
+
+	<quest id="FinalEscape">
+		<property name="name_key" value="FinalEscapename"/>
+		<property name="subtitle_key" value="FinalEscapekey"/>
+		<property name="description_key" value="FinalEscapedesc"/>
+		<property name="icon" value="ui_game_symbol_map_house"/>
+		<property name="category" value="Mission"/>
+		<property name="difficulty" value="hard"/>
+		<property name="offer_key" value="quest_BasicSurvival_offer"/>
+		<property name="shareable" value="false"/>
+		
+		<objective type="Goto" id="trader" value="5" phase="1">
+			<property name="biome_filter_type" value="OnlyBiome" />
+			<property name="biome_filter" value="pine_forest" />
+			<property name="nav_object" value="go_to_trader" />
+		</objective>
+		<objective type="EntityKill" id="SuperTyrant" value="1" phase="2"/>
+
+		<reward type="Quest" id="Completion"/>
+	</quest>
+
+	<quest id="Completion">
+		<property name="name_key" value="Quest_Completion_tip_title"/>
+		<property name="subtitle_key" value="Quest_Completion_tip_title"/>
+		<property name="description_key" value="Completion_desc"/>
+		<property name="icon" value="ui_game_symbol_map_trader"/>
+		<property name="category" value="Congratulations!"/>
+		<property name="difficulty" value="easy"/>
+		<property name="shareable" value="false"/>
+		
+		<action type="GameEvent" >
+			<property name="event" value="BeatGame"/>
+			<property name="delay" value="1"/>
+		</action>
+		
+	</quest>
+
+	</append>
+</FranticDan>
