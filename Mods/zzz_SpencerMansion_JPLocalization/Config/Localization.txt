@@ -354,7 +354,7 @@ LockedSuperRocket,まずスイッチを押してください
 LockedAmmoChest,ロックされた弾薬箱
 AmmoChestCollect,弾薬クラフトバンドル (床に置いて集めます)
 AmmoCraftingBundleDesc,"弾薬のクラフト用品が詰まった箱。\n\n以下の内容が含まれます。\n火薬2400。\n45 個の薬莢。\n45 個の箇条書きのヒント。\n15 バックショット。\n30 ポリマー。"
-AmmoChestCollectDesc,"弾薬のクラフト用品が詰まった箱。\n\n開く前に、空の在庫スロットが少なくとも 5 つあることを確認してください。"
+AmmoChestCollectDesc,"弾薬のクラフト用品が詰まった箱。\n\n開く前に、空の在庫スロットが少なくとも 5 つあることを確認してください。\n\n床に置いて収集します。"
 Backpack,バックパック
 BackpackDesc,"このバックパックにはさらに 2 つの在庫スロットが追加されます"
 "WorkbenchRepairKit",作業台修理キット
