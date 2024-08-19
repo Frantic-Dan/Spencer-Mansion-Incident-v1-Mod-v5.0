@@ -347,7 +347,7 @@ DismantleShotgunShells,Dismantle 12 Gauge Shotgun Shell
 ShotgunSlug,Shotgun Slug
 LockedAmmoChest,Locked Ammo Chest
 AmmoChestCollect,Ammo Crafting Bundle (Place on floor to collect)
-AmmoChestCollectDesc,"A box full of ammo crafting supplies.\n\nBe sure to have at least 5 empty inventory slots before opening!"
+AmmoChestCollectDesc,"A box full of ammo crafting supplies.\n\nBe sure to have at least 5 empty inventory slots before opening!\n\nPlace on floor to collect."
 AmmoCraftingBundleDesc,"A box full of ammo crafting supplies.\n\nContains the following:\n2400 Gunpowder.\n45 Bullet Casings.\n45 Bullet Tips.\n15 Buckshot.\n30 Polymers."
 Backpack,Backpack
 BackpackDesc,"This backpack will give you 2 more inventory slots"
