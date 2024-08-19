@@ -311,8 +311,9 @@
 	<property name="MaxDamage" value="5000"/>
 	<property name="Shape" value="ModelEntity"/>
 	<property name="Material" value="Mbedrock"/>
-	<property name="Model" value="@:Entities/LootContainers/loot_satchelPrefab.prefab"/>
-	<property name="ModelOffset" value="0,0,0"/>
+	<property name="Model" value="#@modfolder:/Config/Resources/REProps.unity3d?Lighter_Brass"/>
+	<!-- <property name="Model" value="@:Entities/LootContainers/loot_satchelPrefab.prefab"/> -->
+	<!-- <property name="ModelOffset" value="-0.8,0.99,.8"/> -->
 	<property name="GndAlign" value="1"/>
 	<property name="AllowAllRotations" value="true"/>
 	<property name="ImposterExclude" value="true"/>
@@ -322,7 +323,6 @@
 	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
 	<property name="FilterTags" value="floot,fdecor,ffurniture"/>
 	<property name="CanPickup" value="true" param1="Lighter"/>
-	<property name="TakeDelay" value="3"/>
 </block>
 
 <block name="TorchBlock">
@@ -608,7 +608,7 @@
 	<property name="Material" value="Mbedrock"/>
 	<property name="Model" value="#@modfolder:/Config/Resources/deathmask.unity3d?DeathMaskPrefab"/>
 	<!-- <property name="Model" value="@:Entities/LootContainers/woodenChestRotten_01Prefab Variant.prefab"/> -->
-	<property name="ModelOffset" value="-.82,0,0"/>
+	<property name="ModelOffset" value="0,-0.07,0"/>
 	<!-- <property name="GndAlign" value="1"/> -->
 	<property name="AllowAllRotations" value="true"/>
 	<property name="ImposterExclude" value="true"/>
@@ -1027,8 +1027,10 @@
 	<property name="MaxDamage" value="5000"/>
 	<property name="Shape" value="ModelEntity"/>
 	<property name="Material" value="Mbedrock"/>
-	<property name="Model" value="@:Entities/LootContainers/woodenChestRotten_01Prefab Variant.prefab"/>
-	<property name="ModelOffset" value="0,0.5,0"/>
+	<property name="Model" value="#@modfolder:/Config/Resources/REProps.unity3d?Gem_Red"/>
+	<!-- <property name="Model" value="@:Entities/LootContainers/woodenChestRotten_01Prefab Variant.prefab"/> -->
+	<!-- <property name="ModelOffset" value="0,0.5,0"/> -->
+	<property name="GndAlign" value="1"/>
 	<property name="AllowAllRotations" value="true"/>
 	<property name="ImposterExclude" value="true"/>
 	<property name="IsTerrainDecoration" value="true"/>
@@ -3510,10 +3512,11 @@
 	<property name="CreativeMode" value="None"/>
 	<property name="Material" value="Mbedrock"/>
 	<property name="Shape" value="ModelEntity"/>
-	<property name="Model" value="@:Entities/LootContainers/medic_loot_pile_APrefab.prefab"/>
+	<property name="Model" value="#@modfolder:/Config/Resources/REProps.unity3d?Spray_SlimGreen"/>
+	<!-- <property name="Model" value="@:Entities/LootContainers/medic_loot_pile_APrefab.prefab"/> -->
 	<property name="StabilitySupport" value="false"/>
 	<property name="IsTerrainDecoration" value="true"/>
-	<property name="ModelOffset" value="0,0,0"/>
+	<!-- <property name="ModelOffset" value="0,0,0"/> -->
 	<property name="GndAlign" value="1"/>
 	<property name="FilterTags" value="floot"/>
 	<property name="CanPickup" value="true" param1="FirstAidSpray"/>
@@ -3666,8 +3669,10 @@
 	<property name="MaxDamage" value="5000"/>
 	<property name="Shape" value="ModelEntity"/>
 	<property name="Material" value="Mbedrock"/>
-	<property name="Model" value="@:Entities/LootContainers/woodenChestRotten_01Prefab Variant.prefab"/>
-	<property name="ModelOffset" value="0,0.5,0"/>
+	<property name="Model" value="#@modfolder:/Config/Resources/REProps.unity3d?Floppy_Blue"/>
+	<!-- <property name="Model" value="@:Entities/LootContainers/woodenChestRotten_01Prefab Variant.prefab"/> -->
+	<!-- <property name="ModelOffset" value="0,0.5,0"/> -->
+	<property name="GndAlign" value="1"/>
 	<property name="AllowAllRotations" value="true"/>
 	<property name="ImposterExclude" value="true"/>
 	<property name="IsTerrainDecoration" value="true"/>
