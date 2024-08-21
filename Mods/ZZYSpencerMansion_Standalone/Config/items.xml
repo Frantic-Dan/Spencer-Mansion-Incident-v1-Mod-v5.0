@@ -2213,7 +2213,8 @@
 	<property name="DisplayType" value="ammoLauncher"/>
 	<property name="CustomIcon" value="ammoRocketFrag"/>
 	<property name="CustomIconTint" value="333333"/>
-	<property name="Meshfile" value="@:Other/Items/Weapons/Ranged/RocketLauncher/rocketPrefab.prefab"/>
+	<property name="Meshfile" value="@:Other/Items/Weapons/Ranged/Grenade/GrenadePrefab.prefab"/>
+	<!-- <property name="Meshfile" value="@:Other/Items/Weapons/Ranged/RocketLauncher/rocketPrefab.prefab"/> -->
 	<property name="HoldType" value="45"/>
 	<property name="HandMeshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
 	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
@@ -2289,7 +2290,8 @@
 	<property name="DisplayType" value="ammoGrenadeExplosive"/>
 	<property name="CustomIcon" value="grenade-shells"/>
 	<property name="DescriptionKey" value="GrenadeExplosiveDesc"/>
-	<property name="Meshfile" value="@:Other/Items/Weapons/Ranged/RocketLauncher/rocketPrefab.prefab"/>
+	<property name="Meshfile" value="@:Other/Items/Weapons/Ranged/Grenade/GrenadePrefab.prefab"/>
+	<!-- <property name="Meshfile" value="@:Other/Items/Weapons/Ranged/RocketLauncher/rocketPrefab.prefab"/> -->
 	<property name="HoldType" value="45"/>
 	<property name="HandMeshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
 	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
@@ -2331,7 +2333,8 @@
 	<property name="DisplayType" value="ammoGrenadeAcid"/>
 	<property name="CustomIcon" value="acid-shells"/>
 	<property name="DescriptionKey" value="GrenadeAcidDesc"/>
-	<property name="Meshfile" value="@:Other/Items/Weapons/Ranged/RocketLauncher/rocketPrefab.prefab"/>
+	<property name="Meshfile" value="@:Other/Items/Weapons/Ranged/Grenade/GrenadePrefab.prefab"/>
+	<!-- <property name="Meshfile" value="@:Other/Items/Weapons/Ranged/RocketLauncher/rocketPrefab.prefab"/> -->
 	<property name="HoldType" value="45"/>
 	<property name="HandMeshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
 	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
@@ -2394,7 +2397,8 @@
 	<property name="DisplayType" value="ammoGrenadeFlame"/>
 	<property name="CustomIcon" value="incendiary-shells"/>
 	<property name="DescriptionKey" value="GrenadeFlameDesc"/>
-	<property name="Meshfile" value="@:Other/Items/Weapons/Ranged/RocketLauncher/rocketPrefab.prefab"/>
+	<property name="Meshfile" value="@:Other/Items/Weapons/Ranged/Grenade/GrenadePrefab.prefab"/>
+	<!-- <property name="Meshfile" value="@:Other/Items/Weapons/Ranged/RocketLauncher/rocketPrefab.prefab"/> -->
 	<property name="HoldType" value="45"/>
 	<property name="HandMeshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
 	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
