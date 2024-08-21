@@ -99,7 +99,7 @@
 	<item group="SpecialClothes"/>
 </lootcontainer>
 
-<lootcontainer name="TheVault" size="6,10" destroy_on_close="false" sound_open="UseActions/chest_tier5_open" sound_close="UseActions/chest_tier5_close" open_time="0">
+<lootcontainer name="TheVault" size="6,10" destroy_on_close="false" sound_open="UseActions/crate_iron_open" sound_close="UseActions/crate_iron_close" open_time="0">
 	<item name="cobweb" count="0"/>
 </lootcontainer>
 
