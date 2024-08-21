@@ -286,9 +286,11 @@
 	<property name="DisplayType" value="blockHardenedMulti"/>
 	<property name="Material" value="MmetalMansion"/>
 	<property name="Shape" value="ModelEntity"/>
-	<property name="Model" value="@:Entities/LootContainers/tier5LootChestPrefab.prefab"/>
+	<property name="Model" value="@:Entities/LootContainers/super_chestPrefab.prefab"/>
+	<!-- <property name="Model" value="@:Entities/LootContainers/tier5LootChestPrefab.prefab"/> -->
 	<property name="Place" value="TowardsPlacerInverted"/>
-	<property name="ModelOffset" value="0,0.5,0"/>
+	<property name="ModelOffset" value="0.5,0.5,0"/>
+	<!-- <property name="ModelOffset" value="0,0.5,0"/> -->
 	<property name="MultiBlockDim" value="2,1,1"/>
 	<property name="ImposterExchange" value="imposterBlock" param1="115"/>
 	<property name="WaterFlow" value="permitted"/>
