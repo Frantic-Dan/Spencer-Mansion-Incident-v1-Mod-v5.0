@@ -123,7 +123,8 @@
 		<gameoption name="ServerPort" title="goPort" value_wrap="false" value_type="int" values="" display_names="" value_localization_prefix="" is_textinput="true" character_limit="5"/>
 	</insertafter>
 	
-	<set xpath="/windows/window[@name='newContinueGame']/rect[3]//simplebutton[@name='btnDefaults']/@pos">960, -2000</set>
+	<set xpath="/windows/window[@name='newContinueGame']/rect[3]//simplebutton[@name='btnDefaults']/@pos">960, -3000</set>
+	<set xpath="/windows/window[@name='newContinueGame']/rect[1]//simplebutton[@name='btnDeleteSave']/@pos">960, -3000</set>
 	
 	<!-- <insertafter xpath="/windows/window[@name='spawnselection']/rect[2]//simplebutton[3]">
 		<simplebutton name="btnExit" depth="3" pos="200,-250" pivot="center" width="400" height="42" font_size="36" caption_key="xuiMenuExit" />
