@@ -46,7 +46,7 @@
 <set xpath="/entity_classes/entity_class[@name='zombieTemplateMale']//property[@name='LootDropProb']/@value">0</set>
 <set xpath="/entity_classes/entity_class//property[@name='PainResistPerHit']/@value">1.01</set>
 <set xpath="/entity_classes/entity_class[@name='animalZombieDog']//property[@name='PainResistPerHit']/@value">1</set>
-<set xpath="/entity_classes/entity_class[@name='animalZombieDog']/effect_group[@name='Base Effects']//passive_effect[@name='HealthMax']/@value">1500</set>
+<set xpath="/entity_classes/entity_class[@name='animalZombieDog']/effect_group[@name='Base Effects']//passive_effect[@name='HealthMax']/@value">1250</set>
 <set xpath="/entity_classes/entity_class//property[@name='ExperienceGain']/@value">0</set>
 <set xpath="/entity_classes/entity_class//property[@name='KnockdownProneDamageThreshold']/@value">0.7</set>
 <set xpath="/entity_classes/entity_class[@name='zombieTemplateMale']//property[@name='AITask']/@value">BreakBlock|
@@ -366,8 +366,112 @@
 		<property name="CrimsonHeadEntityName" value="SoldierCrimsonHead"/>
 </insertafter>
 
-
-
+<!-- Random walk types -->
+<append xpath="/entity_classes/entity_class[@name='zombieArlene']">
+		<effect_group>
+			<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="buffRandomWalk"/>
+		</effect_group>
+</append>
+<append xpath="/entity_classes/entity_class[@name='zombieMarlene']">
+		<effect_group>
+			<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="buffRandomWalk"/>
+		</effect_group>
+</append>
+<append xpath="/entity_classes/entity_class[@name='zombieDarlene']">
+		<effect_group>
+			<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="buffRandomWalk"/>
+		</effect_group>
+</append>
+<append xpath="/entity_classes/entity_class[@name='zombieTomClark']">
+		<effect_group>
+			<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="buffRandomWalk"/>
+		</effect_group>
+</append>
+<append xpath="/entity_classes/entity_class[@name='zombieSteve']">
+		<effect_group>
+			<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="buffRandomWalk"/>
+		</effect_group>
+</append>
+<append xpath="/entity_classes/entity_class[@name='zombieBoe']">
+		<effect_group>
+			<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="buffRandomWalk"/>
+		</effect_group>
+</append>
+<append xpath="/entity_classes/entity_class[@name='zombieJoe']">
+		<effect_group>
+			<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="buffRandomWalk"/>
+		</effect_group>
+</append>
+<append xpath="/entity_classes/entity_class[@name='zombieYo']">
+		<effect_group>
+			<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="buffRandomWalk"/>
+		</effect_group>
+</append>
+<append xpath="/entity_classes/entity_class[@name='zombieJanitor']">
+		<effect_group>
+			<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="buffRandomWalk"/>
+		</effect_group>
+</append>
+<append xpath="/entity_classes/entity_class[@name='zombieBusinessMan']">
+		<effect_group>
+			<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="buffRandomWalk"/>
+		</effect_group>
+</append>
+<append xpath="/entity_classes/entity_class[@name='zombieBiker']">
+		<effect_group>
+			<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="buffRandomWalk"/>
+		</effect_group>
+</append>
+<append xpath="/entity_classes/entity_class[@name='zombieLumberjack']">
+		<effect_group>
+			<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="buffRandomWalk"/>
+		</effect_group>
+</append>
+<append xpath="/entity_classes/entity_class[@name='zombieUtilityWorker']">
+		<effect_group>
+			<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="buffRandomWalk"/>
+		</effect_group>
+</append>
+<append xpath="/entity_classes/entity_class[@name='zombieMoe']">
+		<effect_group>
+			<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="buffRandomWalk"/>
+		</effect_group>
+</append>
+<append xpath="/entity_classes/entity_class[@name='zombieFatHawaiian']">
+		<effect_group>
+			<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="buffRandomWalk"/>
+		</effect_group>
+</append>
+<append xpath="/entity_classes/entity_class[@name='zombieFemaleFat']">
+		<effect_group>
+			<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="buffRandomWalk"/>
+		</effect_group>
+</append>
+<append xpath="/entity_classes/entity_class[@name='zombieSkateboarder']">
+		<effect_group>
+			<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="buffRandomWalk"/>
+		</effect_group>
+</append>
+<append xpath="/entity_classes/entity_class[@name='zombieNurse']">
+		<effect_group>
+			<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="buffRandomWalk"/>
+		</effect_group>
+</append>
+<append xpath="/entity_classes/entity_class[@name='zombieLab']">
+		<effect_group>
+			<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="buffRandomWalk"/>
+		</effect_group>
+</append>
+<append xpath="/entity_classes/entity_class[@name='zombieMaleHazmat']">
+		<effect_group>
+			<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="buffRandomWalk"/>
+		</effect_group>
+</append>
+<append xpath="/entity_classes/entity_class[@name='zombieSoldier']">
+		<effect_group>
+			<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="buffRandomWalk"/>
+		</effect_group>
+</append>
 
 <append xpath="/entity_classes">
 
@@ -560,7 +664,7 @@
 	<property name="LootDropProb" value="1"/>
 	<drop event="Harvest" name="resourcePotassiumNitratePowder" count="15" tag="REMansionAmmoPickup" tool_category="Butcher"/>
 	<effect_group name="Base Effects">
-		<passive_effect name="HealthMax" operation="base_set" value="2000"/>
+		<passive_effect name="HealthMax" operation="base_set" value="1750"/>
 	</effect_group>
 </entity_class>
 
