@@ -661,18 +661,68 @@
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" fade="3" effect_name="Hot2"/>
 		</effect_group>
 	</buff>
+	
+	<buff name="buffCrimsonMusic" hidden="true">
+		<duration value="0"/>
 
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="music_CrimsonHead" />
+		</effect_group>
+	</buff>
+	
+	<buff name="buffPlantMusic" hidden="true">
+		<duration value="0"/>
+
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="music_Plant42" />
+		</effect_group>
+	</buff>
+	
+	<buff name="buffYawnMusic" hidden="true">
+		<duration value="0"/>
+
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="music_Yawn" />
+		</effect_group>
+	</buff>
+	
+	<buff name="buffYawnMusic2" hidden="true">
+		<duration value="0"/>
+
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="music_Yawn" />
+		</effect_group>
+	</buff>
+	
+	<buff name="buffBlackTigerMusic" hidden="true">
+		<duration value="0"/>
+
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="music_BlackTiger" />
+		</effect_group>
+	</buff>
+	
+	<buff name="buffBlackTigerMusic2" hidden="true">
+		<duration value="0"/>
+
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="music_BlackTiger" />
+		</effect_group>
+	</buff>
+	
 	<buff name="buffTyrantMusic" hidden="true">
 		<duration value="0"/>
 
 		<effect_group>
-			<!-- <triggered_effect trigger="onSelfBuffStart" action="PlaySound" file="@modfolder:/KHA21-CustomMenuMusic/Assets/MenuMusic.unity3d" /> -->
-			<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="buff_bleeding" />
-			
-				<!-- <requirement name="!HoldingItemHasTags" tags="thrownWeapon"/>
-				<requirement name="!HasBuff" buff="buffArmSprained"/>
-				<requirement name="!HasBuff" buff="buffArmBroken"/> -->
-			<!-- <triggered_effect trigger="onSelfBuffFinish" action="ModifyStats" stat="Health" operation="add" value="30000"/> -->
+			<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="music_Tyrant" />
+		</effect_group>
+	</buff>
+	
+	<buff name="buffSuperTyrantMusic" hidden="true">
+		<duration value="0"/>
+
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="music_SuperTyrant" />
 		</effect_group>
 	</buff>
 
