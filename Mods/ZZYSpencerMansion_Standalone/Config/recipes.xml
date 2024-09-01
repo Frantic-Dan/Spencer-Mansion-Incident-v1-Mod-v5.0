@@ -270,6 +270,10 @@
 	<ingredient name="bookPistolPeteHPAmmo" count="1"/>
 </recipe>
 
+<recipe name="9mmBullet" count="1" craft_time="0" craft_exp_gain="0" is_trackable="false" tags="learnable">
+	<ingredient name="AmmoChestCollect" count="1"/>
+</recipe>
+
 <!-- <recipe name="Dismantle9mmAmmo" count="1" craft_time="2" craft_area="workbench" is_trackable="false" craft_exp_gain="0" tags="workbenchCrafting">
 	<ingredient name="ammo9mmBulletBallRE" count="1"/>
 </recipe> -->
@@ -298,6 +302,10 @@
 
 <recipe name="44MagnumBullet" count="1" craft_time="0" craft_exp_gain="0" is_trackable="false" tags="learnable">
 	<ingredient name="bookEnforcerHPAmmo" count="1"/>
+</recipe>
+
+<recipe name="44MagnumBullet" count="1" craft_time="0" craft_exp_gain="0" is_trackable="false" tags="learnable">
+	<ingredient name="AmmoChestCollect" count="1"/>
 </recipe>
 
 <!-- <recipe name="Dismantle.44Ammo" count="1" craft_time="2" craft_area="workbench" is_trackable="false" craft_exp_gain="0" tags="workbenchCrafting">
@@ -354,6 +362,10 @@
 
 <recipe name="ShotgunShell" count="1" craft_time="0" craft_exp_gain="0" is_trackable="false" tags="learnable">
 	<ingredient name="bookShotgunMessiahSlugs" count="1"/>
+</recipe>
+
+<recipe name="ShotgunShell" count="1" craft_time="0" craft_exp_gain="0" is_trackable="false" tags="learnable">
+	<ingredient name="AmmoChestCollect" count="1"/>
 </recipe>
 
 <!-- <recipe name="DismantleShotgunShells" count="1" craft_time="2" craft_area="workbench" is_trackable="false" craft_exp_gain="0" tags="workbenchCrafting">
