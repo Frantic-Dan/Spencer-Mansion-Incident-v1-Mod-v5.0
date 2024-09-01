@@ -2299,7 +2299,7 @@
 	<property name="Weight" value="0"/>
 	<property name="Stacknumber" value="6"/>
 	<property name="EconomicValue" value="0"/>
-	<property name="Group" value="Ammo/Weapons,Ammo,Ranged Weapons"/>
+	<property name="Group" value=""/>
 	<property name="SoundPickup" value="ammocan_grab"/>
 	<property name="SoundPlace" value="ammocan_place"/>
 	
@@ -2342,7 +2342,7 @@
 	<property name="Weight" value="0"/>
 	<property name="Stacknumber" value="6"/>
 	<property name="EconomicValue" value="0"/>
-	<property name="Group" value="Ammo/Weapons,Ammo,Ranged Weapons"/>
+	<property name="Group" value=""/>
 	<property name="SoundPickup" value="ammocan_grab"/>
 	<property name="SoundPlace" value="ammocan_place"/>
 	
@@ -2406,7 +2406,7 @@
 	<property name="Weight" value="0"/>
 	<property name="Stacknumber" value="6"/>
 	<property name="EconomicValue" value="0"/>
-	<property name="Group" value="Ammo/Weapons,Ammo,Ranged Weapons"/>
+	<property name="Group" value=""/>
 	<property name="SoundPickup" value="ammocan_grab"/>
 	<property name="SoundPlace" value="ammocan_place"/>
 	
@@ -5687,6 +5687,7 @@
 	<effect_group tiered="false" >
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="perkClassicMode" level="1"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="perkPhysician" level="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="perkCardio" level="1"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="medicalRegHealthAmount" operation="add" value="1600"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="medRegHealthIncSpeed" operation="set" value="10"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
@@ -5724,6 +5725,7 @@
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="perkClassicMode" level="1"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="perkClassicModeChris" level="1"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="perkPhysician" level="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="perkCardio" level="1"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="medicalRegHealthAmount" operation="add" value="5600"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="medRegHealthIncSpeed" operation="set" value="10"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
