@@ -521,7 +521,7 @@
 
 	<effect_group name="Base Effects">
 		<passive_effect name="HealthMax" operation="base_set" value="100000"/>
-		<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="buffTyrantMusic"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="buffSuperTyrantMusic"/>
 		
 		<!-- <passive_effect action="PlaySound" sound="buff_stunned" play_in_head="true"/> -->
 		<!-- <triggered_effect trigger="onSelfEnteredGame" action="PlaySound" sound="buff_stunned" play_in_head="true"/> -->
@@ -575,6 +575,7 @@
 	<property name="LootDropEntityClass" value="PrototypeLoot"/>
 	<property name="LootDropProb" value="1"/> <!-- Feral -->
 	<effect_group name="Base Effects">
+		<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="buffCrimsonMusic"/>
 		<passive_effect name="HealthMax" operation="base_set" value="7500"/>
 	</effect_group>
 </entity_class>
@@ -840,6 +841,7 @@
 	<property name="LootDropProb" value="1"/> <!-- Feral -->
 	<property name="LootDropEntityClass" value="Plant42Loot"/>
 	<effect_group name="Base Effects">
+		<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="buffPlantMusic"/>
 		<passive_effect name="HealthMax" operation="base_set" value="13500"/>
 	</effect_group>
 </entity_class>
@@ -876,7 +878,11 @@
 	<drop event="Harvest" name="resourcePotassiumNitratePowder" tag="REMansionAmmoPickup" count="100"/> <!-- animalBoar -->
 
 	<effect_group name="Base Effects">
+		<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="buffYawnMusic"/>
 		<passive_effect name="HealthMax" operation="base_set" value="15000"/>
+	</effect_group>
+	<effect_group name="Base Effects">
+		<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="buffYawnMusic2"/>
 	</effect_group>
 </entity_class>
 
@@ -917,6 +923,8 @@
 	<property name="JumpMaxDistance" value="7, 9"/>
 
 	<effect_group name="Base Effects">
+		<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="buffBlackTigerMusic"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="buffBlackTigerMusic2"/>
 		<passive_effect name="HealthMax" operation="base_set" value="15000"/>
 	</effect_group>
 </entity_class>
