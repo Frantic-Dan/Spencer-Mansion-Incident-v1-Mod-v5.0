@@ -62,6 +62,44 @@
 	
 <append xpath="/buffs">
 
+	<buff name="buffRandomWalk" hidden="true">
+			<duration value="0"/>
+	
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="walktype" operation="set" value="randomint(1,6)"/>
+			</effect_group>
+			<effect_group>
+				<requirement name="CVarCompare" cvar="walktype" operation="Equals" value="1"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetWalkType,IDCCore" value="1"/>
+			</effect_group>
+			<effect_group>
+				<requirement name="CVarCompare" cvar="walktype" operation="Equals" value="2"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetWalkType,IDCCore" value="2"/>
+			</effect_group>
+			<effect_group>
+				<requirement name="CVarCompare" cvar="walktype" operation="Equals" value="3"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetWalkType,IDCCore" value="3"/>
+			</effect_group>
+			<effect_group>
+				<requirement name="CVarCompare" cvar="walktype" operation="Equals" value="4"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetWalkType,IDCCore" value="5"/>
+			</effect_group>
+			<effect_group>
+				<requirement name="CVarCompare" cvar="walktype" operation="Equals" value="5"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetWalkType,IDCCore" value="6"/>
+			</effect_group>
+			<effect_group>
+				<requirement name="CVarCompare" cvar="walktype" operation="Equals" value="6"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetWalkType,IDCCore" value="7"/>
+			</effect_group>
+			
+			<!-- <effect_group>
+				<requirement name="HitLocation" body_parts="LeftUpperLeg,RightUpperLeg,LeftLowerLeg,RightLowerLeg"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="SetWalkType,IDCCore" value="21"/>
+				<triggered_effect trigger="onDismember" action="RemoveBuff" buff="buffRandomWalk"/>
+            </effect_group> -->
+	</buff>
+
 	<buff name="buffCritImmuneRE" hidden="true">
 		<stack_type value="replace"/>
 		<duration value="0"/>
