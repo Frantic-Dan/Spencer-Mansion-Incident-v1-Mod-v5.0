@@ -970,7 +970,7 @@
 	<property name="OpenDoorPercentage" value="0"/>
 	<property name="CrimsonHeadEntityName" value=""/>
 	<effect_group name="Base Effects">
-
+		<passive_effect name="BuffResistance" operation="base_set" value="999" tags="buffRandomWalk"/>
 		<passive_effect name="HealthMax" operation="base_set" value="1100"/>
 	</effect_group>
 </entity_class>
@@ -987,7 +987,7 @@
 	<property name="OpenDoorPercentage" value="0"/>
 	<property name="CrimsonHeadEntityName" value=""/>
 	<effect_group name="Base Effects">
-
+		<passive_effect name="BuffResistance" operation="base_set" value="999" tags="buffRandomWalk"/>
 		<passive_effect name="HealthMax" operation="base_set" value="1100"/>
 	</effect_group>
 </entity_class>
@@ -1004,7 +1004,7 @@
 	<property name="OpenDoorPercentage" value="0"/>
 	<property name="CrimsonHeadEntityName" value=""/>
 	<effect_group name="Base Effects">
-
+		<passive_effect name="BuffResistance" operation="base_set" value="999" tags="buffRandomWalk"/>
 		<passive_effect name="HealthMax" operation="base_set" value="1100"/>
 	</effect_group>
 </entity_class>
@@ -1021,7 +1021,7 @@
 	<property name="HandItem" value="meleeHandZombieREcrawler"/>
 	<property name="CrimsonHeadEntityName" value=""/>
 	<effect_group name="Base Effects">
-
+		<passive_effect name="BuffResistance" operation="base_set" value="999" tags="buffRandomWalk"/>
 		<passive_effect name="HealthMax" operation="base_set" value="1100"/>
 	</effect_group>
 </entity_class>
@@ -1038,7 +1038,7 @@
 	<property name="OpenDoorPercentage" value="0"/>
 	<property name="CrimsonHeadEntityName" value=""/>
 	<effect_group name="Base Effects">
-
+		<passive_effect name="BuffResistance" operation="base_set" value="999" tags="buffRandomWalk"/>
 		<passive_effect name="HealthMax" operation="base_set" value="1100"/>
 	</effect_group>
 </entity_class>
@@ -1055,7 +1055,7 @@
 	<property name="HandItem" value="meleeHandZombieREcrawler"/>
 	<property name="CrimsonHeadEntityName" value=""/>
 	<effect_group name="Base Effects">
-
+		<passive_effect name="BuffResistance" operation="base_set" value="999" tags="buffRandomWalk"/>
 		<passive_effect name="HealthMax" operation="base_set" value="1100"/>
 	</effect_group>
 </entity_class>
@@ -1072,7 +1072,7 @@
 	<property name="HandItem" value="meleeHandZombieREcrawler"/>
 	<property name="CrimsonHeadEntityName" value=""/>
 	<effect_group name="Base Effects">
-
+		<passive_effect name="BuffResistance" operation="base_set" value="999" tags="buffRandomWalk"/>
 		<passive_effect name="HealthMax" operation="base_set" value="1100"/>
 	</effect_group>
 </entity_class>
@@ -1089,7 +1089,7 @@
 	<property name="OpenDoorPercentage" value="0"/>
 	<property name="CrimsonHeadEntityName" value=""/>
 	<effect_group name="Base Effects">
-
+		<passive_effect name="BuffResistance" operation="base_set" value="999" tags="buffRandomWalk"/>
 		<passive_effect name="HealthMax" operation="base_set" value="1100"/>
 	</effect_group>
 </entity_class>
@@ -1106,7 +1106,7 @@
 	<property name="OpenDoorPercentage" value="0"/>
 	<property name="CrimsonHeadEntityName" value=""/>
 	<effect_group name="Base Effects">
-
+		<passive_effect name="BuffResistance" operation="base_set" value="999" tags="buffRandomWalk"/>
 		<passive_effect name="HealthMax" operation="base_set" value="1100"/>
 	</effect_group>
 </entity_class>
@@ -1123,7 +1123,7 @@
 	<property name="OpenDoorPercentage" value="0"/>
 	<property name="CrimsonHeadEntityName" value=""/>
 	<effect_group name="Base Effects">
-
+		<passive_effect name="BuffResistance" operation="base_set" value="999" tags="buffRandomWalk"/>
 		<passive_effect name="HealthMax" operation="base_set" value="1100"/>
 	</effect_group>
 </entity_class>
@@ -1139,7 +1139,7 @@
 	<property name="OpenDoorPercentage" value="0"/>
 	<property name="HandItem" value="meleeHandZombieREcrawler"/>
 	<effect_group name="Base Effects">
-
+		<passive_effect name="BuffResistance" operation="base_set" value="999" tags="buffRandomWalk"/>
 		<passive_effect name="HealthMax" operation="base_set" value="1100"/>
 	</effect_group>
 </entity_class>
@@ -1156,7 +1156,7 @@
 	<property name="HandItem" value="meleeHandZombieREcrawler"/>
 	<property name="CrimsonHeadEntityName" value=""/>
 	<effect_group name="Base Effects">
-
+		<passive_effect name="BuffResistance" operation="base_set" value="999" tags="buffRandomWalk"/>
 		<passive_effect name="HealthMax" operation="base_set" value="1100"/>
 	</effect_group>
 </entity_class>
@@ -1173,7 +1173,7 @@
 	<property name="OpenDoorPercentage" value="0"/>
 	<property name="CrimsonHeadEntityName" value=""/>
 	<effect_group name="Base Effects">
-
+		<passive_effect name="BuffResistance" operation="base_set" value="999" tags="buffRandomWalk"/>
 		<passive_effect name="HealthMax" operation="base_set" value="1100"/>
 	</effect_group>
 </entity_class>
@@ -1190,7 +1190,7 @@
 	<property name="OpenDoorPercentage" value="0"/>
 	<property name="CrimsonHeadEntityName" value=""/>
 	<effect_group name="Base Effects">
-
+		<passive_effect name="BuffResistance" operation="base_set" value="999" tags="buffRandomWalk"/>
 		<passive_effect name="HealthMax" operation="base_set" value="1100"/>
 	</effect_group>
 </entity_class>
@@ -1221,6 +1221,7 @@
 	<property name="OpenDoorPercentage" value="0.3"/>
 	<property name="CrimsonHeadEntityName" value=""/>
 	<effect_group name="Base Effects">
+		<passive_effect name="BuffResistance" operation="base_set" value="999" tags="buffRandomWalk"/>
 		<passive_effect name="HealthMax" operation="base_set" value="2100"/>
 	</effect_group>
 </entity_class>
@@ -1248,6 +1249,7 @@
 	<property name="OpenDoorPercentage" value="0.3"/>
 	<property name="CrimsonHeadEntityName" value=""/>
 	<effect_group name="Base Effects">
+		<passive_effect name="BuffResistance" operation="base_set" value="999" tags="buffRandomWalk"/>
 		<passive_effect name="HealthMax" operation="base_set" value="2100"/>
 	</effect_group>
 </entity_class>
@@ -1275,6 +1277,7 @@
 	<property name="OpenDoorPercentage" value="0.3"/>
 	<property name="CrimsonHeadEntityName" value=""/>
 	<effect_group name="Base Effects">
+		<passive_effect name="BuffResistance" operation="base_set" value="999" tags="buffRandomWalk"/>
 		<passive_effect name="HealthMax" operation="base_set" value="2100"/>
 	</effect_group>
 </entity_class>
@@ -1302,6 +1305,7 @@
 	<property name="OpenDoorPercentage" value="0.3"/>
 	<property name="CrimsonHeadEntityName" value=""/>
 	<effect_group name="Base Effects">
+		<passive_effect name="BuffResistance" operation="base_set" value="999" tags="buffRandomWalk"/>
 		<passive_effect name="HealthMax" operation="base_set" value="2100"/>
 	</effect_group>
 </entity_class>
@@ -1329,6 +1333,7 @@
 	<property name="OpenDoorPercentage" value="0.3"/>
 	<property name="CrimsonHeadEntityName" value=""/>
 	<effect_group name="Base Effects">
+		<passive_effect name="BuffResistance" operation="base_set" value="999" tags="buffRandomWalk"/>
 		<passive_effect name="HealthMax" operation="base_set" value="2100"/>
 	</effect_group>
 </entity_class>
@@ -1356,6 +1361,7 @@
 	<property name="OpenDoorPercentage" value="0.3"/>
 	<property name="CrimsonHeadEntityName" value=""/>
 	<effect_group name="Base Effects">
+		<passive_effect name="BuffResistance" operation="base_set" value="999" tags="buffRandomWalk"/>
 		<passive_effect name="HealthMax" operation="base_set" value="2100"/>
 	</effect_group>
 </entity_class>
@@ -1383,6 +1389,7 @@
 	<property name="OpenDoorPercentage" value="0.3"/>
 	<property name="CrimsonHeadEntityName" value=""/>
 	<effect_group name="Base Effects">
+		<passive_effect name="BuffResistance" operation="base_set" value="999" tags="buffRandomWalk"/>
 		<passive_effect name="HealthMax" operation="base_set" value="2100"/>
 	</effect_group>
 </entity_class>
@@ -1410,6 +1417,7 @@
 	<property name="OpenDoorPercentage" value="0.3"/>
 	<property name="CrimsonHeadEntityName" value=""/>
 	<effect_group name="Base Effects">
+		<passive_effect name="BuffResistance" operation="base_set" value="999" tags="buffRandomWalk"/>
 		<passive_effect name="HealthMax" operation="base_set" value="2100"/>
 	</effect_group>
 </entity_class>
@@ -1437,6 +1445,7 @@
 	<property name="OpenDoorPercentage" value="0.3"/>
 	<property name="CrimsonHeadEntityName" value=""/>
 	<effect_group name="Base Effects">
+		<passive_effect name="BuffResistance" operation="base_set" value="999" tags="buffRandomWalk"/>
 		<passive_effect name="HealthMax" operation="base_set" value="2100"/>
 	</effect_group>
 </entity_class>
@@ -1464,6 +1473,7 @@
 	<property name="OpenDoorPercentage" value="0.3"/>
 	<property name="CrimsonHeadEntityName" value=""/>
 	<effect_group name="Base Effects">
+		<passive_effect name="BuffResistance" operation="base_set" value="999" tags="buffRandomWalk"/>
 		<passive_effect name="HealthMax" operation="base_set" value="2100"/>
 	</effect_group>
 </entity_class>
@@ -1492,6 +1502,7 @@
 	<property name="OpenDoorPercentage" value="0.35"/>
 	<property name="CrimsonHeadEntityName" value=""/>
 	<effect_group name="Base Effects">
+		<passive_effect name="BuffResistance" operation="base_set" value="999" tags="buffRandomWalk"/>
 		<passive_effect name="HealthMax" operation="base_set" value="2800"/>
 	</effect_group>
 </entity_class>
@@ -1519,6 +1530,7 @@
 	<property name="OpenDoorPercentage" value="0.35"/>
 	<property name="CrimsonHeadEntityName" value=""/>
 	<effect_group name="Base Effects">
+		<passive_effect name="BuffResistance" operation="base_set" value="999" tags="buffRandomWalk"/>
 		<passive_effect name="HealthMax" operation="base_set" value="2800"/>
 	</effect_group>
 </entity_class>
@@ -1546,6 +1558,7 @@
 	<property name="OpenDoorPercentage" value="0.35"/>
 	<property name="CrimsonHeadEntityName" value=""/>
 	<effect_group name="Base Effects">
+		<passive_effect name="BuffResistance" operation="base_set" value="999" tags="buffRandomWalk"/>
 		<passive_effect name="HealthMax" operation="base_set" value="2800"/>
 	</effect_group>
 </entity_class>
@@ -1573,6 +1586,7 @@
 	<property name="OpenDoorPercentage" value="0.35"/>
 	<property name="CrimsonHeadEntityName" value=""/>
 	<effect_group name="Base Effects">
+		<passive_effect name="BuffResistance" operation="base_set" value="999" tags="buffRandomWalk"/>
 		<passive_effect name="HealthMax" operation="base_set" value="2800"/>
 	</effect_group>
 </entity_class>
@@ -1600,6 +1614,7 @@
 	<property name="OpenDoorPercentage" value="0.35"/>
 	<property name="CrimsonHeadEntityName" value=""/>
 	<effect_group name="Base Effects">
+		<passive_effect name="BuffResistance" operation="base_set" value="999" tags="buffRandomWalk"/>
 		<passive_effect name="HealthMax" operation="base_set" value="2800"/>
 	</effect_group>
 </entity_class>
@@ -1627,6 +1642,7 @@
 	<property name="OpenDoorPercentage" value="0.35"/>
 	<property name="CrimsonHeadEntityName" value=""/>
 	<effect_group name="Base Effects">
+		<passive_effect name="BuffResistance" operation="base_set" value="999" tags="buffRandomWalk"/>
 		<passive_effect name="HealthMax" operation="base_set" value="2800"/>
 	</effect_group>
 </entity_class>
@@ -1654,6 +1670,7 @@
 	<property name="OpenDoorPercentage" value="0.35"/>
 	<property name="CrimsonHeadEntityName" value=""/>
 	<effect_group name="Base Effects">
+		<passive_effect name="BuffResistance" operation="base_set" value="999" tags="buffRandomWalk"/>
 		<passive_effect name="HealthMax" operation="base_set" value="2800"/>
 	</effect_group>
 </entity_class>
@@ -1682,6 +1699,7 @@
 	<property name="OpenDoorPercentage" value="0.4"/>
 	<property name="CrimsonHeadEntityName" value=""/>
 	<effect_group name="Base Effects">
+		<passive_effect name="BuffResistance" operation="base_set" value="999" tags="buffRandomWalk"/>
 		<passive_effect name="HealthMax" operation="base_set" value="3500"/>
 	</effect_group>
 </entity_class>
@@ -1709,6 +1727,7 @@
 	<property name="OpenDoorPercentage" value="0.4"/>
 	<property name="CrimsonHeadEntityName" value=""/>
 	<effect_group name="Base Effects">
+		<passive_effect name="BuffResistance" operation="base_set" value="999" tags="buffRandomWalk"/>
 		<passive_effect name="HealthMax" operation="base_set" value="3500"/>
 	</effect_group>
 </entity_class>
@@ -1736,6 +1755,7 @@
 	<property name="OpenDoorPercentage" value="0.4"/>
 	<property name="CrimsonHeadEntityName" value=""/>
 	<effect_group name="Base Effects">
+		<passive_effect name="BuffResistance" operation="base_set" value="999" tags="buffRandomWalk"/>
 		<passive_effect name="HealthMax" operation="base_set" value="3500"/>
 	</effect_group>
 </entity_class>
@@ -1763,6 +1783,7 @@
 	<property name="OpenDoorPercentage" value="0.4"/>
 	<property name="CrimsonHeadEntityName" value=""/>
 	<effect_group name="Base Effects">
+		<passive_effect name="BuffResistance" operation="base_set" value="999" tags="buffRandomWalk"/>
 		<passive_effect name="HealthMax" operation="base_set" value="3500"/>
 	</effect_group>
 </entity_class>
