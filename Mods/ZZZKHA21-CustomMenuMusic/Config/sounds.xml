@@ -1,0 +1,11 @@
+<configs>
+
+<append xpath="/Sounds">
+	
+	<SoundDataNode name="music_Lisa"> <AudioSource name="Sounds/AudioSource_Notifications"/>
+	<AudioClip ClipName="#@modfolder:/Assets/MenuMusic.unity3d?new_menu_music_lp.mp3"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="1.0"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="0.01"/> </SoundDataNode>
+
+</append>
+
+</configs>
