@@ -686,23 +686,7 @@
 		</effect_group>
 	</buff>
 	
-	<buff name="buffYawnMusic2" hidden="true">
-		<duration value="0"/>
-
-		<effect_group>
-			<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="music_Yawn" />
-		</effect_group>
-	</buff>
-	
 	<buff name="buffBlackTigerMusic" hidden="true">
-		<duration value="0"/>
-
-		<effect_group>
-			<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="music_BlackTiger" />
-		</effect_group>
-	</buff>
-	
-	<buff name="buffBlackTigerMusic2" hidden="true">
 		<duration value="0"/>
 
 		<effect_group>
@@ -723,6 +707,14 @@
 
 		<effect_group>
 			<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="music_SuperTyrant" />
+		</effect_group>
+	</buff>
+	
+	<buff name="buffLisaMusic" hidden="true">
+		<duration value="0"/>
+
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="music_Lisa" />
 		</effect_group>
 	</buff>
 
