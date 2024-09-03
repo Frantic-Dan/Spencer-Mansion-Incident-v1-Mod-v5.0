@@ -183,7 +183,7 @@ Spraydesc,A lubricating liquid used to loosen joints of metalic objects.
 Cylinder,Cylinder
 Shaft,Shaft
 CylinderShaft,Cylinder Shaft
-FuelSupplyCapsuleEmpty,Fuel Supply Capsule Empty
+FuelSupplyCapsuleEmpty,Fuel Supply Capsule (Empty)
 FuelSupplyCapsule,Fuel Supply Capsule
 Green_Herb,Green Herb
 MixedGreenHerb,Mixed Green Herb
