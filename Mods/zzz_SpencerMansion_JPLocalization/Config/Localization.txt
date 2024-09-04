@@ -498,7 +498,7 @@ MuzzleBreakDesc,"アサルトライフルの命中精度とハンドリングを
 modGunMeleeBlessedMetalTyrant,T-ウイルス中和剤
 modGunMeleeBlessedMetalTyrantDesc,"タイラントに与えるダメージ量が大幅に上がります。\n\nナイフにセット可能。\n\n\n"
 modGunMeleeBlessedMetalPlant,V-ジョルトケミカル
-modGunMeleeBlessedMetalPlantDesc,"ナイフを V ジョルトに浸して、プラント 42 に追加のダメージを与えます。\n\n\n
+modGunMeleeBlessedMetalPlantDesc,"ナイフを V ジョルトに浸して、プラント 42 に追加のダメージを与えます。\n\n\n"
 drugBoulderBusters,"クリス・レッドフィールドはプロテインシェイクにこっそりこれを入れています。\n\n拳攻撃時に与えるダメージ量上昇 400%\nスカルクラッシャーやビールのバフとスタックします！"
 drugBoulderBustersDesc,"ナックル武器や素手時に与えるダメージ量上昇 400%\nスカルクラッシャーやビールのバフとスタックします！"
 drugRockBusters,ボルダーバスター
