@@ -640,7 +640,7 @@ Tyrant,タイラント
 "LabWorkerCrawler",這いずりアンブレラ社の科学者
 "DarleneCrawler",Crippled Lois Griffin
 "MarleneCrawler",Crippled Misterri
-"YoCrawler",Crippled NotOnly25
+"YoCrawler",Crippled YubiNashi
 "SteveCrawler",Crippled Draycko
 "BusinessMan Crawler",Crippled Aviose
 "BurntCrawler",這いずりクリムゾンヘッド
