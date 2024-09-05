@@ -102,7 +102,7 @@
 	<set xpath="/windows/window[@name='windowQuestOffer']/panel[1]//label[2]/@pos">605,-10</set>
 	<set xpath="/windows/window[@name='windowQuestOffer']/panel[2]/sprite[@depth='8']/@width">1253</set>
 	<set xpath="/windows/window[@name='windowQuestOffer']/panel[2]/sprite[@depth='8']/@height">929</set>
-	<set xpath="/windows/window[@name='windowQuestOffer']/panel[2]/label[@depth='3']/@width">1240</set>
+	<set xpath="/windows/window[@name='windowQuestOffer']/panel[2]/label[@depth='3']/@width">1235</set>
 	<set xpath="/windows/window[@name='windowQuestOffer']/panel[2]/label[@depth='3']/@height">920</set>
 	<set xpath="/windows/window[@name='windowQuestOffer']//rect[@name='btnAccept']/@pos">0,-938</set>
 	<set xpath="/windows/window[@name='windowQuestOffer']//rect[@name='btnDecline']/@pos">950,-938</set>
