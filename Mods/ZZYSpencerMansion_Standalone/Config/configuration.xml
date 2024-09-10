@@ -35,6 +35,14 @@ FOR EXTRA IMMERSION:
 2) Set music to play 100% of the time.
 3) Lighting is balanced for 50% brightness. There is a portable light source to be found.
 
+Known Issue: DirectoryNotFoundException
+For those who installed using the Mod Launcher, you'll likely get this error.
+Could not find a part of the path
+'C:\7D2D\v1\SpencerMansion_Incident-Resident_Evil\Spencer_Mansion_Incident-_Resident_Evil_Jill_Valentines_Story\Saves\YourPreviousMapYouPlayed\YourPreviousGameNameYouPlayed'.
+
+You will need to navigate your PC directory to the 'Saves' folder, then create both of these new folders that the game is trying to access.
+First folder inside the Saves folder, then open the newly created folder to create the second folder. The spelling needs to be exact.
+
 
 7 Days to Die Forum Thread - https://community.7daystodie.com/topic/27467-the-spencer-mansion-incident-resident-evil-v10/
 
@@ -43,7 +51,7 @@ FOR EXTRA IMMERSION:
 
                        <DownloadMode>Clone</DownloadMode>
 
-                       <SubscriptionLink></SubscriptionLink>
+                       <SubscriptionLink>https://community.7daystodie.com/topic/27467-the-spencer-mansion-incident-resident-evil-v11/</SubscriptionLink>
 
                        <Version>v1.1 b4</Version>
 
