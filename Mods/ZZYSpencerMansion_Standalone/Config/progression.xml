@@ -147,8 +147,9 @@
 		</effect_group>
 		
 		<effect_group>
-			<passive_effect name="PhysicalDamageResist" operation="base_add" level="1" value="10" />
+			<passive_effect name="PhysicalDamageResist" operation="base_add" level="1" value="15" />
 			<passive_effect name="HealthMax" operation="base_add" level="1" value="200"/>
+			<passive_effect name="HealthChangeOT" operation="base_add" value=".067"/>
 		</effect_group>
 		
 		<effect_group>
