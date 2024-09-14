@@ -24,7 +24,7 @@ goAirDropFrequencyREDesc," "
 goAirDropFrequencyRE,[FF4F00]Select 'Disabled'[-]
 goZombieMoveNightREDesc,"This affects the movement speed of generic zombies."
 goZombieMoveNightRE,[FF4F00]Zombie Night Speed (Always Night)[-]
-SpencerMansionSpawnText_title,Welcome To The Spencer Mansion Challenge
+SpencerMansionSpawnText_title,Welcome To The Spencer Mansion Incident
 loadingTipRE1,You're trapped inside Spencer Mansion. Healing supplies and ammunition are in short supply. Can you escape with your life? Or become a Jill Sandwich?
 loadingTipRE1_title,Welcome to Resident Evil!
 loadingTipRE2,"Sometimes, it's better to not kill everything in your path."
