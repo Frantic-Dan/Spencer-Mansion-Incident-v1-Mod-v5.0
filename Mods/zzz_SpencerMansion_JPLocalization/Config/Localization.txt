@@ -28,7 +28,7 @@ goAirDropFrequencyRE,[FF4F00]選択 0日[-]
 goAirDropFrequencyREDesc," "
 goZombieMoveNightREDesc,"これは一般的なゾンビの移動速度に影響します。"
 goZombieMoveNightRE,[FF4F00]夜間のゾンビ移動速度\n(常時夜)[-]
-tutorialTipQuest01_title,スペンサー邸チャレンジへようこそ
+SpencerMansionSpawnText_title,スペンサー邸チャレンジへようこそ (スペンサー邸事件へようこそ)
 loadingTipRE1,あなたはスペンサー邸に閉じ込められてしまいました。\n弾薬や回復アイテムは限られています。\n無事生きて脱出できるのでしょうか？　それとも、ジル・サンドイッチになってしまうのでしょうか？
 loadingTipRE1_title,バイオハザードへようこそ！
 loadingTipRE2,"場合によっては、途中にあるものをすべて殺さない方がよい場合もあります。"
