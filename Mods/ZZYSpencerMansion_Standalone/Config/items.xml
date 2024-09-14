@@ -2906,6 +2906,8 @@
 	<property name="EconomicValue" value="0"/>
 	<property name="Group" value="Tools/Traps"/>
 	<property name="Candrop" value="false"/>
+	<property name="SoundPickup" value="battery_lead_grab"/>
+	<property name="SoundPlace" value="battery_lead_place"/>
 </item>
 
 <item name="WD-40Spray">
@@ -2923,6 +2925,8 @@
 	<property name="EconomicValue" value="0"/>
 	<property name="Group" value="Tools/Traps"/>
 	<property name="Candrop" value="false"/>
+	<property name="SoundPickup" value="baton_pipe_grab"/>
+	<property name="SoundPlace" value="baton_pipe_place"/>
 </item>
 
 <item name="Cylinder">
