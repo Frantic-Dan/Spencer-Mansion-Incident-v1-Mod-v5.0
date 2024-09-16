@@ -22,7 +22,7 @@
 	</entitygroup>
 
 	<entitygroup name="GraceGroup">
-		<entity name="YawntheWolf"/>
+		<entity name="animalYawntheWolf"/>
 	</entitygroup>
 
 	<entitygroup name="ZombieTyrant">
