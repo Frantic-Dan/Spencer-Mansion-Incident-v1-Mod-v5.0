@@ -846,7 +846,7 @@
 	</effect_group>
 </entity_class>
 
-<entity_class name="YawntheWolf" extends="animalDireWolf">
+<entity_class name="animalYawntheWolf" extends="animalDireWolf">
 <!-- <entity_class name="YawntheBoar" extends="animalBossGrace"> -->
 	<property name="SizeScale" value="1.5"/>
 		<property name="Tags" value="entity,animal,zombie,hostile,wolf,perkAT03,boss,yawn"/>
