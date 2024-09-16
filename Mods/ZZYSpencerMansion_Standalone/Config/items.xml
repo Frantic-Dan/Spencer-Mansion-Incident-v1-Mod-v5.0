@@ -1,8 +1,10 @@
 <FranticDan>
 
-	<set xpath="/items/item[@name='meleeHandPlayer']/effect_group[1]//passive_effect[2]/@value">0.1</set>
-	<set xpath="/items/item[@name='meleeHandPlayer']/effect_group[1]//passive_effect[7]/@value">15</set>
-	<set xpath="/items/item[@name='meleeHandPlayer']/effect_group[2]//passive_effect[3]/@value">22.5</set>
+	<set xpath="/items/item[@name='meleeHandPlayer']/effect_group[1]//passive_effect[1]/@value">50</set>
+	<set xpath="/items/item[@name='meleeHandPlayer']/effect_group[1]//passive_effect[2]/@value">10</set>
+	<set xpath="/items/item[@name='meleeHandPlayer']/effect_group[1]//passive_effect[7]/@value">12</set>
+	<set xpath="/items/item[@name='meleeHandPlayer']/effect_group[2]//passive_effect[1]/@value">0.6</set>
+	<set xpath="/items/item[@name='meleeHandPlayer']/effect_group[2]//passive_effect[3]/@value">20</set>
 	<set xpath="/items/item[@name='meleeHandPlayer']/effect_group[3]//triggered_effect[4]/@value">-50</set>
 	<set xpath="/items/item[@name='meleeHandPlayer']/effect_group[3]//triggered_effect[5]/@value">24</set>
 	<!-- <set xpath="/items/item[@name='apparelBallCap']//property[@name='Weight']/@value">0</set>
