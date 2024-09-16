@@ -628,7 +628,7 @@ animalChicken,Oskurd
 Hunter,ハンター
 "FailedTestSubject",実験体
 "Plant42",プラント42
-"YawntheWolf",オオカミのあくび
+"animalYawntheWolf",オオカミのあくび
 "BlackTigerSpider",ブラックタイガー
 "LisaTrevor",リサ・トレヴァー
 Tyrant,タイラント
