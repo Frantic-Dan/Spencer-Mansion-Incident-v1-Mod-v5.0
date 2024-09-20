@@ -107,6 +107,7 @@ Coin,Coin
 Coindesc,A coin that was found inside a dog's collar.
 Lighter,Lighter ([4FC3F7]Light Source[-])
 Lighterdesc,Can be used as a small light source.\n\nYou will need this on you to light molotovs.
+EmptyBaseBottledesc,Craft into specific bottles before filling.
 EmptyBottledesc,A container used to mix chemicals.\n\nFill using the secondary action.
 FilledBottledesc,A bottle filled with liquid
 MixingBottledesc,Two types of liquid mixing together.
@@ -269,6 +270,7 @@ SingleLockedDoorOldoak2,Locked
 SingleShieldDoorOldOak2,Locked
 SingleBookDoorOldOak2,Locked
 SingleEmblemDoorOldOak2,Locked
+SinglePianoDoorOldOak2,Locked
 IronLockedMansionDoorWhite,Locked
 IronArmourMansionDoorWhite,Locked
 jailMansionDoorWhite,Unlocked
@@ -304,7 +306,7 @@ SingleEagleDoorBrown,Locked
 GyrocopterRE,Gyrocopter
 elevatorMansionGyroDoorDouble,Locked
 elevatorMansionDoorDouble,Unlocked
-
+GrandPiano,Grand Piano
 InsertWindCrest,Insert Wind Crest
 InsertMoonCrest,Insert Moon Crest
 InsertStarCrest,Insert Star Crest
@@ -366,8 +368,8 @@ ClassicModeJill,Classic Mode (Jill)
 ClassicModeChris,Classic Mode (Chris)
 ClassicModeName,Classic Mode (Jill)
 ClassicModeChrisName,Classic Mode (Chris)
-perkClassicModeJillDesc,"Play the game with restrictions like in classic Resident Evil.\n\n1: You'll have less inventory slots.\nJill has 8 slots, Chris has 6 slots.\n\n2: You can't move while you're reloading. Reload faster.\n(Excludes the rocket launcher)\n\n3: You can't craft ammunition or the closet room items.\n\nJill: 2000 health, Medical Knowledge, Cardio Training."
-perkClassicModeChrisDesc,"Play the game with restrictions like in classic Resident Evil.\n\n1: You'll have less inventory slots.\nJill has 8 slots, Chris has 6 slots.\n\n2: You can't move while you're reloading. Reload faster.\n(Excludes the rocket launcher)\n\n3: You can't craft ammunition or the closet room items.\n\nChris: 2500 health, Medical Knowledge, Cardio Training, +25% knife damage, can't use the grenade launcher."
+perkClassicModeJillDesc,"Play the game with restrictions like in classic Resident Evil.\n\n1: You'll have less inventory slots.\nJill has 8 slots, Chris has 6 slots.\n\n2: You can't move while you're reloading. Reload faster.\n(Excludes the rocket launcher)\nYou cannot move while aiming, and you cannot fire without aiming.\n\n3: You can't craft ammunition or the closet room items.\n\nJill: 2000 health, Medical Knowledge, Cardio Training."
+perkClassicModeChrisDesc,"Play the game with restrictions like in classic Resident Evil.\n\n1: You'll have less inventory slots.\nJill has 8 slots, Chris has 6 slots.\n\n2: You can't move while you're reloading. Reload faster.\n(Excludes the rocket launcher)\nYou cannot move while aiming, and you cannot fire without aiming.\n\n3: You can't craft ammunition or the closet room items.\n\nChris: 2500 health, Medical Knowledge, Cardio Training, +25% knife damage, can't use the grenade launcher."
 perkPainToleranceNameRE,Pain Tolerance
 perkPainToleranceDescRE,Increases your max health by 600.\nReduces damage received by 15%\n\n(Also heals 600)
 perkPassiveHealingName,Passive Healing
@@ -464,6 +466,8 @@ buffPoisonedTooltip,You've been poisoned!
 buffDeathTooltip,[FF4F00]Jill Valentine was never heard from again...[-]
 buffDeadlyPoisonedName,Game Over!
 buffDeadlyPoisonedDesc,Jill Valentine was never heard from again...
+buffTarnishedIntegrityName,Tarnished Integrity
+buffTarnishedIntegrityDesc,"You just had to do it, didn't you?\n\nI balanced the lighting for aesthetics and provided a lighter so you could see.\n\nUltimately, you've cheated yourself out of the intended experience."
 questStartup_offer,Quest
 questStartup_desc,"It's July 1998, you're Jill Valentine, a member of the S.T.A.R.S Alpha Team. Your team was sent in to investigate the disappearance of your fellow Bravo Team after you lost contact with them.\n\nYour team flew over the forest area in the Arklay Mountains and discovered a crashed helicopter.\nThe helicopter belongs to Bravo Team and everyone is dead. Your team is attacked by vicious dogs and are chased through the forest, you see a mansion in the distance and call it out to your team and you all make a break for it!\n\nYou're now trapped inside, it's too dangerous out there!"
 BookOfCurses_offer,"The four masks.\n\nA mask that speaks no evil...\nA mask that smells no evil...\nA mask that sees no evil...\nA mask that cannot speak, smell, or see evil...\n\nWhen all four fall into place, evil will awaken.\n\n\nYou see a key embedded on the back, Will you remove it?"
