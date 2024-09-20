@@ -1,9 +1,12 @@
 <FranticDan>
 
 	<set xpath="/items/item[@name='meleeHandPlayer']/effect_group[1]//passive_effect[1]/@value">50</set>
-	<set xpath="/items/item[@name='meleeHandPlayer']/effect_group[1]//passive_effect[2]/@value">10</set>
+	<set xpath="/items/item[@name='meleeHandPlayer']/effect_group[1]//passive_effect[2]/@value">25</set>
+	<set xpath="/items/item[@name='meleeHandPlayer']/effect_group[1]//passive_effect[4]/@value">-.8</set>
+	<set xpath="/items/item[@name='meleeHandPlayer']/effect_group[1]//passive_effect[5]/@value">-.95</set>
 	<set xpath="/items/item[@name='meleeHandPlayer']/effect_group[1]//passive_effect[7]/@value">12</set>
 	<set xpath="/items/item[@name='meleeHandPlayer']/effect_group[2]//passive_effect[1]/@value">0.6</set>
+	<set xpath="/items/item[@name='meleeHandPlayer']/effect_group[2]//passive_effect[2]/@value">0.6</set>
 	<set xpath="/items/item[@name='meleeHandPlayer']/effect_group[2]//passive_effect[3]/@value">20</set>
 	<set xpath="/items/item[@name='meleeHandPlayer']/effect_group[3]//triggered_effect[4]/@value">-50</set>
 	<set xpath="/items/item[@name='meleeHandPlayer']/effect_group[3]//triggered_effect[5]/@value">24</set>
@@ -229,6 +232,40 @@
 	<property name="CreativeMode" value="None"/>
 	<property name="Class" value="ItemClassTorch"/>
 	<property name="Tags" value="junk"/>
+	<!-- <property name="Meshfile" value="@:Other/Items/Tools/candlePrefab.prefab"/> -->
+	<property name="Meshfile" value="#@modfolder:/Config/Resources/LighterHeld.unity3d?ZippoLighter"/>
+	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+	<property name="CustomIcon" value="lighter"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="Weight" value="0"/>
+	<property name="Stacknumber" value="1"/>
+	<property name="DescriptionKey" value="Lighterdesc"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="EconomicValue" value="0"/>
+	<property name="Candrop" value="false"/>
+	<property name="SoundPickup" value="ratchet_grab"/>
+	<property name="SoundPlace" value="ratchet_place"/>
+	<effect_group name="light/douse always" tiered="false">
+		<triggered_effect trigger="onSelfEquipStart" action="AttachParticleEffectToEntity" particle="p_candle_firstperson" >
+			<requirement name="CVarCompare" cvar="_underwater" operation="LT" value="1"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfEquipStop" action="RemoveParticleEffectFromEntity" particle="p_candle_firstperson"/>
+		<triggered_effect trigger="onSelfWaterSurface" action="AttachParticleEffectToEntity" particle="p_candle_firstperson" />
+		<triggered_effect trigger="onSelfWaterSubmerge" action="RemoveParticleEffectFromEntity" particle="p_candle_firstperson"/>
+	</effect_group>
+	<property name="Group" value=""/>
+	<property name="AlwaysActive" value="true"/>	
+	
+	<property name="LightValue" value=".35"/>
+	<property name="LightSource" value="lightSource"/>
+	<property name="ActivateObject" value="lightSource"/>	
+</item>
+
+<!-- <item name="LighterOriginal">
+	<property name="HoldType" value="12"/>
+	<property name="CreativeMode" value="None"/>
+	<property name="Class" value="ItemClassTorch"/>
+	<property name="Tags" value="junk"/>
 	<property name="Meshfile" value="@:Other/Items/Tools/candlePrefab.prefab"/>
 	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
 	<property name="CustomIcon" value="lighter"/>
@@ -255,7 +292,7 @@
 	<property name="LightValue" value=".35"/>
 	<property name="LightSource" value="lightSource"/>
 	<property name="ActivateObject" value="lightSource"/>	
-</item>
+</item> -->
 
 <item name="Kerosene">	
 	<property name="CreativeMode" value="None"/>
@@ -400,11 +437,12 @@
 	<property name="Tags" value="junk,EmptyBottle"/>
 	<property name="Meshfile" value="@:Other/Items/Food/emptyJarPrefab.prefab"/>
 	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+	<property name="TintColor" value="255,255,255"/>
 	<property name="CustomIcon" value="empty-bottle"/>
 	<property name="Material" value="Mglass"/>
 	<property name="Stacknumber" value="1"/>
 	<property name="Weight" value="0"/>
-	<property name="DescriptionKey" value="EmptyBottledesc"/>
+	<property name="DescriptionKey" value="EmptyBaseBottledesc"/>
 	<property name="EconomicValue" value="0"/>
 	<property name="CraftingIngredientTime" value="9"/>
 	<property name="Group" value=""/>
@@ -418,6 +456,7 @@
 	<property name="HoldType" value="3"/>
 	<property name="Meshfile" value="@:Other/Items/Food/emptyJarPrefab.prefab"/>
 	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+	<property name="TintColor" value="200,200,200"/>
 	<property name="CustomIcon" value="empty-bottle"/>
 	<property name="Material" value="Mglass"/>
 	<property name="Stacknumber" value="1"/>
@@ -451,6 +490,7 @@
 	<property name="HoldType" value="3"/>
 	<property name="Meshfile" value="@:Other/Items/Food/emptyJarPrefab.prefab"/>
 	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+	<property name="TintColor" value="255,51,51"/>
 	<property name="CustomIcon" value="empty-bottle"/>
 	<property name="Material" value="Mglass"/>
 	<property name="Stacknumber" value="1"/>
@@ -484,6 +524,7 @@
 	<property name="HoldType" value="3"/>
 	<property name="Meshfile" value="@:Other/Items/Food/emptyJarPrefab.prefab"/>
 	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+	<property name="TintColor" value="255,255,0"/>
 	<property name="CustomIcon" value="empty-bottle"/>
 	<property name="Material" value="Mglass"/>
 	<property name="Stacknumber" value="1"/>
@@ -517,6 +558,7 @@
 	<property name="HoldType" value="3"/>
 	<property name="Meshfile" value="@:Other/Items/Food/bottled_waterPrefab.prefab"/>
 	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+	<property name="TintColor" value="200,200,200"/>
 	<property name="CustomIcon" value="water"/>
 	<property name="Material" value="Mglass"/>
 	<property name="Stacknumber" value="1"/>
@@ -540,8 +582,9 @@
 <item name="UMB-No3Filled">
 	<property name="CreativeMode" value="None"/>
 	<property name="HoldType" value="3"/>
-	<property name="Meshfile" value="@:Other/Items/Food/bottled_waterPrefab.prefab"/>
+	<property name="Meshfile" value="@:Other/Items/Food/coffeePrefab.prefab"/>
 	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+	<property name="TintColor" value="255,51,51"/>
 	<property name="CustomIcon" value="umb-no3"/>
 	<property name="Material" value="Mglass"/>
 	<property name="Stacknumber" value="1"/>
@@ -565,8 +608,9 @@
 <item name="Yellow-6Filled">
 	<property name="CreativeMode" value="None"/>
 	<property name="HoldType" value="3"/>
-	<property name="Meshfile" value="@:Other/Items/Food/bottled_waterPrefab.prefab"/>
+	<property name="Meshfile" value="@:Other/Items/Food/coffeePrefab.prefab"/>
 	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+	<property name="TintColor" value="255,255,51"/>
 	<property name="CustomIcon" value="yellow-6"/>
 	<property name="Material" value="Mglass"/>
 	<property name="Stacknumber" value="1"/>
@@ -615,8 +659,9 @@
 <item name="NP-004Filled">
 	<property name="CreativeMode" value="None"/>
 	<property name="HoldType" value="3"/>
-	<property name="Meshfile" value="@:Other/Items/Food/bottled_waterPrefab.prefab"/>
+	<property name="Meshfile" value="@:Other/Items/Food/coffeePrefab.prefab"/>
 	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+	<property name="TintColor" value="255,51,255"/>
 	<property name="CustomIcon" value="np-004"/>
 	<property name="Material" value="Mglass"/>
 	<property name="Stacknumber" value="1"/>
@@ -665,8 +710,9 @@
 <item name="UMB-No7Filled">
 	<property name="CreativeMode" value="None"/>
 	<property name="HoldType" value="3"/>
-	<property name="Meshfile" value="@:Other/Items/Food/bottled_waterPrefab.prefab"/>
+	<property name="Meshfile" value="@:Other/Items/Food/coffeePrefab.prefab"/>
 	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+	<property name="TintColor" value="153,255,51"/>
 	<property name="CustomIcon" value="umb-no7"/>
 	<property name="Material" value="Mglass"/>
 	<property name="Stacknumber" value="1"/>
@@ -715,8 +761,9 @@
 <item name="UMB-No10Filled">
 	<property name="CreativeMode" value="None"/>
 	<property name="HoldType" value="3"/>
-	<property name="Meshfile" value="@:Other/Items/Food/bottled_waterPrefab.prefab"/>
+	<property name="Meshfile" value="@:Other/Items/Food/coffeePrefab.prefab"/>
 	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+	<property name="TintColor" value="255,151,53"/>
 	<property name="CustomIcon" value="umb-no10"/>
 	<property name="Material" value="Mglass"/>
 	<property name="Stacknumber" value="1"/>
@@ -765,8 +812,9 @@
 <item name="VP-017Filled">
 	<property name="CreativeMode" value="None"/>
 	<property name="HoldType" value="3"/>
-	<property name="Meshfile" value="@:Other/Items/Food/bottled_waterPrefab.prefab"/>
+	<property name="Meshfile" value="@:Other/Items/Food/coffeePrefab.prefab"/>
 	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+	<property name="TintColor" value="51,153,255"/>
 	<property name="CustomIcon" value="vp-017"/>
 	<property name="Material" value="Mglass"/>
 	<property name="Stacknumber" value="1"/>
@@ -792,8 +840,9 @@
 	<property name="Tags" value="REKeys,V-Jolt"/>
 	<property name="Group" value=""/>
 	<property name="HoldType" value="3"/>
-	<property name="Meshfile" value="@:Other/Items/Food/bottled_waterPrefab.prefab"/>
+	<property name="Meshfile" value="@:Other/Items/Food/coffeePrefab.prefab"/>
 	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+	<property name="TintColor" value="102,51,0"/>
 	<property name="Material" value="Mmetal"/> <property name="Weight" value="0"/>
 	<property name="DescriptionKey" value="VJoltdesc"/>
 	<property name="CustomIcon" value="v-jolt"/>
@@ -1778,7 +1827,7 @@
 
 <item name="GrenadeLauncher">
 	<property name="CreativeMode" value="None"/>
-	<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,launcher,attPerception,perkDemolitionsExpert,canHaveCosmetic,barrelAttachments,noSilencer,sideAttachments,smallTopAttachments,explosivesSkill"/>
+	<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,launcher,attPerception,perkDemolitionsExpert,canHaveCosmetic,barrelAttachments,noSilencer,sideAttachments,smallTopAttachments,explosivesSkill,GrenadeLauncher"/>
 	<property name="DisplayType" value="rangedLauncher"/>
 	<property name="HoldType" value="76"/>
 	<property name="Meshfile" value="@:Other/Items/Weapons/Ranged/Auto Shotgun/autoShotgunPrefab.prefab"/>
@@ -1825,7 +1874,7 @@
 		<property name="BarrelOffset" value="0,0,0"/>
 		<requirement name="CVarCompare" cvar="_underwater" operation="LT" value=".98"/>
 	        <property name="triggerEffectTriggerShootDualsense" value="PistolShoot"/>
-		<requirement name="ProgressionLevel" progression_name="perkClassicModeChris" operation="Equals" value="0"/>
+		<!-- <requirement name="ProgressionLevel" progression_name="perkClassicModeChris" operation="Equals" value="0"/> -->
 	</property>
 	<property class="Action1">
 		<property name="Class" value="Zoom"/>
@@ -5735,6 +5784,7 @@
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="medicalRegHealthAmount" operation="add" value="5600"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="medRegHealthIncSpeed" operation="set" value="10"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffClassicChris"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveBuff" buff="buffImmobalised"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="CallGameEvent" event="EventClassicModeChris"/>
 	</effect_group>
