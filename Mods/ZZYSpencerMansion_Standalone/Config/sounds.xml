@@ -2,28 +2,41 @@
 
 <append xpath="/Sounds">
 
+	<SoundDataNode name="REPiano">
+		<!-- <AudioSource name="#@modfolder:/Config/Resources/Piano.unity3d?Piano"/> -->
+		<AudioSource name="Sounds/AudioSource_Notifications"/>
+		<AudioClip ClipName="#@modfolder:/Config/Resources/PianoAudio.unity3d?MoonlightSonata.mp3"/>
+		<maxVoicesPerEntity value="1"/>
+		<MaxVoices value="30"/> 
+	</SoundDataNode>
+	
+	<SoundDataNode name="REGrandfatherClock">
+		<AudioSource name="#@modfolder:/Config/Resources/REBlocks.unity3d?GrandfatherClockAudio"/>
+		<AudioClip ClipName="#@modfolder:/Config/Resources/grandfatherclockaudio.unity3d?grandfatherclockloud.mp3"/>
+	</SoundDataNode>	
+
 	<SoundDataNode name="music_CrimsonHead"> <AudioSource name="Sounds/AudioSource_Notifications"/>
-	<AudioClip ClipName="#@modfolder:/Config/Resources/REBossMusic1.unity3d?REZombieDog.mp3"/>
+	<AudioClip ClipName="#@modfolder:/Config/Resources/REBossMusic1.unity3d?REZombieDog.mp3" Loop="true"/>
 	<LocalCrouchVolumeScale value="1"/> <CrouchNoiseScale value="1.0"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="0.01"/> </SoundDataNode>
 	
 	<SoundDataNode name="music_Plant42"> <AudioSource name="Sounds/AudioSource_Notifications"/>
-	<AudioClip ClipName="#@modfolder:/Config/Resources/REBossMusic1.unity3d?REPlant42.mp3"/>
+	<AudioClip ClipName="#@modfolder:/Config/Resources/REBossMusic1.unity3d?REPlant42.mp3" Loop="true"/>
 	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="1.0"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="0.01"/> </SoundDataNode>
 
 	<SoundDataNode name="music_Yawn"> <AudioSource name="Sounds/AudioSource_Notifications"/>
-	<AudioClip ClipName="#@modfolder:/Config/Resources/REBossMusic1.unity3d?REYawn.mp3"/>
+	<AudioClip ClipName="#@modfolder:/Config/Resources/REBossMusic1.unity3d?REYawn.mp3" Loop="true"/>
 	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="1.0"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="0.01"/> </SoundDataNode>
 	
 	<SoundDataNode name="music_BlackTiger"> <AudioSource name="Sounds/AudioSource_Notifications"/>
-	<AudioClip ClipName="#@modfolder:/Config/Resources/REBossMusic.unity3d?REBlackTiger.mp3"/>
+	<AudioClip ClipName="#@modfolder:/Config/Resources/REBossMusic.unity3d?REBlackTiger.mp3" Loop="true"/>
 	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="1.0"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="0.01"/> </SoundDataNode>
 	
 	<SoundDataNode name="music_Tyrant"> <AudioSource name="Sounds/AudioSource_Notifications"/>
-	<AudioClip ClipName="#@modfolder:/Config/Resources/REBossMusic.unity3d?RETyrant1.mp3"/>
+	<AudioClip ClipName="#@modfolder:/Config/Resources/REBossMusic.unity3d?RETyrant1.mp3" Loop="true"/>
 	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="1.0"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="0.01"/> </SoundDataNode>
 	
 	<SoundDataNode name="music_SuperTyrant"> <AudioSource name="Sounds/AudioSource_Notifications"/>
-	<AudioClip ClipName="#@modfolder:/Config/Resources/REBossMusic.unity3d?RETyrant2.mp3"/>
+	<AudioClip ClipName="#@modfolder:/Config/Resources/REBossMusic.unity3d?RETyrant2.mp3" Loop="true"/>
 	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="1.0"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="0.01"/> </SoundDataNode>
 
 </append>
