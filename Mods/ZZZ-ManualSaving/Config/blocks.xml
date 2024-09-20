@@ -2,17 +2,28 @@
 
 
 <insertafter xpath="/blocks/block[@name='cntCashRegister']">
+<block name="cntTypewriter">
+	<property name="Extends" value="cntCashRegisterEmpty"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="Model" value="#@modfolder:/Config/Resources/RETypewriter.unity3d?Typewriter"/>
+	<dropextendsoff/>
+	<drop event="Destroy" count="0"/>
+	<property name="DowngradeFX" value="impact_organic_on_metal,silencefiller"/>
+	<property name="DowngradeBlock" value="cntCashRegisterEmpty"/>
+	<property name="SortOrder2" value="0001"/>
+</block>
+
 <block name="cntCashRegisterInkRibbon">
 	<property name="Extends" value="cntCashRegisterEmpty"/>
 	<property name="CreativeMode" value="None"/>
 	<property name="Class" value="Loot"/>
 	<property name="LootList" value="InkRibbonLoot"/>
-	<property name="Model" value="@:Entities/LootContainers/cashRegisterClosedPrefab.prefab"/>
+	<property name="Model" value="#@modfolder:/Config/Resources/RETypewriter.unity3d?Typewriter"/>
 	<property name="ModelOffset" value="0,0,0"/>
 	<dropextendsoff/>
 	<drop event="Destroy" name="resourceScrapIron" count="0"/>
 	<property name="DowngradeFX" value="impact_organic_on_metal,silencefiller"/>
-	<property name="DowngradeBlock" value="cntCashRegister"/>
+	<property name="DowngradeBlock" value="cntTypewriter"/>
 	<property name="SortOrder1" value="B471"/>
 	<property name="SortOrder2" value="0001"/>
 </block>
@@ -27,7 +38,7 @@
 	<property name="PlantGrowing.LightLevelStay" value="0"/>
 	<property name="PlantGrowing.FertileLevel" value="0"/>
 	<property name="IsRandom" value="false" />
-	<property name="Model" value="@:Entities/LootContainers/cashRegisterClosedPrefab.prefab"/>
+	<property name="Model" value="#@modfolder:/Config/Resources/RETypewriter.unity3d?Typewriter"/>
 	<property name="ModelOffset" value="0,0,0"/>
 	<property name="DisplayInfo" value="Name"/>
 	<dropextendsoff/>
@@ -43,7 +54,7 @@
 	<property name="CreativeMode" value="None"/>
 	<property name="Class" value="Loot"/>
 	<property name="LootList" value="InfiniteInkRibbonLoot"/>
-	<property name="Model" value="@:Entities/LootContainers/cashRegisterClosedPrefab.prefab"/>
+	<property name="Model" value="#@modfolder:/Config/Resources/RETypewriter.unity3d?Typewriter"/>
 	<property name="ModelOffset" value="0,0,0"/>
 	<dropextendsoff/>
 	<drop event="Destroy" name="resourceScrapIron" count="0"/>
