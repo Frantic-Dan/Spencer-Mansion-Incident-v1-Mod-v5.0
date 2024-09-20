@@ -680,6 +680,12 @@
 				<requirement name="PlayerItemCount" item_name="modGunFlashlight" operation="Equals" value="1"/>
 			</triggered_effect>
 	</effect_group>
+	
+	<effect_group>
+			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="I cheated so please punish me">
+				<requirement name="PlayerItemCount" item_name="modArmorHelmetLight" operation="Equals" value="1"/>
+			</triggered_effect>
+	</effect_group>
 
 	</buff>
 	
