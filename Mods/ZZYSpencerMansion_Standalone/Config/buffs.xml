@@ -131,7 +131,7 @@
 	
 	<buff name="buffImmobalised" hidden="true">
 		<stack_type value="ignore"/>
-		<damage_type value="stun"/>
+		<duration value="0"/>
 
 		<effect_group>
 			<requirement name="PlayerItemCount" item_name="STARSTrainingManual" operation="GTE" value="1"/>
@@ -271,8 +271,8 @@
 	</buff>	
 	
 	<buff name="buffPoisoned" name_key="buffPoisonedName" description_key="buffPoisonedDesc" tooltip_key="buffPoisonedTooltip" icon="ui_game_symbol_critical" remove_on_death="false" icon_color="255,0,255" icon_blink="true">
-		<damage_type value="bloodloss"/>
-		<damage_source value="Internal"/>
+		<!-- <damage_type value="bloodloss"/> -->
+		<!-- <damage_source value="Internal"/> -->
 		<stack_type value="ignore"/>
 		<duration value="0"/>
 		<!-- <display_value value=""/><display_value_format value="time"/> -->
@@ -295,8 +295,8 @@
 	</buff>
 	
 	<buff name="buffDeadlyPoisoned" name_key="buffDeadlyPoisonedName" description_key="buffDeadlyPoisonedDesc" tooltip_key="buffDeathTooltip" icon="ui_game_symbol_critical" remove_on_death="false" icon_color="255,0,255" icon_blink="true">
-		<damage_type value="bloodloss"/>
-		<damage_source value="Internal"/>
+		<!-- <damage_type value="bloodloss"/> -->
+		<!-- <damage_source value="Internal"/> -->
 		<stack_type value="ignore"/>
 		<duration value="0"/>
 		<!-- <display_value value=""/><display_value_format value="time"/> -->
@@ -606,6 +606,121 @@
 		
 	</buff>
 	
+	<buff name="buffClassicChris" hidden="true" remove_on_death="false">
+		<stack_type value="replace"/>
+		<duration value="0"/>
+	<effect_group>
+			<requirement name="ProgressionLevel" progression_name="perkClassicModeChris" operation="Equals" value="1"/>
+			<passive_effect name="DisableItem" operation="base_set" value="1" tags="GrenadeLauncher" />
+	</effect_group>
+
+	</buff>
+	
+	<buff name="buffClassicAimingTrigger" hidden="true" remove_on_death="false">
+		<stack_type value="replace"/>
+		<duration value="0"/>
+	<effect_group>
+			<requirement name="ProgressionLevel" progression_name="perkClassicMode" operation="Equals" value="1"/>
+			<triggered_effect trigger="onSelfAimingGunStart" action="AddBuff" buff="buffClassicAiming"/>
+	</effect_group>
+	
+	<effect_group>
+		<requirement name="ProgressionLevel" progression_name="perkClassicMode" operation="Equals" value="1"/>
+		<requirement name="!HasBuff" buff="buffClassicAiming"/>
+		<passive_effect name="DisableItem" operation="base_set" value="1" tags="ranged" />
+	</effect_group>
+
+	</buff>
+	
+	<buff name="buffClassicAiming" hidden="true">
+		<stack_type value="replace"/>
+		<duration value="0"/>
+		
+		<effect_group>
+			<triggered_effect trigger="onSelfDied" action="RemoveBuff" buff="buffClassicAiming"/>
+			<triggered_effect trigger="onSelfEnteredGame" action="RemoveBuff" buff="buffClassicAiming"/>
+			<triggered_effect trigger="onSelfAimingGunStop" action="RemoveBuff" buff="buffClassicAiming"/>
+			<triggered_effect trigger="onSelfEquipStart" action="RemoveBuff" buff="buffClassicAiming"/>
+
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffClassicAiming">
+				<requirement name="!HoldingItemHasTags" tags="holdBreathAiming"/>
+			</triggered_effect>
+		</effect_group>	
+		
+		<effect_group>
+				<passive_effect name="Mobility" operation="base_add" value="-1"/>
+				<passive_effect name="JumpStrength" operation="perc_subtract" value=".99"/>
+		</effect_group>
+
+	</buff>
+	
+	<buff name="Iprobablyshouldnotcheat" hidden="true" remove_on_death="false">
+		<stack_type value="replace"/>
+		<duration value="0"/>
+	<effect_group>
+			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="I cheated so please punish me">
+				<requirement name="PlayerItemCount" item_name="meleeToolFlashlight02" operation="Equals" value="1"/>
+			</triggered_effect>
+	</effect_group>
+	
+	<effect_group>
+			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="I cheated so please punish me">
+				<requirement name="PlayerItemCount" item_name="meleeToolTorch" operation="Equals" value="1"/>
+			</triggered_effect>
+	</effect_group>
+	
+	<effect_group>
+			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="I cheated so please punish me">
+				<requirement name="PlayerItemCount" item_name="pimpMiningHelmetAdmin" operation="Equals" value="1"/>
+			</triggered_effect>
+	</effect_group>
+	
+	<effect_group>
+			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="I cheated so please punish me">
+				<requirement name="PlayerItemCount" item_name="modGunFlashlight" operation="Equals" value="1"/>
+			</triggered_effect>
+	</effect_group>
+
+	</buff>
+	
+	<buff name="I cheated so please punish me" hidden="true" remove_on_death="false">
+		<stack_type value="replace"/>
+		<duration value="0"/>
+	
+	<effect_group>
+		<triggered_effect trigger="onSelfBuffStart" action="CallGameEvent" event="You are a cheater" />
+	</effect_group>
+
+	</buff>
+	
+	<!-- <buff name="Cheater Monochrome" hidden="true" remove_on_death="false">
+		<stack_type value="replace"/>
+		<duration value="0"/>
+
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="1" fade="1" effect_name="Greyscale"/>
+		</effect_group>
+	</buff>
+	
+	<buff name="Cheater Deafen" hidden="true" remove_on_death="false">
+		<stack_type value="replace"/>
+		<duration value="0"/>
+
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="SetAudioMixerState" state="Deafened" enabled="true"/>
+		</effect_group>
+	</buff> -->
+	
+	<buff name="Tarnished Integrity" name_key="buffTarnishedIntegrityName" description_key="buffTarnishedIntegrityDesc" icon="ui_game_symbol_zombie" icon_color="255,0,0" remove_on_death="false">
+		<stack_type value="replace"/>
+		<duration value="0"/>
+		
+		<effect_group>
+
+		</effect_group>
+		
+	</buff>
+	
 	
 
 <buff name="buffHealthStatusCheck" hidden="true" remove_on_death="false">
@@ -628,7 +743,7 @@
 
 
 	<buff name="buffLowHealth" hidden="true">
-		<damage_type value="Starvation"/>
+		<!-- <damage_type value="Starvation"/> -->
 		<stack_type value="ignore"/>
 
 		<effect_group>
@@ -644,7 +759,7 @@
 	</buff>
 
 	<buff name="buffCriticalHealth" hidden="true">
-		<damage_type value="Starvation"/>
+		<!-- <damage_type value="Starvation"/> -->
 		<stack_type value="ignore"/>
 
 		<effect_group>
