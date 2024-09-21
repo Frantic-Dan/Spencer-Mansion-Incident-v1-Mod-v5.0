@@ -1,0 +1,30 @@
+<FranticDan>
+
+	<remove xpath="/item_modifiers/item_modifier[@name='modArmorHelmetLight']"/>
+	<remove xpath="/item_modifiers/item_modifier[@name='modGunFlashlight']"/>
+	
+
+
+	<append xpath="/item_modifiers">
+
+	<item_modifier name="modGunFlashlight" installable_tags="sideAttachments" modifier_tags="sideAttachment" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+		<property name="Material" value="Mplastics"/>
+	</item_modifier>
+	
+	<item_modifier name="modArmorHelmetLight" installable_tags="head" modifier_tags="misc,modArmorHelmetLight" blocked_tags="noMods,clothing" type="attachment">
+		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+		<property name="Material" value="Msteel"/>
+		<effect_group tiered="false">
+			<triggered_effect trigger="onSelfEquipChanged" prefab="Entities/Lighting/miningHelmetLightSource" parentTransform="CameraNode" localPos="0,0.1,0" localRot="-90,180,0"/>
+			<triggered_effect trigger="onSelfEquipChanged" prefab="Entities/Lighting/miningHelmetLightSource" parentTransform="Spotlight" localPos="0,0,0" localRot="90,0,0"/>
+			<!-- Needs a code polish pass to prevent the light sounds from activating when starting the game or swapping weapons -->
+			<!-- <triggered_effect trigger="onSelfItemActivate" action="PlaySound" target="self" sound="flashlight_toggle" play_in_head="false"/> -->
+			<!-- <triggered_effect trigger="onSelfItemDeactivate" action="PlaySound" target="self" sound="flashlight_toggle" play_in_head="false"/> -->
+		</effect_group>
+	</item_modifier>
+
+
+
+	</append>
+</FranticDan>
