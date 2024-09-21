@@ -8,6 +8,7 @@
 	
 	<item name="meleeToolFlashlight02">
 		<property name="Tags" value="blunt,melee,grunting,light,tool,noMods"/>
+		<property name="CreativeMode" value="None"/>
 		<property name="DisplayType" value="simpleTool"/>
 		<property name="HoldType" value="13"/>
 		<property name="Meshfile" value="@:Other/Items/Tools/flashlight02Prefab.prefab"/>
@@ -24,6 +25,7 @@
 	
 	<item name="meleeToolTorch">
 		<property name="Tags" value="blunt,melee,tool,weapon,meleeWeapon,heldTorch,noMods"/>
+		<property name="CreativeMode" value="None"/>
 		<property name="DisplayType" value="meleeTorch"/>
 		<property name="HoldType" value="12"/>
 		<property name="Meshfile" value="@:Other/Items/Tools/torch02_unlitPrefab.prefab"/>
@@ -39,7 +41,7 @@
 	</item>
 	
 	<item name="pimpMiningHelmetAdmin">
-		<property name="CreativeMode" value="Dev"/>
+		<property name="CreativeMode" value="None"/>
 		<property name="CustomIcon" value="armorMinerHelmet"/>
 		<property name="CustomIconTint" value="210,0,210"/>
 		<property name="ItemTypeIcon" value="computer"/>
