@@ -8,6 +8,8 @@
 <set xpath="/materials/material[@id='MoreMetal']//property[8]/@value">20</set>
 <set xpath="/materials/material[@id='Mglass']//property[10]/@value">200</set>
 <set xpath="/materials/material[@id='Mmetal']//property[8]/@value">5000</set>
+<set xpath="/materials/material[@id='Morganic']//property[@name='stability_glue']/@value">10</set>
+<set xpath="/materials/material[@id='Morganic']//property[@name='StabilitySupport']/@value">true</set>
 
 <append xpath="/materials">
 
