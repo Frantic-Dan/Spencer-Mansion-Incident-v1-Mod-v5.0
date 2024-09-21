@@ -1,0 +1,72 @@
+<FranticDan>
+
+	<remove xpath="/items/item[@name='pimpMiningHelmetAdmin']"/>
+	<remove xpath="/items/item[@name='meleeToolFlashlight02']"/>
+	<remove xpath="/items/item[@name='meleeToolTorch']"/>
+
+	<append xpath="/items">
+	
+	<item name="meleeToolFlashlight02">
+		<property name="Tags" value="blunt,melee,grunting,light,tool,noMods"/>
+		<property name="DisplayType" value="simpleTool"/>
+		<property name="HoldType" value="13"/>
+		<property name="Meshfile" value="@:Other/Items/Tools/flashlight02Prefab.prefab"/>
+		<property name="DropScale" value="1.5"/>
+		<property name="Material" value="MelectricParts"/>
+		<property name="Weight" value="5"/>
+		<property name="ScrapTimeOverride" value="10.0"/>
+		<property name="EconomicValue" value="0"/>
+		<property name="Stacknumber" value="1"/>
+		<property name="Group" value="Tools/Traps"/>
+		<property name="SoundUnholster" value="weapon_unholster"/>
+		<property name="SoundHolster" value="weapon_holster"/>
+	</item>
+	
+	<item name="meleeToolTorch">
+		<property name="Tags" value="blunt,melee,tool,weapon,meleeWeapon,heldTorch,noMods"/>
+		<property name="DisplayType" value="meleeTorch"/>
+		<property name="HoldType" value="12"/>
+		<property name="Meshfile" value="@:Other/Items/Tools/torch02_unlitPrefab.prefab"/>
+		<property name="DropMeshfile" value="@:Other/Items/Tools/torch02_droppedPrefab.prefab"/>
+		<property name="DropScale" value=".6"/>
+		<property name="Material" value="Morganic"/>
+		<property name="Stacknumber" value="50"/> <!-- STK torch -->
+		<property name="EconomicValue" value="0"/>
+		<property name="SoundUnholster" value="torch_unholster"/>
+		<property name="SoundHolster" value="torch_holster"/>
+		<property name="SoundPickup" value="torch_grab"/>
+		<property name="SoundPlace" value="torch_place"/>
+	</item>
+	
+	<item name="pimpMiningHelmetAdmin">
+		<property name="CreativeMode" value="Dev"/>
+		<property name="CustomIcon" value="armorMinerHelmet"/>
+		<property name="CustomIconTint" value="210,0,210"/>
+		<property name="ItemTypeIcon" value="computer"/>
+		<property name="Tags" value="head,armor,armorHead,mediumArmor,mediumArmorPenalty,admin,noMods"/>
+		<property name="DisplayType" value="clothing"/>
+		<property name="Waterproof" value=".15"/>
+		<property name="Material" value="Mplastics"/>
+		<property name="RepairTools" value="resourceRepairKit"/>
+		<property name="Weight" value="10"/>
+		<property name="EconomicValue" value="0"/>
+		<property name="Stacknumber" value="1"/>
+		<property name="Degradation" value="1" param1="true"/>
+		<property name="DegradationBreaksAfter" value="true"/>
+		<property name="Encumbrance" value=".01"/>
+		<property name="HoldType" value="45"/>
+		<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+		<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+		<property name="EquipSlot" value="Head"/>
+		<property name="ShowQuality" value="false"/>
+
+		<property class="SDCS">
+			<property name="HeadGearName" value="Miner"/>
+			<property name="TransformName" value="head"/>
+			<property name="Excludes" value=""/>
+			<property name="HairMaskType" value="Hat"/>
+		</property>
+	</item>
+
+	</append>
+</FranticDan>
