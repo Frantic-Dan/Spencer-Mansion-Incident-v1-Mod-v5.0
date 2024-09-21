@@ -4,7 +4,7 @@
 <insertafter xpath="/blocks/block[@name='cntCashRegister']">
 <block name="cntTypewriter">
 	<property name="Extends" value="cntCashRegisterEmpty"/>
-	<property name="CreativeMode" value="Player"/>
+	<property name="CreativeMode" value="None"/>
 	<property name="Model" value="#@modfolder:/Config/Resources/RETypewriter.unity3d?Typewriter"/>
 	<dropextendsoff/>
 	<drop event="Destroy" count="0"/>
