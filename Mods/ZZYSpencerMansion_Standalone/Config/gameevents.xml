@@ -27,6 +27,26 @@
 			<property name="quest" value="SpencerMansionQuest" />
 			<property name="phase" value="3" />
 		</action>
+		
+		<action class="Delay">
+			<property name="time" value="1" />
+			<property name="phase" value="4" />
+		</action>
+		
+		<action class="AddBuff">
+			<property name="phase" value="5" />
+			<property name="buff_name" value="I probably should not cheat" />
+		</action>
+		
+		<action class="Delay">
+			<property name="time" value="1" />
+			<property name="phase" value="6" />
+		</action>
+		
+		<action class="AddBuff">
+			<property name="phase" value="7" />
+			<property name="buff_name" value="buff SpawnManualSave" />
+		</action>
 </insertafter>
 
 		
