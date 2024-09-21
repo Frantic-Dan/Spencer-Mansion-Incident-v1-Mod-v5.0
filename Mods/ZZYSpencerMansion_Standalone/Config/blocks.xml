@@ -464,6 +464,7 @@
 	<property name="Shape" value="ModelEntity"/>
 	<property name="Model" value="#@modfolder:/Config/Resources/REBlocks.unity3d?Old_Gramophone"/>
 	<property name="Place" value="TowardsPlacerInverted"/>
+	<property name="GndAlign" value="1"/>
 	<property name="ModelOffset" value="0,0,-0.08"/>
 	<property name="MultiBlockDim" value="1,1,1"/>
 	<property name="ImposterExchange" value="imposterBlock" param1="115"/>
