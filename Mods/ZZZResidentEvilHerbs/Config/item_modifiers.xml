@@ -9,11 +9,13 @@
 
 	<item_modifier name="modGunFlashlight" installable_tags="sideAttachments" modifier_tags="sideAttachment" blocked_tags="noMods" type="attachment">
 		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+		<property name="CreativeMode" value="None"/>
 		<property name="Material" value="Mplastics"/>
 	</item_modifier>
 	
 	<item_modifier name="modArmorHelmetLight" installable_tags="head" modifier_tags="misc,modArmorHelmetLight" blocked_tags="noMods,clothing" type="attachment">
 		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+		<property name="CreativeMode" value="None"/>
 		<property name="Material" value="Msteel"/>
 		<effect_group tiered="false">
 			<triggered_effect trigger="onSelfEquipChanged" prefab="Entities/Lighting/miningHelmetLightSource" parentTransform="CameraNode" localPos="0,0.1,0" localRot="-90,180,0"/>
