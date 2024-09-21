@@ -420,6 +420,43 @@
 	<drop event="Fall" name="scrapMetalPile" count="0" prob="0" stick_chance="0"/>
 </block>
 
+<block name="OldGuitar">
+	<property name="CreativeMode" value="None"/>
+	<property name="DisplayType" value="blockHardenedMulti"/>
+	<property name="Material" value="MwoodMansion"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:/Config/Resources/Guitars.unity3d?DestroyedGuitar"/>
+	<property name="Place" value="TowardsPlacerInverted"/>
+	<property name="GndAlign" value="1"/>
+	<property name="ModelOffset" value="0,-.051,-.23"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property name="ImposterExchange" value="imposterBlock" param1="115"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="Path" value="solid"/>
+	<property name="EconomicValue" value="0"/>
+	<property name="MaxDamage" value="1000"/>
+	<drop event="Destroy" count="0" />
+	<drop event="Fall" name="scrapMetalPile" count="0" prob="0" stick_chance="0"/>
+</block>
+
+<block name="GuitarCase">
+	<property name="CreativeMode" value="None"/>
+	<property name="DisplayType" value="blockHardenedMulti"/>
+	<property name="Material" value="MwoodMansion"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:/Config/Resources/Guitars.unity3d?GuitarCaseClosed"/>
+	<property name="Place" value="TowardsPlacerInverted"/>
+	<property name="ModelOffset" value="0,0,0"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property name="ImposterExchange" value="imposterBlock" param1="115"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="Path" value="solid"/>
+	<property name="EconomicValue" value="0"/>
+	<property name="MaxDamage" value="1000"/>
+	<drop event="Destroy" count="0" />
+	<drop event="Fall" name="scrapMetalPile" count="0" prob="0" stick_chance="0"/>
+</block>
+
 <block name="Gramophone">
 	<property name="CreativeMode" value="None"/>
 	<property name="DisplayType" value="blockHardenedMulti"/>
