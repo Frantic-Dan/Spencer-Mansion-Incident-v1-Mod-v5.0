@@ -37,7 +37,7 @@ loadingTipRE5,"Nitrate can be harvested from zombie animals, gardens and mutated
 loadingTipRE5_title,Nitrate and Coal:
 loadingTipRE6,"Zombies don't feel pain, just like in Resident Evil, so they won't even flinch when attacked."
 loadingTipRE6_title,Zombies Feel No Pain:
-loadingTipRE7,"This devastating weapon can easily take off legs (Shells) and blowing off heads (Slugs)."
+loadingTipRE7,"This devastating weapon can easily take off legs (Shells) and blow off heads (Slugs)."
 loadingTipRE7_title,The Pump Shotgun:
 loadingTipRE8,"A huge thank you to the following people: Mythix, AuroraGiggleFairy, w00kie n00kie, RambunctiousRed, HellsJanitorTV, JaxTeller718, KhaineGB, Khelldon, Chikorina, HaidrGna, AvioseVeAvara, Subquake, Zilox, Redbeard, idc12, Pyrokar420, ocbMaurice."
 loadingTipRE8_title,Special Thanks!
