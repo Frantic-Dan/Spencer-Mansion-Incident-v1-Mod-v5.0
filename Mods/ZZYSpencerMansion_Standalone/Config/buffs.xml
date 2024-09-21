@@ -654,7 +654,7 @@
 
 	</buff>
 	
-	<buff name="Iprobablyshouldnotcheat" hidden="true" remove_on_death="false">
+	<buff name="I probably should not cheat" hidden="true" remove_on_death="false">
 		<stack_type value="replace"/>
 		<duration value="0"/>
 	<effect_group>
@@ -695,6 +695,16 @@
 	
 	<effect_group>
 		<triggered_effect trigger="onSelfBuffStart" action="CallGameEvent" event="You are a cheater" />
+	</effect_group>
+
+	</buff>
+	
+	<buff name="buff SpawnManualSave" hidden="true" remove_on_death="false">
+		<stack_type value="replace"/>
+		<duration value="3"/>
+	
+	<effect_group>
+		<triggered_effect trigger="onSelfBuffFinish" action="ManualSave,ManualSaving"/>
 	</effect_group>
 
 	</buff>
