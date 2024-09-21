@@ -141,13 +141,13 @@
 		</action> -->
 		
 		<action class="Delay">
-			<property name="time" value="7200" />
+			<property name="time" value="3600" />
 			<property name="phase" value="1" />
 		</action>
 		
 		<action class="BeltTooltip">
 			<property name="phase" value="2" />
-			<property name="text" value="[FF4F00]Are you using the lighter?[-]" />
+			<property name="text" value="[FF4F00]Did you cheat in a light source?[-]" />
 		</action>
 		
 		<!-- <action class="BeltTooltip">
