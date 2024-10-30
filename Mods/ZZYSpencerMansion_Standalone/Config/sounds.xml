@@ -8,6 +8,7 @@
 		<AudioClip ClipName="#@modfolder:/Config/Resources/PianoAudio.unity3d?MoonlightSonata.mp3"/>
 		<maxVoicesPerEntity value="1"/>
 		<MaxVoices value="30"/> 
+		<MaxRepeatRate name="20"/>
 	</SoundDataNode>
 	
 	<SoundDataNode name="REGrandfatherClock">
