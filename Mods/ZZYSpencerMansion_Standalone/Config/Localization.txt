@@ -24,6 +24,7 @@ goAirDropFrequencyREDesc," "
 goAirDropFrequencyRE,[FF4F00]Select 'Disabled'[-]
 goZombieMoveNightREDesc,"This affects the movement speed of generic zombies."
 goZombieMoveNightRE,[FF4F00]Zombie Night Speed (Always Night)[-]
+Spencer Mansion Incident,Spencer Mansion Incident
 SpencerMansionSpawnText_title,Welcome To The Spencer Mansion Incident
 loadingTipRE1,You're trapped inside Spencer Mansion. Healing supplies and ammunition are in short supply. Can you escape with your life? Or become a Jill Sandwich?
 loadingTipRE1_title,Welcome to Resident Evil!
@@ -42,6 +43,8 @@ loadingTipRE7_title,The Pump Shotgun:
 loadingTipRE8,"A huge thank you to the following people: Mythix, AuroraGiggleFairy, w00kie n00kie, RambunctiousRed, HellsJanitorTV, JaxTeller718, KhaineGB, Khelldon, Chikorina, HaidrGna, AvioseVeAvara, Subquake, Zilox, Redbeard, idc12, Pyrokar420, ocbMaurice."
 loadingTipRE8_title,Special Thanks!
 SpencerMansionSpawnText,"You're about to experience the Spencer Mansion Incident in a first person perspective.\n\nTo keep the experience true to Resident Evil, please note the following.\n1) You have limited inventory space of 10 slots. There are Item Storage Boxes to store your items. These boxes are not linked like in classic Resident Evil (Real Survival mode) so be mindful of where you store your items.\n2) You cannot jump.\n3) Most enemies don't feel pain, so fighting them will be different to what you're used to.\n4) Ink Ribbons are needed to save your progress! (Found in typewriters)\n\n[FFC800]For an immersive experience, I'd recommend turning up your ambient sound volume and your music to play all the time. The lighting is balanced to have brightness set to 50%.[-]\n\nFor the intended experience, be sure to remove any non-related mods."
+Mod Not Installed Correctly,[FF4F00]Mod Not Installed Correctly[-]
+ModNotInstalledCorrectlyText,"[FF4F00]This mod hasn't been installed correctly and is missing critical files required for the mod to be 100% functional.[-]"
 TwitchAction_SpawnCrawlerCommand,#crawler
 TwitchAction_SpawnToughCommand,#spawn_tough
 TwitchAction_SpawnSnakeCommand,#snake
