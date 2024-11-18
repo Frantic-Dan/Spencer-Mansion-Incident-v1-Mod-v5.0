@@ -73,7 +73,174 @@
 		<tip key="loadingTipRE7" />
 	</tips> -->
 
-
+	<conditional>
+      <if cond="mod_loaded('TFP_Harmony') == false">
+			<set xpath="/doc/tips//tip[1]/@key">ModNotInstalledCorrectlyText</set>
+			<set xpath="/doc/tips//tip[2]/@key">ModNotInstalledCorrectlyText</set>
+			<set xpath="/doc/tips//tip[3]/@key">ModNotInstalledCorrectlyText</set>
+			<set xpath="/doc/tips//tip[4]/@key">ModNotInstalledCorrectlyText</set>
+			<set xpath="/doc/tips//tip[5]/@key">ModNotInstalledCorrectlyText</set>
+			<set xpath="/doc/tips//tip[6]/@key">ModNotInstalledCorrectlyText</set>
+			<set xpath="/doc/tips//tip[7]/@key">ModNotInstalledCorrectlyText</set>
+			<set xpath="/doc/tips//tip[8]/@key">ModNotInstalledCorrectlyText</set>
+		</if>
+	</conditional>
+	
+	<conditional>
+      <if cond="mod_loaded('IDCCore') == false">
+			<set xpath="/doc/tips//tip[1]/@key">ModNotInstalledCorrectlyText</set>
+			<set xpath="/doc/tips//tip[2]/@key">ModNotInstalledCorrectlyText</set>
+			<set xpath="/doc/tips//tip[3]/@key">ModNotInstalledCorrectlyText</set>
+			<set xpath="/doc/tips//tip[4]/@key">ModNotInstalledCorrectlyText</set>
+			<set xpath="/doc/tips//tip[5]/@key">ModNotInstalledCorrectlyText</set>
+			<set xpath="/doc/tips//tip[6]/@key">ModNotInstalledCorrectlyText</set>
+			<set xpath="/doc/tips//tip[7]/@key">ModNotInstalledCorrectlyText</set>
+			<set xpath="/doc/tips//tip[8]/@key">ModNotInstalledCorrectlyText</set>
+		</if>
+	</conditional>
+	
+	<conditional>
+      <if cond="mod_loaded('ExplicitGunReloading') == false">
+			<set xpath="/doc/tips//tip[1]/@key">ModNotInstalledCorrectlyText</set>
+			<set xpath="/doc/tips//tip[2]/@key">ModNotInstalledCorrectlyText</set>
+			<set xpath="/doc/tips//tip[3]/@key">ModNotInstalledCorrectlyText</set>
+			<set xpath="/doc/tips//tip[4]/@key">ModNotInstalledCorrectlyText</set>
+			<set xpath="/doc/tips//tip[5]/@key">ModNotInstalledCorrectlyText</set>
+			<set xpath="/doc/tips//tip[6]/@key">ModNotInstalledCorrectlyText</set>
+			<set xpath="/doc/tips//tip[7]/@key">ModNotInstalledCorrectlyText</set>
+			<set xpath="/doc/tips//tip[8]/@key">ModNotInstalledCorrectlyText</set>
+		</if>
+	</conditional>
+	
+	<conditional>
+      <if cond="mod_loaded('FranticDanThunder') == false">
+			<set xpath="/doc/tips//tip[1]/@key">ModNotInstalledCorrectlyText</set>
+			<set xpath="/doc/tips//tip[2]/@key">ModNotInstalledCorrectlyText</set>
+			<set xpath="/doc/tips//tip[3]/@key">ModNotInstalledCorrectlyText</set>
+			<set xpath="/doc/tips//tip[4]/@key">ModNotInstalledCorrectlyText</set>
+			<set xpath="/doc/tips//tip[5]/@key">ModNotInstalledCorrectlyText</set>
+			<set xpath="/doc/tips//tip[6]/@key">ModNotInstalledCorrectlyText</set>
+			<set xpath="/doc/tips//tip[7]/@key">ModNotInstalledCorrectlyText</set>
+			<set xpath="/doc/tips//tip[8]/@key">ModNotInstalledCorrectlyText</set>
+		</if>
+	</conditional>
+	
+	<conditional>
+      <if cond="mod_loaded('FranticDanZombieUnlockDoor') == false">
+			<set xpath="/doc/tips//tip[1]/@key">ModNotInstalledCorrectlyText</set>
+			<set xpath="/doc/tips//tip[2]/@key">ModNotInstalledCorrectlyText</set>
+			<set xpath="/doc/tips//tip[3]/@key">ModNotInstalledCorrectlyText</set>
+			<set xpath="/doc/tips//tip[4]/@key">ModNotInstalledCorrectlyText</set>
+			<set xpath="/doc/tips//tip[5]/@key">ModNotInstalledCorrectlyText</set>
+			<set xpath="/doc/tips//tip[6]/@key">ModNotInstalledCorrectlyText</set>
+			<set xpath="/doc/tips//tip[7]/@key">ModNotInstalledCorrectlyText</set>
+			<set xpath="/doc/tips//tip[8]/@key">ModNotInstalledCorrectlyText</set>
+		</if>
+	</conditional>
+	
+	<conditional>
+      <if cond="mod_loaded('Material_Modifier') == false">
+			<set xpath="/doc/tips//tip[1]/@key">ModNotInstalledCorrectlyText</set>
+			<set xpath="/doc/tips//tip[2]/@key">ModNotInstalledCorrectlyText</set>
+			<set xpath="/doc/tips//tip[3]/@key">ModNotInstalledCorrectlyText</set>
+			<set xpath="/doc/tips//tip[4]/@key">ModNotInstalledCorrectlyText</set>
+			<set xpath="/doc/tips//tip[5]/@key">ModNotInstalledCorrectlyText</set>
+			<set xpath="/doc/tips//tip[6]/@key">ModNotInstalledCorrectlyText</set>
+			<set xpath="/doc/tips//tip[7]/@key">ModNotInstalledCorrectlyText</set>
+			<set xpath="/doc/tips//tip[8]/@key">ModNotInstalledCorrectlyText</set>
+		</if>
+	</conditional>
+	
+	<conditional>
+      <if cond="mod_loaded('OcbCustomTextures') == false">
+			<set xpath="/doc/tips//tip[1]/@key">ModNotInstalledCorrectlyText</set>
+			<set xpath="/doc/tips//tip[2]/@key">ModNotInstalledCorrectlyText</set>
+			<set xpath="/doc/tips//tip[3]/@key">ModNotInstalledCorrectlyText</set>
+			<set xpath="/doc/tips//tip[4]/@key">ModNotInstalledCorrectlyText</set>
+			<set xpath="/doc/tips//tip[5]/@key">ModNotInstalledCorrectlyText</set>
+			<set xpath="/doc/tips//tip[6]/@key">ModNotInstalledCorrectlyText</set>
+			<set xpath="/doc/tips//tip[7]/@key">ModNotInstalledCorrectlyText</set>
+			<set xpath="/doc/tips//tip[8]/@key">ModNotInstalledCorrectlyText</set>
+		</if>
+	</conditional>
+	
+	<conditional>
+      <if cond="mod_loaded('PathSmoothing') == false">
+			<set xpath="/doc/tips//tip[1]/@key">ModNotInstalledCorrectlyText</set>
+			<set xpath="/doc/tips//tip[2]/@key">ModNotInstalledCorrectlyText</set>
+			<set xpath="/doc/tips//tip[3]/@key">ModNotInstalledCorrectlyText</set>
+			<set xpath="/doc/tips//tip[4]/@key">ModNotInstalledCorrectlyText</set>
+			<set xpath="/doc/tips//tip[5]/@key">ModNotInstalledCorrectlyText</set>
+			<set xpath="/doc/tips//tip[6]/@key">ModNotInstalledCorrectlyText</set>
+			<set xpath="/doc/tips//tip[7]/@key">ModNotInstalledCorrectlyText</set>
+			<set xpath="/doc/tips//tip[8]/@key">ModNotInstalledCorrectlyText</set>
+		</if>
+	</conditional>
+	
+	<conditional>
+      <if cond="mod_loaded('WMMPersistGameOptions') == false">
+			<set xpath="/doc/tips//tip[1]/@key">ModNotInstalledCorrectlyText</set>
+			<set xpath="/doc/tips//tip[2]/@key">ModNotInstalledCorrectlyText</set>
+			<set xpath="/doc/tips//tip[3]/@key">ModNotInstalledCorrectlyText</set>
+			<set xpath="/doc/tips//tip[4]/@key">ModNotInstalledCorrectlyText</set>
+			<set xpath="/doc/tips//tip[5]/@key">ModNotInstalledCorrectlyText</set>
+			<set xpath="/doc/tips//tip[6]/@key">ModNotInstalledCorrectlyText</set>
+			<set xpath="/doc/tips//tip[7]/@key">ModNotInstalledCorrectlyText</set>
+			<set xpath="/doc/tips//tip[8]/@key">ModNotInstalledCorrectlyText</set>
+		</if>
+	</conditional>
+	
+	<conditional>
+      <if cond="mod_loaded('CustomMenuMusic') == false">
+			<set xpath="/doc/tips//tip[1]/@key">ModNotInstalledCorrectlyText</set>
+			<set xpath="/doc/tips//tip[2]/@key">ModNotInstalledCorrectlyText</set>
+			<set xpath="/doc/tips//tip[3]/@key">ModNotInstalledCorrectlyText</set>
+			<set xpath="/doc/tips//tip[4]/@key">ModNotInstalledCorrectlyText</set>
+			<set xpath="/doc/tips//tip[5]/@key">ModNotInstalledCorrectlyText</set>
+			<set xpath="/doc/tips//tip[6]/@key">ModNotInstalledCorrectlyText</set>
+			<set xpath="/doc/tips//tip[7]/@key">ModNotInstalledCorrectlyText</set>
+			<set xpath="/doc/tips//tip[8]/@key">ModNotInstalledCorrectlyText</set>
+		</if>
+	</conditional>
+	
+	<conditional>
+      <if cond="mod_loaded('ZombieDifficultyAdjustments') == false">
+			<set xpath="/doc/tips//tip[1]/@key">ModNotInstalledCorrectlyText</set>
+			<set xpath="/doc/tips//tip[2]/@key">ModNotInstalledCorrectlyText</set>
+			<set xpath="/doc/tips//tip[3]/@key">ModNotInstalledCorrectlyText</set>
+			<set xpath="/doc/tips//tip[4]/@key">ModNotInstalledCorrectlyText</set>
+			<set xpath="/doc/tips//tip[5]/@key">ModNotInstalledCorrectlyText</set>
+			<set xpath="/doc/tips//tip[6]/@key">ModNotInstalledCorrectlyText</set>
+			<set xpath="/doc/tips//tip[7]/@key">ModNotInstalledCorrectlyText</set>
+			<set xpath="/doc/tips//tip[8]/@key">ModNotInstalledCorrectlyText</set>
+		</if>
+	</conditional>
+	
+	<conditional>
+      <if cond="mod_loaded('ManualSaving') == false">
+			<set xpath="/doc/tips//tip[1]/@key">ModNotInstalledCorrectlyText</set>
+			<set xpath="/doc/tips//tip[2]/@key">ModNotInstalledCorrectlyText</set>
+			<set xpath="/doc/tips//tip[3]/@key">ModNotInstalledCorrectlyText</set>
+			<set xpath="/doc/tips//tip[4]/@key">ModNotInstalledCorrectlyText</set>
+			<set xpath="/doc/tips//tip[5]/@key">ModNotInstalledCorrectlyText</set>
+			<set xpath="/doc/tips//tip[6]/@key">ModNotInstalledCorrectlyText</set>
+			<set xpath="/doc/tips//tip[7]/@key">ModNotInstalledCorrectlyText</set>
+			<set xpath="/doc/tips//tip[8]/@key">ModNotInstalledCorrectlyText</set>
+		</if>
+	</conditional>
+	
+	<conditional>
+      <if cond="mod_loaded('FranticDansCleanerHUD') == false">
+			<set xpath="/doc/tips//tip[1]/@key">ModNotInstalledCorrectlyText</set>
+			<set xpath="/doc/tips//tip[2]/@key">ModNotInstalledCorrectlyText</set>
+			<set xpath="/doc/tips//tip[3]/@key">ModNotInstalledCorrectlyText</set>
+			<set xpath="/doc/tips//tip[4]/@key">ModNotInstalledCorrectlyText</set>
+			<set xpath="/doc/tips//tip[5]/@key">ModNotInstalledCorrectlyText</set>
+			<set xpath="/doc/tips//tip[6]/@key">ModNotInstalledCorrectlyText</set>
+			<set xpath="/doc/tips//tip[7]/@key">ModNotInstalledCorrectlyText</set>
+			<set xpath="/doc/tips//tip[8]/@key">ModNotInstalledCorrectlyText</set>
+		</if>
+	</conditional>
 
 
 </configs>
