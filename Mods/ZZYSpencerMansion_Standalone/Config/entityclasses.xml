@@ -473,6 +473,123 @@
 		</effect_group>
 </append>
 
+	<conditional>
+      <if cond="mod_loaded('TFP_Harmony') == false">
+			<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[1]//passive_effect[5]/@value">.6</set>
+			<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[1]//passive_effect[6]/@value">.6</set>
+			<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[1]//passive_effect[23]/@value">.8</set>
+			<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[1]//passive_effect[28]/@value">8</set>
+		</if>
+	</conditional>
+	
+	<conditional>
+      <if cond="mod_loaded('IDCCore') == false">
+			<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[1]//passive_effect[5]/@value">.6</set>
+			<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[1]//passive_effect[6]/@value">.6</set>
+			<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[1]//passive_effect[23]/@value">.8</set>
+			<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[1]//passive_effect[28]/@value">8</set>
+		</if>
+	</conditional>
+	
+	<conditional>
+      <if cond="mod_loaded('ExplicitGunReloading') == false">
+			<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[1]//passive_effect[5]/@value">.6</set>
+			<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[1]//passive_effect[6]/@value">.6</set>
+			<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[1]//passive_effect[23]/@value">.8</set>
+			<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[1]//passive_effect[28]/@value">8</set>
+		</if>
+	</conditional>
+	
+	<conditional>
+      <if cond="mod_loaded('FranticDanThunder') == false">
+			<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[1]//passive_effect[5]/@value">.6</set>
+			<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[1]//passive_effect[6]/@value">.6</set>
+			<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[1]//passive_effect[23]/@value">.8</set>
+			<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[1]//passive_effect[28]/@value">8</set>
+		</if>
+	</conditional>
+	
+	<conditional>
+      <if cond="mod_loaded('FranticDanZombieUnlockDoor') == false">
+			<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[1]//passive_effect[5]/@value">.6</set>
+			<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[1]//passive_effect[6]/@value">.6</set>
+			<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[1]//passive_effect[23]/@value">.8</set>
+			<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[1]//passive_effect[28]/@value">8</set>
+		</if>
+	</conditional>
+	
+	<conditional>
+      <if cond="mod_loaded('Material_Modifier') == false">
+			<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[1]//passive_effect[5]/@value">.6</set>
+			<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[1]//passive_effect[6]/@value">.6</set>
+			<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[1]//passive_effect[23]/@value">.8</set>
+			<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[1]//passive_effect[28]/@value">8</set>
+		</if>
+	</conditional>
+	
+	<conditional>
+      <if cond="mod_loaded('OcbCustomTextures') == false">
+			<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[1]//passive_effect[5]/@value">.6</set>
+			<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[1]//passive_effect[6]/@value">.6</set>
+			<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[1]//passive_effect[23]/@value">.8</set>
+			<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[1]//passive_effect[28]/@value">8</set>
+		</if>
+	</conditional>
+	
+	<conditional>
+      <if cond="mod_loaded('PathSmoothing') == false">
+			<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[1]//passive_effect[5]/@value">.6</set>
+			<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[1]//passive_effect[6]/@value">.6</set>
+			<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[1]//passive_effect[23]/@value">.8</set>
+			<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[1]//passive_effect[28]/@value">8</set>
+		</if>
+	</conditional>
+	
+	<conditional>
+      <if cond="mod_loaded('WMMPersistGameOptions') == false">
+			<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[1]//passive_effect[5]/@value">.6</set>
+			<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[1]//passive_effect[6]/@value">.6</set>
+			<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[1]//passive_effect[23]/@value">.8</set>
+			<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[1]//passive_effect[28]/@value">8</set>
+		</if>
+	</conditional>
+	
+	<conditional>
+      <if cond="mod_loaded('CustomMenuMusic') == false">
+			<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[1]//passive_effect[5]/@value">.6</set>
+			<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[1]//passive_effect[6]/@value">.6</set>
+			<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[1]//passive_effect[23]/@value">.8</set>
+			<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[1]//passive_effect[28]/@value">8</set>
+		</if>
+	</conditional>
+	
+	<conditional>
+      <if cond="mod_loaded('ZombieDifficultyAdjustments') == false">
+			<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[1]//passive_effect[5]/@value">.6</set>
+			<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[1]//passive_effect[6]/@value">.6</set>
+			<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[1]//passive_effect[23]/@value">.8</set>
+			<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[1]//passive_effect[28]/@value">8</set>
+		</if>
+	</conditional>
+	
+	<conditional>
+      <if cond="mod_loaded('ManualSaving') == false">
+			<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[1]//passive_effect[5]/@value">.6</set>
+			<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[1]//passive_effect[6]/@value">.6</set>
+			<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[1]//passive_effect[23]/@value">.8</set>
+			<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[1]//passive_effect[28]/@value">8</set>
+		</if>
+	</conditional>
+	
+	<conditional>
+      <if cond="mod_loaded('FranticDansCleanerHUD') == false">
+			<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[1]//passive_effect[5]/@value">.6</set>
+			<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[1]//passive_effect[6]/@value">.6</set>
+			<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[1]//passive_effect[23]/@value">.8</set>
+			<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[1]//passive_effect[28]/@value">8</set>
+		</if>
+	</conditional>
+
 <append xpath="/entity_classes">
 
 <entity_class name="Tyrant" extends="zombieWightFeral">
