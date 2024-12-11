@@ -761,3 +761,9 @@ perkRunAndGunRank3LongDescRE,"Hip fire accuracy is improved by 30% and movement 
 perkFlurryOfBlowsRank1LongDescRE,Melee attack speeds are increased by 15%. Each kill recharges stamina by 10 points.
 perkFlurryOfBlowsRank2LongDescRE,Melee attack speeds are increased by 30%. Each kill recharges stamina by 15 points.
 perkFlurryOfBlowsRank3LongDescRE,Melee attack speeds are increased by 45%. Each kill recharges stamina by 20 points.
+EscapeTheSpencerMansion_subtitle,Escape The Spencer Mansion
+EscapeTheSpencerMansion_desc,Scavenge the mansion for parts and put together a gyrocopter. Then escape to the helipad.
+The_Spencer_Mansion_Incident,The Spencer Mansion Incident
+Enter_The_Survival_Horror,Enter The Survival Horror
+The_Story,The Story
+Build_Gyrocopter,Build A Gyrocopter
