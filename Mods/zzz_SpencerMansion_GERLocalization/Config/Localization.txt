@@ -1,0 +1,769 @@
+Key,german
+goGameWorld,[FF4F00]Wähle 'Spencer Mansion Incident'[-]
+goDifficultyRE,[FF4F00]Schwierigkeitsgrad (Bitte lesen)[-]
+goDifficultyREDesc,D : Feind HP: 85%. Spielerschaden: 80%.\nFinde 20% mehr Muni.\n\nC : Feind HP: 100%. Spielerschaden: 100%.\n\nB : Feind HP: 125%. Spielerschaden: 150%.\n\nA : Feind HP: 150%. Spielerschaden: 200%.\n\nS : Feind HP: 175%. Spielerschaden: 250%.\nFinde 20% weniger Muni.\n\nS+ : Feind HP: 200%. Spielerschaden: 300%.\nFinde 40% weniger Muni.
+goDifficulty1RE,D
+goDifficulty2RE,C
+goDifficulty3RE,B
+goDifficulty4RE,A
+goDifficulty5RE,S
+goDifficulty6RE,S+
+goDayLengthREDesc," "
+goDayLengthRE,[FF4F00]Wähle '120 Minuten'[-]
+goDayLightLengthREDesc," "
+goDayLightLengthRE,[FF4F00]Wähle '0'[-]
+goBloodMoonFrequencyREDesc," "
+goBloodMoonFrequencyRE,[FF4F00]Wähle 'Deaktiviert'[-]
+goXPMultiplierRE,[FF4F00]Wähle '100%'[-]
+goBlockDamagePlayerRE,[FF4F00]Wähle '100%'[-]
+goBlockDamageAIRE,[FF4F00]Wähle '100%'[-]
+goLootAbundanceRE,[FF4F00]Wähle '100%'[-]
+goLootRespawnDaysREDesc," "
+goLootRespawnDaysRE,[FF4F00]Wähle 'Deaktiviert'[-]
+goAirDropFrequencyREDesc," "
+goAirDropFrequencyRE,[FF4F00]Wähle 'Deaktiviert'[-]
+goZombieMoveNightREDesc,"Dies wirkt sich auf die Bewegungsgeschwindigkeit der generischen Zombies aus."
+goZombieMoveNightRE,[FF4F00]Zombie-Nacht-Geschwindigkeit [-]
+Spencer Mansion Incident,Spencer Mansion Vorfall
+SpencerMansionSpawnText_title,Willkommen in dem Spencer Mansion Vorfall
+loadingTipRE1,Du bist im Inneren der Spencer Mansion gefangen. Heilmittel und Munition sind Mangelware. Kannst du mit deinem Leben davonkommen? Oder wirst du zum Jill-Eintopf?
+loadingTipRE1_title,Willkommen bei Resident Evil!
+loadingTipRE2,"Manchmal ist es besser, nicht alles zu zerstören, was einem im Weg steht."
+loadingTipRE2_title,"Zerstören oder heile lassen:"
+loadingTipRE3,"Genau wie in Resident Evil wird dein Inventar begrenzt sein (10 Slots). Du musst dir gut überlegen, was du mitnimmst."
+loadingTipRE3_title,Inventar:
+loadingTipRE4,"Türen sind der wichtigste Schutz in der Spencer Mansion. Das Schließen von Türen verlangsamt die Zombies und verhindert, dass Zombies dich einholen."
+loadingTipRE4_title,Türen:
+loadingTipRE5,"Nitrat kann aus Zombie-Tieren, Gärten und mutiertem Holz gewonnen werden.\nKohle kann aus verbrannten Bäumen gewonnen werden."
+loadingTipRE5_title,Nitrat und Kohle:
+loadingTipRE6,"Genau wie in Resident Evil, also zucken sie nicht einmal, wenn sie angegriffen werden."
+loadingTipRE6_title,Zombies fühlen keinen Schmerz:
+loadingTipRE7,"Diese starke Waffe kann leicht Beine abtrennen (Kugeln) und Köpfe zum platzen bringen (Geschosse)."
+loadingTipRE7_title,Die Schrottflite:
+loadingTipRE8,"Ein großes Dankeschön an die folgenden Personen: Mythix, AuroraGiggleFairy, w00kie n00kie, RambunctiousRed, HellsJanitorTV, JaxTeller718, KhaineGB, Khelldon, Chikorina, HaidrGna, AvioseVeAvara, Subquake, Zilox, Redbeard, idc12, Pyrokar420, ocbMaurice, Nordmann."
+loadingTipRE8_title,Besonderen Dank!
+SpencerMansionSpawnText,"Du wirst den Vorfall in der Spencer-Manison aus der Ich-Perspektive erleben.\n\nUm das Erlebnis von Resident Evil beizubehalten, beachte bitte die folgenden Punkte.\n1) Du hast einen begrenzten Inventarplatz von 10 Slots. Es gibt Lagerkisten, in denen du deine Gegenstände aufbewahren kannst. Diese Kisten sind nicht wie im klassischen Resident Evil (Real Survival-Modus) miteinander verbunden, also achte darauf, wo du deine Gegenstände aufbewahrst.\n2) Du kannst nicht springen.\n3) Die meisten Feinde empfinden keinen Schmerz, also wird der Kampf gegen sie anders sein,\nals du es gewohnt bist.\n4) Farbbänder werden benötigt, um deinen Fortschritt zu sichern! (Zu finden in den Schreibmaschinen)\n\n[FFC800]Für ein intensives Erlebnis empfehle ich, die Lautstärke der Umgebungsgeräusche und der Musik auf Max. zu stellen. Die Beleuchtung ist so abgestimmt, dass die Helligkeit auf 50 % eingestellt ist.[-]\n\nUm die gewünschte Erfahrung zu machen, solltest du alle anderen Mods entfernen."
+Mod Not Installed Correctly,[FF4F00]Mod wurde nicht korrekt installiert[-]
+ModNotInstalledCorrectlyText,"[FF4F00]Diese Mod wurde nicht korrekt installiert und es fehlen wichtige Dateien, die für eine 100%ige Funktion dieser Mod erforderlich sind.[-]"
+TwitchAction_SpawnCrawlerCommand,#crawler
+TwitchAction_SpawnToughCommand,#spawn_tough
+TwitchAction_SpawnSnakeCommand,#snake
+TwitchAction_SpawnSpiderCommand,#web_spinner
+TwitchAction_SpawnDogCommand,#cerberus
+TwitchAction_SpawnCrimsonHeadCommand,#crimson_head
+TwitchAction_SpawnForestSpeyerCommand,#forest_speyer
+TwitchAction_SpawnHunterCommand,#hunter
+TwitchAction_SpawncrimsonPrototypeCommand,#crimson_prototype
+TwitchAction_SupplyAmmo9mmCommand,#handgun_x8
+TwitchAction_SupplyGreenHerbCommand,#green_herb
+TwitchAction_SupplyRedHerbCommand,#red_herb
+TwitchAction_SupplyBlueHerbCommand,#blue_herb
+TwitchAction_SupplyAmmoShellsCommand,#shotgun_x2
+TwitchAction_SupplyAmmo44MagCommand,#magnum_x2
+TwitchAction_SupplyAmmoRocketCommand,#rocket
+TwitchAction_SupplyAmmoGrenadeCommand,#grenade
+TwitchAction_SupplyAmmoMolotovCommand,#molotov
+TwitchAction_SupplyFirstAidSprayCommand,#firstaidspray
+TwitchAction_SupplyAmmo762Command,#rifle_x12
+buffNewbieCoatNameRE,Allgemeine Informationen zu dem Spencer Mansion Vorfall
+buffNewbieCoatDescRE,"Der Spencer Mansion Vorfall bietet dir ein einzigartiges 7 Days to Die-Erlebnis wie keine andere Mod.\nHier einige Informationen, die dir die Eingewöhnung erleichtern.\n\nDa es keine kritischen Verletzungen gibt, musst du dir keine Sorgen machen, dass du verblutest und kannst dich darauf konzentrieren, dass Beste aus den begrenzten Heilungsvorräten zu machen.\n\nAchte auf dein Inventar, versuche nicht Kräuter oder Munition zu sammeln, wenn dein Inventar voll ist, da sie auf den Boden fallen und verschwinden werden.\n\nDu musst dir keine Sorgen um Nahrung und Wasser machen. Wenn du jedoch in Brand gesetzt wirst, wirst du durstig. Wenn du völlig dehydriert bist, musst du von einer Wasserquelle trinken und riskierst krank zu werden.\n\nZombies können Türen öffnen, also gehe nie davon aus, dass du in Sicherheit bist!"
+xuiInventory,Jill Valentine's Inventar
+tooltipJammed,([DECEA3]Blockiert[-])
+tooltipLocked,{1}
+tooltipUnlocked,{1}
+useBlock,{1}
+harvestTip,Benutze dein Messer, um Zombie-Tiere zu häuten und Nitrat zu farmen.\nNitrat wird zur Herstellung von Schießpulver verwendet.
+cntCashRegister,Schreibmaschine 
+TheVault,Item Aufbewahrungskiste
+AmmoChest,Munibündel\n(Schlagen zum Aufheben) 
+ReloadingTool,Muni-Werkzeug
+Reloading_Tooldesc,"Ein nützliches Werkzeug, mit dem du Muni herstellen kannst.\n\nEs ermöglicht auch, Muni zu zerlegen.\n\nStell sicher, dass du beim Herstellen genügend leere Inventarplätze hast."
+InkRibbon,Farbband
+InkRibbondesc,"Derzeit nutzlos, wird aber benötigt, um Ihren Fortschritt zu speichern, wenn das manuelle Speichern implementiert ist.\n\nBehalte es vorerst."
+DeathMaskDesc,Diese Todesmaske wird an der Tür des Bösen verwendet.
+MansionBattery,Damit wird die Tür im Innenhof mit Strom versorgt.
+Green_Herb,Grünes Kraut
+GreenHerbDesc,"Heilt dich leicht.\n\nHeilt 160 HP über 2 Sekunden.\n\nMedizinisches Wissen: Heilt 216 HP über 2 Sekunden."
+Red_Herb,Rotes Kraut
+RedHerbdesc,"Verstärkt die Wirkung von grünen Kraut.\n\nKann nicht allein verwendet werden."
+MixedGreenHerbDesc,"Heilt dich mäßig.\n\nHeilt 400 HP über 5 Sekunden.\n\nMedizinisches Wissen: Heilt 540 HP über 5 Sekunden."
+Green+RedHerbDesc,"Heilt dich erheblich.\n\nHeilt 720 HP über 9 Sekunden.\n\nMedizinisches Wissen: Heilt 972 HP über 9 Sekunden."
+Blue_Herb,Blaues Kraut
+BlueHerbDesc,"Heilt Gift und heilt dich leicht.\n\nHeilt 80 HP über 1 Sekunde.\n\nMedizinisches Wissen:Heilt 108 HP über 1 Sekunde."
+Yellow_Herb,Gelbes Kraut
+YellowHerbDesc,"Das gelbe Kraut ist unglaublich selten und hat wundersame Eigenschaften, die die Konstitution derer stärken, die es konsumieren. (Nur einmalig)\n\nMaximale Gesundheit +600.\nDeine Gesundheit erholt sich auf natürliche Weise alle 12 Sekunden um 1.\n\n(Stapelt sich mit Schmerztoleranz und passiver Heilung)"
+Green+BlueHerbDesc,"Heilt Gift und heilt dich leicht.\n\nHeilt 240 HP über 3 Sekunden.\n\nMedizinisches Wissen: Heilt 324 HP über 3 Sekunden."
+Green2+BlueHerbDesc,"Heilt Gift und heilt dich mäßig.\n\nHeilt 480 HP über 6 Sekunden.\n\nMedizinisches Wissen: Heilt 648 HP über 6 Sekunden."
+Green+Red+BlueHerbDesc,"Heilt Gift und heilt dich erheblich.\n\nHeilt 800 HP über 10 Sekunden.\n\nMedizinisches Wissen:Heilt 1080 HP über 10 Sekunden.\n\nSchutz: Diese wundersame Kräutermischung reduziert Schaden für 120 Sekunden um 30%."
+FirstAidSprayDesc,"Heilt 1600 HP über 20 Sekunden.\n\nMedizinisches Wissen: Heilt 2160 HP über 20 Sekunden."
+WolfBookdesc,Ein blau gefärbtes Buch über einen Wolf.
+WolfMedaldesc,Die Medaille des Wolfes.
+EagleBookdesc,Ein rot gefärbtes Buch über einen Adler.
+EagleMedaldesc,Die Medaille des Adlers.
+BookofCurses,Das Buch der Flüche
+BookOfCursesdesc,"Ein gruselig aussehendes Buch, das du auf dem Boden im 3. Stock gefunden hast."
+DogWhistle,Hundepfeife
+DogWhistledesc,"Eine Pfeife, die verwendet wird, um die Aufmerksamkeit von Hunden zu erregen."
+DogCollar,Hundehalsband
+DogCollardesc,Hat dieses Halsband eine Bedeutung?
+Coin,Münze
+Coindesc,"Eine Münze, die im Hundehalsband gefunden wurde."
+Lighter,Feuerzeug ([4FC3F7]Lichtquelle[-])
+Lighterdesc,"Kann als kleine Lichtquelle verwendet werden.\n\nDu wirst es bei dir haben müssen, um Molotovs anzuzünden."
+EmptyBaseBottledesc,"Stelle erst die richtige Flasche her, bevor du Sie abfüllst."
+EmptyBottledesc,"Eine Flasche die zum Mischen von Chemikalien verwendet wird.\n\nAuffüllen mit der sekundären Aktion."
+FilledBottledesc,Eine Flasche mit Flüssigkeit gefüllt.
+MixingBottledesc,Zwei Flüssigkeiten miteinander vermischt.
+VJoltdesc,"Eine starke Chemikalie, die die Pflanze schwächen kann 42.\n\nDrücken Sie die Taste [Interagieren], um sie zu verwenden."
+Crestdesc,Ein sechseckiges Wappen.
+BrokenShotgundesc,"Eine Schrotflinte, die irreparabel beschädigt ist."
+Herbicidedesc,"Eine Chemikalie, die zum Abtöten von Pflanzen verwendet wird."
+MetalObjectdesc,Ein achteckiges Objekt, das die Tür zum Innenhof aufschließen wird.
+StoneRingdesc,Ein Ring aus Stein mit einer achteckigen Form
+MetalObject2desc,Ein achteckiges Objekt aus Metall.
+StoneMetalObjectdesc,Dadurch wird die Tür hinter der Treppe in der Haupthalle des Herrenhauses geöffnet.
+Cylinderdesc,"Sieht aus, als ob etwas in das Loch gehört."
+Shaftdesc,Es sieht so aus, als ob eine Art Ring fehlt.
+CylinderShaftdesc,Damit wird der Generator in der Mine betrieben.
+FuelSupplyEmptydesc,"Eine leere Kapsel, die als Treibstoffbehälter für eine Energiequelle dient.\n\nFüll Sie mit etwas Eiskaltem\n\n[FF4F00]WARNUNG!\nDer Hauptbestandteil dieses Kraftstoffs scheint eine Nitroverbindung zu sein. Das „Laufenlassen“ kann zu einer tödlichen Explosion führen.[-]"
+FuelSupplydesc,"Benutze dies, um das Rolltor aufzutanken.\n\n[FF4F00]WARNUNG!\nDer Hauptbestandteil dieses Kraftstoffs scheint eine Nitroverbindung zu sein. Das „Laufenlassen“ kann zu einer tödlichen Explosion führen.[-]"
+JewelryBox2desc,"Eine geheimnisvolle Kiste, was ist darin?"
+JewelryBoxdesc,"Jetzt ist sie geöffnet, was ist da drin?"
+RedGemstonedesc,Dieser kleine Stein ist ein Vermögen wert...
+LockedBoxdesc,Sicher verriegelt
+PrisonKey,Eine Diskette mit der Aufschrift „MO“.
+GyrocopterDesc,"Jetzt kannst du durch den Ausgang des Labors zum Hubschrauberlandeplatz gehen."
+REkeys,Drücke die Taste [Interagieren], während du eine verschlossene Tür betrachten.
+Jill's_LockPick,Jill's Dietrich
+SwordKey,Schwertschlüssel
+TerraceKey,Terrassenschlüssel
+ArmourKey,Rüstungsschlüssel
+ClosetKey,Schrankschlüssel
+ShieldKey,Schildschlüssel
+HelmetKey,Helmschlüssel
+EmblemKey,Wappenschlüssel
+WolfBook,Wolf Buch
+WolfMedal,Wolf Medaille
+EagleBook,Adler Buch
+EagleMedal,Adler Medaille
+DeathMaskWithoutEyes,Totenmaske ohne Augen
+DeathMaskWithoutMouth,Totenmaske ohne Mund
+DeathMaskWithoutNose,Totenmaske ohne Nase
+DeathMaskWithoutAllThree,Todesmaske ohne alles
+LaboratoryKey,Laborschlüssel
+MODisc,MO Diskette
+EmptyBottle,Leere Flasche
+EmptyWaterBottle,Leere Wasserflasche
+EmptyUMB-No3Bottle,Leere UMB-No3 Flasche
+EmptyYellow-6Bottle,Leere Yellow-6 Flasche
+WaterFilled,Wasser (Gefüllt)
+UMB-No3Filled,UMB-No3 (Gefüllt)
+Yellow-6Filled,Yellow-6 (Gefüllt)
+NP-004Filled,NP-004 (Gefüllt)
+UMB-No7Filled,UMB-No7 (Gefüllt)
+UMB-No10Filled,UMB-No10 (Gefüllt)
+VP-017Filled,VP-017 (Gefüllt)
+NP-004Mixing,NP-004 (Gemixt)
+UMB-No7Mixing,UMB-No7 (Gemixt)
+UMB-No10Mixing,UMB-No10 (Gemixt)
+VP-017Mixing,VP-017 (Gemixt)
+V-Jolt,V-Jolt
+WindCrest,Wind-Wappen
+MoonCrest,Mond-Wappen
+StarCrest,Stern-Wappen
+SunCrest,Sonnen-Wappen
+BrokenShotgun,Kaputte Schrotflinte
+Herbicide,Unkrautvernichter
+MetalObject,Metallobjekt
+StoneRing,Steinring
+MetalObject2,Metallobjekt
+StoneandMetalObject,Stein- und Metallobjekt
+WD-40Spray,WD-40 Spray
+UnprintedBook,Unbedrucktes Buch
+ClawHammer,Klauenhammer
+ClawhammerDesc,Damit kann ich die Leiter reparieren!
+Battery,Batterie
+Spraydesc,"Eine schmierende Flüssigkeit, die zum Lösen der Verbindungen von Metallgegenständen verwendet wird."
+Cylinder,Zylinder
+Shaft,Schaft
+CylinderShaft,Zylinder Schaft
+FuelSupplyCapsuleEmpty,Treibstoffversorgungskapsel (leer)
+FuelSupplyCapsule,Treibstoffversorgungskapsel
+Green_Herb,Grünes Kraut
+MixedGreenHerb,Grünes Kraut gemischt
+Mixed3GreenHerbs,3 grüne Kräter gemischt
+MixedGreen+RedHerb,Grünes+rotes Kraut gemischt
+MixedGreen+BlueHerb,Grünes+blaues Kraut gemischt
+Mixed2Green+BlueHerb,2 Grüne+blaues Kraut gemischt
+MixedGreen+Red+BlueHerb,Grünes+rotes+blaues Kraut gemischt
+Red_Herb,Rotes Kraut
+Blue_Herb,Blaues Kraut
+FirstAidSpray,Erste-Hilfe-Spray
+FirstAidSprayBox,Erste-Hilfe-Spray-Bündel
+FirstAidSprayBoxDesc,"Kann nur im klassischen Modus hergestellt werden."
+Military-GradeDuctTape,Militärisches Klebeband
+JewelryBox2,Schmuckkästchen
+JewelryBox,Schmuckkästchen
+KeytoRoom001,Schlüssel Raum 001
+KeytoRoom003,Schlüssel Raum 003
+GalleryKey,Galerie Schlüssel
+ControlRoomKey,Kontrollraumschlüssel
+RedGemstone,Roter Edelstein
+LockedJewelryBox,Verschlossenes Schmuckkästchen
+MasterKey,Generalschlüssel
+
+doors
+ttLockpickMissing,Rührt sich nicht...
+DoubleMansionDoorBrown,Entriegelt
+DoubleMansionLockedDoorBrown,Klemmt
+DoubleShieldDoorBrown,Verschlossen
+DoubleMansionDoorBrownOld,Entriegelt
+commercialMansionWindowDoorBlue,Entriegelt
+commercialLockedMansionWindowDoorBlue,Klemmt
+commercialMansionWindowDoorGrey,Entriegelt
+commercialMansionDoorDoubleBlue,Entriegelt
+commercialLockedMansionDoubleDoorBlue,Klemmt
+commercialMansionDoorDoubleGrey,Entriegelt
+commercialMansionDoorBlue,Entriegelt
+commercialMansionMetalObjectDoorBlue,Verschlossen
+commercialLabMansionDoorBlue,Verschlossen
+commercialMansionDoorGrey,Entriegelt
+commercialMansionMasterDoorGrey,Verschlossen
+commercialMansionLockedDoorBlue,Klemmt
+ironMansionDoorGrey,Entriegelt
+ironMansionMOdisc1DoorGrey,Verschlossen
+ironMansionMOdisc2DoorGrey,Verschlossen
+ironMansionMOdisc3DoorGrey,Verschlossen
+ironMansionDoorOrange,Entriegelt
+ironMansionLockedDoorOrange,Klemmt
+ironControlDoorOrange,Verschlossen
+ironMansionLockableDoorGrey,Klemmt
+ironMansionDoorBlack,Entriegelt
+DoorThatSeesSpeaksSmellsNoEvil,Verschlossen
+DoorThatSmellsNoEvil,Verschlossen
+DoorThatSpeaksNoEvil,Verschlossen
+DoorThatSeesNoEvil,Verschlossen
+SingleMansionDoorBrown,Entriegelt
+SingleMansionDoorGrey,Entriegelt
+SingleArmourDoorGrey,Verschlossen
+SingleMansionDoorBrown2,Entriegelt
+SingleMansionDoorGrey2,Entriegelt
+SinglePlantRoomDoorGrey2,Verschlossen
+SingleLockedMansionDoorBrown,Klemmt
+SingleSwordDoorBrown,Verschlossen
+SingleSwordDoorWhite,Verschlossen
+SingleSwordDoorBrown2,Verschlossen
+SingleArmourDoorBrown,Verschlossen
+SingleTerraceDoorBrown,Verschlossen
+SingleClosetDoorBrown,Verschlossen
+SingleMansionDoorOldBrown,Entriegelt
+MansionArmourDoorOldBrown,Verschlossen
+MansionRoom001DoorOldBrown,Verschlossen
+MansionRoom003DoorOldBrown,Verschlossen
+MansionGalleryDoorOldBrown,Verschlossen
+SingleMansionDoorOldGrey,Entriegelt
+SingleSwordMansionDoorOldGrey,Verschlossen
+SingleSwordDoorOldBrown,Verschlossen
+SingleHelmetDoorWhite,Verschlossen
+SingleHelmetDoorBrown,Verschlossen
+SingleMansionDoorOldOak2,Entriegelt
+SingleMansionDoorOldGrey2,Entriegelt
+SingleLockedDoorOldGrey2,Verschlossen
+SingleLockedDoorOldoak2,Verschlossen
+SingleShieldDoorOldOak2,Verschlossen
+SingleBookDoorOldOak2,Verschlossen
+SingleEmblemDoorOldOak2,Verschlossen
+SinglePianoDoorOldOak2,Verschlossen
+IronLockedMansionDoorWhite,Verschlossen
+IronArmourMansionDoorWhite,Verschlossen
+jailMansionDoorWhite,Entriegelt
+DoubleMansionDoorWhite,Entriegelt
+DoubleMansionDoorWhiteOld,Entriegelt
+commercialMansionWindowDoorWhite,Entriegelt
+commercialMansionDoorDoubleWhite,Entriegelt
+commercialMansionDoorWhite,Entriegelt
+ironMansionDoorWhite,Entriegelt
+SingleMansionDoorWhite,Entriegelt
+SingleMansionDoorWhite2,Entriegelt
+SingleMansionDoorOldWhite,Entriegelt
+SingleMansionDoorOldWhite2,Entriegelt
+jailMansionDoorGrey,Entriegelt
+jailMansionUnpoweredDoorGrey,Kein Strom
+jailMansionLockedDoorGrey,Klemmt
+jailMansionDoorDoubleWhite,Entriegelt
+jailMansionDoorDoubleGrey,Entriegelt
+jailMansionLockedDoorDoubleGrey,Klemmt
+jailStoneObjectDoorDoubleGrey,Verschlossen
+oldMansionDoor,Entriegelt
+oldShieldDoor,Verschlossen
+oldMansionDoubleDoor,Entriegelt
+ironMansionDoorDoubleWhite,Entriegelt
+ironMansionDoorDoubleArmyGreen,Entriegelt
+ironMansionDoorDoubleBlack,Entriegelt
+ironMansionLabDoorDoubleBlack,Verschlossen
+ironMansionWD40DoorDoubleBlack,Verrostet
+ironMansionLockedDoorDoubleBlack,Klemmt
+ironArmourDoorDoubleArmyGreen,Verschlossen
+SingleWolfDoorBrown,Verschlossen
+SingleEagleDoorBrown,Verschlossen
+GyrocopterRE,Tragschrauber
+elevatorMansionGyroDoorDouble,Verschlossen
+elevatorMansionDoorDouble,Entriegelt
+GrandPiano,Großes Klavier
+InsertWindCrest,Wind-Wappen einsetzen
+InsertMoonCrest,Mond-Wappen einsetzen
+InsertStarCrest,Stern-Wappen einsetzen 
+InsertSunCrest,Sonnen-Wappen einsetzen
+InsertBrokenShotgun,Kaputte Schrotflinte ablegen
+Plant42'sRoots,42's Pflanzenwurzeln
+Plant42'sPoisonedRootsHittoDestroy,Vergiftete 42's Pflanzenwurzeln\n(Schlagen zum Aufheben)
+MineshaftHatchControlInsertCylinderShaft,Verschlossen
+MineshaftHatchControl,Kontrolle der Minenschachtluke
+LaboratoryComputer,Labor Computer
+UnpoweredRollerShutterNeedsRefueling,Kein Strom
+PoweredRollerShutter,Elektrisches Rolltor
+AK-47HittoPickup,AK-47\n(Schlagen zum Aufheben)
+QuadRocketLauncherHittoPickup,Vierfacher Raketenwerfer\n(Schlagen zum Aufheben)
+LockedSuperRocket,Zuerst Schalter drücken
+PumpShotgunHittoPickup,Schrotflinte\n(Schlagen zum Aufheben)
+MagnumRevolverHittoPickup,Magnum Revolver\n(Schlagen zum Aufheben)
+RocketLauncherHittoPickup,Granatenwerfer\n(Schlagen zum Aufheben)
+HandgunAmmoHittoPickup,Handwaffen-Muni\n(Schlagen zum Aufheben)
+ShotgunAmmoHittoPickup,Schrotflinten-Muni\n(Schlagen zum Aufheben)
+MagnumAmmoHittoPickup,Magnum-Muni\n(Schlagen zum Aufheben)
+RocketAmmoHittoPickup,Raketen-Muni\n(Schlagen zum Aufheben)
+GrenadeExplosiveHittoPickup,Granatengeschosse\n(Schlagen zum Aufheben)
+GrenadeAcidHittoPickup,Säuregeschosse\n(Schlagen zum Aufheben)
+GrenadeFlameHittoPickup,Brandbomben\n(Schlagen zum Aufheben)
+SuperRocket,Raketen-Muni\n(Schlagen zum Aufheben)
+AssaultRifleAmmoHittoPickup,Sturmgewehr-Muni\n(Schlagen zum Aufheben)
+HandGrenadeHittoPickup,Klebrige Granate\n(Schlagen zum Aufheben)
+9mmBullet,9×19mm Parabellum Bündel
+Dismantle9mmAmmo,9×19mm Parabellum Bündel zerlegen
+9mmHPBullet,HiPower 9×19mm Parabellum Bündel
+44MagnumBullet,.357 Magnum Bündel
+Dismantle.44Ammo,.357 Magnum Bündel zerlegen
+44MagnumHPBullet,HiPower .357 Magnum Bündel
+762Bullet,7.62 Gewehrmuni Bündel
+Dismantle7.62Ammo,7.62 Gewehrmuni Bündel zerlegen
+762HPBullet,HiPower 7.62 Gewehrmuni Bündel
+ShotgunShell,Kaliber 12 Schrotflintenpatronen
+DismantleShotgunShells,Kaliber 12 Schrotflintenpatronen zerlegen
+ShotgunSlug,Schrotflintengeschoss
+LockedAmmoChest,Verschlossene Munikiste
+AmmoChestCollect,Muni-Herstellungsset (Schlagen zum Aufheben)
+AmmoChestCollectDesc,"Eine Kiste voller Munitionszubehör.\n\nAchte darauf, dass du mindestens 5 leere Inventarplätze hast, bevor du sie öffnest!\n\nPlatziere sie zum Sammeln auf dem Boden."
+AmmoCraftingBundleDesc,"Eine Kiste voller Munition Zubehör.\n\nEnthält Folgendes:\n2400 Schießpulver.\n45 Patronenhülsen.\n45 Kugelspitzen.\n15 Schrotkugeln.\n30 Kunststoff."
+Backpack,Rucksack
+BackpackDesc,"Dieser Rucksack gibt dir 2 zusätzliche Inventarplätze"
+S.T.A.R.STrainingManual,S.T.A.R.S Trainingshandbuch
+attTrainingName, 
+attTrainingDesc, 
+skillTrainingSurvivalName, 
+TrainingManualDesc,"Als S.T.A.R.S. Mitglied hast du eine spezielle Ausbildung genossen, und jetzt musst du deine Ausbildung nutzen, um für dein Überleben zu kämpfen!\n\nLese genau, was jede der 6 verfügbaren Begünstigungen bewirkt.\n\nEs gibt nur 3 Ausbildungshandbücher, also wähle weise!"
+PainToleranceTraining,Schmerztoleranztraining
+PassiveHealingTraining,Passives Heilungstraining
+MedicalKnowledgeTraining,Medizinisches Wissenstraining
+KnifeTrainedTraining,Messertraining
+ChemistExpertTraining,Chemie Expertentraining
+CardioTraining,Kardiotraining
+ClassicModeJill,Klassischer Modus (Jill)
+ClassicModeChris,Klassischer Modus (Chris)
+ClassicModeName,Klassischer Modus (Jill)
+ClassicModeChrisName,Klassischer Modus (Chris)
+perkClassicModeJillDesc,"Spiele das Spiel mit Einschränkungen wie im klassischen Resident Evil.\n\n1: Du hast weniger Inventarslots.\nJill hat 8 Slots, Chris hat 6 Slots.\n\n2: Du kannst dich nicht bewegen, während du nachlädst. Nachladen geht schneller.\n(Mit Ausnahme des Raketenwerfers)\nDu kannst dich nicht bewegen, während du zielst, und du kannst nicht schießen, ohne zu zielen.\n\n3: Du kannst keine Muni oder Gegenstände herstellen.\n\nJill: 2000 HP, 15 Verteidigung, Medizinisches Wissen, Kardio-Training."
+perkClassicModeChrisDesc,"Spiele das Spiel mit Einschränkungen wie im klassischen Resident Evil.\n\n1: Du hast weniger Inventarslots.\nJill hat 8 Slots, Chris hat 6 Slots.\n\n2: Du kannst dich nicht bewegen, während du nachlädst. Nachladen geht schneller.\n(Mit Ausnahme des Raketenwerfers)\nDu kannst dich nicht bewegen, während du zielst, und du kannst nicht schießen, ohne zu zielen.\n\n3: Du kannst keine Muni oder Gegenstände herstellen.\n\nChris: 2500 HP, 15 Verteidigung, Medizinisches Wissen, Kardio-Training, +25% Messerschaden und kannst den Raketenwerfer nicht benutzen."
+perkPainToleranceNameRE,Schmerztoleranz
+perkPainToleranceDescRE,Erhöht deine max. HP um 600. Verringert den erlittenen Schaden um 15% (heilt auch 600).
+perkPassiveHealingName,Passive Heilung
+perkPassiveHealingDesc,Heilt passiv alle 4 Sekunden 1 HP.
+perkCardioName,Kardio
+perkCardioDesc,Die Ausdauer wird beim Sprinten um 50 % langsamer verbraucht. 10 % schnelleres Sprinten.
+perkKnifeTrainedName,Messer ausgebildet
+perkKnifeTrainedDesc,Füge 25 % mehr Schaden zu. Greife 25 % schneller an. Verbrauche 3 weniger Ausdauer bei normalen Angriffen und 6 weniger Ausdauer bei Schweren-Angriffen.
+perkMedicalKnowledgeName,Medizinisches Wissen
+perkMedicalKnowledgeDesc,Medizinische Gegenstände sind 35 % stärker.
+perkChemistExpertName,Experte für Chemie
+perkChemistExpertDesc,Beim Herstellen von Munition benötigst du 25% weniger Schießpulver. Beim Herstellen von Schießpulver benötigst du 20% weniger Nitrat und Kohle.
+meleeTorchRE,Fackel
+Torchdesc,Ein/Ausschalten mit [F]
+ClassicModeInventoryBlocker,Klassischer Modus Inventar-Blocker
+ClassicModeInventoryBlockerDesc,"Du spielst im klassischen Modus, dieser Inventarplatz ist dauerhaft blockiert."
+SurvivalKnife,Survival-Messer
+SurvivalKnifedesc,"Jill's speziell angefertigtes Messer, ideal für den Nahkampf und zum zerlegen von Tieren.\n\nSprint-Attacke: +15% Zerstückelungschance.\nAusdauer > 50%: +10% Zerstückelungschance.\n(Wird nach dem Angriff berechnet)\n\n\n"
+S.T.A.R.SHandgun,S.T.A.R.S Handwaffe
+Handgundesc,"Eine speziell angefertigte S.T.A.R.S. standard Handfeuerwaffe, schießt mit 9×19mm parabellum Kugeln.\n\n\n"
+MagnumRevolver,Magnum Revolver
+Magnumdesc,"Ein schwerer Magnum-Revolver, eine extrem starke Handfeuerwaffe. Schießt mit .357 magnum Kugeln.\n\n\n"
+PumpShotgun,Schrotflinte
+Shotgundesc,"Schießt mit Schrotpatronen Kaliber 12. Eine Waffe, die weit schießen kann. Sie ist alt und abgenutzt und hat eine langsame Feuerrate!\n\n\n"
+AK-47,AK-47 Sturmgewehr
+Rifledesc,Ein automatisches Sturmgewehr, das dir in verzweifelten Situationen helfen kann."\n\n\n"
+GrenadeLauncher,Granatenwerfer
+RocketLauncher,Raketenwerfer
+Launcherdesc,"Forest Speyers Lieblingswaffe. Eine zerstörerische Waffe, versuch dich nicht selbst in die Luft zu jagen, okay? Kann mit 3 verschiedenen Arten von Granaten geladen werden: Granate, Säure und Brandsatz."
+DestroyedRocketLauncher,Zerstörter Raketenwerfer
+Launcher2desc,"Unwiederbringlich zerstört, hoppla!"
+QuadRocketLauncher,Vierfacher Raketenwerfer
+MilitaryGoods,Militärgüter
+MilitaryGoodsdesc,"Eine militärische Ausrüstung, die Sie in einem geheimen Schrank gefunden haben."
+BulletProofVest,Kugelsichere Westen
+Vestdesc,Diese Schutzweste mindert den Schaden um 25%.\nStapelt sich mit Schmerztoleranz.
+Bandolier,Patronengürtel
+Bandolierdesc,"Wenn du ihn trägst, verringert sich deine Nachladezeit um 40% und du erleidest keinen Mobilitätsnachteil mehr beim Nachladen."
+armorJillClothingDesc,"Standard S.T.A.R.S Uniform.\n\nSie schützt dich nicht vor Schaden, aber vor Hitze und Kälte."
+armorJillOutfit,Jill's Uniform
+armorJillGloves,Jill's Handschuhe
+armorJillBoots,Jill's Stiefel
+modGunSoundSuppressorSilencerRE,Schalldämpfer
+SuppressorDesc,"Wenn du diesen Schalldämpfer an deiner Handfeuerwaffe anbringst, vervierfachst du deine kritische Trefferquote.\nErhöht nicht den Schaden.\n\nWirkt nicht bei starken Gegnern.\n\n\n"
+modMeleeSerratedBladeRE,Gezahnte Klinge
+SerratedBladeDesc,"Diese Messer-Mod erhöht die Zerlegungschance um 40%.\n\n(Erhöht nicht den Schaden)"
+apparelToughGuySunglasses,Wesker's Sonnenbrille
+ammo9mmBulletBallRE,9x19mm Parabellum Kugel
+ammo9mmBulletHPRE,HiPower 9x19mm Parabellum Kugel
+ammo44MagnumBulletBallRE,.357 Magnum Kugel
+ammo44MagnumBulletHPRE,HiPower .357 Magnum Kugel
+ammo762mmBulletBallRE,7.62 Gewehrkugel
+ammo762mmBulletHPRE,HiPower 7.62 Gewehrugel
+ammoShotgunShellRE,Schrotpatronen Kaliber 12
+ammoShotgunSlugRE,Schrotpatronen
+ammoRocketHERE,Anti-Tyrann Fragmentierungsrakete
+ammoRocketFragRE,Fragmentierungsrakete
+ammoGrenadeExplosiveRE,Granatengeschoss
+GrenadeExplosiveDesc,"Ein Geschosstyp für den Granatwerfer, der eine erhöhte Chance hat, Verstümmelungen zu verursachen."
+ammoGrenadeAcidRE,Säurekugel
+GrenadeAcidDesc,"Eine Art von Geschoss für den Granatwerfer, das mit Schwefelsäure gefüllt ist.\n\nVerursacht massiven Schaden an lebenden Zielen."
+ammoGrenadeFlameRE,Brandgranate
+GrenadeFlameDesc,"Eine Art von Geschoss für den Granatwerfer, das alles in Brand setzt.\n\nKann helfen, die Wiederauferstehung von Scharlachroten Köpfen zu verhindern."
+statEntityDamageExplosionLiving,"+ Explosionsschaden (Jäger, Spinne, Tyrann)"
+statEntityDamageRangedImpactLiving,"+ Impact Damage (Jäger, Spinne, Tyrann)"
+statEntityDamageExplosionSpider,"Explosion Damage (Spinne, Pflanze)"
+statEntityDamageRangedImpactSpider,"Impact Damage (Spinne, Pflanze)"
+thrownGrenadeRE,Klebrige Handgranate
+GrenadeDesc,"Diese Granate haftet an allem, wenn sie geworfen wird."
+Kerosene,Kerosin
+Kerosenedesc,"Eine brennbare Flüssigkeit, mit der ich einen Molotow machen kann. Ich brauche etwas, um sie anzuzünden."
+thrownAmmoMolotovCocktailRE,Molotow Cocktail
+MolotovDesc,"Alles, was zu Tode brennt, wird nie wieder lebendig!\n\nZum Anzünden ist ein Feuerzeug erforderlich."
+perkEnforcerHPAmmoDesc,Du kannst HiPower .357 Magnum-Muni herstellen.
+perkEnforcerHPAmmoLongDesc,Die stärkste Handfeuerwaffe der Welt ist jetzt noch stärker. Du kannst HiPower .357 Magnum-Muni herstellen.
+
+plantedRedHerb1,Rotes Kraut (Samen)
+plantedBlueHerb1,Blaues Kraut (Samen)
+plantedRedHerb2,Rotes Kraut (Wächst)
+plantedBlueHerb2,Blaues Kraut (Wächst)
+plantedRedHerb3Harvest,Rotes Kraut
+plantedBlueHerb3Harvest,Blaues Kraut
+plantedRedHerb3HarvestPlayer,Rotes Kraut
+plantedBlueHerb3HarvestPlayer,Blaues Kraut
+buffInvincibilityFramesName,Zeitweise Unbesiegbar
+buffInvincibilityFramesDesc,Unbesiegbarkeitsrahmen
+buffPerfectHerbMixName,Perfekte Kräuter-Mischung
+buffPerfectHerbMixDesc,"Die Kräutermischung aus Grün, Rot und Blau hat dir vorübergehend eine Resistenz gegen Schmerzen verliehen.\n\nSchadensminderung: 30%"
+buffYellowHerbName,Gelbes Kraut
+buffYellowHerbDesc,"Du hast ein Gelbes Kraut eingenommen, ein wundersames Kraut, das deine Konstitution gestärkt hat.\n\nMaximale HP +600.\nDeine HP erholt sich auf natürliche Weise alle 12 Sekunden um 1."
+buffPoisonedName,Vergiftet!
+buffPoisonedDesc,Du bist vergiftet und nimmst langsam Schaden.\n\nVerwende ein blaues Kraut, um dich zu entgiften.
+buffPoisonedTooltip,Du bist vergiftet worden!
+buffDeathTooltip,[FF4F00]Von Jill Valentine wurde nie wieder etwas gehört...[-]
+buffDeadlyPoisonedName,Game Over!
+buffDeadlyPoisonedDesc,Von Jill Valentine wurde nie wieder etwas gehört
+buffTarnishedIntegrityName,Beeinträchtigte Integrität
+buffTarnishedIntegrityDesc,"Du musstest es einfach tun, nicht wahr? \n\nIch habe die Beleuchtung aus ästhetischen Gründen ausgeglichen und ein Feuerzeug bereitgestellt, damit du etwas sehen kannst.\n\nLetztendlich hast du dich selbst um die geplante Erfahrung betrogen."
+questStartup_offer,Aufgabe
+questStartup_desc,"Es ist Juli 1998, du bist Jill Valentine, Mitglied des S.T.A.R.S Alpha Teams. Dein Team wurde losgeschickt, um das Verschwinden des Bravo Teams zu untersuchen, nachdem du den Kontakt zu ihnen verloren hast.\n\nDein Team flog über das Waldgebiet in den Arklay Mountains und entdeckte einen abgestürzten Hubschrauber.\nDer Hubschrauber gehört zum Bravo Team und alle sind tot. Dein Team wird von bösartigen Hunden angegriffen und durch den Wald gejagt, du siehst ein Herrenhaus in der Ferne und rufst es deinem Team zu und ihr brecht alle dorthin auf!\n\nIhr seid jetzt drinnen gefangen, es ist draußen viel zu gefährlich!"
+BookOfCurses_offer,"Die vier Masken.\n\nEine Maske, die kein Böses spricht...\nEine Maske, die kein Böses riecht...\nEine Maske, die kein Böses sieht...\nEine Maske, die weder sprechen, riechen noch sehen kann... \n\nWenn alle vier an ihrem Platz sind, wird das Böse erwachen.\n\n\nDu siehst einen Schlüssel, er ist eingelassen auf der Rückseite, willst du ihn entfernen?"
+Quest_SwordKey_tip_title,Beschädigter Schlüssel
+Quest_SwordKey_tip,"Als du den Schlüssel entfernst, rutscht er dir aus der Hand und fällt auf den Boden. Du bemerkst, dass er nun einen Riss hat und leicht brechen könnte."
+DogWhistle_offer,"Heute sagte mir Herr Spencer, ich solle etwas verstecken, wo niemand es finden kann.\n\nNun, ich hatte diese Idee, ich dachte, wenn ich es irgendwie durch ein gefährliches Tier wie den bösartigen Hund, der hier lebt, beschützt lassen kann, würde niemand sich ihm nähern können!\n\nSoweit ich das beurteilen kann, hält sich der Köter immer auf dem Balkon im zweiten Stock auf der Westseite der Terrasse auf und er sollte auf das Geräusch einer Hundepfeife anspringen.\n\nHier kommst du ins Spiel. Die Sache ist, ich denke, du bist die einzige Person, die sich diesem verdammten Hund nähern kann, ohne sich einer ernsthaften Maulerei auszusetzen.\n\nDas bedeutet, nur du kannst ihm dieses Halsband anlegen. Das Objekt, das Herr Spencer versteckt haben will, ist darin verborgen.\n\nDu bist die einzige Person, der ich das zutrauen würde. Natürlich wirst du auch etwas davon haben. Erinnerst du dich an dieses bestimmte Objekt, das du immer haben wolltest?\n\nNun, im Austausch für deine Dienste könnte ich es dir vielleicht besorgen. Das könnte für uns beide von Vorteil sein...\n\nJon Toleman."
+JillLockpick,Mit ihrem Dietrichset ist Jill die Meisterin im Öffnen.
+FilesDesc,Du kannst diese Notiz in deiner Questliste lesen.
+modMeleeErgonomicGripRE,Ergonomischer Griff
+KnifeGripDesc,"Verringert den Ausdauerverbrauch für normale Angriffe um 3 und den Ausdauerverbrauch für Schwere Angriffe um 6.\n\n\n"
+modGunFlashlightRE,Waffenlampe
+modMeleeWeightedHeadRE,Beschwerter-Kopf-Mod
+WeightedHeadDesc,"Eine Modifikation für dein Messer.\nErhöht die Chance, Opfer zu betäuben und zu verlangsamen, um 20%.\n\n\n"
+SamuraiEdgeParts,Samurai Randteile
+SamuraiEdgeDesc,"Spezielle Teile, die die Feuerrate drastisch erhöhen und einen 3-Schuss-Stoß ermöglichen.\n\nInsgesamt ist deine Handfeuerwaffe leichter zu handhaben.\n\n\n"
+AssaultShotgunParts,Schrotflinte Teile
+AssaultShotgunDesc,"Ein S.T.A.R.S. Spezialarsenal und auch Richards Favorit.\n\nFasst 10 Schuss. Hat eine engere Streuung. Größere Reichweite und schnellere Feuerrate. Aber langsamere Nachladegeschwindigkeit.\n\n\n"
+MagnumSpeedloader,Magnum Schnelllader
+MagnumSpeedloaderDesc,"Dadurch wird das Nachladen um 25 % beschleunigt und die Handhabung des Revolvers insgesamt erleichtert.\n\n\n"
+AK-47MuzzleBrake,AK-47 Mündungsbremse
+MuzzleBreakDesc,"Macht das Sturmgewehr genauer und insgesamt leichter zu handhaben.\n\n\n"
+modGunMeleeBlessedMetalTyrant,T-Virus Neutralisator
+modGunMeleeBlessedMetalTyrantDesc,"Erhöht den Schaden am Tyrannen erheblich\n\nNur Messer.\n\n\n"
+modGunMeleeBlessedMetalPlant,V-Jolt Chemikalien
+modGunMeleeBlessedMetalPlantDesc,"Tränke dein Messer in V-Jolt, um Pflanze 42 zusätzlichen Schaden zuzufügen.\n\n\n"
+drugBoulderBusters,"Chris Redfield hat es heimlich in seinem Eiweißshake.\n\nErhöht den Schaden durch Schlägereien um 400%.\nStapelt sich mit Schädelbrecher und Bier!"
+drugBoulderBustersDesc,"Dein Schaden durch Schlägereien wird um 400% erhöht.\nStapelt sich mit Schädelbrecher und Bier!"
+drugRockBusters,Felsbrocken Buster!
+SuperGogglesDesc,Diese bösen Jungs werden dich davor bewahren, ein Jill Eintopf zu werden.\n\n\nStandhaftigkeit +2\nBeweglichkeit +2.\nHerstellungszeit -40%.
+Note from Barry,Notiz von Barry
+BarryNote,"Jill, Ich habe dir ein paar Vorräte dagelassen.\n\nBarry"
+Jill Sandwich,Jill Eintopf
+JillSandwichDesc,Du warst fast ein Jill-Eintopf
+Watch your step,Vorsicht, Stufe!
+PuzzleDesc,Nach Süden ausgerichtet. \n\nNebeneinander ist sicher. \n\nAuf und ab ist explosiv!
+Researcher'sWill,Der Wille des Forschers
+ResearcherWillTip_title,Der Wille des Forschers
+ResearcherWillTip,"Ein Brief liegt drinne.\n3. Juni 1998\nMeine liebste Alma,\n\nLass mich zunächst um Entschuldigung bitten, dass ich dich nicht anrufen konnte. Ein Mann mit Sonnenbrille ließ keine Telefonanrufe zu. Entschuldige, Alma.\n\nHier sitze ich und versuche zu überlegen, wo ich anfangen soll, wie ich in wenigen einfachen Worten alles erklären kann, was seit unserem letzten Gespräch in meinem Leben passiert ist, und scheitere bereits. Ich hoffe, dieser Brief erreicht dich wohlauf, und dass du die Abschweifungen meines Stiftes verzeihst; das fällt mir nicht leicht.\n\nSelbst während ich schreibe, spüre ich, wie die einfachsten Konzepte entgleiten, verloren in Gefühlen von Verzweiflung und Verwirrung - aber ich muss dir sagen, was in meinem Herzen ist, bevor ich ruhen kann. Alma, bitte glaube, dass das, was ich dir erzähle, die Wahrheit ist. Die ganze Geschichte würde Stunden dauern, um sie dir zu erzählen, und die Zeit ist knapp, also nimm diese Dinge als Tatsache hin: Letzten Monat gab es einen Unfall im Labor und das Virus, das wir untersuchten, ist ausgetreten.\n\nAlle meine Kollegen, die infiziert wurden, sind tot oder sterben, und die Natur der Krankheit ist so, dass die noch Lebenden ihren Verstand verloren haben. Dieses Virus beraubt seine Opfer ihrer Menschlichkeit, zwingt sie in ihrer Krankheit dazu, Leben zu suchen und zu zerstören. Während ich diese Worte schreibe, kann ich sie hören, die gegen meine Tür drücken wie geistlose, hungrige Tiere.\n\nAlma, ich habe versucht zu überleben, nur um dich wiederzusehen. Aber meine Bemühungen haben nur das Unvermeidliche verzögert; ich bin infiziert, und es gibt keine Heilung für das, was folgt - außer mein Leben zu beenden, bevor ich das einzige verliere, was mich von ihnen unterscheidet.\n\nMeine Liebe zu dir.\n\nIn einer Stunde werde ich meinen ewigen Schlaf betreten, wo Frieden herrscht. Bitte verstehe. Bitte wisse, dass es mir leid tut.\nMartin Crackhorn"
+Trevor'sDiary,Trevor's Der Wille des Forschers 1
+TrevorDiaryTip_title,Trevor's Tagebuch 1
+TrevorDiaryTip,"24. Nov, 1967\nElf Tage sind vergangen, seit ich auf diesem Anwesen angekommen bin. Wie bin ich nur in diese Lage geraten? Ein Mann in einem Laborkittel brachte mir einen Teller mit magerer Kost und sagte zu mir, 'Es tut mir leid, dass wir dich das hier durchmachen lassen müssen, aber es ist aus Sicherheitsgründen.' Da wurde mir klar, was hier vor sich geht. Jetzt ergibt alles einen Sinn. Es gibt nur zwei Personen, die das Geheimnis dieses Anwesens kennen, Herr Spencer und ich. Falls sie mich umbringen, wird nur Herr Spencer das Geheimnis kennen. Aber zu welchem Zweck? Das ist jetzt unwichtig. Es ist hier zu gefährlich. Meine Familie... Ich hoffe, es geht ihnen gut. Ich habe beschlossen zu fliehen... Jessica, Lisa, ich bete dafür, dass ihr sicher seid.\n\n25. Nov, 1967\nWie konnte ich nur so unachtsam sein? Ich habe mein Lieblingsfeuerzeug verloren - das, was Jessica mir zum Geburtstag geschenkt hat. Jetzt wird es noch schwieriger, aus diesem dunklen Ort herauszukommen.\nDer 13. Nov, das Datum, an dem mein Schicksal besiegelt wurde. Meine Tante wurde nur drei Tage zuvor ins Krankenhaus eingeliefert. Jessica und Lisa sagten, dass sie sie besuchen würden. Ich wünschte, ich könnte bei ihnen sein. Aber Moment mal, während ich das noch schreibe, kehrt meine Erinnerung immer lebhafter zurück. Kurz bevor ich ohnmächtig wurde, erinnere ich mich daran, dass die Männer in den Laborkitteln so etwas gesagt haben wie, 'Wahrscheinlich ist deine Familie schon...' Ich bete für ihre Sicherheit.\n\n27. Nov, 1967\nIrgendwie habe ich es geschafft, aus diesem Raum herauszukommen. Aber es wird nicht einfach sein, aus diesem Anwesen zu entkommen. Ich muss an all den Sprengfallen vorbei. Tigeraugen, Goldemblem... Ich muss versuchen, mich zu erinnern, um meinetwillen...."
+Trevor'sDiary2,Trevor's Tagebuch 2
+TrevorDiaryTip2_title,Trevor's Tagebuch 2
+TrevorDiaryTip2,"29. Nov. 1967\nIch kann nicht raus. Ich habe alles versucht, um zu entkommen, aber ich wurde mit der Realität konfrontiert, dass ich gefangen bin. Ich war überall. Das Labor mit den großen Glasröhren, die mit Formaldehyd gefüllt sind, und diese dunklen, nassen und unheimlichen Höhlen... Was kann ich tun?\nZuerst wollte ich meinen Augen nicht trauen. Aber dieser vertraute Schaukelschuh im Flur... Es war wie ein Reflex. Ein Name kam mir in den Sinn, Jessica!\nIch will nicht glauben, dass sie dasselbe Schicksal teilen wie ich. Nein! Ich kann die Hoffnung nicht aufgeben. Ich muss hoffen, dass sie am Leben sind.\n\n30. Nov. 1967\nIch habe in den letzten Tagen nichts gegessen oder getrunken. Ich fühle mich, als würde ich verrückt werden. Warum passiert mir das? Warum muss ich so sterben? Ich war zu besessen davon, dieses grässliche Herrenhaus zu vernichten. Ich hätte es besser wissen müssen.\n\n31. Nov. 1967\nEs war ein dunkler und feuchter unterirdischer Tunnel. Und wieder eine Sackgasse. Aber selbst in der Dunkelheit fiel mir etwas auf. Vorsichtig zündete ich das letzte Streichholz an, ich musste sehen, was es war. Ein Grab! Aber tief in den Stein eingraviert war mein Name! „George Trevor“. In diesem Moment wurde mir alles klar. Diese Bastarde wussten von Anfang an, dass ich hier sterben würde, und ich bin direkt in ihre Falle getappt. Aber jetzt ist es zu spät. Ich verliere die Kontrolle. Alles rückt so weit weg. Jessica... Lisa... Verzeiht mir. Wegen meines Egos habe ich euch beide in diese ganze verdammte Verschwörung verwickelt. Verzeiht mir. Möge Gott meinen Tod im Austausch für eure Sicherheit rechtfertigen.\n\nGeorge Trevor"
+Trevor'sDiary3,Trevor's Tagebuch 3
+TrevorDiaryTip3_title,Trevor's Tagebuch 3
+TrevorDiaryTip3,"Da ist etwas Handgeschriebenes. Es ist nicht datiert.\n\nNichts hat sich geändert. Ich hätte nie gedacht, dass sich dieser Raum, den ich als Experiment entworfen habe, so auszahlen würde.\n\nIch kann mich hier für eine Weile sicher verstecken, denn niemand kennt das Geheimnis hinter diesem Gemälde. Nicht einmal Herr Spencer.\n\nGemälde eines Herrenhauses ... im hinteren Teil des Kunstraums."
+
+BotanyBook,Botanikbuch
+BotanyBookTip_title,Botanikbuch
+BotanyBookTip,"Verwendung von Heilkräutern\n\nEs ist allgemein bekannt, dass es viele Pflanzen gibt, denen medizinische Heilkräfte zugeschrieben werden. Seit der Antike heilt die Menschheit Wunden und Krankheiten mit verschiedenen Pflanzen.\n\nIn diesem Buch werden wir drei Kräuter probieren, die in den Arklay Mountains heimisch sind, und ihre jeweiligen medizinischen Eigenschaften kurz beschreiben. Jedes Kraut hat eine eigene Farbe und eine eigene medizinische Qualität.\n\nDas grüne Kraut stellt die körperliche Kraft wieder her. Das blaue Kraut neutralisiert natürliche Giftstoffe. Das rote Kraut hat jedoch allein keine wirkliche Wirkung. Wir haben festgestellt, dass das Mischen von grünen und roten Kräutern eine verstärkte Wirkung hat.\n\nWir werden die Wirkung von roten Kräutern in Kombination mit anderen Kräutern beschreiben, wenn wir mehr Daten haben. In der Zwischenzeit können Sie gerne selbst experimentieren, denn wahres Wissen erlangt man am besten durch eigene Erfahrung."
+BodyDisposal,[FF4F00]Körper Entsorgung[-]
+BodyDisposalTip_title,[FF4F00]Körper Entsorgung[-]
+BodyDisposalTip,"Besondere Anweisungen zum Entsorgen von Leichen.\n\nWir haben neue Informationen über diese 'Wesen'. Sie mögen wie tot erscheinen, können jedoch tatsächlich wieder zum Leben erwachen. Es gibt jedoch Möglichkeiten, sie daran zu hindern, erneut aktiv zu werden.\n\nDerzeit gibt es drei bekannte Methoden, um ihre Wiederbelebung zu stoppen.\n\n1. ZERSTÖRUNG DES KOPFES ([FF4F00]Todesursache[-])\n2. BEIN AMPUTIEREN ([FF4F00]Vor dem Tot[-] / [FF4F00]Todesursache[-])\n3. EINÄSCHERN ([FF4F00]Todesursache[-])\n\nSollten weitere Methoden entdeckt werden, werden sie umgehend mitgeteilt.\n\nIn der Zwischenzeit, für diejenigen von euch, die noch den Willen zum Überleben haben, wurde Kerosin im Herrenhaus und den umliegenden Gebieten platziert. Nimm so viel, wie du benötigst.\n\nDu wirst etwas zum Anzünden brauchen, was du selbst finden musst."
+Keeper'sDiary,Wächter Tagebuch
+KeeperDiaryTip_title,Wächter Tagebuch
+KeeperDiaryTip,"9. Mai, 1998\nHabe heute Abend mit Scott und Alias von der Sicherheit sowie Steve aus der Forschung Poker gespielt. Steve war der große Gewinner, aber ich denke, er hat geschummelt. Schuft.\n\n10. Mai 1998\nEiner der Vorgesetzten hat mich beauftragt, mich um ein neues Wesen zu kümmern. Es sieht aus wie ein gehäuteter Gorilla. Die Fütterungsanweisungen besagten, dem Wesen lebende Tiere zu geben. Als ich ein Schwein hineinwarf, schien das Wesen damit zu spielen... indem es dem Schwein die Beine abriss und die Eingeweide herauszog, bevor es tatsächlich anfing zu fressen.\n\n11. Mai 1998\nUm etwa 5 Uhr morgens weckte mich Scott auf. Hatte mich auch ganz schön erschreckt. Er trug einen Schutzanzug. Er reichte mir einen weiteren Anzug und sagte mir, ich solle ihn anziehen. Er sagte, dass es im unteren Labor einen Unfall gegeben habe. Ich wusste einfach, dass so etwas passieren würde. Diese Schweine in der Forschung schlafen nie, nicht einmal an Feiertagen.\n\n12. Mai 1998\nIch trage diesen verdammten Raumanzug seit gestern. Meine Haut wird immer schmieriger und überall juckt es mich. Die verdammten Hunde haben mich komisch angeguckt, also entschied ich mich, sie heute nicht zu füttern. Es ist mir egal.\n\n13. Mai 1998\nGing ins Krankenhaus, weil mein Rücken geschwollen und juckend war. Sie legten einen großen Verband darauf und sagten mir, dass ich den Anzug nicht mehr tragen müsste. Alles, was ich jetzt möchte, ist schlafen.\n\n14. Mai 1998\nFand heute Morgen eine weitere große Blase an meinem Fuß. Ich schleppte mich bis zum Hundezwinger. Sie waren den ganzen Tag ruhig, was seltsam war. Dann wurde mir klar, dass einige von ihnen entkommen waren. Vielleicht ist das ihre Art, sich bei mir dafür zu rächen, dass ich sie die letzten drei Tage nicht gefüttert habe. Wenn jemand davon erfährt, werde ich Ärger bekommen.\n\n16. Mai 1998\nEs kursieren Gerüchte, dass ein Forscher, der versucht hat, gestern Nacht aus dem Anwesen zu fliehen, erschossen wurde. Mein ganzer Körper fühlt sich heiß und juckend an, und ich schwitze jetzt die ganze Zeit. Ich kratzte an der Schwellung an meinem Arm, und ein Stück faulendes Fleisch fiel einfach ab. Was zum Teufel passiert hier mit mir?\n\n19. Mai 1998\nDas Fieber ist weg, aber es juckt. Heute bin ich hungrig und esse Hundefutter.\n\n21. Mai 1998\n Juckt, es juckt. Scott hatte ein hässliches Gesicht, deshalb habe ich ihn getötet. Lecker. 4 / / Es juckt. Lecker."
+ScrapBook,Fotoalbum
+ScrapbookTip_title,Fotoalbum
+ScrapbookTip,"RACCOON NEWS 27. MAI, 1998\nTIERANGRIFF? FRAU VERSTÜMMELT\n\nAm 20. Mai gegen 22 Uhr wurde der Körper einer 20-jährigen jungen Frau von einem Passanten am linken Ufer des Marble River im Cider District von Raccoon City gefunden. Die Polizei von Raccoon geht davon aus, dass es sich um das Werk eines Grizzlies oder eines anderen Tieres handelt, da Bisswunden an ihren verstümmelten Armen und dem linken Fuß darauf hinweisen, dass beträchtliche Kraft im Spiel war. Da sie einen Wanderschuh am verbleibenden Fuß trug, wurde festgestellt, dass sie in den Arklay Mountains angegriffen wurde und in den Fluss gefallen ist. Man bemüht sich um die Identifizierung dieser Frau.\n\n\nRACCOON NEWS 16. JUNI 1998\nMONSTER IN DEN ARKLAY MOUNTAINS?\n\nEinige behaupten, sie hätten Monster in den Arklay Mountains gesehen. Die Monster sollen etwa die Größe von großen Hunden haben und normalerweise in einer Rudelstruktur laufen, wie es Wölfe tun. Das mag sich wie eine Gruppe gewöhnlicher Wildhunde anhören, aber diese Monster sind erstaunlich wild und schwer zu verletzen. Man sagt, dass diese Hunde einen nicht belästigen, es sei denn, man weckt sie, also sollten kluge Leser vorerst die Arklay Mountains meiden. Aber wenn Sie auf der Suche nach Abenteuer sind, schauen Sie doch mal vorbei! Wollen Sie es versuchen?\n\n\nRACCOON NEWS 9. JULI 1998\nGEHEIMNIS IN DEN ARKLAY MOUNTAINS: BERGSSTRASSE GESPERRT\n\nAufgrund aufeinanderfolgender Katastrophen in den Arklay Mountains haben die Stadtbehörden beschlossen, die Straße zu den Hügeln zu sperren. Gleichzeitig plant die Polizei von Raccoon, die vermissten Personen mit Hilfe der S.T.A.R.S.-Teammitglieder zu suchen. Man erwartet große Schwierigkeiten aufgrund der enormen Größe der Arklay Mountains und des ursprünglichen Waldes, der die meiste Fläche bedeckt. Zudem berichten weiterhin Menschen von grotesken Monster-Sichtungen in den Bergen."
+MailtotheChiefofSecurity,Mail an den Sicherheitschef
+MailToTheChiefOfSecurityTip_title,Mail an den Sicherheitschef
+MailToTheChiefOfSecurityTip,"VERTRAULICH\n\nAn: Sicherheitschef\n\nDatum: 22. Juli, 1998 2:13\n\nDer Tag X steht vor der Tür. Führen Sie die folgenden Schritte innerhalb einer Woche aus. Es sind sofortige Maßnahmen erforderlich.\n\nLocken Sie S.T.A.R.S zum Anwesen und beschaffen Sie sich die Rohdaten von B.O.W's Kampf gegen S.T.A.R.S.\n\nSammeln Sie als Proben zwei Embryonen jedes mutierten Exemplars, mit Ausnahme des Tyrant. Beseitigen Sie den Tyrant.\n\nStellen Sie die vollständige Entsorgung des Arklay-Labors einschließlich aller Mitarbeiter und Versuchstiere sicher. Lassen Sie ihren Tod als Unfall aussehen.
+Wenn Sie die oben genannten Verfahren durchgeführt haben, melden Sie sich in der Zentrale, um weitere Anweisungen zu erhalten.\n\nWenn Sie aus irgendeinem Grund nicht in der Lage sind, das Verfahren fristgerecht durchzuführen, melden Sie sich sofort. In Notfällen melden Sie sich direkt bei der Durchwahl 5691.\n\nViel Glück.\nUmbrella Hauptquartier,\nUmbrella Inc."
+Researcher'sLetter,Brief des Wissenschaftlers
+ResearcherLetterTip_title,Brief des Wissenschaftlers
+ResearcherLetterTip,"8. Juni 1998\nMeine liebste Ada.\n\nWenn Du diesen Brief liest, werde ich nicht mehr die Person sein, die Du einmal kanntest. Die Ergebnisse meines Tests sind heute rausgekommen und wie ich vermutet habe, waren sie positiv.\n\nIch habe das Gefühl, dass ich am Rande der Vernunft schwanke, wenn ich nur an mein bevorstehendes Schicksal denke. Ich würde alles dafür geben, nicht einer von ihnen zu werden.\n\nSoweit ich weiß, bist Du nicht infiziert. Ich hoffe aufrichtig, dass die Dinge nicht so verzweifelt werden, aber wenn sich herausstellen sollte, dass Du jetzt die letzte Person bist, die noch am Leben ist, möchte ich, dass Du das Material aus dem visuellen Datenraum holst.\n\nDann aktiviere das Selbstzerstörungssystem im Kraftwerk Raum und entkomme von hier. Bitte tu alles in Deiner Macht Stehende, um diesen ganzen Unfall öffentlich zu machen.\n\nWenn alles noch normal läuft, solltest Du in der Lage sein, alle Schlösser mit dem Sicherheitssystem zu öffnen.\n\nIch habe das Terminal im kleinen Sicherheitsraum so eingerichtet, dass Du dich mit meinem Namen und deinen Namen als Passwort in das System einloggen kannst.\n\nNur noch eine Sache … und das ist meine letzte Bitte. Ich hoffe, Du musst mich in diesem Zustand nie zu Gesicht bekommen, aber wenn Du mich in meiner abscheulichen Gestalt treffen solltest, bitte ich dich, mich von meinem Leid zu erlösen. Ich hoffe, Du verstehst das.\n\nDanke, Ada.\nHochachtungsvoll,\nJohn"
+ObservationNote,Beobachtungsnotiz
+ObservationNoteTip_title,Beobachtungsnotiz
+ObservationNoteTip,"Die Entdeckung des G-Virus erfolgte 21 Jahre nach der Verabreichung des Vorläufervirus.\n\nDer 'Prototyp-Parasit', den wir von einem Labor in Frankreich erhalten haben, wurde dem Probanden verabreicht. Die Probe nahm den Parasiten auf, ohne irgendwelche Anzeichen einer unerwünschten Reaktion zu zeigen.\n\nDas Ausbleiben jeglicher Reaktion war ein ungelöstes Rätsel. Aber jetzt ist mir alles klar.\n\nDer „Prototyp-Parasit“ brütete 21 Jahre lang im Körper des Probanden. Dann mutierte der Prototyp plötzlich aus diesem Inkubationszustand heraus. ('Entwickelt' wäre vielleicht ein passenderes Wort.)\n\nDiese Beobachtung gab mir weitere Einblicke in meine Forschung. Durch weitere Modifikationen und Tests war ich in der Lage, eine Methode zur Erschaffung des 'G' abzuleiten, die die Leistung des 'T' übertrifft.\n\nDies war der Durchbruch, der die Zukunft der B.O.W.-Geschichte verändern würde.\n\nIch kann es kaum erwarten, den Ausdruck auf Alexias ärgerlichem Gesicht zu sehen, wenn ich endlich meine Forschung bekannt gebe. Aber leider werde ich noch ein paar Jahre warten müssen, um meine Ergebnisse vollständig zu verifizieren.\n\nWilliam Birkin"
+SuicideNote,Abschiedsbrief
+SuicideNoteTip_title,Abschiedsbrief
+SuicideNoteTip,"22. Juni 1998\n\nIch musste es tun. Wir liefen vor diesen Dingen davon - und halfen uns gegenseitig zu überleben. Aber Robert begann, die Symptome zu zeigen. Ich musste es tun. Diese verdammten Dinger sind das reine Böse.\n\nEs gab keine andere Möglichkeit. Er hätte dasselbe getan, wenn es andersherum gewesen wäre. Nachdem ich ihn von seinem Elend erlöst hatte, musste ich ihn einfach ins Badezimmer stecken. Jetzt bin ich wahrscheinlich die Letzte...\n\nWie konnte das nur passieren? Ich werde mir nie verzeihen, dass ich bei diesem Projekt mitgemacht habe. Letztendlich werde ich aber bekommen, was ich verdiene. Es gibt keinen Weg, aus diesem Irrenhaus zu entkommen, es ist nur noch eine Frage der Zeit.\n\nEs ist alles bereit. Alles, was ich brauche, ist ein wenig Mut, um es zu tun. Zu wissen, dass ich viele Dinge unerledigt lassen werde, ist unbeschreiblich bedauerlich.\n\nAber das ist besser, als nur darauf zu warten, einer von ihnen zu werden. Bitte versteh das und lass mich wenigstens mein Leben als Mensch beenden.\n\nAuf der Rückseite steht eine Nachricht.\n\nLinda, bitte verzeih mir..."
+Plant42Report,Bericht Pflanze 42 
+Plant42ReportTip_title,Bericht Pflanze 42 
+Plant42ReportTip,"Vier Tage sind seit dem Unfall vergangen. Die Pflanze bei Punkt 42 wächst mit einer erstaunlichen Geschwindigkeit.\n\nObwohl es viele unbekannte Aspekte über diese Pflanze gibt, wissen wir, dass das T-Virus im Vergleich zu den anderen Pflanzengruppen einen wesentlich stärkeren Einfluss auf diese Pflanze hatte.\n\nWenn man sich seinen jetzigen Zustand ansieht, ist es schwierig, sich sein ursprüngliches Aussehen vorzustellen. Nirgendwo auf der Erde wird man etwas Vergleichbares finden.\n\nWir haben auch herausgefunden, dass PFLANZE 42 zwei Hauptquellen hat, um seine notwendigen Nährstoffe zu erhalten. Die eine Quelle ist ihre Wurzel. Irgendwie hat sie sich in den Keller eingewurzelt.\n\nUnmittelbar nach dem Unfall wurde ein Wissenschaftler verrückt und zerstörte den Wasserring. Seitdem gleicht der Keller einem Tümpel. Höchstwahrscheinlich ist es eine der Chemikalien im Wasser, die das schnelle Wachstum der PFLANZE 42 begünstigt.\n\nWir müssen jedoch noch herausfinden, um welche Chemikalie es sich handelt.\n\nEin zwiebelartiger Körper der PFLANZE 42 wurde von der Decke des ersten Stocks hängen gesehen.Wir sind sicher, dass er die Luftschächte benutzt hat, um in den ersten Stock zu gelangen. Zahlreiche lange, tentakelartige Ranken ragen aus der Zwiebel heraus.\n\nWir glauben, dass die Ranken das zweite Mittel ist, um an seine Nährstoffe zu gelangen. Wenn die PFLANZE 42 Beute wittert, benutzt sie die tentakelartigen Ranken, um ihre Beute zu fangen. Danach saugen die Saugnäpfe an der Ranke das Blut der Beute ab.n\nWir haben auch festgestellt, dass sie über eine gewisse Intelligenz verfügt. Wenn sie ihre Beute gefangen hat oder wenn sie inaktiv ist, schlingen sich die Ranken um die Tür, um mögliche Eindringlinge aufzuhalten.\n\nLeider sind bereits mehrere unserer Wissenschaftler dieser PFLANZE 42 zum Opfer gefallen. Als wir die Geschichten der Überlebenden hörten, stellten sie alle eine Gemeinsamkeit fest: \n\nWenn sich die gleichmäßigen blütenblattartigen Klappen öffnen und ihr lebenswichtiges Inneres enthüllen, neigt sie dazu, aggressiver zu werden.\n\nEin Zeuge berichtete, dass es so sei, als ob sie sich selbst schützen wolle. Warum sie sich so verhält, ist noch unbekannt.\n\n21. Mai 1998\nHenry Sarton"
+OrganicChemistryLabExperiment,Organische Chemie - Laborexperiment
+OrganicChemistryLabExperimentTip_title,Organische Chemie - Laborexperiment
+OrganicChemistryLabExperimentTip,"Über die Ähnlichkeiten in den zellulären Eigenschaften der schnell wachsenden, mit dem Tyrant-Virus infizierten Pflanze wurde bereits in früheren Arbeiten berichtet. Bei der Wiederholung dieser Experimente wurde jedoch eine interessante neue Tatsache deutlich.\n\nWir erfuhren, dass eine Chemikalie aus der UMB-Familie, UMB Nr. 20, eine Verbindung enthält, die für die Zellen der Pflanze giftig ist.\n\nWir haben UMB Nr. 20 einen neuen Namen gegeben: V-JOLT. Wenn die Berechnungen korrekt sind, sollte bei direkter Anwendung von V-JOLT auf die Wurzel der Pflanze die gesamte Pflanze innerhalb von 5 Sekunden absterben.\n\nDas V-JOLT kann durch einfaches Mischen der Chemikalien VP und UMB in einem bestimmten Verhältnis hergestellt werden. Beim Umgang mit diesen UMB-Chemikalien ist jedoch besondere Vorsicht geboten. Es ist bekannt, dass sie bei unsachgemäßer Handhabung giftige Gase erzeugen.\n\nDie Eigenschaften der einzelnen UMB-Chemikalien sind wie folgt:\n\nUMB Nr. 3 rot\ngelb-6 gelb\nUMB Nr. 7 grün\nUMB Nr. 10 orange\nVP-017 blau\nV-JOLT dunkel braun"
+FamilyPictureandNotes,Familienbild und Brief
+FamilyPicture1Tip_title,Familienbild und Brief
+FamilyPicture1Tip,"Da steht etwas auf der Rückseite\n\n10. November 1967\n-Progenitorvirus verabreicht\n\nJessica\nVerabreichtes Virus: Typ-A\nPlasmolyse von Gewebe während der Zellaktivierung.\n\nVirusfusion: Negativ\n\nAktion: Entsorgt\n\nLisa\n\nVerabreichtes Virus: Typ-B\nPlasmolyse von Gewebe während der Zellaktivierung.\n\nVirusfusion: Positive, aber verzögerte Fusion.\n\nKörperveränderung: Beobachtete konstante Ergebnisse.\n\nStatus: Weitere schützende Beobachtung.\n\n\nGeorge\nAktion: Beendet (30. Nov. 1967)"
+Lisa'sJournal,Lisa's Tagebuch
+FamilyPicture2Tip_title,Lisa's Tagebuch
+FamilyPicture2Tip,"14. November 1967\nIch fühle mich schwindlig nach der Spritze, die sie mir gegeben haben. Ich sehe meine Mutter nicht. Wo haben sie sie hingebracht?\nSie hat versprochen, dass wir zusammen fliehen würden. Ist sie allein geflohen und hat mich zurückgelassen?\n\n15. November 1967\nIch habe Mama gefunden. Wir haben zusammen gegessen. Ich war sehr glücklich.\n\nAber sie war eine Fälschung. Nicht meine echte Mama. Gleiches Gesicht, aber anderes Verhalten.\n\nIch muss Mama finden. Ich muss meiner Mutter ihr Gesicht zurückgeben.\n\nIch habe Mamas Gesicht zurückbekommen.\nNiemand außer mir kann meine Mama haben. Ich setze ihr Gesicht auf, damit sie bei mir bleibt.\nWeil Mama traurig ist, wenn ich sie ohne ihr Gesicht treffe.\n\n17.11.19 7\naus der Kiste kommt Geruch von Mama. Vielleicht ist dort die echte Mama.\nharte Steinkiste. Es tat weh. Stahlseil sind im Weg.\nkann Mama nicht sehen, wegen 4 Steinen.\n\n19\npaapa erst erreicht\nMamma danach erreicht\n\nInnen roT und schLeimig\nWeiS und HarT\n\nicht wahr wo Mama\n\nKeine Ahnung Paapa\nMama wiedergefunden\nMaaaaaaaaaama\nsie bewegt sich nicht mehr\n\nsie schreit\nwarum?\nIch will nur bei ihr sein... wo?\n\nIch vemise dihc"
+Jessica'sLetter,Jessica's Brief
+FamilyPicture3Tip_title,Jessica's Brief
+FamilyPicture3Tip,"An meine Lisa,\n\nVon Tag zu Tag spüre ich, wie mein Bewusstsein immer weiter abdriftet.\nDie Spritzen, die mir von Männern in weißen Kitteln verabreicht wurden, ließen Mamas Juckreiz etwas verschwinden. Heute gaben sie mir eine weitere Spritze und sagten, es sei Nahrung.\n\nWenn sie mir die Spritzen geben, kann Mama klar denken, aber Mama ist schockiert und traurig, weil sie nicht immer an dich denken kann.\n\nMama hat Angst. Angst davor, alles zu vergessen, vor allem die Erinnerungen an dich und Papa... Wie eure Gesichter aussehen, wie wir früher zusammen waren... Sie fangen an, in meinem Kopf irgendwo im Dunkeln zu verschwinden.\n\nOh Lisa, ich wünschte, ich könnte jetzt dein Gesicht berühren und dich in meinen Armen halten, damit ich unsere wunderbaren Erinnerungen an dich und Papa festhalten kann.\n\nLisa, wir können nicht länger hier bleiben. Wir müssen fliehen!\n\nHör mir zu, Lisa. Unsere Chance zu fliehen ist das nächste Mal, wenn wir zusammen in dieses Labor gehen. Wir tun so, als wären wir beide bewusstlos, und wenn der Mann in den weißen Kittel nicht aufpasst, ist das unsere Chance.\n\nWenn wir draußen sind, lass uns zusammen nach Papa suchen. Okay, Schätzchen? Sei stark, Lisa.\n\n13. November 1967\nJessica Trevor"
+V-ACT,V-AKTE
+VACTTip_title,V-AKTE
+VACTTip,"Notiz des Wissenschaftlers\n\nEs gibt jetzt Hinweise darauf, dass der Körper in einen Ruhezustand übergeht, wenn der Wirt das Bewusstsein verliert. Während dieser Zeit wird das Virus aktiv und verwandelt sich rasch und baut die grundlegende Zusammensetzung des Körpers um.\n\nDer Wirt mutierte schließlich zu einer humanoiden Kreatur. (Wir nennen sie V-AKTEs)\n\nSeine Geschwindigkeit und seine erstaunliche Muskelentwicklung sind besonders bemerkenswert. Nach der Verwandlung wird es agiler und aggressiver.\n\nBereits vier unserer Forscher sind bei dem Versuch, es zu füttern, ums Leben gekommen und haben den Ort in ein sofortiges Blutbad verwandelt. (Seit diesem tragischen und barbarischen Unfall haben wir beschlossen, diese Art 'Scharlachrote Köpfe' zu nennen)\n\nDieses gefährliche und wertvolle Prototyp-Exemplar können wir nicht dort lassen. Wir müssen einen Weg finden, wie wir mit ihm umgehen können. Eine Tötung ist definitiv keine Option.\n\nWir haben schließlich beschlossen, das Exemplar einzufrieren und den Körper im Keller des Hinterhoffriedhofs einzuschließen."
+FAX,FAX
+FAXTip_title,FAX
+FAXTip,"Zu: Abteilung Sanitärtechnik\nAn: Leiter der Sanitärabteilung\nVon: Raccoon Ausschuss für den Katastrophenschutz\n\nDer Inhalt dieses Faxes ist vertraulich und nur für den genannten Adressaten bestimmt. Jegliche Vervielfältigung oder Weitergabe des Inhalts dieses Faxes an Dritte ist vom Absender strengstens untersagt.\n\nNach der Lektüre dieses Faxes muss es sofort vernichtet werden.\n\nWir gehen davon aus, dass der Schaden durch den jüngsten Ausbruch des T-Virus erheblich größer ist als ursprünglich angenommen. Es gibt mehrere Befürchtungen.\n\nErste Befürchtung\nMehr als die Hälfte der Forscher wurde mit dem T-Virus infiziert und ist gestorben. Außerdem wurde berichtet, dass fast alle Überlebenden dieses Unfalls erste Symptome einer T-Virus-Infektion zeigen.\n\nZweite Sorge\nUnser geheimes Sicherheitspatrouillen-Team wurde ebenfalls vollständig ausgelöscht. Daher besteht die Gefahr, dass unsere geheimsten Forschungen an die Öffentlichkeit gelangen. Es muss schnell gehandelt werden, um eine Massenberichterstattung in den Medien zu verhindern.\n\nDritte Sorge\nEs ist sehr wahrscheinlich, dass die meisten Exemplare innerhalb des Geländes frei herumlaufen. Wir gehen davon aus, dass es viele Opfer geben wird.\n\nAuch wenn dies bedauerlich ist, unterstreichen diese Opfer den Erfolg unserer Forschungsergebnisse. Es müssen Maßnahmen ergriffen werden, um zu verhindern, dass unsere Forschungsergebnisse an die Öffentlichkeit gelangen.\nWir vermuten, dass die erste offizielle Intervention von der Staatspolizei und S.T.A.R.S. kommen wird. Wir empfehlen dringend, zuerst Maßnahmen gegen sie zu ergreifen."
+SecurityProtocols,Sicherheitsprotokolle
+SecurityProtocolsTip_title,Sicherheitsprotokolle
+SecurityProtocolsTip,"KELLERGESCHOSS EBENE ZWEI\n\nVisueller Datenraum/ Nur zur Nutzung durch die Abteilung für Spezialforschung. Jeder andere Zugang zum visuellen Datenraum muss mit Keith Arving, Raumverwaltung, abgesprochen werden.\n\n\nKELLERGESCHOSS EBENE DREI\n\nDie Abteilung Gefängnis/Sanitär kontrolliert die Nutzung des Gefängnisses. Mindestens ein beratender Forscher (E. Smith, S. Ross, A. Wesker) muss anwesend sein, wenn die virale Nutzung genehmigt wird.\n\n\nDreifachverriegelungstür/ Der Zugang zum Raum ist auf die einzige Person beschränkt, die das Schloss mit allen Passcodes deaktiviert. Durch den Zugriff auf die exklusiven Ausgangsterminals, die sich in jedem Bereich der leitenden Forscher befinden, wird die Sperre deaktiviert.\n\nKraftraum/ In diesem Raum wird Nitroverbindung als primäre Kraftstoffquelle für Energie verwendet. Der Zugang ist auf die Aufsichtspersonen des Hauptquartiers beschränkt. Diese Einschränkung gilt nicht für beratende Forscher mit Sondergenehmigung.\n\nPasscode-Ausgangsterminals/ Die Benutzung und der Zugang zu den Ausgangsterminals ist auf autorisierte leitende Forscher beschränkt.\n\n\nKELLERGESCHOSS EBENE VIER\n\nBezüglich des Fortschritts vom 'Tyrant' nach der Verabreichung des T-Virus...\n(Unleserlich im Folgenden...)"
+TrainingInformation,[4FC3F7]Trainings Informationen[-]
+TrainingInformationTip_title,[4FC3F7]Trainings Informationen[-]
+TrainingInformationTip,"Deine Trainingsvorteile - mehr Details:\n\nChemieexperte:\nErmöglicht dir, viel mehr Munition mit großer Schießpulvereffizienz herzustellen. Außerdem kannst du unerwünschte Munition abbauen, ohne Ressourcen zu verlieren.\n\nPassive Heilung:\nDu heilst 900 HP pro Stunde, solange du nicht bei voller Gesundheit bist. Sehr gut zum entspannten Durchspielen, schlecht für einen Speedrun.\n\nMedizinisches Wissen:\n35% mehr medizinische Heilung ist perfekt für die Maximierung deiner Heilungsvorräte sowie für die Heilung in der Mitte des Kampfes. Besser für Speedruns als passive Heilung.\n\nMesser-Training:\nVerbessert deine Fähigkeit, das Messer zu benutzen, und ermöglicht es dir, mehr Munition zu sparen, schneller zu töten und nicht so schnell zu erschöpfen.\n\nKardio:\nDu kannst schneller und länger rennen, so dass du schnellen Gegnern entkommen kannst, ohne von hinten getroffen zu werden.\n\nSchmerztoleranz:\nDu bist widerstandsfähiger als die meisten anderen und kannst mehr Treffer überleben, bevor du deinen Verletzungen erliegst."
+Achievements,[4FC3F7]Errungenschaften[-]
+AchievementsTip_title,[4FC3F7]Errungenschaften[-]
+AchievementsTip,"Im Folgenden findest du eine Liste von Erfolgen, die du anstreben kannst, wenn du eine zusätzliche Herausforderung suchst.\n\n[4FC3F7]Klassiker sterben niemals aus[-]\nBesiege das Spiel im klassischen Modus.\n\n[4FC3F7]Samurai 'Jill' Edge[-]\nBesiege das Spiel nur mit dem Survival-Messer als Waffe. \n(Schusswaffen und Wurfgegenstände können nicht verwendet werden.)\n\n[4FC3F7]Meister der Inventarverwaltung[-]\nBesiege das Spiel, ohne jemals Gegenstandskästen zur Aufbewahrung deiner Gegenstände zu verwenden.\n(Dies schließt Schreibmaschinen, die Schmiede und die Werkbank ein. Ausnahme: Du darfst nur die roten Säcke benutzen.\n\n[4FC3F7]Ausbruch verhindert?[-]\nBesiege das Spiel mit mindestens 260 Kills.\n\n[4FC3F7]Schnelles Entkommen[-]\nBesiege das Spiel in unter:\n - D: 2 Stunden 55 Minuten. \n - C: 3 Stunden 35 Minuten.\n - B: 4 Stunden 25 Minuten.\n - A: 5 Stunden 15 Minuten.\n - S: 6 Stunden 5 Minuten. \n - S+: 6 Stunden 55 Minuten.\n\n[4FC3F7]Hautallergien[-]\nBesiege das Spiel, ohne Kräuter oder Erste-Hilfe-Sprays zu benutzen.\n(Passive Heilung ist erlaubt. Du kannst kein Gift heilen)\n\n[4FC3F7]Ich bin gerettet![-]\nFinde die Unendliche Schreibmaschine und speichere dein Spiel so oft du willst!"
+MeleeCombat,[4FC3F7]Nahkampf-Sicherheit[-]
+MeleeCombatTip_title,[4FC3F7]Nahkampf-Sicherheit[-]
+MeleeCombatTip,"Zombies haben eine volle Schmerzresistenz, ein Angriff auf die meisten Zombies führt zu einer 5-sekündigen Gegenangriffsschwelle. Wenn du einen Zombie angreifst, bevor die 5 Sekunden abgelaufen sind, wird die Schwelle für den Gegenangriff um weitere 5 Sekunden erhöht (bis zu 15 Sekunden). Die sicherste Art, mit Zombies im Nahkampf umzugehen, ist es, die Angriffe zu verteilen.\n\nWenn sich ein Zombie in deinem Weg befindet, der keine aktive Gegenangriffsschwelle hat, und du dich an ihm vorbeibewegen willst, kannst du vermeiden, Schaden zu nehmen, indem du den Zombie im Vorbeigehen triffst.\n\nZerstückelung:\nDeine Chance auf Zerstückelung liegt bei 25%, Sprintangriffe und Angriffe mit hoher Ausdauer erhöhen deine Chance auf Zerstückelung zusätzlich."
+Herbs,[4FC3F7]Kräuter: Effizienz und Nachwachsen[-]
+HerbsTip_title,[4FC3F7]Kräuter: Effizienz und Nachwachsen[-]
+HerbsTip,"Eine Mischung aus zwei grünen Kräutern erhöht die Potenz um 25 %.\n(160 + 160 = 320 x 1,25 = 400)\n\nEine Mischung aus drei grünen Kräutern erhöht die Potenz um 50 %.\n(160 + 160 + 160 = 480 x 1. 5 = 720)\n\nEine grüne + rote + blaue Kräutermischung ist die beste Kombination, da sie eine maximale Heilung von 800 bietet, Gift heilt und den Schaden für 90 Sekunden um 30 % verringert, was für den Einsatz in der Mitte des Kampfes ideal ist.\n\nDie Kräuter wachsen nach:\nEs gibt vier grüne Kräuter, ein rotes und ein blaues, die nachwachsen können. Diese „Saatgut“-Töpfe können aufgenommen und drinnen platziert werden, um den Zugang zu erleichtern. Sie werden im Haus wachsen."
+AmmoCrafting,[4FC3F7]Muniherstellung[-]
+AmmoCraftingTip_title,[4FC3F7]Muniherstellung[-]
+AmmoCraftingTip,"Die Basisressourcen für das Handwerk:\n\nKohle:\nVerbrannte Bäume sind die einzige Quelle für Kohle. Wenn du nach draußen gehst, wirst du reichlich davon finden. Vermeide Zombies, wenn du nicht noch mehr Scharlachrote Köpfe haben willst.\n\nNitrat:\nNitrat findet man bei (a) Zombie-Tieren/verrottenden Leichen, (b) Draußen und (c) Treibholz.\n\nBleierz:\ndraußen zwischen den Bäumen und Zombies gibt es Bleierz.\n\nMessing:\nSammel die Heizkörper überall im Herrenhaus auf und schmelze sie in der Schmiede ein, die Schmiede ist irgendwo zu finden."
+Miscellaneous,[4FC3F7]Weitere Informationen[-]
+MiscellaneousTip_title,[4FC3F7]Weitere Informationen[-]
+MiscellaneousTip,"Flüssigkeitsaufnahme: Wenn du in Brand gesetzt wirst, müssen du mit bloßen Händen an einer Wasserquelle trinken.\n\nEinige Blöcke können zerstört werden, andere sind erforderlich, um weiterzukommen, also halte Ausschau nach allem, was verdächtig sein könnte. Geländer im zweiten Stock können zerstört werden, um der Gefahr zu entgehen, indem man eine Etage tiefer springt.\n\nEs gibt fünf Schwerttüren, aber nur vier Schwertschlüssel. Welche lässt man verschlossen?\n\nKlebrige Granaten haften auch an Gegenständen, nicht nur an Blöcken.\n\nWenn es um Bossräume geht, kann man sie nicht verlassen, bevor man den Boss getötet hat. Stelle sicher, dass du bereit bist, bevor du diese Räume betrittst!"
+CrimsonPrevention,[4FC3F7]Scharlachroter Kopf Vorsorge[-]
+CrimsonPreventionTip_title,[4FC3F7]Scharlachroter Kopf Vorsorge[-]
+CrimsonPreventionTip,"Scharlachrote Köpfe können nicht existieren, wenn Zombies nicht getötet werden, also ist es eine Möglichkeit, ungebetene Gäste zu vermeiden, indem man Zombies dort leben lässt, wo es bequem ist. Türen helfen dabei, die Zombies davon abzuhalten, dich einzuholen.\n\nEnthauptung:\nDie beste Chance, den Kopf eines Zombies zu enthaupten, hat man mit einer Handfeuerwaffe mit eingebautem Schalldämpfer (4-fache Chance), vorausgesetzt, man findet sie und wählt sie als eine der drei Optionen für „Militärgüter“. Schrotflintengeschosse sind die nächstbeste Option.\n\nBeine amputieren:\nDie beste Chance, ein Zombie-Bein zu amputieren, ist mit der Schrotflinte, aber es kann ein wenig knifflig sein, lassen mich erklären.\n\nKugeln und Geschosse haben beide eine sehr hohe Chance, funktionieren aber unterschiedlich. \Bei Kugeln: Je weniger HP dein Ziel hat, desto größer ist die Chance, dass du ihm das Bein amputierst.\n\nGeschosse erfordern, dass das Ziel bei voller Gesundheit ist, je weniger HP es hat, desto unwahrscheinlicher ist es, dass du ihm ein Bein amputierst.\n\nWenn du Glück hast, kannst du einen Zombie fast mit deinem Messer töten und dann deine Handfeuerwaffe auf sein Bein richten."
+Quest_Completion_tip_title,Du bist erfolgreich entkommen!
+Completion_desc,Jill Valentine hat es geschafft, aus dem Herrenhaus zu entkommen. Sie ahnt nicht, dass der Albtraum gerade erst begonnen hat!\n\nGlückwunsch!!!\nDu hast den Spencer Mansion Incident erfolgreich abgeschlossen.\n\nIch hoffe, du hattest beim Spielen genauso viel Spaß wie ich bei der Erstellung des Spiels!\n\nFrantic Dan
+Quest_Completion_tip,Jill Valentine hat es geschafft, aus dem Herrenhaus zu entkommen. Sie ahnt nicht, dass der Albtraum gerade erst begonnen hat!\n\nGlückwunsch!!!\nDu hast den Spencer Mansion Incident erfolgreich abgeschlossen.\n\nIch hoffe, du hattest beim Spielen genauso viel Spaß wie ich bei der Erstellung des Spiels!\n\nFrantic Dan
+zombieArlene,JaWoodle's Girl
+zombieMarlene,Misterri
+zombieNurse,Umbrella Chirurgin
+zombieJoe,Glock9's Dealer
+zombieSteve,Draycko
+zombieBusinessMan,Aviose
+zombieBoe,DD1GG
+zombieJanitor,HellsJanitorTV
+zombieMoe,TheOrigamiGuru
+zombieLab,Umbrella Wissenschaftlerin
+zombieDarlene,Lois Griffin
+zombieYo,YubiNashi
+zombieUtilityWorker,"Guns, Nerds, and Steel"
+zombieBiker,Games4Kickz
+zombieLumberjack,JonahBirch
+zombieFemaleFat,Rambunctious Red
+zombieFatHawaiian,Peter Griffin
+zombieMaleHazmat,Umbrella Gefahrguttechniker
+zombieSkateboarder,DoctorBest85
+zombieSoldier,Umbrella Sicherheitsbeamter
+animalZombieDog,Cerberus
+ZombieDog,Cerberus
+animalZombieVulture,Flappy Fuck
+animalSnake,Adder
+animalChicken,Oskurd
+WebSpinner,Netzspinner
+CrimsonHead,Jagz's Opfer
+CrimsonHeadPrototype,Scharlachroter Kopf Prototyp
+CrimsonHeadPrototype2,Scharlachroter Kopf Prototyp
+ForestSpeyer,Waldspeyer
+ForestSpeyer2,Waldspeyer
+Hunter,Jäger
+FailedTestSubject,Durchgefallenes Testobjekt
+Plant42,Pflanze 42
+animalYawntheWolf,Gähnender Wolf
+BlackTigerSpider,Schwarze Tigerspinne
+LisaTrevor,Lisa Trevor
+Tyrant,Tyrann
+SuperTyrant,Super Tyrann
+BoeCrawler,Verkrüppelter DD1GG
+JoeCrawler,Glock9's Verkrüppelter Dealer
+JanitorCrawler,Verkrüppelter HellsJanitorTV
+ArleneCrawler,JaWoodle's Verkrüppeltes Girl
+LabWorkerCrawler,Verkrüppelte Umbrella Wissenschaftlerin
+DarleneCrawler,Verkrüppelte Lois Griffin
+MarleneCrawler,Verkrüppelte Misterri
+YoCrawler,Verkrüppelter YubiNashi
+SteveCrawler,Verkrüppelter Draycko
+BusinessManCrawler,Verkrüppelter Aviose
+BurntCrawler,Jagz's Verkrüppeltes Opfer
+NurseCrawler,Verkrüppelte Umbrella Surgeon
+HazmatCrawler,Verkrüppelter Umbrella Gefahrguttechniker
+SkateboarderCrawler,Verkrüppelter DoctorBest85
+zombieMarleneRadiated,Misterri
+zombieJoeRadiated,Glock9's Dealer
+zombieJanitorRadiated,HellsJanitorTV
+zombieYoRadiated,NotOnly25
+BoeCrimsonHead,Scharlachroter Kopf
+JoeCrimsonHead,Scharlachroter Kopf
+SteveCrimsonHead,Scharlachroter Kopf
+TomCrimsonHead,Scharlachroter Kopf
+YoCrimsonHead,Scharlachroter Kopf
+BusinessManCrimsonHead,Scharlachroter Kopf
+ArleneCrimsonHead,Scharlachroter Kopf
+DarleneCrimsonHead,Scharlachroter Kopf
+MarleneCrimsonHead,Scharlachroter Kopf
+JanitorCrimsonHead,Scharlachroter Kopf
+MoeCrimsonHead,Scharlachroter Kopf
+BikerCrimsonHead,Scharlachroter Kopf
+LumberjackCrimsonHead,Scharlachroter Kopf
+FemaleFatCrimsonHead,Scharlachroter Kopf
+FatHawaiianCrimsonHead,Scharlachroter Kopf
+SkateboarderCrimsonHead,Scharlachroter Kopf
+UtilityWorkerCrimsonHead,Scharlachroter Kopf
+LabCrimsonHead,Scharlachroter Kopf
+NurseCrimsonHead,Scharlachroter Kopf
+MaleHazmatCrimsonHead,Scharlachroter Kopf
+SoldierCrimsonHead,Scharlachroter Kopf
+
+STARSTrainingManual,S.T.A.R.S Trainingshandbuch
+BrawlerTraining,Schlägertraining
+BoomstickTraining,Boomstick Training
+ArmourToleranceTraining,Rüstungstoleranztraining
+SexualTrexTraining,Sexueller Trex-Training
+MachineGunnnerTraining, Maschinengewehrtraining
+PainToleranceTraining,Schmerztoleranztraining
+WellnessTraining,Trainuing fürs Wohlbefinden
+HealingFactorTraining,Heilungsfaktortraining
+PhysicianTraining,Mediziner-Training
+DeepCutsTraining,Tiefe Wunden Training
+GunslingerTraining,Revolverheld-Training
+RunandGunTraining,Laufen und Schießen Training
+FlurryofBlowsTraining,Wirbelsturm Training
+CardioTraining,Kardiotraining
+
+"FinalEscape","Entkomme diesem Albtraum!!"
+"FinalEscapekey","Entkomme diesem Albtraum!!"
+"FinalEscapename","Entkomme diesem Albtraum!!"
+"FinalEscapedesc","Es ist endlich an der Zeit aus diese Hölle zu verschwinden!"
+
+ObjectiveGoto_keyword,Zum Helikopterlandeplatz
+
+
+attStrengthRank01LongDescRE,"Verursachen 250% Kopfschussschaden und haben eine 15% höhere Chance, mit Schrotflinten und Fäusten zu zerstückeln."
+perkDemolitionsExpertRank1LongDescRE,"Du bist jetzt ein eingeweihter Grenadier, sei vorsichtig mit dem Sprengstoff. Erhöhe den Schaden um 17%, die Nachladegeschwindigkeit um 10%, ziele 15% schneller und erhöhe die Chance auf Zerstückelung um 15%."
+perkDemolitionsExpertRank2LongDescRE,"Erhöht den Schaden um 34 %, die Nachladegeschwindigkeit um 20 %, zielt 30 % schneller und erhöht die Chance auf Zerstückelung um 30 %."
+perkDemolitionsExpertRank3LongDescRE,"Du bist jetzt ein Sprengstoffexperte. Erhöhet den Schaden um 51%, erhöhet die Nachladegeschwindigkeit um 30%, ziele 45% schneller, erhöhet die Chance auf Zerstückelung um 45%."
+perkBoomstickRank1LongDescRE,"Verursacht 8,5% mehr Schaden.\n+8% schnellere Feuerrate.\n+8% schnelleres Nachladen.\nBetäubt Gegner für 4 Sekunden."
+perkBoomstickRank2LongDescRE,"Verursacht 17% mehr Schaden.\n16% schnellere Feuerrate.\n+16% schnelleres Nachladen.\nBetäubt Gegner für 6 Sekunden."
+perkBoomstickRank3LongDescRE,"Verursacht 25,5% mehr Schaden.\n24% schnellere Feuerrate.\n+24% schnelleres Nachladen.\nBetäubt Gegner für 8 Sekunden."
+perkBoomstickRank4LongDescRE,"Verursacht 34% mehr Schaden.\n32% schnellere Feuerrate.\n+32% schnelleres Nachladen.\nBetäubt Gegner für 8 Sekunden.\nBeinschüsse verkrüppeln Gegner."
+perkBrawlerNameRE,Schläger (Slots 7 8 9 0)
+perkBrawlerRank1LongDescRE,Verursacht 12,5% mehr Schaden. Blockschaden +50%.\nSchläge gegen den Kopf negieren die Infektionsfähigkeit.
+perkBrawlerRank2LongDescRE,Verursacht 25% mehr Schaden.Blockschaden +100%.\nSchläge gegen den Kopf negieren die Infektionsfähigkeit.\n30% Chance, Gegner mit schweren Angriffen zu betäuben.
+perkBrawlerRank3LongDescRE,Verursacht 37,5% mehr Schaden. Blockschaden +150%.\nSchläge gegen den Kopf negieren die Infektionsfähigkeit.\n30% Chance, Gegner mit schweren Angriffen zu betäuben.\nSchwere Angriffe gegen den Kopf haben eine 30%ige Chance, den Gegner niederzustrecken.
+perkBrawlerRank4LongDescRE,Verursacht 50% mehr Schaden.Blockschaden +200%.\nSchläge gegen den Kopf negieren die Infektionsfähigkeit.\n30% Chance, Gegner mit schweren Angriffen zu betäuben.\nSchwere Angriffe gegen den Kopf haben eine 30%ige Chance, den Gegner niederzusttecken.\n+10% Zerlegungschance.
+perkSexualTrexRank1LongDescRE,Reduziert den Verbrauch von Nahkampf- und Werkzeugausdauer um 6%\nSchwere Angriffe um 10%.\nTötungsschläge gewähren 10 Ausdauer.
+perkSexualTrexRank2LongDescRE,Reduziert den Verbrauch von Nahkampf- und Werkzeugausdauer um 12%\nSchwere Angriffe um 20%.\nTötungsschläge gewähren 15 Ausdauer.
+perkSexualTrexRank3LongDescRE,Reduziert den Verbrauch von Nahkampf- und Werkzeugausdauer um 18%\nSchwere Angriffe um 30%.\nTötungsschläge gewähren 20 Ausdauer.
+perkSexualTrexRank4LongDescRE,Reduziert den Verbrauch von Nahkampf- und Werkzeugausdauer um 24%\nSchwere Angriffe um 40%.\nTötungsschläge gewähren 25 Ausdauer.
+perkHeavyArmorNameRE,Rüstungstoleranz
+perkHeavyArmorRank1LongDescRE,+1 Rüstungswert für jedes getragene Rüstungsteil.\nVerringert Ausdauer- und Bewegungsabzüge um 10%.
+perkHeavyArmorRank2LongDescRE,+2 Rüstungswert für jedes getragene Rüstungsteil.\nVerringert Ausdauer- und Bewegungsabzüge um 20%.
+perkHeavyArmorRank3LongDescRE,+3 Rüstungswert für jedes getragene Rüstungsteil.\nVerringert Ausdauer- und Bewegungsabzüge um 30%.
+perkHeavyArmorRank4LongDescRE,+4 Rüstungswert für jedes getragene Rüstungsteil.\nVerringert Ausdauer- und Bewegungsabzüge um 40%.
+attFortitudeRank01LongDescRE,Verursachen 250% Kopfschussschaden und haben eine Chance von 15%, mit Maschinengewehren zu zerstückeln.
+perkMachineGunnerRank1LongDescRE,"Verursacht 8,5% mehr Schaden.\n8% schnellere Feuerrate.\n8% schnelleres Nachladen.\n8% geringere Projektilstreuung.\nKommando Adrenalin: Jeder Schuss mit automatischen Waffen gibt dir 1 Ausdauer."
+perkMachineGunnerRank2LongDescRE,"Verursacht 17% mehr Schaden.\n16% schnellere Feuerrate.\n16% schnelleres Nachladen.\n16% geringere Projektilstreuung.\nKommando Adrenalin: Jeder Schuss mit automatischen Waffen gibt dir 2 Ausdauer."
+perkMachineGunnerRank3LongDescRE,"Verursacht 25.5% mehr Schaden.\n24% schnellere Feuerrate.\n24% schnelleres Nachladen.\n24% geringere Projektilstreuung.\nKommando Adrenalin: Jeder Schuss mit automatischen Waffen gibt dir 3 Ausdauer."
+perkMachineGunnerRank4LongDescRE,"Verursacht 34% mehr Schaden.\n32% schnellere Feuerrate.\n32% schnelleres Nachladen.\n32% geringere Projektilstreuung.\nKommando Adrenalin: Jeder Schuss mit automatischen Waffen gibt dir 4 Ausdauer."
+perkPainToleranceRank1LongDescRE,7.5% Schadenswiderstand (wird nach Rüstungswert berechnet)\n40% Betäubungswiderstand.
+perkPainToleranceRank2LongDescRE,15% Schadenswiderstand (wird nach Rüstungswert berechnet)\n60% Betäubungswiderstand.
+perkPainToleranceRank3LongDescRE,22.5% Schadenswiderstand (wird nach Rüstungswert berechnet)\n80% Betäubungswiderstand.
+perkPainToleranceRank4LongDescRE,30% Schadenswiderstand (wird nach Rüstungswert berechnet)\n100% Betäubungswiderstand.
+buffPerkCharismaticNatureDescRE,Sie leben einen gesunden Lebensstil! Erhöhte maximale HP.
+perkCharismaticNatureDescRE,Du hast deine maximale HP erhöht.
+perkCharismaticNatureNameRE,Wohlbefinden
+perkCharismaticNatureRank1DescRE,Morgendliches Fitness-Training
+perkCharismaticNatureRank2DescRE,Kein Zucker
+perkCharismaticNatureRank3DescRE,Vitamine
+perkCharismaticNatureRank4DescRE,Nahrhafte Diät
+perkCharismaticNatureRank1LongDescRE,Dein Wohlbefinden bringt dir +10 maximale HP.
+perkCharismaticNatureRank2LongDescRE,Dein Wohlbefinden bringt dir +20 maximale HP.
+perkCharismaticNatureRank3LongDescRE,Dein Wohlbefinden bringt dir +30 maximale HP.
+perkCharismaticNatureRank4LongDescRE,Dein Wohlbefinden bringt dir +40 maximale HP.
+perkHealingFactorRank1LongDescRE,Passive Heilung von 24 HP jede echtzeit Stunde. Kritische Verletzungen heilen 20% schneller.
+perkHealingFactorRank2LongDescRE,Passive Heilung von 36 HP jede echtzeit Stunde. Kritische Verletzungen heilen 50% schneller.
+perkHealingFactorRank3LongDescRE,Passive Heilung von 48 HP jede echtzeit Stunde. Kritische Verletzungen heilen 100% schneller.
+perkPhysicianRank1LongDescRE,Erhöht die medizinische Heilung um 10%.
+perkPhysicianRank2LongDescRE,Erhöht die medizinische Heilung um 20%.
+perkPhysicianRank3LongDescRE,Erhöht die medizinische Heilung um 30%.
+perkPhysicianRank4LongDescRE,Erhöht die medizinische Heilung um 40%.
+attAgilityRank01LongDescRE,"Verursacht 250% Kopfschussschaden und hat eine Chance von 15%, mit Handfeuerwaffen und Messern zu zerstückeln."
+perkGunslingerDescRE,Verbessert deine Fertigkeiten im Umgang mit Handfeuerwaffen und Magnum-Revolvern.
+perkGunslingerRank1LongDescRE,"Verursacht 8,5% mehr Schaden.\n8% schnellere Feuerrate.\n8% schnelleres Nachladen.\n8% geringere Projektilstreuung."
+perkGunslingerRank2LongDescRE,"Verursacht 17% mehr Schaden.\n16% schnellere Feuerrate.\n16% schnelleres Nachladen.\n16% weniger Projektilstreuung.\nKritischer Schaden: 5 aufeinanderfolgende Treffer in kurzer Zeit verursachen kritischen Schaden."
+perkGunslingerRank3LongDescRE,"Verursacht 25,5% mehr Schaden.\n24% schnellere Feuerrate.\n24% schnelleres Nachladen.\n24% weniger Projektilstreuung.\nKritischer Schaden:4 aufeinanderfolgende Treffer in kurzer Zeit verursachen kritischen Schaden."
+perkGunslingerRank4LongDescRE,"Verursacht 34% mehr Schaden.\n32% schnellere Feuerrate.\n32% schnelleres Nachladen.\n32% weniger Projektilstreuung.\nKritischer Schaden:3 aufeinanderfolgende Treffer in kurzer Zeit verursachen kritischen Schaden."
+perkDeepCutsDescRE,Spezialisiere dich auf die Verwendung des Survival-Messers.
+perkDeepCutsRank1LongDescRE,Verursacht 8,5% mehr Schaden.\nErhöht den Blockschaden mit Messern um 50%.
+perkDeepCutsRank2LongDescRE,Verursacht 17% mehr Schaden.\nErhöht den Blockschaden mit Messern um 100%.
+perkDeepCutsRank3LongDescRE,Verursacht 25,5% mehr Schaden.\nErhöht den Blockschaden mit Messern um 150%.
+perkDeepCutsRank4LongDescRE,Verursacht 34% mehr Schaden.\nErhöht den Blockschaden mit Messern um 200%.
+perkRunAndGunRank1LongDescRE,"Die Genauigkeit beim Hüftschuss wurde um 10% verbessert und der Bewegungsnachteil beim Nachladen um 25% reduziert."
+perkRunAndGunRank2LongDescRE,"Die Genauigkeit beim Hüftschuss wurde um 20% verbessert und der Bewegungsnachteil beim Nachladen um 50% reduziert.."
+perkRunAndGunRank3LongDescRE,"Die Genauigkeit beim Hüftschuss wurde um 30% verbessert und der Bewegungsnachteil beim Nachladen um 75% reduziert."
+perkFlurryOfBlowsRank1LongDescRE,Die Geschwindigkeit von Nahkampfangriffen wird um 15% erhöht. Jeder Kill lädt die Ausdauer um 10 Punkte auf.
+perkFlurryOfBlowsRank2LongDescRE,Die Geschwindigkeit von Nahkampfangriffen wird um 30% erhöht. Jeder Kill lädt die Ausdauer um 15 Punkte auf.
+perkFlurryOfBlowsRank3LongDescRE,Die Geschwindigkeit von Nahkampfangriffen wird um 45% erhöht. Jeder Kill lädt die Ausdauer um 20 Punkte auf.
+EscapeTheSpencerMansion_subtitle,ENTKOMME AUS DER SPENCER MANSION
+EscapeTheSpencerMansion_desc,"Durchsuche die Villa nach Bauteilen und baue einen Tragschrauber zusammen. Flüchte dann zum Hubschrauberlandeplatz."
+The_Spencer_Mansion_Incident,Der Spencer Mansion Vorfall
+Enter_The_Survival_Horror,Betrete den Survival-Horror
+The_Story,Die Geschichte
+Build_Gyrocopter,Baue einen Tragschrauber
