@@ -44,7 +44,7 @@ loadingTipRE6,"本家と同じように、ゾンビは痛みを感じません�
 loadingTipRE6_title,ゾンビは痛みを感じない：
 loadingTipRE7,"この破壊的な武器は、足 (貝殻) を簡単に剥がし、頭を吹き飛ばす (ナメクジ) ことができます。"
 loadingTipRE7_title,ポンプショットガン:
-loadingTipRE8,"次の方達に大きな感謝： Mythix,AuroraGiggleFairy, wOOkie nOOkie, RambunctiousRed, HellsJanitorTV, JaxTeller718, KhaineGB, Khelldon, Chikorina, HaidrGna, AvioseVeAvara, Subquake, Zilox, Redbeard, idc12, Pyrokar420, ocbMaurice."
+loadingTipRE8,"次の方達に大きな感謝： Mythix,AuroraGiggleFairy, wOOkie nOOkie, RambunctiousRed, HellsJanitorTV, JaxTeller718, KhaineGB, Khelldon, Chikorina, HaidrGna, AvioseVeAvara, Subquake, Zilox, Redbeard, idc12, Pyrokar420, ocbMaurice, Nordmann."
 loadingTipRE8_title,スペシャルサンクス！
 SpencerMansionSpawnText,"あなたはこれからスペンサー邸での出来事を一人称視点で体験する事になります。\n\nバイオハザードの体験を忠実に保つために、次の点に注意してください。\n1) 所持品は10スロットのみになるので、館内のアイテムボックスをご利用ください。\nこれらのボックスはクラシックなバイオハザード（リアルサバイバルモード）のようにリンクされていないため、アイテムを保管する場所に注意してください。\n2) ジャンプをする事は出来ません。\n3) ほとんどの敵は痛みを感じないため、いつもの戦い方では難しいかもしれません。\n4) 進行状況を保存するにはインクリボンが必要です。 (タイプライターで発見)\n\n[FFC800]より楽しいチャレンジになる用、周囲の音量を上げて、常に音楽を再生することをお勧めします。 照明は明るさを 50% に設定してバランスをとります。[-]\n\n意図したエクスペリエンスを実現するには、無関係な MOD を必ず削除してください。"
 Mod Not Installed Correctly,[FF4F00]Modが正しくインストールされていない[-]
@@ -781,3 +781,9 @@ perkDeepCutsDescRE,ナイフ使用時のダメージ量が上がります。
 "Mission",ミッション
 ObjectiveGoto_keyword,ヘリポートへ向かいましょう！
 "Congratulations!",おめでとうございます！
+EscapeTheSpencerMansion_subtitle,スペンサー邸からの脱出
+EscapeTheSpencerMansion_desc,邸宅から部品をあさってジャイロコプターを組み立てましょう。その後、ヘリポートへ逃げます。
+The_Spencer_Mansion_Incident,スペンサー邸事件
+Enter_The_Survival_Horror,サバイバルホラーの登場
+The_Story,物語
+Build_Gyrocopter,ジャイロコプターを作ろう
