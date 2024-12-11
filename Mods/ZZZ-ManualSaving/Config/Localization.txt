@@ -1,10 +1,10 @@
-Key,English,Japanese
-xuiSaveManual,[4FC3F7]Save Game[-],[4FC3F7]ゲームを保存する[-]
-xuiSavingInProgress,"[ffff40]Saving in progress...[-]","[ffff40]保存中です...[-]"
-xuiGameSaved,"[40ff40]Game saved.[-]","[40ff40]ゲームが保存されました。[-]"
+Key,English,Japanese,German
+xuiSaveManual,[4FC3F7]Save Game[-],[4FC3F7]ゲームを保存する[-],[4FC3F7]Speichern[-]
+xuiSavingInProgress,"[ffff40]Saving in progress...[-]","[ffff40]保存中です...[-]","[ffff40]Wird gespeichert...[-]"
+xuiGameSaved,"[40ff40]Game saved.[-]","[40ff40]ゲームが保存されました。[-]","[40ff40]Spiel gespeichert.[-]"
 potatoOfManualSaving,"[ff00ff]Almighty Potato Of Manual Saving (Test Item)[-]"
-cntCashRegisterInkRibbon,Typewriter,タイプライター
-cntCashRegisterInkRibbon2,Will be restocked in a few minutes!,数分後に再入荷します！
-cntCashRegisterInfiniteInkRibbon,Infinite Typewriter,無限タイプライター
-InkRERibbon,Ink Ribbon,インクリボン
-InkRibbonREdesc,"An important item used to save your progress.\n\nBe sure to save your game before ending your play session.\n\nThese are limited in number, so save your game sparingly.","進行状況を保存するための重要なアイテム。\n\nプレイセッションを終了する前に、必ずゲームを保存してください。\n\nこれらは数に制限があるため、ゲームを慎重に保存してください。"
+cntCashRegisterInkRibbon,Typewriter,タイプライター,Schreibmaschine
+cntCashRegisterInkRibbon2,Will be restocked in a few minutes!,数分後に再入荷します！,Wird in ein paar Minuten wieder verfügbar sein!
+cntCashRegisterInfiniteInkRibbon,Infinite Typewriter,無限タイプライター,Unendliche Schreibmaschine
+InkRERibbon,Ink Ribbon,インクリボン,Farbband
+InkRibbonREdesc,"An important item used to save your progress.\n\nBe sure to save your game before ending your play session.\n\nThese are limited in number, so save your game sparingly.","進行状況を保存するための重要なアイテム。\n\nプレイセッションを終了する前に、必ずゲームを保存してください。\n\nこれらは数に制限があるため、ゲームを慎重に保存してください。","Sehr wichtig, um deinen Fortschritt zu speichern.\n\nSpeicher dein Spiel mit einem Farbband, bevor du das Spiel verlässt.\n\nDie Anzahl ist begrenzt, also sei sparsam."
