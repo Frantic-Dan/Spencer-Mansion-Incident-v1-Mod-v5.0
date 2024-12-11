@@ -4,11 +4,11 @@
 	<!-- Automatically completed quest -->
 	<quest id="SpencerMansionQuest">
 		<property name="group_name_key" value="quest_BasicSurvival"/>
-		<property name="name_key" value="The Spencer Mansion Challenge"/>
-		<property name="subtitle_key" value="Enter The Survival Horror"/>
+		<property name="name_key" value="The_Spencer_Mansion_Incident"/>
+		<property name="subtitle_key" value="Enter_The_Survival_Horror"/>
 		<property name="description_key" value="questStartup_desc"/>
 		<property name="icon" value="ui_game_symbol_map_house"/>
-		<property name="category_key" value="The Story"/>
+		<property name="category_key" value="The_Story"/>
 		<property name="difficulty" value="veryeasy"/>
 		<property name="offer_key" value="questStartup_offer"/>
 		<property name="shareable" value="false"/>
@@ -441,9 +441,9 @@
 	</quest>
 
 	<quest id="Escape">
-		<property name="name_key" value="Build a Gyrocopter"/>
-		<property name="subtitle_key" value="Escape The Spencer Mansion"/>
-		<property name="description_key" value="Scavenge the mansion for parts and put together a gyrocopter. Then escape to the helipad."/>
+		<property name="name_key" value="Build_Gyrocopter"/>
+		<property name="subtitle_key" value="EscapeTheSpencerMansion_subtitle"/>
+		<property name="description_key" value="EscapeTheSpencerMansion_desc"/>
 		<property name="icon" value="ui_game_symbol_gyrocopter"/>
 		<property name="category" value="Mission"/>
 		<property name="difficulty" value="hard"/>
