@@ -529,7 +529,7 @@
 		
 		<action class="SetDayTime" >
 			<property name="day" value="-1" />
-			<property name="hours" value="7" />
+			<property name="hours" value="1" />
 			<property name="minutes" value="1" />
 		</action>	
 	</action_sequence>	
@@ -544,6 +544,12 @@
 		<action class="AddBuff">
 			<property name="phase" value="2" />
 			<property name="buff_name" value="buffDontMove" />
+			<property name="duration" value="300" />
+		</action>
+		
+		<action class="AddBuff">
+			<property name="phase" value="2" />
+			<property name="buff_name" value="buffInvincibilityFrames" />
 			<property name="duration" value="300" />
 		</action>
 		
