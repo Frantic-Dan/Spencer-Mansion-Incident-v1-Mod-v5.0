@@ -887,7 +887,8 @@
 	<property name="UnlockedBy" value="perkClassicMode"/>
 	<property name="CustomIcon" value="ammo9mmBulletBall"/>
 	<property name="DescriptionKey" value="FirstAidSprayBoxDesc"/>
-	<property name="Stacknumber" value="1"/> 
+	<property name="Stacknumber" value="1"/>
+	<property name="Group" value=""/>
 	<property name="EconomicValue" value="0"/>
 	<property class="Action0">
 		<property name="Create_item" value="ammo9mmBulletBallRE"/>
@@ -927,7 +928,8 @@
 	<property name="UnlockedBy" value="perkClassicMode"/>
 	<property name="CustomIcon" value="ammo44MagnumBulletBall"/>
 	<property name="DescriptionKey" value="FirstAidSprayBoxDesc"/>
-	<property name="Stacknumber" value="1"/> 
+	<property name="Stacknumber" value="1"/>
+	<property name="Group" value=""/>
 	<property name="EconomicValue" value="0"/>
 	<property class="Action0">
 		<property name="Create_item" value="ammo44MagnumBulletBallRE"/>
@@ -1006,6 +1008,7 @@
 	<property name="CustomIcon" value="ammoShotgunShell"/>
 	<property name="DescriptionKey" value="FirstAidSprayBoxDesc"/>
 	<property name="Stacknumber" value="1"/>
+	<property name="Group" value=""/>
 	<property name="EconomicValue" value="0"/>
 	<property class="Action0">
 		<property name="Create_item" value="ammoShotgunShellRE"/>
@@ -2030,7 +2033,7 @@
 	<property name="EconomicValue" value="0"/>
 	<property name="DescriptionKey" value="ammoHPGroupDesc"/>
 	<property name="UnlockedBy" value="perkPistolPeteHPAmmo"/>
-	<property name="Group" value="Resources"/>
+	<property name="Group" value="Ammo/Weapons,Ammo"/>
 	<property name="SoundPickup" value="bullets_grab"/>
 	<property name="SoundPlace" value="bullets_place"/>
 	<property class="Action0">
@@ -2091,7 +2094,7 @@
 	<property name="CustomIcon" value="ammo44MagnumBulletHP"/>
 	<property name="DescriptionKey" value="ammoHPGroupDesc"/>
 	<property name="UnlockedBy" value="perkEnforcerHPAmmo"/>
-	<property name="Group" value="Resources"/>
+	<property name="Group" value="Ammo/Weapons,Ammo"/>
 	<property name="SoundPickup" value="bullets_grab"/>
 	<property name="SoundPlace" value="bullets_place"/>
 	<property class="Action0">
@@ -2224,7 +2227,7 @@
 	<property name="Weight" value="0"/>
 	<property name="Stacknumber" value="30"/>
 	<property name="EconomicValue" value="0"/>
-	<property name="Group" value="Resources"/>
+	<property name="Group" value="Ammo/Weapons,Ammo"/>
 	<property name="UnlockedBy" value="perkShotgunMessiahSlugs"/>
 	<property name="SoundPickup" value="shotgunshells_grab"/>
 	<property name="SoundPlace" value="shotgunshells_place"/>
@@ -2577,7 +2580,7 @@
 	<property name="ExplodeOnHit" value="true"/>
 	<property name="StickPercent" value=".5"/>
 	<property name="EconomicValue" value="0"/>
-	<property name="Group" value="Basics"/>
+	<property name="Group" value=""/>
 	<property name="SoundPickup" value="molotov_grab"/>
 	<property name="SoundPlace" value="molotov_place"/>
 	<property class="Action0">
@@ -4416,7 +4419,6 @@
 <item name="FirstAidSpray">
 	<property name="CreativeMode" value="None"/>
 	<property name="Extends" value="medicalBandage" param1="DescriptionKey,DisplayType,Group"/>
-	<property name="Group" value="Science,Medical"/>
 	<property name="EconomicValue" value="0"/>
 	<property name="DescriptionKey" value="FirstAidSprayDesc"/>
 	<property name="Stacknumber" value="1"/>
@@ -4504,7 +4506,8 @@
 	<property name="UnlockedBy" value="perkClassicMode"/>
 	<property name="CustomIcon" value="first-aid-spray"/>
 	<property name="DescriptionKey" value="FirstAidSprayBoxDesc"/>
-	<property name="Stacknumber" value="1"/> 
+	<property name="Stacknumber" value="1"/>
+	<property name="Group" value=""/>
 	<property name="EconomicValue" value="0"/>
 	<property class="Action0">
 		<property name="Create_item" value="FirstAidSpray"/>
@@ -5819,6 +5822,7 @@
 	<property name="Stacknumber" value="1"/>
 	<property name="SellableToTrader" value="false"/>
 	<property name="EconomicValue" value="0"/>
+	<property name="Group" value="Building"/>
 	<property name="Candrop" value="false"/>
 </item>
 
