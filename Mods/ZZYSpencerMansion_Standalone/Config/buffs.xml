@@ -129,7 +129,7 @@
 		</effect_group>
 	</buff>	
 	
-	<buff name="buffImmobalised" hidden="true">
+	<buff name="buffImmobalised" name_key="buffImmobalisedName" description_key="buffImmobalisedDesc" icon="ui_game_symbol_twitch_history" icon_color="155,155,255">
 		<stack_type value="ignore"/>
 		<duration value="0"/>
 
@@ -220,7 +220,7 @@
 		<display_value_format value="time"/>
 
 		<effect_group>
-			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".buffTimeREvertDisplay" operation="set" value="115"/>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".buffTimeREvertDisplay" operation="set" value="5"/>
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$buffTimeREvertDuration" operation="set" value="@.buffTimeREvertDisplay"/>
 			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$buffTimeREvertDuration" operation="subtract" value="1"/>
 			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".buffTimeREvertDisplay" operation="set" value="@$buffTimeREvertDuration"/>
@@ -251,7 +251,7 @@
 		<display_value_format value="time"/>
 
 		<effect_group>
-			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".buffTimeREvertDisplay2" operation="set" value="5"/>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".buffTimeREvertDisplay2" operation="set" value="115"/>
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$buffTimeREvertDuration2" operation="set" value="@.buffTimeREvertDisplay2"/>
 			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$buffTimeREvertDuration2" operation="subtract" value="1"/>
 			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".buffTimeREvertDisplay2" operation="set" value="@$buffTimeREvertDuration2"/>
