@@ -45,7 +45,7 @@
 	<ingredient name="unit_lead" count="1"/>
 </recipe>
 
-<recipe name="ammo9mmBulletBallRE" count="1" craft_time="3" craft_area="workbench" is_trackable="false" craft_exp_gain="0" tags="perkChemistExpert,learnable,workbenchCrafting">
+<!-- <recipe name="ammo9mmBulletBallRE" count="1" craft_time="3" craft_area="workbench" is_trackable="false" craft_exp_gain="0" tags="perkChemistExpert,learnable,workbenchCrafting">
 	<ingredient name="resourceBulletTip" count="1"/>
 	<ingredient name="resourceGunPowder" count="40"/>
 	<ingredient name="resourceBulletCasing" count="1"/>
@@ -61,9 +61,9 @@
 	<effect_group>
 		<passive_effect name="CraftingIngredientCount" level="1" operation="base_add" value="-13" tags="resourceGunPowder"/>
 	</effect_group>	
-</recipe>
+</recipe> -->
 
-<recipe name="ammo44MagnumBulletBallRE" count="1" craft_time="3" craft_area="workbench" is_trackable="false" craft_exp_gain="0" tags="perkChemistExpert,learnable,workbenchCrafting">
+<!-- <recipe name="ammo44MagnumBulletBallRE" count="1" craft_time="3" craft_area="workbench" is_trackable="false" craft_exp_gain="0" tags="perkChemistExpert,learnable,workbenchCrafting">
 	<ingredient name="resourceBulletTip" count="4"/>
 	<ingredient name="resourceGunPowder" count="160"/>
 	<ingredient name="resourceBulletCasing" count="4"/>
@@ -79,7 +79,7 @@
 	<effect_group>
 		<passive_effect name="CraftingIngredientCount" level="1" operation="base_add" value="-52" tags="resourceGunPowder"/>
 	</effect_group>	
-</recipe>
+</recipe> -->
 
 <!-- <recipe name="ammo762mmBulletBallRE" count="1" craft_time="3" craft_area="workbench" is_trackable="false" craft_exp_gain="0" tags="perkChemistExpert,workbenchCrafting">
 	<ingredient name="resourceBulletTip" count="1"/>
@@ -99,7 +99,7 @@
 	</effect_group>	
 </recipe> -->
 
-<recipe name="ammoShotgunShellRE" count="1" craft_time="3" craft_area="workbench" is_trackable="false" craft_exp_gain="0" tags="perkChemistExpert,learnable,workbenchCrafting">
+<!-- <recipe name="ammoShotgunShellRE" count="1" craft_time="3" craft_area="workbench" is_trackable="false" craft_exp_gain="0" tags="perkChemistExpert,learnable,workbenchCrafting">
 	<ingredient name="resourceBuckshot" count="1"/>
 	<ingredient name="resourceGunPowder" count="120"/>
 	<ingredient name="resourcePaper" count="1"/>
@@ -115,7 +115,7 @@
 	<effect_group>
 		<passive_effect name="CraftingIngredientCount" level="1" operation="base_add" value="-39" tags="resourceGunPowder"/>
 	</effect_group>	
-</recipe>
+</recipe> -->
 
 <recipe name="MixedGreenHerb" count="1" craft_exp_gain="0" is_trackable="false" craft_time="1">
 	<ingredient name="Green_Herb" count="2"/>
@@ -124,6 +124,10 @@
 <recipe name="Mixed3GreenHerbs" count="1" craft_exp_gain="0" is_trackable="false" craft_time="1">
 	<ingredient name="Green_Herb" count="1"/>
 	<ingredient name="MixedGreenHerb" count="1"/>
+</recipe>
+
+<recipe name="Mixed3GreenHerbs" count="1" craft_exp_gain="0" is_trackable="false" craft_time="1">
+	<ingredient name="Green_Herb" count="3"/>
 </recipe>
 
 <recipe name="MixedGreen+BlueHerb" count="1" craft_exp_gain="0" is_trackable="false" craft_time="1">
@@ -154,6 +158,12 @@
 <recipe name="MixedGreen+Red+BlueHerb" count="1" craft_exp_gain="0" is_trackable="false" craft_time="1">
 	<ingredient name="Red_Herb" count="1"/>
 	<ingredient name="MixedGreen+BlueHerb" count="1"/>
+</recipe>
+
+<recipe name="MixedGreen+Red+BlueHerb" count="1" craft_exp_gain="0" is_trackable="false" craft_time="1">
+	<ingredient name="Green_Herb" count="1"/>
+	<ingredient name="Red_Herb" count="1"/>
+	<ingredient name="Blue_Herb" count="1"/>
 </recipe>
 
 <!-- <recipe name="modGunFlashlight" count="1" craft_exp_gain="0" is_trackable="false">
