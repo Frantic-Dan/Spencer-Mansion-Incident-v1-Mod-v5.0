@@ -1053,6 +1053,7 @@
 	<property name="SoundAlert" value="Enemies/Scout_Zombie/zombiefemalescoutalert"/>
 	<property name="SoundAttack" value="Enemies/Base_Zombie_Female/zombiefemalescoutattack"/>
 	<property name="SoundSense" value="Enemies/Base_Zombie_Female/zombiefemalescoutsense"/>
+	<property name="SoundHurt" value=""/>
 	<property name="WalkType" value="2"/>
 	<property name="HandItem" value="meleeHandLisaTrevor"/>
 	<property name="ExperienceGain" value="0"/><!-- XP grunt feral -->
