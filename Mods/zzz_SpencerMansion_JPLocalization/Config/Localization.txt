@@ -320,7 +320,7 @@ InsertMoonCrest,入る月の紋章
 InsertStarCrest,入る星の紋章
 InsertSunCrest,入る太陽の紋章
 InsertBrokenShotgun,壊れたショットガンを挿入する
-"Plant42'sRoots",プラント42の根
+"Plant42'sRoots",プラント42の根 - {0}
 "Plant42'sPoisonedRootsHittoDestroy",毒を受けたプラント42の根(叩いて破壊)
 "MineshaftHatchControlInsertCylinderShaft",マインシャフトハッチコントロール (シリンダーシャフトを入れる)
 "MineshaftHatchControl",マインシャフトハッチコントロール
@@ -787,3 +787,6 @@ The_Spencer_Mansion_Incident,スペンサー邸事件
 Enter_The_Survival_Horror,サバイバルホラーの登場
 The_Story,物語
 Build_Gyrocopter,ジャイロコプターを作ろう
+H2O,H2O - [ [action:local:Secondary] ]
+UMB-No3,UMB-No3 - [ [action:local:Secondary] ]
+Yellow-6,Yellow-6 - [ [action:local:Secondary] ]
