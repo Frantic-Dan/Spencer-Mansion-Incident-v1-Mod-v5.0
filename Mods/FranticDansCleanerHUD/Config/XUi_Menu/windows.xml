@@ -41,9 +41,9 @@
 	<set xpath="/windows/window[@name='newContinueGame']/rect[2]/rect[2]/rect[1]/grid[@pos='6,-77']//gameoption[@name='GameDifficulty']/@title">goDifficultyRE</set>
 	<set xpath="/windows/window[@name='newContinueGame']/rect[2]/rect[2]/rect[1]/grid[@pos='6,-77']//gameoption[@name='GameDifficulty']/@display_names">goDifficulty1RE,goDifficulty2RE,goDifficulty3RE,goDifficulty4RE,goDifficulty5RE,goDifficulty6RE</set>
 	<set xpath="/windows/window[@name='newContinueGame']/rect[2]/rect[2]/rect[1]/grid[@pos='6,-77']//gameoption[@name='DayNightLength']/@title">goDayLengthRE</set>
-	<set xpath="/windows/window[@name='newContinueGame']/rect[2]/rect[2]/rect[1]/grid[@pos='6,-77']//gameoption[@name='DayNightLength']/@values">120</set>
+	<set xpath="/windows/window[@name='newContinueGame']/rect[2]/rect[2]/rect[1]/grid[@pos='6,-77']//gameoption[@name='DayNightLength']/@values">60</set>
 	<set xpath="/windows/window[@name='newContinueGame']/rect[2]/rect[2]/rect[1]/grid[@pos='6,-77']//gameoption[@name='DayLightLength']/@title">goDayLightLengthRE</set>
-	<set xpath="/windows/window[@name='newContinueGame']/rect[2]/rect[2]/rect[1]/grid[@pos='6,-77']//gameoption[@name='DayLightLength']/@values">0</set>
+	<set xpath="/windows/window[@name='newContinueGame']/rect[2]/rect[2]/rect[1]/grid[@pos='6,-77']//gameoption[@name='DayLightLength']/@values">18</set>
 	<set xpath="/windows/window[@name='newContinueGame']/rect[2]/rect[2]/rect[1]/grid[@pos='6,-77']//gameoption[@name='ServerEnabled']/@display_names">goServerEnabledOff</set>
 	<!-- <remove xpath="/windows/window[@name='newContinueGame']/rect[2]/rect[2]/rect[1]/grid[@pos='6,-77']//gameoption[@name='Region']"/> -->
 	<!-- <remove xpath="/windows/window[@name='newContinueGame']/rect[2]/rect[2]/rect[1]/grid[@pos='6,-77']//gameoption[@name='ServerVisibility']"/> -->
@@ -52,6 +52,11 @@
 	<set xpath="/windows/window[@name='newContinueGame']/rect[2]/rect[2]/rect[1]/grid[@pos='6,-77']//gameoption[@name='ServerMaxPlayerCount']/@values">1</set>/>
 	<remove xpath="/windows/window[@name='newContinueGame']/rect[2]/rect[2]/rect[1]/grid[@pos='6,-77']//gameoption[@name='DayNightLength']"/>
 	<remove xpath="/windows/window[@name='newContinueGame']/rect[2]/rect[2]/rect[1]/grid[@pos='6,-77']//gameoption[@name='DayLightLength']"/>
+	<remove xpath="/windows/window[@name='newContinueGame']/rect[2]/rect[2]/rect[1]/grid[@pos='6,-77']//gameoption[@name='ServerEnabled']"/>
+	<remove xpath="/windows/window[@name='newContinueGame']/rect[2]/rect[2]/rect[1]/grid[@pos='6,-77']//gameoption[@name='Region']"/>
+	<remove xpath="/windows/window[@name='newContinueGame']/rect[2]/rect[2]/rect[1]/grid[@pos='6,-77']//gameoption[@name='ServerVisibility']"/>
+	<remove xpath="/windows/window[@name='newContinueGame']/rect[2]/rect[2]/rect[1]/grid[@pos='6,-77']//gameoption[@name='ServerPassword']"/>
+	<remove xpath="/windows/window[@name='newContinueGame']/rect[2]/rect[2]/rect[1]/grid[@pos='6,-77']//gameoption[@name='ServerMaxPlayerCount']"/>
 	
 	
 	
@@ -113,14 +118,41 @@
 	<remove xpath="/windows/window[@name='newContinueGame']/rect[2]/rect[2]/rect[@tab_key='xuiGameSettingsAdvanced']"/>
 	<remove xpath="/windows/window[@name='newContinueGame']/rect[2]/rect[2]/rect[@tab_key='xuiGameSettingsMultiplayer']"/>
 	
+	<insertbefore xpath="/windows/window[@name='newContinueGame']/rect[2]/rect[2]/rect[1]/grid[@pos='6,-77']//gameoption[@name='GameDifficulty']">
+	<rect/><rect/><rect/>
+	</insertbefore>
+	
 	<insertafter xpath="/windows/window[@name='newContinueGame']/rect[2]/rect[2]/rect[1]/grid[@pos='6,-77']//gameoption[@name='GameDifficulty']">
+		<rect/><rect/>
 		<gameoption name="ZombieMoveNight" title="goZombieMoveNightRE" value_wrap="false" value_type="int" values="" display_names="goZMWalk,goZMJog,goZMRun,goZMSprint" value_localization_prefix="" />
 		<!-- <gameoption name="BloodMoonFrequency" title="goBloodMoonFrequencyRE" value_wrap="false" value_type="int" values="0" display_names="goDisabled" value_localization_prefix="goDay" /> -->
 		<!-- <gameoption name="LootRespawnDays" title="goLootRespawnDaysRE" value_wrap="false" value_type="int" values="-1" display_names="goDisabled" value_localization_prefix="goLootRespawnDaysValue" /> -->
 		<!-- <gameoption name="BloodMoonRange" title="goBloodMoonRange" value_wrap="false" value_type="int" values="0" display_names="" value_localization_prefix="goDay" /> -->
-		<rect/><rect/><rect/><rect/><rect/><rect/><rect/><rect/><rect/><rect/><rect/><rect/><rect/><rect/><rect/><rect/>
-		<rect/><rect/><rect/><rect/><rect/><rect/><rect/><rect/><rect/><rect/><rect/><rect/><rect/><rect/><rect/><rect/>
+		<rect/><rect/><rect/><rect/><rect/><rect/><rect/><rect/><rect/><rect/><rect/><rect/>
+		<rect/><rect/><rect/><rect/><rect/><rect/><rect/><rect/><rect/><rect/><rect/><rect/>
+		<rect/><rect/><rect/><rect/><rect/><rect/><rect/><rect/><rect/><rect/><rect/><rect/>
+		<gameoption name="ServerEnabled" title="goServerEnabled" value_wrap="false" value_type="bool" values="" display_names="goServerEnabledOff,goServerEnabledOn" value_localization_prefix="" />
+		<gameoption name="Region" title="goRegion" value_wrap="true" value_type="string" values="NorthAmericaEast,NorthAmericaWest,CentralAmerica,SouthAmerica,Europe,Russia,Asia,MiddleEast,Africa,Oceania" display_names="" value_localization_prefix="goRegionName" has_default="false" always_show="true" />
+		<gameoption name="ServerVisibility" title="goServerVisibility" value_wrap="false" value_type="int" values="" display_names="goServerVisibility0,goServerVisibility1,goServerVisibility2" value_localization_prefix="" />
+		<gameoption name="ServerPassword" title="goPassword" value_wrap="false" value_type="string" values="" display_names="" value_localization_prefix="" is_textinput="true" password_field="true" character_limit="30" />
+		<gameoption name="ServerMaxPlayerCount" title="goMaxPlayers" value_wrap="false" value_type="int" values="2, 4, 8, 16" display_names="" value_localization_prefix="goPlayer" platform="!PS5,!XBOX_S,!XBOX_X"/>
+		<gameoption name="ServerMaxPlayerCount" title="goMaxPlayers" value_wrap="false" value_type="int" values="2, 3, 4" values_enforced="true" display_names="" value_localization_prefix="goPlayer" platform="PS5,XBOX_X"/>
+		<gameoption name="ServerMaxPlayerCount" title="goMaxPlayers" value_wrap="false" value_type="int" values="2" values_enforced="true" display_names="" value_localization_prefix="goPlayer" platform="XBOX_S"/>
 		<gameoption name="ServerPort" title="goPort" value_wrap="false" value_type="int" values="" display_names="" value_localization_prefix="" is_textinput="true" character_limit="5"/>
+		<gameoption name="LootRespawnDays" title="goLootRespawnDays" value_wrap="false" value_type="int" values="-1,1" display_names="goDisabled" value_localization_prefix="goLootRespawnDaysValue" />
+		<gameoption name="DeathPenalty" title="goDeathPenalty" value_wrap="false" value_type="int" values="" display_names="goNone" value_localization_prefix="" />
+		<gameoption name="DropOnDeath" title="goDropOnDeath" value_wrap="false" value_type="int" values="" display_names="goToolbelt" value_localization_prefix="" />
+		<gameoption name="XPMultiplier" title="goXPMultiplier" value_wrap="false" value_type="int" values="0" display_names="" value_localization_prefix="goXPMultiplierValue" />
+		<gameoption name="ZombieFeralSense" title="goZombieFeralSense" value_wrap="false" value_type="int" values="" display_names="goOff" value_localization_prefix="" />
+		<gameoption name="BlockDamagePlayer" title="goBlockDamagePlayer" value_wrap="false" value_type="int" values="100" display_names="" value_localization_prefix="goBlockDamageValue" />
+		<gameoption name="BlockDamageAI" title="goBlockDamageAI" value_wrap="false" value_type="int" values="100" display_names="" value_localization_prefix="goBlockDamageValue" />
+		<gameoption name="LootAbundance" title="goLootAbundance" value_wrap="false" value_type="int" values="100" display_names="" value_localization_prefix="goLootAbundanceValue" />
+		<gameoption name="EnemySpawnMode" title="goEnemySpawn" value_wrap="false" value_type="bool" values="" display_names="" value_localization_prefix="" />
+		<gameoption name="BuildCreate" title="goBuildCreate" value_wrap="false" value_type="bool" values="" display_names="" value_localization_prefix="" platform="!PS5,!XBOX"/>
+		<gameoption name="BuildCreate" title="goBuildCreate" value_wrap="false" value_type="bool" values="" display_names="" value_localization_prefix="" tooltip_key="goBuildCreateDescPS5" platform="PS5" />
+		<gameoption name="BuildCreate" title="goBuildCreate" value_wrap="false" value_type="bool" values="" display_names="" value_localization_prefix="" tooltip_key="goBuildCreateDescXBOX" platform="XBOX" />
+		<gameoption name="DayNightLength" title="goDayLength" value_wrap="false" value_type="int" values="60" display_names="" value_localization_prefix="goMinute" />
+		<gameoption name="DayLightLength" title="goDayLightLength" value_wrap="false" value_type="int" values="18" display_names="" value_localization_prefix="goDayLightLengthValue" />
 	</insertafter>
 	
 	<set xpath="/windows/window[@name='newContinueGame']/rect[3]//simplebutton[@name='btnDefaults']/@pos">960, -3000</set>
