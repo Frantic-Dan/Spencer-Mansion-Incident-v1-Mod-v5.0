@@ -40,7 +40,7 @@ loadingTipRE6,"Genau wie in Resident Evil, also zucken sie nicht einmal, wenn si
 loadingTipRE6_title,Zombies fühlen keinen Schmerz:
 loadingTipRE7,"Diese starke Waffe kann leicht Beine abtrennen (Kugeln) und Köpfe zum platzen bringen (Geschosse)."
 loadingTipRE7_title,Die Schrottflite:
-loadingTipRE8,"Ein großes Dankeschön an die folgenden Personen: Mythix, AuroraGiggleFairy, w00kie n00kie, RambunctiousRed, HellsJanitorTV, JaxTeller718, KhaineGB, Khelldon, Chikorina, HaidrGna, AvioseVeAvara, Subquake, Zilox, Redbeard, idc12, Pyrokar420, ocbMaurice, Nordmann."
+loadingTipRE8,"Ein großes Dankeschön an die folgenden Personen: Mythix, AuroraGiggleFairy, w00kie n00kie, RambunctiousRed, HellsJanitorTV, JaxTeller718, KhaineGB, Khelldon, Chikorina, HaidrGna, AvioseVeAvara, Subquake, Zilox, Redbeard, idc12, Pyrokar420, ocbMaurice, NORDMANN."
 loadingTipRE8_title,Besonderen Dank!
 SpencerMansionSpawnText,"Du wirst den Vorfall in der Spencer-Manison aus der Ich-Perspektive erleben.\n\nUm das Erlebnis von Resident Evil beizubehalten, beachte bitte die folgenden Punkte.\n1) Du hast einen begrenzten Inventarplatz von 10 Slots. Es gibt Lagerkisten, in denen du deine Gegenstände aufbewahren kannst. Diese Kisten sind nicht wie im klassischen Resident Evil (Real Survival-Modus) miteinander verbunden, also achte darauf, wo du deine Gegenstände aufbewahrst.\n2) Du kannst nicht springen.\n3) Die meisten Feinde empfinden keinen Schmerz, also wird der Kampf gegen sie anders sein,\nals du es gewohnt bist.\n4) Farbbänder werden benötigt, um deinen Fortschritt zu sichern! (Zu finden in den Schreibmaschinen)\n\n[FFC800]Für ein intensives Erlebnis empfehle ich, die Lautstärke der Umgebungsgeräusche und der Musik auf Max. zu stellen. Die Beleuchtung ist so abgestimmt, dass die Helligkeit auf 50 % eingestellt ist.[-]\n\nUm die gewünschte Erfahrung zu machen, solltest du alle anderen Mods entfernen."
 Mod Not Installed Correctly,[FF4F00]Mod wurde nicht korrekt installiert[-]
@@ -315,7 +315,7 @@ InsertMoonCrest,Mond-Wappen einsetzen
 InsertStarCrest,Stern-Wappen einsetzen 
 InsertSunCrest,Sonnen-Wappen einsetzen
 InsertBrokenShotgun,Kaputte Schrotflinte ablegen
-Plant42'sRoots,42's Pflanzenwurzeln
+Plant42'sRoots,42's Pflanzenwurzeln - {0}
 Plant42'sPoisonedRootsHittoDestroy,Vergiftete 42's Pflanzenwurzeln\n(Schlagen zum Aufheben)
 MineshaftHatchControlInsertCylinderShaft,Verschlossen
 MineshaftHatchControl,Kontrolle der Minenschachtluke
@@ -767,8 +767,9 @@ The_Spencer_Mansion_Incident,Der Spencer Mansion Vorfall
 Enter_The_Survival_Horror,Betrete den Survival-Horror
 The_Story,Die Geschichte
 Build_Gyrocopter,Baue einen Tragschrauber
-UMB-No3,UMB-Nr.3
-Yellow-6,Gelb 6
+H2O,H2O - [ [action:local:Secondary] ]
+UMB-No3,UMB-Nr.3 - [ [action:local:Secondary] ]
+Yellow-6,Gelb 6 - [ [action:local:Secondary] ]
 Plant42Loot,Pflanze-42-Loot 
 ZombieDogLoot,Zombiehund-Loot
 ForestLoot,Forest-Loot
@@ -776,3 +777,5 @@ PrototypeLoot,Prototyp-Loot
 YawnLoot,Yawn-Loot
 BlackTigerLoot,Schwarze Tigerspinne-Loot
 TyrantLoot,Tyrann-Loot
+buffImmobalisedName,Immobilisiert
+buffImmobalisedDesc,Lesen Sie zuerst Ihre Schulungsbücher.
