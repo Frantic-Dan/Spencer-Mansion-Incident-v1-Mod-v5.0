@@ -40,7 +40,7 @@ loadingTipRE6,"Zombies don't feel pain, just like in Resident Evil, so they won'
 loadingTipRE6_title,Zombies Feel No Pain:
 loadingTipRE7,"This devastating weapon can easily take off legs (Shells) and blow off heads (Slugs)."
 loadingTipRE7_title,The Pump Shotgun:
-loadingTipRE8,"A huge thank you to the following people: Mythix, AuroraGiggleFairy, w00kie n00kie, RambunctiousRed, HellsJanitorTV, JaxTeller718, KhaineGB, Khelldon, Chikorina, HaidrGna, AvioseVeAvara, Subquake, Zilox, Redbeard, idc12, Pyrokar420, ocbMaurice, Nordmann."
+loadingTipRE8,"A huge thank you to the following people: Mythix, AuroraGiggleFairy, w00kie n00kie, RambunctiousRed, HellsJanitorTV, JaxTeller718, KhaineGB, Khelldon, Chikorina, HaidrGna, AvioseVeAvara, Subquake, Zilox, Redbeard, idc12, Pyrokar420, ocbMaurice, NORDMANN."
 loadingTipRE8_title,Special Thanks!
 SpencerMansionSpawnText,"You're about to experience the Spencer Mansion Incident in a first person perspective.\n\nTo keep the experience true to Resident Evil, please note the following.\n1) You have limited inventory space of 10 slots. There are Item Storage Boxes to store your items. These boxes are not linked like in classic Resident Evil (Real Survival mode) so be mindful of where you store your items.\n2) You cannot jump.\n3) Most enemies don't feel pain, so fighting them will be different to what you're used to.\n4) Ink Ribbons are needed to save your progress! (Found in typewriters)\n\n[FFC800]For an immersive experience, I'd recommend turning up your ambient sound volume and your music to play all the time. The lighting is balanced to have brightness set to 50%.[-]\n\nFor the intended experience, be sure to remove any non-related mods."
 Mod Not Installed Correctly,[FF4F00]Mod Not Installed Correctly[-]
@@ -315,7 +315,7 @@ InsertMoonCrest,Insert Moon Crest
 InsertStarCrest,Insert Star Crest
 InsertSunCrest,Insert Sun Crest
 InsertBrokenShotgun,Insert Broken Shotgun
-Plant42'sRoots,Plant 42's Roots
+Plant42'sRoots,Plant 42's Roots - {0}
 Plant42'sPoisonedRootsHittoDestroy,Plant 42's Poisoned Roots\n(Hit to Destroy)
 MineshaftHatchControlInsertCylinderShaft,Locked
 MineshaftHatchControl,Mineshaft Hatch Control
@@ -767,3 +767,15 @@ The_Spencer_Mansion_Incident,The Spencer Mansion Incident
 Enter_The_Survival_Horror,Enter The Survival Horror
 The_Story,The Story
 Build_Gyrocopter,Build A Gyrocopter
+Plant42Loot,Plant 42 Loot 
+ZombieDogLoot,Cerberus Loot
+ForestLoot,Forest Speyer Loot
+PrototypeLoot,Prototype Loot
+YawnLoot,Yawn Loot
+BlackTigerLoot,Black Tiger Loot
+TyrantLoot,Tyrant Loot
+buffImmobalisedName,Immobalised
+buffImmobalisedDesc,Read your training books first.
+H2O,H2O - [ [action:local:Secondary] ]
+UMB-No3,UMB-No3 - [ [action:local:Secondary] ]
+Yellow-6,Yellow-6 - [ [action:local:Secondary] ]
