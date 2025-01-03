@@ -5551,6 +5551,7 @@
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="medRegHealthIncSpeed" operation="set" value="10"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveBuff" buff="buffImmobalised"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffImmobalisedImmune"/>
 	</effect_group>		
 </item>
 
@@ -5584,6 +5585,7 @@
 	<effect_group tiered="false" >
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="perkPassiveHealing" level="1"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveBuff" buff="buffImmobalised"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffImmobalisedImmune"/>
 	</effect_group>	
 </item>
 
@@ -5617,6 +5619,7 @@
 	<effect_group tiered="false" >
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="perkPhysician" level="1"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveBuff" buff="buffImmobalised"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffImmobalisedImmune"/>
 	</effect_group>	
 </item>
 
@@ -5649,6 +5652,7 @@
 	<effect_group tiered="false" >
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="perkKnifeTrained" level="1"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveBuff" buff="buffImmobalised"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffImmobalisedImmune"/>
 	</effect_group>
 </item>
 
@@ -5681,6 +5685,7 @@
 	<effect_group tiered="false" >
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="perkChemistExpert" level="1"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveBuff" buff="buffImmobalised"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffImmobalisedImmune"/>
 	</effect_group>
 </item>
 
@@ -5714,6 +5719,7 @@
 	<effect_group tiered="false" >
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="perkCardio" level="1"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveBuff" buff="buffImmobalised"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffImmobalisedImmune"/>
 	</effect_group>
 </item>
 
@@ -5750,6 +5756,7 @@
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="medRegHealthIncSpeed" operation="set" value="10"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveBuff" buff="buffImmobalised"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffImmobalisedImmune"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="CallGameEvent" event="EventClassicModeJill"/>
 	</effect_group>	
 </item>
@@ -5789,6 +5796,7 @@
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffClassicChris"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveBuff" buff="buffImmobalised"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffImmobalisedImmune"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="CallGameEvent" event="EventClassicModeChris"/>
 	</effect_group>
 </item>
