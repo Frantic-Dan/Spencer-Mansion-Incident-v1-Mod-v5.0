@@ -171,6 +171,15 @@
 		</effect_group>
 	</buff>
 	
+	<buff name="buffImmobalisedImmune" hidden="true">
+		<stack_type value="ignore"/>
+		<duration value="0"/>
+
+		<effect_group>
+			<passive_effect name="BuffResistance" operation="base_set" value="100" tags="buffImmobalised"/>
+		</effect_group>
+	</buff>
+	
 	<buff name="buffExplosionTrigger" hidden="true">
         <stack_type value="ignore"/>
         <duration value="0"/>
