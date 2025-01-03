@@ -1509,8 +1509,10 @@
 	<property name="CreativeMode" value="None"/>
 	<!-- Class -->
 	<property name="Class" value="Door"/>
-	<property name="OpenSound" value="door_wood_open"/>
-	<property name="CloseSound" value="door_wood_close"/>
+	<property name="OpenSound" value="door_new_ext_double_open"/>
+	<property name="CloseSound" value="door_new_ext_double_close"/>
+	<!-- <property name="OpenSound" value="door_wood_open"/>
+	<property name="CloseSound" value="door_wood_close"/> -->
 	<property name="IndexName" value="TraderOnOff"/>
 	<!-- UI_Info -->
 	<property name="CustomIconTint" value="E2DED3"/>
@@ -1590,8 +1592,10 @@
 	<property name="CreativeMode" value="None"/>
 	<!-- Class -->
 	<property name="Class" value="Door"/>
-	<property name="OpenSound" value="door_wood_open"/>
-	<property name="CloseSound" value="door_wood_close"/>
+	<property name="OpenSound" value="door_old_ext_double_open"/>
+	<property name="CloseSound" value="door_old_ext_double_close"/>
+	<!-- <property name="OpenSound" value="door_wood_open"/>
+	<property name="CloseSound" value="door_wood_close"/> -->
 	<property name="IndexName" value="TraderOnOff"/>
 	<!-- UI_Info -->
 	<property name="CustomIconTint" value="E2DED3"/>
@@ -2116,8 +2120,10 @@
 	<property name="CreativeMode" value="None"/>
 	<!-- Class -->
 	<property name="Class" value="Door"/>
-	<property name="OpenSound" value="door_wood_open"/>
-	<property name="CloseSound" value="door_wood_close"/>
+	<property name="OpenSound" value="door_new_ext_single_open"/>
+	<property name="CloseSound" value="door_new_ext_single_close"/>
+	<!-- <property name="OpenSound" value="door_wood_open"/>
+	<property name="CloseSound" value="door_wood_close"/> -->
 	<property name="IndexName" value="TraderOnOff"/>
 	<!-- UI_Info -->
 	<property name="CustomIconTint" value="E2DED3"/>
@@ -2196,8 +2202,10 @@
 	<property name="CreativeMode" value="None"/>
 	<!-- Class -->
 	<property name="Class" value="Door"/>
-	<property name="OpenSound" value="door_wood_open"/>
-	<property name="CloseSound" value="door_wood_close"/>
+	<property name="OpenSound" value="door_new_int_single_open"/>
+	<property name="CloseSound" value="door_new_int_single_close"/>
+	<!-- <property name="OpenSound" value="door_wood_open"/>
+	<property name="CloseSound" value="door_wood_close"/> -->
 	<property name="IndexName" value="TraderOnOff"/>
 	<!-- UI_Info -->
 	<property name="CustomIconTint" value="E2DED3"/>
@@ -2395,8 +2403,10 @@
 	<property name="CreativeMode" value="None"/>
 	<!-- Class -->
 	<property name="Class" value="Door"/>
-	<property name="OpenSound" value="door_wood_open"/>
-	<property name="CloseSound" value="door_wood_close"/>
+	<property name="OpenSound" value="door_old_ext_single_open"/>
+	<property name="CloseSound" value="door_old_ext_single_close"/>
+	<!-- <property name="OpenSound" value="door_wood_open"/>
+	<property name="CloseSound" value="door_wood_close"/> -->
 	<property name="IndexName" value="TraderOnOff"/>
 	<!-- UI_Info -->
 	<property name="CustomIconTint" value="B2AFA5"/>
@@ -2557,8 +2567,10 @@
 	<property name="CreativeMode" value="None"/>
 	<!-- Class -->
 	<property name="Class" value="Door"/>
-	<property name="OpenSound" value="door_wood_open"/>
-	<property name="CloseSound" value="door_wood_close"/>
+	<property name="OpenSound" value="door_old_int_single_open"/>
+	<property name="CloseSound" value="door_old_int_single_close"/>
+	<!-- <property name="OpenSound" value="door_wood_open"/>
+	<property name="CloseSound" value="door_wood_close"/> -->
 	<property name="IndexName" value="TraderOnOff"/>
 	<!-- UI_Info -->
 	<property name="CustomIconTint" value="B2AFA5"/>
