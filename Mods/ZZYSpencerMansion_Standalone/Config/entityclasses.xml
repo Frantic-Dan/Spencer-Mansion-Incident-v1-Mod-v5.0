@@ -73,6 +73,58 @@
 		<property name="OpenDoorPercentage" value="0.2"/>
 </insertafter>
 
+<!-- remove pain and death zombie sounds -->
+<remove xpath="/entity_classes/entity_class[@name='zombieTemplateMale']//property[@name='SoundHurt']"/>
+<remove xpath="/entity_classes/entity_class[@name='zombieTemplateMale']//property[@name='SoundDeath']"/>
+<remove xpath="/entity_classes/entity_class[@name='zombieTemplateSlimFemale']//property[@name='SoundHurt']"/>
+<remove xpath="/entity_classes/entity_class[@name='zombieTemplateSlimFemale']//property[@name='SoundDeath']"/>
+<remove xpath="/entity_classes/entity_class[@name='zombieArlene']//property[@name='SoundHurt']"/>
+<remove xpath="/entity_classes/entity_class[@name='zombieArlene']//property[@name='SoundDeath']"/>
+<remove xpath="/entity_classes/entity_class[@name='zombieMarlene']//property[@name='SoundHurt']"/>
+<remove xpath="/entity_classes/entity_class[@name='zombieMarlene']//property[@name='SoundDeath']"/>
+<remove xpath="/entity_classes/entity_class[@name='zombieNurse']//property[@name='SoundHurt']"/>
+<remove xpath="/entity_classes/entity_class[@name='zombieNurse']//property[@name='SoundDeath']"/>
+<remove xpath="/entity_classes/entity_class[@name='zombieBurnt']//property[@name='SoundHurt']"/>
+<remove xpath="/entity_classes/entity_class[@name='zombieBurnt']//property[@name='SoundDeath']"/>
+<remove xpath="/entity_classes/entity_class[@name='zombieSpider']//property[@name='SoundHurt']"/>
+<remove xpath="/entity_classes/entity_class[@name='zombieSpider']//property[@name='SoundDeath']"/>
+<remove xpath="/entity_classes/entity_class[@name='zombieBoe']//property[@name='SoundHurt']"/>
+<remove xpath="/entity_classes/entity_class[@name='zombieBoe']//property[@name='SoundDeath']"/>
+<remove xpath="/entity_classes/entity_class[@name='zombieMaleHazmat']//property[@name='SoundHurt']"/>
+<remove xpath="/entity_classes/entity_class[@name='zombieMaleHazmat']//property[@name='SoundDeath']"/>
+<remove xpath="/entity_classes/entity_class[@name='zombieMoe']//property[@name='SoundHurt']"/>
+<remove xpath="/entity_classes/entity_class[@name='zombieMoe']//property[@name='SoundDeath']"/>
+<remove xpath="/entity_classes/entity_class[@name='zombieLab']//property[@name='SoundHurt']"/>
+<remove xpath="/entity_classes/entity_class[@name='zombieLab']//property[@name='SoundDeath']"/>
+<remove xpath="/entity_classes/entity_class[@name='zombieDarlene']//property[@name='SoundHurt']"/>
+<remove xpath="/entity_classes/entity_class[@name='zombieDarlene']//property[@name='SoundDeath']"/>
+<remove xpath="/entity_classes/entity_class[@name='zombieUtilityWorker']//property[@name='SoundHurt']"/>
+<remove xpath="/entity_classes/entity_class[@name='zombieUtilityWorker']//property[@name='SoundDeath']"/>
+<remove xpath="/entity_classes/entity_class[@name='zombieLumberjack']//property[@name='SoundHurt']"/>
+<remove xpath="/entity_classes/entity_class[@name='zombieLumberjack']//property[@name='SoundDeath']"/>
+<remove xpath="/entity_classes/entity_class[@name='zombieFemaleFat']//property[@name='SoundHurt']"/>
+<remove xpath="/entity_classes/entity_class[@name='zombieFemaleFat']//property[@name='SoundDeath']"/>
+<remove xpath="/entity_classes/entity_class[@name='zombieFatHawaiian']//property[@name='SoundHurt']"/>
+<remove xpath="/entity_classes/entity_class[@name='zombieFatHawaiian']//property[@name='SoundDeath']"/>
+<remove xpath="/entity_classes/entity_class[@name='zombieBowler']//property[@name='SoundHurt']"/>
+<remove xpath="/entity_classes/entity_class[@name='zombieBowler']//property[@name='SoundDeath']"/>
+<remove xpath="/entity_classes/entity_class[@name='zombieSkateboarder']//property[@name='SoundHurt']"/>
+<remove xpath="/entity_classes/entity_class[@name='zombieSkateboarder']//property[@name='SoundDeath']"/>
+<remove xpath="/entity_classes/entity_class[@name='zombieFatCop']//property[@name='SoundHurt']"/>
+<remove xpath="/entity_classes/entity_class[@name='zombieFatCop']//property[@name='SoundDeath']"/>
+<remove xpath="/entity_classes/entity_class[@name='zombieSoldier']//property[@name='SoundHurt']"/>
+<remove xpath="/entity_classes/entity_class[@name='zombieSoldier']//property[@name='SoundDeath']"/>
+<remove xpath="/entity_classes/entity_class[@name='zombieWightFeral']//property[@name='SoundHurt']"/>
+<remove xpath="/entity_classes/entity_class[@name='zombieWightFeral']//property[@name='SoundDeath']"/>
+<remove xpath="/entity_classes/entity_class[@name='zombieMutated']//property[@name='SoundHurt']"/>
+<remove xpath="/entity_classes/entity_class[@name='zombieMutated']//property[@name='SoundDeath']"/>
+<remove xpath="/entity_classes/entity_class[@name='zombieDemolition']//property[@name='SoundHurt']"/>
+<remove xpath="/entity_classes/entity_class[@name='zombieDemolition']//property[@name='SoundDeath']"/>
+<remove xpath="/entity_classes/entity_class[@name='animalZombieDog']//property[@name='SoundHurt']"/>
+<remove xpath="/entity_classes/entity_class[@name='animalZombieDog']//property[@name='SoundDeath']"/>
+<remove xpath="/entity_classes/entity_class[@name='animalZombieVulture']//property[@name='SoundHurt']"/>
+<remove xpath="/entity_classes/entity_class[@name='animalZombieVulture']//property[@name='SoundDeath']"/>
+
 <!-- Pain Resist -->
 <insertafter xpath="/entity_classes/entity_class[@name='zombieJoe']/property[@name='MoveSpeedAggro']">
 		<property name="PainResistPerHit" value="1.01"/>
@@ -655,8 +707,8 @@
     <property name="SoundSpawn" value="Ambient_Loops/a_fire_embersmoke_sm_lp"/>
 	<property name="SoundAlert" value="Enemies/Burnt_Zombie/zombieburntalert"/>
 	<property name="SoundAttack" value="Enemies/Burnt_Zombie/zombieburntattack"/>
-	<property name="SoundHurt" value="Enemies/Burnt_Zombie/zombieburntpain"/>
-	<property name="SoundDeath" value="Enemies/Burnt_Zombie/zombieburntdeath"/>
+	<property name="SoundHurt" value=""/>
+	<property name="SoundDeath" value=""/>
 	<property name="SoundSense" value="Enemies/Burnt_Zombie/zombieburntsense"/>
 	<property name="SoundFootstepModifier" value="Enemies/Burnt_Zombie/zombieburntfootstep"/>
 	<property name="DismemberMultiplierHead" value="0"/><property name="DismemberMultiplierArms" value="0"/><property name="DismemberMultiplierLegs" value="0"/><!-- Feral -->
@@ -849,6 +901,7 @@
 	<property name="TimeStayAfterDeath" value="30"/>
 	<property name="OpenDoorPercentage" value="0.65"/>
 	<property name="LootDropProb" value="0"/> <!-- Feral -->
+	<property name="SoundHurt" value="spiderpain"/>
 	<property name="KnockdownProneDamageThreshold" value=".6"/>
 	<property name="KnockdownKneelDamageThreshold" value=".6"/>
 	<property name="AITask" value="
@@ -1335,8 +1388,8 @@
 	<property name="SoundRandom" value="Enemies/Burnt_Zombie/zombieburntroam"/>
 	<property name="SoundAlert" value="Enemies/Burnt_Zombie/zombieburntalert"/>
 	<property name="SoundAttack" value="Enemies/Burnt_Zombie/zombieburntattack"/>
-	<property name="SoundHurt" value="Enemies/Burnt_Zombie/zombieburntpain"/>
-	<property name="SoundDeath" value="Enemies/Burnt_Zombie/zombieburntdeath"/>
+	<property name="SoundHurt" value=""/>
+	<property name="SoundDeath" value=""/>
 	<property name="SoundSense" value="Enemies/Burnt_Zombie/zombieburntsense"/>
 	<property name="SoundFootstepModifier" value="Enemies/Burnt_Zombie/zombieburntfootstep"/>
 	<!-- Gameplay -->
@@ -1363,8 +1416,8 @@
 	<property name="SoundRandom" value="Enemies/Burnt_Zombie/zombieburntroam"/>
 	<property name="SoundAlert" value="Enemies/Burnt_Zombie/zombieburntalert"/>
 	<property name="SoundAttack" value="Enemies/Burnt_Zombie/zombieburntattack"/>
-	<property name="SoundHurt" value="Enemies/Burnt_Zombie/zombieburntpain"/>
-	<property name="SoundDeath" value="Enemies/Burnt_Zombie/zombieburntdeath"/>
+	<property name="SoundHurt" value=""/>
+	<property name="SoundDeath" value=""/>
 	<property name="SoundSense" value="Enemies/Burnt_Zombie/zombieburntsense"/>
 	<property name="SoundFootstepModifier" value="Enemies/Burnt_Zombie/zombieburntfootstep"/>
 	<!-- Gameplay -->
@@ -1391,8 +1444,8 @@
 	<property name="SoundRandom" value="Enemies/Burnt_Zombie/zombieburntroam"/>
 	<property name="SoundAlert" value="Enemies/Burnt_Zombie/zombieburntalert"/>
 	<property name="SoundAttack" value="Enemies/Burnt_Zombie/zombieburntattack"/>
-	<property name="SoundHurt" value="Enemies/Burnt_Zombie/zombieburntpain"/>
-	<property name="SoundDeath" value="Enemies/Burnt_Zombie/zombieburntdeath"/>
+	<property name="SoundHurt" value=""/>
+	<property name="SoundDeath" value=""/>
 	<property name="SoundSense" value="Enemies/Burnt_Zombie/zombieburntsense"/>
 	<property name="SoundFootstepModifier" value="Enemies/Burnt_Zombie/zombieburntfootstep"/>
 	<!-- Gameplay -->
@@ -1419,8 +1472,8 @@
 	<property name="SoundRandom" value="Enemies/Burnt_Zombie/zombieburntroam"/>
 	<property name="SoundAlert" value="Enemies/Burnt_Zombie/zombieburntalert"/>
 	<property name="SoundAttack" value="Enemies/Burnt_Zombie/zombieburntattack"/>
-	<property name="SoundHurt" value="Enemies/Burnt_Zombie/zombieburntpain"/>
-	<property name="SoundDeath" value="Enemies/Burnt_Zombie/zombieburntdeath"/>
+	<property name="SoundHurt" value=""/>
+	<property name="SoundDeath" value=""/>
 	<property name="SoundSense" value="Enemies/Burnt_Zombie/zombieburntsense"/>
 	<property name="SoundFootstepModifier" value="Enemies/Burnt_Zombie/zombieburntfootstep"/>
 	<!-- Gameplay -->
@@ -1447,8 +1500,8 @@
 	<property name="SoundRandom" value="Enemies/Burnt_Zombie/zombieburntroam"/>
 	<property name="SoundAlert" value="Enemies/Burnt_Zombie/zombieburntalert"/>
 	<property name="SoundAttack" value="Enemies/Burnt_Zombie/zombieburntattack"/>
-	<property name="SoundHurt" value="Enemies/Burnt_Zombie/zombieburntpain"/>
-	<property name="SoundDeath" value="Enemies/Burnt_Zombie/zombieburntdeath"/>
+	<property name="SoundHurt" value=""/>
+	<property name="SoundDeath" value=""/>
 	<property name="SoundSense" value="Enemies/Burnt_Zombie/zombieburntsense"/>
 	<property name="SoundFootstepModifier" value="Enemies/Burnt_Zombie/zombieburntfootstep"/>
 	<!-- Gameplay -->
@@ -1475,8 +1528,8 @@
 	<property name="SoundRandom" value="Enemies/Burnt_Zombie/zombieburntroam"/>
 	<property name="SoundAlert" value="Enemies/Burnt_Zombie/zombieburntalert"/>
 	<property name="SoundAttack" value="Enemies/Burnt_Zombie/zombieburntattack"/>
-	<property name="SoundHurt" value="Enemies/Burnt_Zombie/zombieburntpain"/>
-	<property name="SoundDeath" value="Enemies/Burnt_Zombie/zombieburntdeath"/>
+	<property name="SoundHurt" value=""/>
+	<property name="SoundDeath" value=""/>
 	<property name="SoundSense" value="Enemies/Burnt_Zombie/zombieburntsense"/>
 	<property name="SoundFootstepModifier" value="Enemies/Burnt_Zombie/zombieburntfootstep"/>
 	<!-- Gameplay -->
@@ -1503,8 +1556,8 @@
 	<property name="SoundRandom" value="Enemies/Burnt_Zombie/zombieburntroam"/>
 	<property name="SoundAlert" value="Enemies/Burnt_Zombie/zombieburntalert"/>
 	<property name="SoundAttack" value="Enemies/Burnt_Zombie/zombieburntattack"/>
-	<property name="SoundHurt" value="Enemies/Burnt_Zombie/zombieburntpain"/>
-	<property name="SoundDeath" value="Enemies/Burnt_Zombie/zombieburntdeath"/>
+	<property name="SoundHurt" value=""/>
+	<property name="SoundDeath" value=""/>
 	<property name="SoundSense" value="Enemies/Burnt_Zombie/zombieburntsense"/>
 	<property name="SoundFootstepModifier" value="Enemies/Burnt_Zombie/zombieburntfootstep"/>
 	<!-- Gameplay -->
@@ -1531,8 +1584,8 @@
 	<property name="SoundRandom" value="Enemies/Burnt_Zombie/zombieburntroam"/>
 	<property name="SoundAlert" value="Enemies/Burnt_Zombie/zombieburntalert"/>
 	<property name="SoundAttack" value="Enemies/Burnt_Zombie/zombieburntattack"/>
-	<property name="SoundHurt" value="Enemies/Burnt_Zombie/zombieburntpain"/>
-	<property name="SoundDeath" value="Enemies/Burnt_Zombie/zombieburntdeath"/>
+	<property name="SoundHurt" value=""/>
+	<property name="SoundDeath" value=""/>
 	<property name="SoundSense" value="Enemies/Burnt_Zombie/zombieburntsense"/>
 	<property name="SoundFootstepModifier" value="Enemies/Burnt_Zombie/zombieburntfootstep"/>
 	<!-- Gameplay -->
@@ -1559,8 +1612,8 @@
 	<property name="SoundRandom" value="Enemies/Burnt_Zombie/zombieburntroam"/>
 	<property name="SoundAlert" value="Enemies/Burnt_Zombie/zombieburntalert"/>
 	<property name="SoundAttack" value="Enemies/Burnt_Zombie/zombieburntattack"/>
-	<property name="SoundHurt" value="Enemies/Burnt_Zombie/zombieburntpain"/>
-	<property name="SoundDeath" value="Enemies/Burnt_Zombie/zombieburntdeath"/>
+	<property name="SoundHurt" value=""/>
+	<property name="SoundDeath" value=""/>
 	<property name="SoundSense" value="Enemies/Burnt_Zombie/zombieburntsense"/>
 	<property name="SoundFootstepModifier" value="Enemies/Burnt_Zombie/zombieburntfootstep"/>
 	<!-- Gameplay -->
@@ -1587,8 +1640,8 @@
 	<property name="SoundRandom" value="Enemies/Burnt_Zombie/zombieburntroam"/>
 	<property name="SoundAlert" value="Enemies/Burnt_Zombie/zombieburntalert"/>
 	<property name="SoundAttack" value="Enemies/Burnt_Zombie/zombieburntattack"/>
-	<property name="SoundHurt" value="Enemies/Burnt_Zombie/zombieburntpain"/>
-	<property name="SoundDeath" value="Enemies/Burnt_Zombie/zombieburntdeath"/>
+	<property name="SoundHurt" value=""/>
+	<property name="SoundDeath" value=""/>
 	<property name="SoundSense" value="Enemies/Burnt_Zombie/zombieburntsense"/>
 	<property name="SoundFootstepModifier" value="Enemies/Burnt_Zombie/zombieburntfootstep"/>
 	<!-- Gameplay -->
@@ -1616,8 +1669,8 @@
 	<property name="SoundRandom" value="Enemies/Burnt_Zombie/zombieburntroam"/>
 	<property name="SoundAlert" value="Enemies/Burnt_Zombie/zombieburntalert"/>
 	<property name="SoundAttack" value="Enemies/Burnt_Zombie/zombieburntattack"/>
-	<property name="SoundHurt" value="Enemies/Burnt_Zombie/zombieburntpain"/>
-	<property name="SoundDeath" value="Enemies/Burnt_Zombie/zombieburntdeath"/>
+	<property name="SoundHurt" value=""/>
+	<property name="SoundDeath" value=""/>
 	<property name="SoundSense" value="Enemies/Burnt_Zombie/zombieburntsense"/>
 	<property name="SoundFootstepModifier" value="Enemies/Burnt_Zombie/zombieburntfootstep"/>
 	<!-- Gameplay -->
@@ -1644,8 +1697,8 @@
 	<property name="SoundRandom" value="Enemies/Burnt_Zombie/zombieburntroam"/>
 	<property name="SoundAlert" value="Enemies/Burnt_Zombie/zombieburntalert"/>
 	<property name="SoundAttack" value="Enemies/Burnt_Zombie/zombieburntattack"/>
-	<property name="SoundHurt" value="Enemies/Burnt_Zombie/zombieburntpain"/>
-	<property name="SoundDeath" value="Enemies/Burnt_Zombie/zombieburntdeath"/>
+	<property name="SoundHurt" value=""/>
+	<property name="SoundDeath" value=""/>
 	<property name="SoundSense" value="Enemies/Burnt_Zombie/zombieburntsense"/>
 	<property name="SoundFootstepModifier" value="Enemies/Burnt_Zombie/zombieburntfootstep"/>
 	<!-- Gameplay -->
@@ -1672,8 +1725,8 @@
 	<property name="SoundRandom" value="Enemies/Burnt_Zombie/zombieburntroam"/>
 	<property name="SoundAlert" value="Enemies/Burnt_Zombie/zombieburntalert"/>
 	<property name="SoundAttack" value="Enemies/Burnt_Zombie/zombieburntattack"/>
-	<property name="SoundHurt" value="Enemies/Burnt_Zombie/zombieburntpain"/>
-	<property name="SoundDeath" value="Enemies/Burnt_Zombie/zombieburntdeath"/>
+	<property name="SoundHurt" value=""/>
+	<property name="SoundDeath" value=""/>
 	<property name="SoundSense" value="Enemies/Burnt_Zombie/zombieburntsense"/>
 	<property name="SoundFootstepModifier" value="Enemies/Burnt_Zombie/zombieburntfootstep"/>
 	<!-- Gameplay -->
@@ -1700,8 +1753,8 @@
 	<property name="SoundRandom" value="Enemies/Burnt_Zombie/zombieburntroam"/>
 	<property name="SoundAlert" value="Enemies/Burnt_Zombie/zombieburntalert"/>
 	<property name="SoundAttack" value="Enemies/Burnt_Zombie/zombieburntattack"/>
-	<property name="SoundHurt" value="Enemies/Burnt_Zombie/zombieburntpain"/>
-	<property name="SoundDeath" value="Enemies/Burnt_Zombie/zombieburntdeath"/>
+	<property name="SoundHurt" value=""/>
+	<property name="SoundDeath" value=""/>
 	<property name="SoundSense" value="Enemies/Burnt_Zombie/zombieburntsense"/>
 	<property name="SoundFootstepModifier" value="Enemies/Burnt_Zombie/zombieburntfootstep"/>
 	<!-- Gameplay -->
@@ -1728,8 +1781,8 @@
 	<property name="SoundRandom" value="Enemies/Burnt_Zombie/zombieburntroam"/>
 	<property name="SoundAlert" value="Enemies/Burnt_Zombie/zombieburntalert"/>
 	<property name="SoundAttack" value="Enemies/Burnt_Zombie/zombieburntattack"/>
-	<property name="SoundHurt" value="Enemies/Burnt_Zombie/zombieburntpain"/>
-	<property name="SoundDeath" value="Enemies/Burnt_Zombie/zombieburntdeath"/>
+	<property name="SoundHurt" value=""/>
+	<property name="SoundDeath" value=""/>
 	<property name="SoundSense" value="Enemies/Burnt_Zombie/zombieburntsense"/>
 	<property name="SoundFootstepModifier" value="Enemies/Burnt_Zombie/zombieburntfootstep"/>
 	<!-- Gameplay -->
@@ -1756,8 +1809,8 @@
 	<property name="SoundRandom" value="Enemies/Burnt_Zombie/zombieburntroam"/>
 	<property name="SoundAlert" value="Enemies/Burnt_Zombie/zombieburntalert"/>
 	<property name="SoundAttack" value="Enemies/Burnt_Zombie/zombieburntattack"/>
-	<property name="SoundHurt" value="Enemies/Burnt_Zombie/zombieburntpain"/>
-	<property name="SoundDeath" value="Enemies/Burnt_Zombie/zombieburntdeath"/>
+	<property name="SoundHurt" value=""/>
+	<property name="SoundDeath" value=""/>
 	<property name="SoundSense" value="Enemies/Burnt_Zombie/zombieburntsense"/>
 	<property name="SoundFootstepModifier" value="Enemies/Burnt_Zombie/zombieburntfootstep"/>
 	<!-- Gameplay -->
@@ -1784,8 +1837,8 @@
 	<property name="SoundRandom" value="Enemies/Burnt_Zombie/zombieburntroam"/>
 	<property name="SoundAlert" value="Enemies/Burnt_Zombie/zombieburntalert"/>
 	<property name="SoundAttack" value="Enemies/Burnt_Zombie/zombieburntattack"/>
-	<property name="SoundHurt" value="Enemies/Burnt_Zombie/zombieburntpain"/>
-	<property name="SoundDeath" value="Enemies/Burnt_Zombie/zombieburntdeath"/>
+	<property name="SoundHurt" value=""/>
+	<property name="SoundDeath" value=""/>
 	<property name="SoundSense" value="Enemies/Burnt_Zombie/zombieburntsense"/>
 	<property name="SoundFootstepModifier" value="Enemies/Burnt_Zombie/zombieburntfootstep"/>
 	<!-- Gameplay -->
@@ -1813,8 +1866,8 @@
 	<property name="SoundRandom" value="Enemies/Burnt_Zombie/zombieburntroam"/>
 	<property name="SoundAlert" value="Enemies/Burnt_Zombie/zombieburntalert"/>
 	<property name="SoundAttack" value="Enemies/Burnt_Zombie/zombieburntattack"/>
-	<property name="SoundHurt" value="Enemies/Burnt_Zombie/zombieburntpain"/>
-	<property name="SoundDeath" value="Enemies/Burnt_Zombie/zombieburntdeath"/>
+	<property name="SoundHurt" value=""/>
+	<property name="SoundDeath" value=""/>
 	<property name="SoundSense" value="Enemies/Burnt_Zombie/zombieburntsense"/>
 	<property name="SoundFootstepModifier" value="Enemies/Burnt_Zombie/zombieburntfootstep"/>
 	<!-- Gameplay -->
@@ -1841,8 +1894,8 @@
 	<property name="SoundRandom" value="Enemies/Burnt_Zombie/zombieburntroam"/>
 	<property name="SoundAlert" value="Enemies/Burnt_Zombie/zombieburntalert"/>
 	<property name="SoundAttack" value="Enemies/Burnt_Zombie/zombieburntattack"/>
-	<property name="SoundHurt" value="Enemies/Burnt_Zombie/zombieburntpain"/>
-	<property name="SoundDeath" value="Enemies/Burnt_Zombie/zombieburntdeath"/>
+	<property name="SoundHurt" value=""/>
+	<property name="SoundDeath" value=""/>
 	<property name="SoundSense" value="Enemies/Burnt_Zombie/zombieburntsense"/>
 	<property name="SoundFootstepModifier" value="Enemies/Burnt_Zombie/zombieburntfootstep"/>
 	<!-- Gameplay -->
@@ -1869,8 +1922,8 @@
 	<property name="SoundRandom" value="Enemies/Burnt_Zombie/zombieburntroam"/>
 	<property name="SoundAlert" value="Enemies/Burnt_Zombie/zombieburntalert"/>
 	<property name="SoundAttack" value="Enemies/Burnt_Zombie/zombieburntattack"/>
-	<property name="SoundHurt" value="Enemies/Burnt_Zombie/zombieburntpain"/>
-	<property name="SoundDeath" value="Enemies/Burnt_Zombie/zombieburntdeath"/>
+	<property name="SoundHurt" value=""/>
+	<property name="SoundDeath" value=""/>
 	<property name="SoundSense" value="Enemies/Burnt_Zombie/zombieburntsense"/>
 	<property name="SoundFootstepModifier" value="Enemies/Burnt_Zombie/zombieburntfootstep"/>
 	<!-- Gameplay -->
@@ -1897,8 +1950,8 @@
 	<property name="SoundRandom" value="Enemies/Burnt_Zombie/zombieburntroam"/>
 	<property name="SoundAlert" value="Enemies/Burnt_Zombie/zombieburntalert"/>
 	<property name="SoundAttack" value="Enemies/Burnt_Zombie/zombieburntattack"/>
-	<property name="SoundHurt" value="Enemies/Burnt_Zombie/zombieburntpain"/>
-	<property name="SoundDeath" value="Enemies/Burnt_Zombie/zombieburntdeath"/>
+	<property name="SoundHurt" value=""/>
+	<property name="SoundDeath" value=""/>
 	<property name="SoundSense" value="Enemies/Burnt_Zombie/zombieburntsense"/>
 	<property name="SoundFootstepModifier" value="Enemies/Burnt_Zombie/zombieburntfootstep"/>
 	<!-- Gameplay -->
