@@ -857,7 +857,12 @@
 	<property name="KnockdownKneelDamageThreshold" value="0"/>
 	<property name="TimeStayAfterDeath" value="30"/>
 	<property name="OpenDoorPercentage" value="0"/>
-
+	<property name="SoundHurt" value="snakepain"/>
+	<property name="SoundDeath" value="snakedeath"/>
+	<property name="SoundRandom" value="snakeroam"/>
+	<property name="SoundSense" value="snakeroam"/>
+	<property name="SoundAlert" value="snakeroam"/>
+	<property name="SoundAttack" value="snakepain"/>
 	<property name="AINoiseSeekDist" value="3"/>
 	<property name="AIPathCostScale" value=".6, 1"/>
 	<property name="AITask" value="
