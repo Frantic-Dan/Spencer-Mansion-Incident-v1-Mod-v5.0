@@ -86,7 +86,7 @@
 		</if>
 	</conditional>
 	
-	<conditional>
+	<!-- <conditional>
       <if cond="mod_loaded('IDCCore') == false">
 			<set xpath="/doc/tips//tip[1]/@key">ModNotInstalledCorrectlyText</set>
 			<set xpath="/doc/tips//tip[2]/@key">ModNotInstalledCorrectlyText</set>
@@ -97,9 +97,9 @@
 			<set xpath="/doc/tips//tip[7]/@key">ModNotInstalledCorrectlyText</set>
 			<set xpath="/doc/tips//tip[8]/@key">ModNotInstalledCorrectlyText</set>
 		</if>
-	</conditional>
+	</conditional> -->
 	
-	<conditional>
+	<!-- <conditional>
       <if cond="mod_loaded('ExplicitGunReloading') == false">
 			<set xpath="/doc/tips//tip[1]/@key">ModNotInstalledCorrectlyText</set>
 			<set xpath="/doc/tips//tip[2]/@key">ModNotInstalledCorrectlyText</set>
@@ -110,7 +110,7 @@
 			<set xpath="/doc/tips//tip[7]/@key">ModNotInstalledCorrectlyText</set>
 			<set xpath="/doc/tips//tip[8]/@key">ModNotInstalledCorrectlyText</set>
 		</if>
-	</conditional>
+	</conditional> -->
 	
 	<conditional>
       <if cond="mod_loaded('FranticDanThunder') == false">
@@ -216,8 +216,21 @@
 		</if>
 	</conditional>
 	
-	<conditional>
+	<!-- <conditional>
       <if cond="mod_loaded('ManualSaving') == false">
+			<set xpath="/doc/tips//tip[1]/@key">ModNotInstalledCorrectlyText</set>
+			<set xpath="/doc/tips//tip[2]/@key">ModNotInstalledCorrectlyText</set>
+			<set xpath="/doc/tips//tip[3]/@key">ModNotInstalledCorrectlyText</set>
+			<set xpath="/doc/tips//tip[4]/@key">ModNotInstalledCorrectlyText</set>
+			<set xpath="/doc/tips//tip[5]/@key">ModNotInstalledCorrectlyText</set>
+			<set xpath="/doc/tips//tip[6]/@key">ModNotInstalledCorrectlyText</set>
+			<set xpath="/doc/tips//tip[7]/@key">ModNotInstalledCorrectlyText</set>
+			<set xpath="/doc/tips//tip[8]/@key">ModNotInstalledCorrectlyText</set>
+		</if>
+	</conditional> -->
+	
+	<conditional>
+      <if cond="mod_loaded('SpencerMansionCrimsonCore') == false">
 			<set xpath="/doc/tips//tip[1]/@key">ModNotInstalledCorrectlyText</set>
 			<set xpath="/doc/tips//tip[2]/@key">ModNotInstalledCorrectlyText</set>
 			<set xpath="/doc/tips//tip[3]/@key">ModNotInstalledCorrectlyText</set>
