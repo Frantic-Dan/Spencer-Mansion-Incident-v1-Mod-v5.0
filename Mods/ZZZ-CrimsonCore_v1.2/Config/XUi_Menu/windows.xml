@@ -1,0 +1,49 @@
+<xml>
+
+	<insertAfter xpath="//window[@name='spawnselection']">
+
+		<window name="spawnselection" pos="0,0" depth="250" width="10000" height="10000" anchor="CenterCenter" controller="CrimsonCore.DeathScreen,CrimsonCore" cursor_area="true">
+
+			<sprite name="background" depth="1" width="10000" height="10000" pivot="center" color="0,0,0,255" globalopacity="false"/>
+			<label name="lblYouAreDead" depth="2" overflow="resizefreely" font_size="128" text_key="xuiYouAreDead" pivot="center" color="192,0,0"/>
+			<!-- <simplebutton name="btnReload" depth="2" pos="0,-70" pivot="center" width="400" height="42" font_size="36" caption_key="xuiReload" /> -->
+			<simplebutton name="btnExit" depth="3" pos="0,-70" pivot="center" width="400" height="42" font_size="36" caption_key="xuiExit" />
+
+			<!-- Vanilla SpawnSelection {{{ -->
+			<rect visible="false" pos="9999,9999">
+				<panel name="noclick" depth="2" createuipanel="true" pos="-20,20" width="440" height="140" clipping="softclip" clippingsoftness="20,20" disableautobackground="true">
+					<sprite depth="0" name="backgroundMain" sprite="menu_empty" color="0,0,0,190" type="sliced" fillcenter="true" />
+				</panel>
+
+				<panel depth="10" createuipanel="true" disableautobackground="true" >
+					<label name="lblProgress" pos="200,-50" width="380" height="80" font_size="32" justify="center" pivot="center" />
+				</panel>
+			</rect>
+
+			<rect visible="false" pos="9999,9999">
+				<panel name="header" pos="0,0" height="43" depth="2" createuipanel="true" backgroundspritename="ui_game_panel_header" bordercolor="[black]" borderthickness="3">
+					<label style="header.name" pos="6,-6" width="550" text_key="respawnTitleMessage" />
+				</panel>
+				
+				<simplebutton name="btnOption1" depth="3" pos="200,-70" pivot="center" width="400" height="42" font_size="36" caption_key="lblSpawnOnBedroll" />
+				<simplebutton name="btnOption2" depth="3" pos="200,-130" pivot="center" width="400" height="42" font_size="36" caption_key="lblSpawnNearBedroll" />
+				<simplebutton name="btnOption3" depth="3" pos="200,-190" pivot="center" width="400" height="42" font_size="36" caption_key="lblSpawnNearBackpack" />
+			</rect>
+			<!-- }}} -->
+
+		</window>
+
+	</insertAfter>
+
+	<remove xpath="//window[@name='spawnselection'][1]"/>
+	
+	<!-- <insertAfter xpath="//gameoption[@name='ZombieMoveNight']">
+		<gameoption name="UNUSED_ControlPanelEnabled" title="goLinkedStorage" value_wrap="false" value_type="bool" values="" display_names="goEnabled,goDisabled" value_localization_prefix="" visible="false" has_default="true"/>
+	</insertAfter> -->
+	
+	<insertAfter xpath="//gameoption[@name='ZombieMoveNight']">
+		<rect/>
+		<gameoption name="TwitchBloodMoonAllowed" title="goLinkedStorage" value_wrap="false" value_type="bool" values="" display_names="" value_localization_prefix="" visible="{isnewgame}" has_default="true"/>
+	</insertAfter>
+
+</xml>
