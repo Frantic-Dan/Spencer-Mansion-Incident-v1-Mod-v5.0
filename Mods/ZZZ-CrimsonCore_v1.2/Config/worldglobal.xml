@@ -1,0 +1,118 @@
+<xml>
+
+	<append xpath="//environment">
+        <property name="SaveItemName"       value="InkRERibbon"/>
+        <property name="DotCrosshairTexture"   value="#@modfolder:/Config/Resources/xml_main.u3d?DotCrosshair"/>
+        <property name="DotCrosshairColour" value="255,255,255,192"/>
+    </append>
+
+	<!-- <append xpath="//environment">
+		<property name="SaveItemName" value="InkRERibbon"/>
+		<property name="DotCrosshairPath"   value="#@modfolder(CrimsonCore):AssetBundles/xml_main.u3d?DotCrosshair"/>
+        <property name="DotCrosshairColour" value="255,255,255,128"/>
+	</append>
+	
+	<append xpath="//environment">
+		<property name="SaveItemName"        value="InkRERibbon"/>
+		<property name="DotCrosshairTexture" value="#@modfolder(CrimsonCore):AssetBundles/xml_main.u3d?DotCrosshair"/>
+		<property name="DotCrosshairColour"  value="255,255,255,128"/>
+	</append> -->
+
+	<append xpath="//environment">
+
+		<property class="Map1">
+			<property name="MapName" value="Mansion1F"/>
+			<property name="SpriteName" value="MapMansion1F"/>
+			<property name="BoundsMinimum" value="-255,-255,-255"/>
+			<property name="BoundsMaximum" value="255,255,255"/>
+		</property>
+
+		<property class="Map2">
+			<property name="MapName" value="Mansion2F"/>
+			<property name="SpriteName" value="MapMansion2F"/>
+			<property name="BoundsMinimum" value="69,38,140"/>
+			<property name="BoundsMaximum" value="148,43,180"/>
+		</property>
+
+		<property class="Map3">
+			<property name="MapName" value="Mansion3F"/>
+			<property name="SpriteName" value="MapMansion3F"/>
+			<property name="BoundsMinimum" value="84,43,159"/>
+			<property name="BoundsMaximum" value="104,47,178"/>
+		</property>
+
+		<property class="Map4">
+			<property name="MapName" value="MansionB1"/>
+			<property name="SpriteName" value="MapMansionB1"/>
+			<property name="BoundsMinimum" value="88,25,144"/>
+			<property name="BoundsMaximum" value="128,32,195"/>
+		</property>
+		
+		<property class="Map5">
+			<property name="MapName" value="Courtyard1F"/>
+			<property name="SpriteName" value="MapCourtyard1F"/>
+			<property name="BoundsMinimum" value="89,28,186"/>
+			<property name="BoundsMaximum" value="130,37,214"/>
+		</property>
+		
+		<property class="Map6">
+			<property name="MapName" value="Guardhouse1F"/>
+			<property name="SpriteName" value="MapGuardhouse1F"/>
+			<property name="BoundsMinimum" value="90,28,215"/>
+			<property name="BoundsMaximum" value="144,36,237"/>
+		</property>
+		
+		<property class="Map7">
+			<property name="MapName" value="AquariumB1"/>
+			<property name="SpriteName" value="MapAquariumB1"/>
+			<property name="BoundsMinimum" value="117,20,222"/>
+			<property name="BoundsMaximum" value="146,28,249"/>
+		</property>
+		
+		<property class="Map8">
+			<property name="MapName" value="CourtyardB1"/>
+			<property name="SpriteName" value="MapCourtyardB1"/>
+			<property name="BoundsMinimum" value="84,18,181"/>
+			<property name="BoundsMaximum" value="138,25,218"/>
+		</property>
+		
+		<property class="Map9">
+			<property name="MapName" value="CourtyardB2"/>
+			<property name="SpriteName" value="MapCourtyardB2"/>
+			<property name="BoundsMinimum" value="121,6,202"/>
+			<property name="BoundsMaximum" value="158,18,248"/>
+		</property>
+		
+		<property class="Map10">
+			<property name="MapName" value="LaboratoryB2"/>
+			<property name="SpriteName" value="MapLaboratoryB2"/>
+			<property name="BoundsMinimum" value="80,15,137"/>
+			<property name="BoundsMaximum" value="111,21,154"/>
+		</property>
+		
+		<property class="Map11">
+			<property name="MapName" value="LaboratoryB3"/>
+			<property name="SpriteName" value="MapLaboratoryB3"/>
+			<property name="BoundsMinimum" value="79,8,128"/>
+			<property name="BoundsMaximum" value="125,15,154"/>
+		</property>
+		
+		<property class="Map12">
+			<property name="MapName" value="LaboratoryB4"/>
+			<property name="SpriteName" value="MapLaboratoryB4"/>
+			<property name="BoundsMinimum" value="113,6,120"/>
+			<property name="BoundsMaximum" value="125,9,141"/>
+		</property>
+		
+		<property class="Map13">
+			<property name="MapName" value="Helipad1F"/>
+			<property name="SpriteName" value="MapHelipad1F"/>
+			<property name="BoundsMinimum" value="22,30,150"/>
+			<property name="BoundsMaximum" value="52,38,175"/>
+		</property>
+
+	</append>
+	
+	
+
+</xml>
