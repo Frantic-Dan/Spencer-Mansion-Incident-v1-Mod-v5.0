@@ -40,9 +40,9 @@ loadingTipRE6,"Genau wie in Resident Evil, also zucken sie nicht einmal, wenn si
 loadingTipRE6_title,Zombies fühlen keinen Schmerz:
 loadingTipRE7,"Diese starke Waffe kann leicht Beine abtrennen (Kugeln) und Köpfe zum platzen bringen (Geschosse)."
 loadingTipRE7_title,Die Schrottflite:
-loadingTipRE8,"Ein großes Dankeschön an die folgenden Personen: Mythix, AuroraGiggleFairy, w00kie n00kie, RambunctiousRed, HellsJanitorTV, JaxTeller718, KhaineGB, Khelldon, Chikorina, HaidrGna, AvioseVeAvara, Subquake, Zilox, Redbeard, idc12, Pyrokar420, ocbMaurice, NORDMANN."
+loadingTipRE8,"Ein großes Dankeschön an die folgenden Personen: Mythix, AuroraGiggleFairy, w00kie n00kie, RambunctiousRed, HellsJanitor, JaxTeller718, KhaineGB, Khelldon, Chikorina, HaidrGna, AvioseVeAvara, Subquake, Zilox, Redbeard, idc12, Pyrokar420, ocbMaurice, NORDMANN, Closer_ex, M14's ZettaiRyouiki, ChoccyMilk."
 loadingTipRE8_title,Besonderen Dank!
-SpencerMansionSpawnText,"Du wirst den Vorfall in der Spencer-Manison aus der Ich-Perspektive erleben.\n\nUm das Erlebnis von Resident Evil beizubehalten, beachte bitte die folgenden Punkte.\n1) Du hast einen begrenzten Inventarplatz von 10 Slots. Es gibt Lagerkisten, in denen du deine Gegenstände aufbewahren kannst. Diese Kisten sind nicht wie im klassischen Resident Evil (Real Survival-Modus) miteinander verbunden, also achte darauf, wo du deine Gegenstände aufbewahrst.\n2) Du kannst nicht springen.\n3) Die meisten Feinde empfinden keinen Schmerz, also wird der Kampf gegen sie anders sein,\nals du es gewohnt bist.\n4) Farbbänder werden benötigt, um deinen Fortschritt zu sichern! (Zu finden in den Schreibmaschinen)\n\n[FFC800]Für ein intensives Erlebnis empfehle ich, die Lautstärke der Umgebungsgeräusche und der Musik auf Max. zu stellen. Die Beleuchtung ist so abgestimmt, dass die Helligkeit auf 50 % eingestellt ist.[-]\n\nUm die gewünschte Erfahrung zu machen, solltest du alle anderen Mods entfernen."
+SpencerMansionSpawnText,"Du wirst den Vorfall in der Spencer-Manison aus der Ich-Perspektive erleben.\n\nUm das Erlebnis von Resident Evil beizubehalten, beachte bitte die folgenden Punkte.\n1) Du hast einen begrenzten Inventarplatz von 10 Slots. Es gibt Lagerkisten, in denen du deine Gegenstände aufbewahren kannst.\n2) Du kannst nicht springen.\n3) Die meisten Feinde empfinden keinen Schmerz, also wird der Kampf gegen sie anders sein,\nals du es gewohnt bist.\n4) Farbbänder werden benötigt, um deinen Fortschritt zu sichern! (Zu finden in den Schreibmaschinen)\n\n[FFC800]Für ein intensives Erlebnis empfehle ich, die Lautstärke der Umgebungsgeräusche und der Musik auf Max.[-]\n\n[FFC800]Um die gewünschte Erfahrung zu machen, solltest du alle anderen Mods entfernen.[-]"
 Mod Not Installed Correctly,[FF4F00]Mod wurde nicht korrekt installiert[-]
 ModNotInstalledCorrectlyText,"[FF4F00]Diese Mod wurde nicht korrekt installiert und es fehlen wichtige Dateien, die für eine 100%ige Funktion dieser Mod erforderlich sind.[-]"
 TwitchAction_SpawnCrawlerCommand,#crawler
@@ -114,7 +114,7 @@ EmptyBaseBottledesc,"Stelle erst die richtige Flasche her, bevor du Sie abfülls
 EmptyBottledesc,"Eine Flasche die zum Mischen von Chemikalien verwendet wird.\n\nAuffüllen mit der sekundären Aktion."
 FilledBottledesc,Eine Flasche mit Flüssigkeit gefüllt.
 MixingBottledesc,Zwei Flüssigkeiten miteinander vermischt.
-VJoltdesc,"Eine starke Chemikalie, die die Pflanze schwächen kann 42.\n\nDrücken Sie die Taste [Interagieren], um sie zu verwenden."
+VJoltdesc,"Eine starke Chemikalie, die die Pflanze schwächen kann 42.\n\nDrücken Sie die Taste [action:permanent:Activate], um sie zu verwenden."
 Crestdesc,Ein sechseckiges Wappen.
 BrokenShotgundesc,"Eine Schrotflinte, die irreparabel beschädigt ist."
 Herbicidedesc,"Eine Chemikalie, die zum Abtöten von Pflanzen verwendet wird."
@@ -133,7 +133,7 @@ RedGemstonedesc,Dieser kleine Stein ist ein Vermögen wert...
 LockedBoxdesc,Sicher verriegelt
 PrisonKey,Eine Diskette mit der Aufschrift „MO“.
 GyrocopterDesc,"Jetzt kannst du durch den Ausgang des Labors zum Hubschrauberlandeplatz gehen."
-REkeys,Drücke die Taste [Interagieren], während du eine verschlossene Tür betrachten.
+REkeys,Drücke die Taste [action:permanent:Activate], während du eine verschlossene Tür betrachten.
 Jill's_LockPick,Jill's Dietrich
 SwordKey,Schwertschlüssel
 TerraceKey,Terrassenschlüssel
@@ -326,6 +326,7 @@ AK-47HittoPickup,AK-47\n(Schlagen zum Aufheben)
 QuadRocketLauncherHittoPickup,Vierfacher Raketenwerfer\n(Schlagen zum Aufheben)
 LockedSuperRocket,Zuerst Schalter drücken
 PumpShotgunHittoPickup,Schrotflinte\n(Schlagen zum Aufheben)
+AssaultShotgunBlock,Sturmflinte\n(Schlagen zum Aufheben)
 MagnumRevolverHittoPickup,Magnum Revolver\n(Schlagen zum Aufheben)
 RocketLauncherHittoPickup,Granatenwerfer\n(Schlagen zum Aufheben)
 HandgunAmmoHittoPickup,Handwaffen-Muni\n(Schlagen zum Aufheben)
@@ -391,11 +392,13 @@ ClassicModeInventoryBlocker,Klassischer Modus Inventar-Blocker
 ClassicModeInventoryBlockerDesc,"Du spielst im klassischen Modus, dieser Inventarplatz ist dauerhaft blockiert."
 SurvivalKnife,Survival-Messer
 SurvivalKnifedesc,"Jill's speziell angefertigtes Messer, ideal für den Nahkampf und zum zerlegen von Tieren.\n\nSprint-Attacke: +15% Zerstückelungschance.\nAusdauer > 50%: +10% Zerstückelungschance.\n(Wird nach dem Angriff berechnet)\n\n\n"
+statStaminaLossPower,Ausdauerkosten (Kraftangriff)
 S.T.A.R.SHandgun,S.T.A.R.S Handwaffe
 Handgundesc,"Eine speziell angefertigte S.T.A.R.S. standard Handfeuerwaffe, schießt mit 9×19mm parabellum Kugeln.\n\n\n"
 MagnumRevolver,Magnum Revolver
 Magnumdesc,"Ein schwerer Magnum-Revolver, eine extrem starke Handfeuerwaffe. Schießt mit .357 magnum Kugeln.\n\n\n"
 PumpShotgun,Schrotflinte
+AssaultShotgun,Sturmflinte
 Shotgundesc,"Schießt mit Schrotpatronen Kaliber 12. Eine Waffe, die weit schießen kann. Sie ist alt und abgenutzt und hat eine langsame Feuerrate!\n\n\n"
 AK-47,AK-47 Sturmgewehr
 Rifledesc,Ein automatisches Sturmgewehr, das dir in verzweifelten Situationen helfen kann."\n\n\n"
@@ -489,7 +492,7 @@ SamuraiEdgeDesc,"Spezielle Teile, die die Feuerrate drastisch erhöhen und einen
 AssaultShotgunParts,Schrotflinte Teile
 AssaultShotgunDesc,"Ein S.T.A.R.S. Spezialarsenal und auch Richards Favorit.\n\nFasst 10 Schuss. Hat eine engere Streuung. Größere Reichweite und schnellere Feuerrate. Aber langsamere Nachladegeschwindigkeit.\n\n\n"
 MagnumSpeedloader,Magnum Schnelllader
-MagnumSpeedloaderDesc,"Dadurch wird das Nachladen um 25 % beschleunigt und die Handhabung des Revolvers insgesamt erleichtert.\n\n\n"
+MagnumSpeedloaderDesc,"Dadurch wird das Nachladen um 33 % beschleunigt und die Handhabung des Revolvers insgesamt erleichtert.\n\n\n"
 AK-47MuzzleBrake,AK-47 Mündungsbremse
 MuzzleBreakDesc,"Macht das Sturmgewehr genauer und insgesamt leichter zu handhaben.\n\n\n"
 modGunMeleeBlessedMetalTyrant,T-Virus Neutralisator
@@ -573,13 +576,13 @@ TrainingInformationTip_title,[4FC3F7]Trainings Informationen[-]
 TrainingInformationTip,"Deine Trainingsvorteile - mehr Details:\n\nChemieexperte:\nErmöglicht dir, viel mehr Munition mit großer Schießpulvereffizienz herzustellen. Außerdem kannst du unerwünschte Munition abbauen, ohne Ressourcen zu verlieren.\n\nPassive Heilung:\nDu heilst 900 HP pro Stunde, solange du nicht bei voller Gesundheit bist. Sehr gut zum entspannten Durchspielen, schlecht für einen Speedrun.\n\nMedizinisches Wissen:\n35% mehr medizinische Heilung ist perfekt für die Maximierung deiner Heilungsvorräte sowie für die Heilung in der Mitte des Kampfes. Besser für Speedruns als passive Heilung.\n\nMesser-Training:\nVerbessert deine Fähigkeit, das Messer zu benutzen, und ermöglicht es dir, mehr Munition zu sparen, schneller zu töten und nicht so schnell zu erschöpfen.\n\nKardio:\nDu kannst schneller und länger rennen, so dass du schnellen Gegnern entkommen kannst, ohne von hinten getroffen zu werden.\n\nSchmerztoleranz:\nDu bist widerstandsfähiger als die meisten anderen und kannst mehr Treffer überleben, bevor du deinen Verletzungen erliegst."
 Achievements,[4FC3F7]Errungenschaften[-]
 AchievementsTip_title,[4FC3F7]Errungenschaften[-]
-AchievementsTip,"Im Folgenden findest du eine Liste von Erfolgen, die du anstreben kannst, wenn du eine zusätzliche Herausforderung suchst.\n\n[4FC3F7]Klassiker sterben niemals aus[-]\nBesiege das Spiel im klassischen Modus.\n\n[4FC3F7]Samurai 'Jill' Edge[-]\nBesiege das Spiel nur mit dem Survival-Messer als Waffe. \n(Schusswaffen und Wurfgegenstände können nicht verwendet werden.)\n\n[4FC3F7]Meister der Inventarverwaltung[-]\nBesiege das Spiel, ohne jemals Gegenstandskästen zur Aufbewahrung deiner Gegenstände zu verwenden.\n(Dies schließt Schreibmaschinen, die Schmiede und die Werkbank ein. Ausnahme: Du darfst nur die roten Säcke benutzen.\n\n[4FC3F7]Ausbruch verhindert?[-]\nBesiege das Spiel mit mindestens 260 Kills.\n\n[4FC3F7]Schnelles Entkommen[-]\nBesiege das Spiel in unter:\n - D: 2 Stunden 55 Minuten. \n - C: 3 Stunden 35 Minuten.\n - B: 4 Stunden 25 Minuten.\n - A: 5 Stunden 15 Minuten.\n - S: 6 Stunden 5 Minuten. \n - S+: 6 Stunden 55 Minuten.\n\n[4FC3F7]Hautallergien[-]\nBesiege das Spiel, ohne Kräuter oder Erste-Hilfe-Sprays zu benutzen.\n(Passive Heilung ist erlaubt. Du kannst kein Gift heilen)\n\n[4FC3F7]Ich bin gerettet![-]\nFinde die unendliche Schreibmaschine und speichere dein Spiel so oft du willst!"
+AchievementsTip,"Im Folgenden findest du eine Liste von Erfolgen, die du anstreben kannst, wenn du eine zusätzliche Herausforderung suchst.\n\n[4FC3F7]Klassiker sterben niemals aus[-]\nBesiege das Spiel im klassischen Modus.\n\n[4FC3F7]Samurai 'Jill' Edge[-]\nBesiege das Spiel nur mit dem Survival-Messer als Waffe. \n(Schusswaffen und Wurfgegenstände können nicht verwendet werden.)\n\n[4FC3F7]Meister der Inventarverwaltung[-]\nBesiege das Spiel, ohne jemals Gegenstandskästen zur Aufbewahrung deiner Gegenstände zu verwenden.\n(Dies schließt Schreibmaschinen, die Schmiede und die Werkbank ein. Ausnahme: Du darfst nur die roten Säcke benutzen.\n\n[4FC3F7]Ausbruch verhindert?[-]\nBesiege das Spiel mit mindestens 260 Kills.\n\n[4FC3F7]Schnelles Entkommen[-]\nBesiege das Spiel in unter:\n - D: 2 Stunden 0 Minuten. \n - C: 2 Stunden 30 Minuten.\n - B: 3 Stunden 0 Minuten.\n - A: 3 Stunden 30 Minuten.\n - S: 4 Stunden 10 Minuten. \n - S+: 4 Stunden 50 Minuten.\n\n[4FC3F7]Hautallergien[-]\nBesiege das Spiel, ohne Kräuter oder Erste-Hilfe-Sprays zu benutzen.\n(Passive Heilung ist erlaubt. Du kannst kein Gift heilen)\n\n[4FC3F7]Ich bin gerettet![-]\nFinde die unendliche Schreibmaschine und speichere dein Spiel so oft du willst!\n\n[4FC3F7]Echtes Überleben![-]\nBeenden Sie das Spiel mit deaktivierten miteinander verbundenen Item-Aufbewahrungsboxen!"
 MeleeCombat,[4FC3F7]Nahkampf-Sicherheit[-]
 MeleeCombatTip_title,[4FC3F7]Nahkampf-Sicherheit[-]
 MeleeCombatTip,"Zombies haben eine volle Schmerzresistenz, ein Angriff auf die meisten Zombies führt zu einer 5-sekündigen Gegenangriffsschwelle. Wenn du einen Zombie angreifst, bevor die 5 Sekunden abgelaufen sind, wird die Schwelle für den Gegenangriff um weitere 5 Sekunden erhöht (bis zu 15 Sekunden). Die sicherste Art, mit Zombies im Nahkampf umzugehen, ist es, die Angriffe zu verteilen.\n\nWenn sich ein Zombie in deinem Weg befindet, der keine aktive Gegenangriffsschwelle hat, und du dich an ihm vorbeibewegen willst, kannst du vermeiden, Schaden zu nehmen, indem du den Zombie im Vorbeigehen triffst.\n\nZerstückelung:\nDeine Chance auf Zerstückelung liegt bei 25%, Sprintangriffe und Angriffe mit hoher Ausdauer erhöhen deine Chance auf Zerstückelung zusätzlich."
 Herbs,[4FC3F7]Kräuter: Effizienz und Nachwachsen[-]
 HerbsTip_title,[4FC3F7]Kräuter: Effizienz und Nachwachsen[-]
-HerbsTip,"Eine Mischung aus zwei grünen Kräutern erhöht die Potenz um 25 %.\n(160 + 160 = 320 x 1,25 = 400)\n\nEine Mischung aus drei grünen Kräutern erhöht die Potenz um 50 %.\n(160 + 160 + 160 = 480 x 1. 5 = 720)\n\nEine grüne + rote + blaue Kräutermischung ist die beste Kombination, da sie eine maximale Heilung von 800 bietet, Gift heilt und den Schaden für 90 Sekunden um 30 % verringert, was für den Einsatz in der Mitte des Kampfes ideal ist.\n\nDie Kräuter wachsen nach:\nEs gibt vier grüne Kräuter, ein rotes und ein blaues, die nachwachsen können. Diese „Saatgut“-Töpfe können aufgenommen und drinnen platziert werden, um den Zugang zu erleichtern. Sie werden im Haus wachsen."
+HerbsTip,"Eine Mischung aus zwei grünen Kräutern erhöht die Potenz um 25 %.\n(160 + 160 = 320 x 1,25 = 400)\n\nEine Mischung aus drei grünen Kräutern erhöht die Potenz um 50 %.\n(160 + 160 + 160 = 480 x 1. 5 = 720)\n\nEine grüne + rote + blaue Kräutermischung ist die beste Kombination, da sie eine maximale Heilung von 800 bietet, Gift heilt und den Schaden für 120 Sekunden um 30 % verringert, was für den Einsatz in der Mitte des Kampfes ideal ist.\n\nDie Kräuter wachsen nach:\nEs gibt vier grüne Kräuter, ein rotes und ein blaues, die nachwachsen können. Diese „Saatgut“-Töpfe können aufgenommen und drinnen platziert werden, um den Zugang zu erleichtern. Sie werden im Haus wachsen."
 AmmoCrafting,[4FC3F7]Muniherstellung[-]
 AmmoCraftingTip_title,[4FC3F7]Muniherstellung[-]
 AmmoCraftingTip,"Die Basisressourcen für das Handwerk:\n\nKohle:\nVerbrannte Bäume sind die einzige Quelle für Kohle. Wenn du nach draußen gehst, wirst du reichlich davon finden. Vermeide Zombies, wenn du nicht noch mehr Scharlachrote Köpfe haben willst.\n\nNitrat:\nNitrat findet man bei (a) Zombie-Tieren/verrottenden Leichen, (b) Draußen und (c) Treibholz.\n\nBleierz:\ndraußen zwischen den Bäumen und Zombies gibt es Bleierz.\n\nMessing:\nSammel die Heizkörper überall im Herrenhaus auf und schmelze sie in der Schmiede ein, die Schmiede ist irgendwo zu finden."
@@ -599,7 +602,7 @@ zombieJoe,Glock9's Dealer
 zombieSteve,Draycko
 zombieBusinessMan,Aviose
 zombieBoe,DD1GG
-zombieJanitor,HellsJanitorTV
+zombieJanitor,HellsJanitor
 zombieMoe,TheOrigamiGuru
 zombieLab,Umbrella Wissenschaftlerin
 zombieDarlene,Lois Griffin
@@ -633,7 +636,7 @@ Tyrant,Tyrann
 SuperTyrant,Super Tyrann
 BoeCrawler,Verkrüppelter DD1GG
 JoeCrawler,Glock9's Verkrüppelter Dealer
-JanitorCrawler,Verkrüppelter HellsJanitorTV
+JanitorCrawler,Verkrüppelter HellsJanitor
 ArleneCrawler,JaWoodle's Verkrüppeltes Girl
 LabWorkerCrawler,Verkrüppelte Umbrella Wissenschaftlerin
 DarleneCrawler,Verkrüppelte Lois Griffin
@@ -647,7 +650,7 @@ HazmatCrawler,Verkrüppelter Umbrella Gefahrguttechniker
 SkateboarderCrawler,Verkrüppelter DoctorBest85
 zombieMarleneRadiated,Misterri
 zombieJoeRadiated,Glock9's Dealer
-zombieJanitorRadiated,HellsJanitorTV
+zombieJanitorRadiated,HellsJanitor
 zombieYoRadiated,NotOnly25
 BoeCrimsonHead,Scharlachroter Kopf
 JoeCrimsonHead,Scharlachroter Kopf
@@ -779,3 +782,5 @@ BlackTigerLoot,Schwarze Tigerspinne-Loot
 TyrantLoot,Tyrann-Loot
 buffImmobalisedName,Immobilisiert
 buffImmobalisedDesc,Lesen Sie zuerst Ihre Schulungsbücher.
+buffInkRibbonImmobalisedName,Speichern Sie das Spiel zunächst, um sich fortzubewegen
+buffInkRibbonImmobalisedDesc,Pausieren Sie das Spiel und klicken Sie auf „Spiel speichern“.
