@@ -266,11 +266,11 @@
 </recipe>
 
 <recipe name="ammo9mmBulletBallRE" count="1" craft_time="0" craft_exp_gain="0" is_trackable="false" tags="perkChemistExpert,learnable">
-	<secondary_output name="ReloadingTool" count="1"/>
 	<ingredient name="resourceBulletTip" count="1"/>
 	<ingredient name="resourceGunPowder" count="40"/>
 	<ingredient name="resourceBulletCasing" count="1"/>
 	<ingredient name="ReloadingTool" count="1"/>
+	<output name="ReloadingTool" count="1"/>
 	<effect_group>
 		<passive_effect name="CraftingIngredientCount" level="1" operation="base_add" value="-10" tags="resourceGunPowder"/>
 	</effect_group>
@@ -289,22 +289,22 @@
 </recipe> -->
 
 <recipe name="ammo9mmBulletHPRE" count="1" craft_time="0" craft_exp_gain="0" is_trackable="false" tags="perkChemistExpert,learnable">
-	<secondary_output name="ReloadingTool" count="1"/>
 	<ingredient name="resourceBulletTip" count="1"/>
 	<ingredient name="resourceGunPowder" count="52"/>
 	<ingredient name="resourceBulletCasing" count="1"/>
 	<ingredient name="ReloadingTool" count="1"/>
+	<output name="ReloadingTool" count="1"/>
 	<effect_group>
 		<passive_effect name="CraftingIngredientCount" level="1" operation="base_add" value="-13" tags="resourceGunPowder"/>
 	</effect_group>
 </recipe>
 
 <recipe name="ammo44MagnumBulletBallRE" count="1" craft_time="0" craft_exp_gain="0" is_trackable="false" tags="perkChemistExpert,learnable">
-	<secondary_output name="ReloadingTool" count="1"/>
 	<ingredient name="resourceBulletTip" count="4"/>
 	<ingredient name="resourceGunPowder" count="160"/>
 	<ingredient name="resourceBulletCasing" count="4"/>
 	<ingredient name="ReloadingTool" count="1"/>
+	<output name="ReloadingTool" count="1"/>
 	<effect_group>
 		<passive_effect name="CraftingIngredientCount" level="1" operation="base_add" value="-40" tags="resourceGunPowder"/>
 	</effect_group>
@@ -323,11 +323,11 @@
 </recipe> -->
 
 <recipe name="ammo44MagnumBulletHPRE" count="1" craft_time="0" craft_exp_gain="0" is_trackable="false" tags="perkChemistExpert,learnable">
-	<secondary_output name="ReloadingTool" count="1"/>
 	<ingredient name="resourceBulletTip" count="4"/>
 	<ingredient name="resourceGunPowder" count="208"/>
 	<ingredient name="resourceBulletCasing" count="4"/>
 	<ingredient name="ReloadingTool" count="1"/>
+	<output name="ReloadingTool" count="1"/>
 	<effect_group>
 		<passive_effect name="CraftingIngredientCount" level="1" operation="base_add" value="-52" tags="resourceGunPowder"/>
 	</effect_group>
@@ -360,11 +360,11 @@
 </recipe> -->
 
 <recipe name="ammoShotgunShellRE" count="1" craft_time="0" craft_exp_gain="0" is_trackable="false" tags="perkChemistExpert,learnable">
-	<secondary_output name="ReloadingTool" count="1"/>
 	<ingredient name="resourceBuckshot" count="1"/>
 	<ingredient name="resourceGunPowder" count="120"/>
 	<ingredient name="resourcePaper" count="1"/>
 	<ingredient name="ReloadingTool" count="1"/>
+	<output name="ReloadingTool" count="1"/>
 	<effect_group>
 		<passive_effect name="CraftingIngredientCount" level="1" operation="base_add" value="-30" tags="resourceGunPowder"/>
 	</effect_group>
@@ -383,21 +383,21 @@
 </recipe> -->
 
 <recipe name="ammoShotgunSlugRE" count="1" craft_time="0" craft_exp_gain="0" is_trackable="false" tags="perkChemistExpert,learnable">
-	<secondary_output name="ReloadingTool" count="1"/>
 	<ingredient name="resourceBulletTip" count="3"/>
 	<ingredient name="resourceGunPowder" count="156"/>
 	<ingredient name="resourceScrapPolymers" count="1"/>
 	<ingredient name="ReloadingTool" count="1"/>
+	<output name="ReloadingTool" count="1"/>
 	<effect_group>
 		<passive_effect name="CraftingIngredientCount" level="1" operation="base_add" value="-39" tags="resourceGunPowder"/>
 	</effect_group>
 </recipe>
 
 <recipe name="resourceGunPowder" count="50" craft_time="0" craft_exp_gain="0" is_trackable="false" tags="perkChemistExpert,learnable">
-	<secondary_output name="ReloadingTool" count="1"/>
 	<ingredient name="resourceCoal" count="10"/>
 	<ingredient name="resourcePotassiumNitratePowder" count="10"/>
 	<ingredient name="ReloadingTool" count="1"/>
+	<output name="ReloadingTool" count="1"/>
 	<effect_group>
 		<passive_effect name="CraftingIngredientCount" level="1" operation="base_add" value="-2" tags="resourceCoal,resourcePotassiumNitratePowder"/>
 	</effect_group>
@@ -411,7 +411,7 @@
 	<ingredient name="Coin" count="1"/>
 </recipe>
 
-<recipe name="EmptyWaterBottle" count="1" craft_time="0" is_trackable="false" craft_exp_gain="0">
+<!-- <recipe name="EmptyWaterBottle" count="1" craft_time="0" is_trackable="false" craft_exp_gain="0">
 	<ingredient name="EmptyBottle" count="1"/>
 </recipe>
 
@@ -421,36 +421,36 @@
 
 <recipe name="EmptyYellow-6Bottle" count="1" craft_time="0" is_trackable="false" craft_exp_gain="0">
 	<ingredient name="EmptyBottle" count="1"/>
-</recipe>
+</recipe> -->
 
 <recipe name="NP-004Filled" count="1" craft_time="0" is_trackable="false" craft_exp_gain="0">
-	<secondary_output name="EmptyBottle" count="1"/>
 	<ingredient name="WaterFilled" count="1"/>
 	<ingredient name="UMB-No3Filled" count="1"/>
+	<output name="EmptyBottle" count="1"/>
 </recipe>
 
 <recipe name="UMB-No7Filled" count="1" craft_time="0" is_trackable="false" craft_exp_gain="0">
-	<secondary_output name="EmptyBottle" count="1"/>
 	<ingredient name="WaterFilled" count="1"/>
 	<ingredient name="Yellow-6Filled" count="1"/>
+	<output name="EmptyBottle" count="1"/>
 </recipe>
 
 <recipe name="UMB-No10Filled" count="1" craft_time="0" is_trackable="false" craft_exp_gain="0">
-	<secondary_output name="EmptyBottle" count="1"/>
 	<ingredient name="NP-004Filled" count="1"/>
 	<ingredient name="Yellow-6Filled" count="1"/>
+	<output name="EmptyBottle" count="1"/>
 </recipe>
 
 <recipe name="VP-017Filled" count="1" craft_time="0" is_trackable="false" craft_exp_gain="0">
-	<secondary_output name="EmptyBottle" count="1"/>
 	<ingredient name="UMB-No7Filled" count="1"/>
 	<ingredient name="UMB-No10Filled" count="1"/>
+	<output name="EmptyBottle" count="1"/>
 </recipe>
 
 <recipe name="V-Jolt" count="1" craft_time="0" is_trackable="false" craft_exp_gain="0">
-	<ingredient name="EmptyBottle" count="1"/>
 	<ingredient name="UMB-No3Filled" count="1"/>
 	<ingredient name="VP-017Filled" count="1"/>
+	<ingredient name="EmptyBottle" count="1"/>
 </recipe>
 
 
