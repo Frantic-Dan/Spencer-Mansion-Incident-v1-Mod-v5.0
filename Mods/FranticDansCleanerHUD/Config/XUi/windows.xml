@@ -77,7 +77,9 @@
 			</rect>	
 	</insertafter>
 	
-	<set xpath="//window[@name='windowChallengeList']/rect[@name='content']/grid[@name='newList']/@rows">1</set>
+	<!-- <set xpath="//window[@name='windowChallengeList']/rect[@name='content']/grid[@name='newList']/@rows">1</set> -->
+	
+	<remove xpath="//window[@name='windowPagingHeader']/button[@name='Challenges']"/>
 	
 	<!-- Skills -->
 	<set xpath="/windows/window[@name='windowSkillList']/panel[2]//rect[1]/@pos">6,2000</set>
