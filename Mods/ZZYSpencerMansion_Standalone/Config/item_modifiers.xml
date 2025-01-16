@@ -184,6 +184,11 @@
 			<passive_effect name="DismemberChance" operation="base_add" value=".75"/>
 
 		</effect_group>
+		
+		<effect_group tiered="false" name="internal attachment prefab (A19)">
+			<requirement name="HoldingItemHasTags" tags="ammoEft919mm"/>
+			<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="silencer_all_sig_srd_9_9x19"/>
+		</effect_group>
 	</item_modifier>
 
 	<item_modifier name="SamuraiEdgeParts" installable_tags="pistol" modifier_tags="trigger" blocked_tags="noMods" type="attachment">
@@ -195,7 +200,7 @@
 		<property name="Weight" value="0"/>
 		<effect_group tiered="false">
 			<passive_effect name="BurstRoundCount" operation="base_set" value="3"/>
-			<passive_effect name="RoundsPerMinute" operation="perc_add" value=".667"/>
+			<passive_effect name="RoundsPerMinute" operation="base_set" value="150"/>
 			<passive_effect name="SpreadDegreesVertical" operation="perc_add" value="-.25"/>
 			<passive_effect name="SpreadDegreesHorizontal" operation="perc_add" value="-.25"/>
 			<passive_effect name="KickDegreesVerticalMin" operation="perc_add" value="-.25"/>
@@ -238,7 +243,7 @@
 		<property name="Candrop" value="false"/>
 		<property name="Weight" value="0"/>
 		<effect_group tiered="false">
-			<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" value=".334"/>
+			<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" value=".5"/>
 			<passive_effect name="KickDegreesVerticalMin" operation="perc_add" value="-.25"/>
 			<passive_effect name="KickDegreesVerticalMax" operation="perc_add" value="-.25"/>
 			<passive_effect name="KickDegreesHorizontalMin" operation="perc_add" value="-.25"/>
