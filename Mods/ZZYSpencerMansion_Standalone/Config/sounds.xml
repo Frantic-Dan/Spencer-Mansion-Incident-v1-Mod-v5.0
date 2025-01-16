@@ -42,4 +42,52 @@
 
 </append>
 
+<append xpath="/Sounds">
+	<SoundDataNode name="ks23_close"> <AudioSource name="#@modfolder:/Config/Resources/SpencerMansionEFTGuns.unity3d?TarkovWeaponFire.prefab"/> <NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/>
+		<Noise ID="0" noise="108" time="2" muffled_when_crouched="0.8" heat_map_strength="1" heat_map_time="60"/>
+		<AudioClip ClipName="#@modfolder:/Config/Resources/SpencerMansionEFTGuns.unity3d?ks23_fire_outdoor_close"/>
+		<LocalCrouchVolumeScale value="1"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="60"/> <MaxVoicesPerEntity value="30"/> <MaxRepeatRate value="0.001"/>
+	</SoundDataNode>
+</append>
+
+<append xpath="/Sounds">
+	<SoundDataNode name="m590_close"> <AudioSource name="#@modfolder:/Config/Resources/SpencerMansionEFTGuns.unity3d?TarkovWeaponFire.prefab"/> <NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/>
+		<Noise ID="0" noise="108" time="2" muffled_when_crouched="0.8" heat_map_strength="1" heat_map_time="60"/>
+		<AudioClip ClipName="#@modfolder:/Config/Resources/SpencerMansionEFTGuns.unity3d?moss500_fire_close1"/>
+		<LocalCrouchVolumeScale value="1"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="60"/> <MaxVoicesPerEntity value="30"/> <MaxRepeatRate value="0.001"/>
+	</SoundDataNode>
+</append>
+
+<append xpath="/Sounds">
+	<SoundDataNode name="fn40gl_close"> <AudioSource name="#@modfolder:/Config/Resources/SpencerMansionEFTGuns.unity3d?TarkovWeaponFire.prefab"/> <NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/>
+		<Noise ID="0" noise="108" time="2" muffled_when_crouched="0.8" heat_map_strength="1" heat_map_time="60"/>
+		<AudioClip ClipName="#@modfolder:/Config/Resources/SpencerMansionEFTGuns.unity3d?fn40gl_fire_close"/>
+		<LocalCrouchVolumeScale value="1"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="60"/> <MaxVoicesPerEntity value="30"/> <MaxRepeatRate value="0.001"/>
+	</SoundDataNode>
+</append>
+
+<append xpath="/Sounds">
+	<SoundDataNode name="chinalake_close"> <AudioSource name="#@modfolder:/Config/Resources/SpencerMansionEFTGuns.unity3d?TarkovWeaponFire.prefab"/> <NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/>
+		<Noise ID="0" noise="108" time="2" muffled_when_crouched="0.8" heat_map_strength="1" heat_map_time="60"/>
+		<AudioClip ClipName="#@modfolder:/Config/Resources/SpencerMansionEFTGuns.unity3d?china_lake_close_outdoor"/>
+		<LocalCrouchVolumeScale value="1"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="60"/> <MaxVoicesPerEntity value="30"/> <MaxRepeatRate value="0.001"/>
+	</SoundDataNode>
+</append>
+
+<append xpath="/Sounds">
+	<SoundDataNode name="m9a3_fire"> <AudioSource name="#@modfolder:/Config/Resources/SpencerMansionEFTGuns.unity3d?TarkovWeaponFire.prefab"/> <NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/>
+		<Noise ID="0" noise="108" time="2" muffled_when_crouched="0.8" heat_map_strength="1" heat_map_time="60"/>
+		<AudioClip ClipName="#@modfolder:/Config/Resources/SpencerMansionEFTGuns.unity3d?m9a3_fire_close"/>
+		<LocalCrouchVolumeScale value="1"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="60"/> <MaxVoicesPerEntity value="30"/> <MaxRepeatRate value="0.001"/>
+	</SoundDataNode>
+</append>
+
+<append xpath="/Sounds">
+	<SoundDataNode name="rsh12_fire"> <AudioSource name="#@modfolder:/Config/Resources/SpencerMansionEFTGuns.unity3d?TarkovWeaponFire.prefab"/> <NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/>
+		<Noise ID="0" noise="108" time="2" muffled_when_crouched="0.8" heat_map_strength="1" heat_map_time="60"/>
+		<AudioClip ClipName="#@modfolder:/Config/Resources/SpencerMansionEFTGuns.unity3d?rsh_12_outdoor_close_oneshot"/>
+		<LocalCrouchVolumeScale value="1"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="60"/> <MaxVoicesPerEntity value="30"/> <MaxRepeatRate value="0.001"/>
+	</SoundDataNode>
+</append>
+
 </configs>
