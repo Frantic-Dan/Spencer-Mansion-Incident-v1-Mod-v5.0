@@ -1,0 +1,17 @@
+<xml>
+
+	<insertAfter xpath="//window_group[@name='map']">
+
+		<window_group name="map">
+			<window name="wdwSpencerMansionMap"/>
+		</window_group>
+
+		<!-- <window_group name="wgDeathScreen" actionSet="true" defaultSelected="btnReload"> -->
+		<!-- 	<window name="wdwDeathScreen" /> -->
+		<!-- </window_group> -->
+
+	</insertAfter>
+
+	<remove xpath="//window_group[@name='map'][1]"/>
+
+</xml>
