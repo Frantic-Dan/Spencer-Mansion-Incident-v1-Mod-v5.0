@@ -149,12 +149,12 @@
 		<effect_group>
 			<passive_effect name="PhysicalDamageResist" operation="base_add" level="1" value="15" />
 			<passive_effect name="HealthMax" operation="base_add" level="1" value="200"/>
-			<passive_effect name="HealthChangeOT" operation="base_add" level="1" value=".067"/>
+			<passive_effect name="HealthChangeOT" operation="base_add" level="1" value=".1"/>
 		</effect_group>
 		
 		<effect_group>
 			<requirement name="!HoldingItemHasTags" tags="QuadRocketLauncher"/>
-			<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" level="1" value=".75"/>
+			<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" level="1" value="1"/>
 		</effect_group>
 		
 		<effect_group>
@@ -168,14 +168,31 @@
 		<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attTraining" operation="GTE" value="1" /></level_requirements>
 		
 		<effect_group>
-			<passive_effect name="HealthMax" operation="base_add" level="1" value="500"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="0,1" value="1,0" tags="ammo9mmBulletBallRE,ammo44MagnumBulletBallRE,ammoShotgunShellRE,resourceGunPowder,modGunSoundSuppressorSilencerRE,modMeleeSerratedBladeRE,BulletProofVest,modArmorBandolier,Yellow_Herb,FirstAidSpray,thrownAmmoMolotovCocktailRE,thrownGrenadeRE,ammoGrenadeExplosiveRE,ammoGrenadeAcidRE,ammoGrenadeFlameRE,questRewardAmmoCraftingBundle"/>
+		</effect_group>
+		
+		<effect_group>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="FirstAidSprayBox,9mmBullet,ShotgunShell,44MagnumBullet"/>
 			<effect_description level="1" desc_key="ClassicModeChrisName" long_desc_key="perkClassicModeChrisDesc"/>
 		</effect_group>
 		
 		<effect_group>
+			<passive_effect name="PhysicalDamageResist" operation="base_add" level="1" value="15" />
+			<passive_effect name="HealthMax" operation="base_add" level="1" value="700"/>
+			<passive_effect name="HealthChangeOT" operation="base_add" level="1" value=".1"/>
+		</effect_group>
+		
+		<effect_group>
+			<requirement name="!HoldingItemHasTags" tags="QuadRocketLauncher"/>
+			<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" level="1" value="1"/>
+		</effect_group>
+		
+		<effect_group>
 			<requirement name="HoldingItemHasTags" tags="perkKnifeTrained"/>
+			<passive_effect name="StaminaLoss" operation="base_subtract" level="1" value="3" tags="primary"/>
+			<passive_effect name="StaminaLoss" operation="base_subtract" level="1" value="6" tags="secondary"/>
 			<passive_effect name="EntityDamage" operation="perc_add" level="1" value=".25" tags="perkKnifeTrained"/>
-		</effect_group>	
+		</effect_group>
 
 	</perk>
 
@@ -183,6 +200,7 @@
 	<perk name="perkPistolPeteHPAmmo" parent="attTraining" max_level="1" base_skill_point_cost="0" name_key="bookPistolPeteHPAmmo" desc_key="perkPistolPeteHPAmmoDesc" long_desc_key="perkPistolPeteHPAmmoLongDesc" icon="ui_game_symbol_pistol">
 		<effect_group>
 			<requirement name="ProgressionLevel" progression_name="perkClassicMode" operation="Equals" value="0"/>
+			<requirement name="ProgressionLevel" progression_name="perkClassicModeChris" operation="Equals" value="0"/>
 			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="ammo9mmBulletHPRE,9mmHPBullet"/>
 		</effect_group>
 	</perk>
@@ -190,6 +208,7 @@
 	<perk name="perkShotgunMessiahSlugs" parent="attTraining" max_level="1" base_skill_point_cost="0" name_key="bookShotgunMessiahSlugs" desc_key="perkShotgunMessiahSlugsDesc" long_desc_key="perkShotgunMessiahSlugsLongDesc" icon="ui_game_symbol_shotgun">
 		<effect_group>
 			<requirement name="ProgressionLevel" progression_name="perkClassicMode" operation="Equals" value="0"/>
+			<requirement name="ProgressionLevel" progression_name="perkClassicModeChris" operation="Equals" value="0"/>
 			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="ammoShotgunSlugRE,ShotgunSlug"/>
 		</effect_group>
 	</perk>	
@@ -197,6 +216,7 @@
 	<perk name="perkEnforcerHPAmmo" parent="attTraining" max_level="1" base_skill_point_cost="0" name_key="bookEnforcerHPAmmo" desc_key="perkEnforcerHPAmmoDesc" long_desc_key="perkEnforcerHPAmmoLongDesc" icon="ui_game_symbol_gunslinger">
 		<effect_group>
 			<requirement name="ProgressionLevel" progression_name="perkClassicMode" operation="Equals" value="0"/>
+			<requirement name="ProgressionLevel" progression_name="perkClassicModeChris" operation="Equals" value="0"/>
 			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="44MagnumHPBullet,ammo44MagnumBulletHPRE"/>
 		</effect_group>
 	</perk>	
