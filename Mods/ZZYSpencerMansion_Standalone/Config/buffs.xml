@@ -58,7 +58,9 @@
 	<set xpath="/buffs/buff[@name='buffRadiationPool']/effect_group/passive_effect[@name='HealthChangeOT']/@value">16</set>
 	<set xpath="/buffs/buff[@name='buffRadiationPool']/effect_group//triggered_effect[3]/@intensity">0.3</set> -->
 	
-	
+	<insertafter xpath="/buffs/buff[@name='buffDontMove']//passive_effect[@name='JumpStrength']">
+		<passive_effect name="DisableItem" operation="base_set" value="1" tags="melee,ranged" />
+	</insertafter>
 	
 <append xpath="/buffs">
 
@@ -69,6 +71,42 @@
 				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="walktype" operation="set" value="randomint(1,6)"/>
 			</effect_group>
 			<effect_group>
+				<requirement name="CVarCompare" cvar="walktype" operation="Equals" value="1"/>
+				<requirement name="!EntityTagCompare" tags="player"/>
+				<requirement name="EntityTagCompare" tags="walker"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AnimatorSetInt" property="WalkType" value="1"/>
+			</effect_group>
+			<effect_group>
+				<requirement name="CVarCompare" cvar="walktype" operation="Equals" value="2"/>
+				<requirement name="!EntityTagCompare" tags="player"/>
+				<requirement name="EntityTagCompare" tags="walker"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AnimatorSetInt" property="WalkType" value="2"/>
+			</effect_group>
+			<effect_group>
+				<requirement name="CVarCompare" cvar="walktype" operation="Equals" value="3"/>
+				<requirement name="!EntityTagCompare" tags="player"/>
+				<requirement name="EntityTagCompare" tags="walker"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AnimatorSetInt" property="WalkType" value="3"/>
+			</effect_group>
+			<effect_group>
+				<requirement name="CVarCompare" cvar="walktype" operation="Equals" value="4"/>
+				<requirement name="!EntityTagCompare" tags="player"/>
+				<requirement name="EntityTagCompare" tags="walker"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AnimatorSetInt" property="WalkType" value="5"/>
+			</effect_group>
+			<effect_group>
+				<requirement name="CVarCompare" cvar="walktype" operation="Equals" value="5"/>
+				<requirement name="!EntityTagCompare" tags="player"/>
+				<requirement name="EntityTagCompare" tags="walker"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AnimatorSetInt" property="WalkType" value="6"/>
+			</effect_group>
+			<effect_group>
+				<requirement name="CVarCompare" cvar="walktype" operation="Equals" value="6"/>
+				<requirement name="!EntityTagCompare" tags="player"/>
+				<requirement name="EntityTagCompare" tags="walker"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AnimatorSetInt" property="WalkType" value="7"/>
+			</effect_group>
+			<!-- <effect_group>
 				<requirement name="CVarCompare" cvar="walktype" operation="Equals" value="1"/>
 				<triggered_effect trigger="onSelfBuffUpdate" action="SetWalkType,IDCCore" value="1"/>
 			</effect_group>
@@ -91,7 +129,7 @@
 			<effect_group>
 				<requirement name="CVarCompare" cvar="walktype" operation="Equals" value="6"/>
 				<triggered_effect trigger="onSelfBuffUpdate" action="SetWalkType,IDCCore" value="7"/>
-			</effect_group>
+			</effect_group> -->
 			
 			<!-- <effect_group>
 				<requirement name="HitLocation" body_parts="LeftUpperLeg,RightUpperLeg,LeftLowerLeg,RightLowerLeg"/>
@@ -180,6 +218,33 @@
 		</effect_group>
 	</buff>
 	
+	<buff name="buffInkRibbonImmobalised" name_key="buffInkRibbonImmobalisedName" description_key="buffInkRibbonImmobalisedDesc" icon="ui_game_symbol_other" icon_color="155,155,255">
+		<stack_type value="ignore"/>
+		<duration value="0"/>
+
+		<effect_group>
+			<requirement name="PlayerItemCount" item_name="InkRERibbon" operation="GTE" value="1"/>
+			<passive_effect name="Mobility" operation="base_add" value="-1"/>
+		</effect_group>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffInkRibbonImmobalisedImmune">
+				<requirement name="PlayerItemCount" item_name="InkRERibbon" operation="Equals" value="0"/>
+			</triggered_effect>
+		</effect_group>
+	</buff>
+	
+	<buff name="buffInkRibbonImmobalisedImmune" hidden="true">
+		<stack_type value="ignore"/>
+		<duration value="0"/>
+
+		<effect_group>
+			<passive_effect name="BuffResistance" operation="base_set" value="100" tags="buffInkRibbonImmobalised"/>
+		</effect_group>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffInkRibbonImmobalised"/>
+		</effect_group>
+	</buff>
+	
 	<buff name="buffExplosionTrigger" hidden="true">
         <stack_type value="ignore"/>
         <duration value="0"/>
@@ -260,7 +325,7 @@
 		<display_value_format value="time"/>
 
 		<effect_group>
-			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".buffTimeREvertDisplay2" operation="set" value="115"/>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".buffTimeREvertDisplay2" operation="set" value="5"/>
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$buffTimeREvertDuration2" operation="set" value="@.buffTimeREvertDisplay2"/>
 			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$buffTimeREvertDuration2" operation="subtract" value="1"/>
 			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".buffTimeREvertDisplay2" operation="set" value="@$buffTimeREvertDuration2"/>
@@ -554,10 +619,10 @@
 				<requirement name="CVarCompare" cvar="_difficulty" operation="GTE" value="1"/>
 			</passive_effect>
 
-			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyScreenEffect" intensity="0" fade=".7" effect_name="Hot" />
-			<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" fade="1" effect_name="Hot"/>
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyScreenEffect" intensity="0" fade=".5" effect_name="Hot" />
+			<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" fade=".7" effect_name="Hot"/>
 
-			<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" effect_name="Radiation" intensity=".3" fade="1"/>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" effect_name="Radiation" intensity=".2" fade="1"/>
 			<triggered_effect trigger="onSelfDied" action="ModifyScreenEffect" effect_name="Radiation" intensity="0" fade="0"/>
 			<triggered_effect trigger="onSelfDied" action="RemoveBuff" buff="buffRadiationPool" />
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" effect_name="Radiation" intensity="0" fade="1"/>
@@ -567,7 +632,7 @@
 	<buff name="buffReloadMovementPenalty" name_key="Reloading" icon="ui_game_symbol_pack_mule" icon_color="255,128,0" hidden="true">
 		<stack_type value="ignore"/>
 		<damage_type value="stun"/>
-		<duration value="6"/>
+		<duration value="15"/>
 
 		<effect_group>
 			<triggered_effect trigger="onReloadStop" action="RemoveBuff" buff="buffReloadMovementPenalty"/>
@@ -585,13 +650,29 @@
 		<effect_group>
 			<requirement name="ProgressionLevel" progression_name="perkClassicMode" operation="Equals" value="0"/>
 			<requirement name="!HasBuff" buff="buffBandolierLegs"/>
-				<passive_effect name="WalkSpeed" operation="perc_subtract" value=".4"/>
-				<passive_effect name="RunSpeed" operation="perc_subtract" value=".4"/>
-				<passive_effect name="JumpStrength" operation="perc_subtract" value=".4"/>
+				<passive_effect name="WalkSpeed" operation="perc_subtract" value=".35"/>
+				<passive_effect name="RunSpeed" operation="perc_subtract" value=".35"/>
+				<passive_effect name="JumpStrength" operation="perc_subtract" value=".99"/>
 		</effect_group>
 		
 		<effect_group>
 			<requirement name="ProgressionLevel" progression_name="perkClassicMode" operation="Equals" value="0"/>
+			<requirement name="HasBuff" buff="buffBandolierLegs"/>
+				<passive_effect name="WalkSpeed" operation="perc_subtract" value="0"/>
+				<passive_effect name="RunSpeed" operation="perc_subtract" value="0"/>
+				<passive_effect name="JumpStrength" operation="perc_subtract" value="0"/>
+		</effect_group>
+		
+		<effect_group>
+			<requirement name="ProgressionLevel" progression_name="perkClassicModeChris" operation="Equals" value="0"/>
+			<requirement name="!HasBuff" buff="buffBandolierLegs"/>
+				<passive_effect name="WalkSpeed" operation="perc_subtract" value=".35"/>
+				<passive_effect name="RunSpeed" operation="perc_subtract" value=".35"/>
+				<passive_effect name="JumpStrength" operation="perc_subtract" value=".99"/>
+		</effect_group>
+		
+		<effect_group>
+			<requirement name="ProgressionLevel" progression_name="perkClassicModeChris" operation="Equals" value="0"/>
 			<requirement name="HasBuff" buff="buffBandolierLegs"/>
 				<passive_effect name="WalkSpeed" operation="perc_subtract" value="0"/>
 				<passive_effect name="RunSpeed" operation="perc_subtract" value="0"/>
@@ -608,9 +689,24 @@
 		<effect_group>
 			<requirement name="ProgressionLevel" progression_name="perkClassicMode" operation="Equals" value="1"/>
 			<requirement name="HoldingItemHasTags" tags="QuadRocketLauncher"/>
-				<passive_effect name="WalkSpeed" operation="perc_subtract" value=".4"/>
-				<passive_effect name="RunSpeed" operation="perc_subtract" value=".4"/>
-				<passive_effect name="JumpStrength" operation="perc_subtract" value=".4"/>
+				<passive_effect name="WalkSpeed" operation="perc_subtract" value=".35"/>
+				<passive_effect name="RunSpeed" operation="perc_subtract" value=".35"/>
+				<passive_effect name="JumpStrength" operation="perc_subtract" value=".99"/>
+		</effect_group>
+		
+		<effect_group>
+			<requirement name="ProgressionLevel" progression_name="perkClassicModeChris" operation="Equals" value="1"/>
+			<requirement name="!HoldingItemHasTags" tags="QuadRocketLauncher"/>
+				<passive_effect name="Mobility" operation="base_add" value="-1"/>
+				<passive_effect name="JumpStrength" operation="perc_subtract" value=".99"/>
+		</effect_group>
+		
+		<effect_group>
+			<requirement name="ProgressionLevel" progression_name="perkClassicModeChris" operation="Equals" value="1"/>
+			<requirement name="HoldingItemHasTags" tags="QuadRocketLauncher"/>
+				<passive_effect name="WalkSpeed" operation="perc_subtract" value=".35"/>
+				<passive_effect name="RunSpeed" operation="perc_subtract" value=".35"/>
+				<passive_effect name="JumpStrength" operation="perc_subtract" value=".99"/>
 		</effect_group>
 		
 	</buff>
@@ -635,6 +731,22 @@
 	
 	<effect_group>
 		<requirement name="ProgressionLevel" progression_name="perkClassicMode" operation="Equals" value="1"/>
+		<requirement name="!HasBuff" buff="buffClassicAiming"/>
+		<passive_effect name="DisableItem" operation="base_set" value="1" tags="ranged" />
+	</effect_group>
+
+	</buff>
+	
+	<buff name="buffClassicAimingTriggerChris" hidden="true" remove_on_death="false">
+		<stack_type value="replace"/>
+		<duration value="0"/>
+	<effect_group>
+			<requirement name="ProgressionLevel" progression_name="perkClassicModeChris" operation="Equals" value="1"/>
+			<triggered_effect trigger="onSelfAimingGunStart" action="AddBuff" buff="buffClassicAiming"/>
+	</effect_group>
+	
+	<effect_group>
+		<requirement name="ProgressionLevel" progression_name="perkClassicModeChris" operation="Equals" value="1"/>
 		<requirement name="!HasBuff" buff="buffClassicAiming"/>
 		<passive_effect name="DisableItem" operation="base_set" value="1" tags="ranged" />
 	</effect_group>
@@ -713,7 +825,7 @@
 		<duration value="3"/>
 	
 	<effect_group>
-		<triggered_effect trigger="onSelfBuffFinish" action="ManualSave,ManualSaving"/>
+		<triggered_effect trigger="onSelfBuffFinish" action="CrimsonCore.ManualSave,CrimsonCore"/>
 	</effect_group>
 
 	</buff>
