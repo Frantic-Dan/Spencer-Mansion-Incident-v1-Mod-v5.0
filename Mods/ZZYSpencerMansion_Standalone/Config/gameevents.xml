@@ -87,7 +87,7 @@
 		</if>
 	</conditional>
 	
-	<conditional>
+	<!-- <conditional>
       <if cond="mod_loaded('IDCCore') == false">
 			<insertafter xpath="/gameevents/action_sequence[@name='game_first_spawn']/action[@class='Delay']">
 		<action class="ShowMessageWindow">
@@ -117,9 +117,9 @@
 		</action>
 			</insertafter>
 		</if>
-	</conditional>
+	</conditional> -->
 	
-	<conditional>
+	<!-- <conditional>
       <if cond="mod_loaded('ExplicitGunReloading') == false">
 			<insertafter xpath="/gameevents/action_sequence[@name='game_first_spawn']/action[@class='Delay']">
 		<action class="ShowMessageWindow">
@@ -149,7 +149,7 @@
 		</action>
 			</insertafter>
 		</if>
-	</conditional>
+	</conditional> -->
 	
 	<conditional>
       <if cond="mod_loaded('FranticDanThunder') == false">
@@ -407,8 +407,40 @@
 		</if>
 	</conditional>
 	
-	<conditional>
+	<!-- <conditional>
       <if cond="mod_loaded('ManualSaving') == false">
+			<insertafter xpath="/gameevents/action_sequence[@name='game_first_spawn']/action[@class='Delay']">
+		<action class="ShowMessageWindow">
+			<property name="message" value="ModNotInstalledCorrectlyText" />
+			<property name="title" value="Mod Not Installed Correctly" />
+			<property name="phase" value="1" />
+		</action>
+
+		<action class="Delay">
+			<property name="time" value="2" />
+			<property name="phase" value="2" />
+		</action>
+
+		<action class="SetScreenEffect">
+			<property name="phase" value="3" />
+			<property name="screen_effect" value="FadeToBlack" />
+			<property name="intensity" value="1" />
+			<property name="fade_time" value="4" />
+		</action>
+		
+		<action class="BlockReplace">
+      <property name="min_offset" value="-80,-15,-80" />
+      <property name="max_offset" value="80,15,80" />
+      <property name="block_to" value="air" />
+      <property name="allow_terrain" value="true" />
+      <property name="phase" value="4" />
+		</action>
+			</insertafter>
+		</if>
+	</conditional> -->
+	
+	<conditional>
+      <if cond="mod_loaded('SpencerMansionCrimsonCore') == false">
 			<insertafter xpath="/gameevents/action_sequence[@name='game_first_spawn']/action[@class='Delay']">
 		<action class="ShowMessageWindow">
 			<property name="message" value="ModNotInstalledCorrectlyText" />
