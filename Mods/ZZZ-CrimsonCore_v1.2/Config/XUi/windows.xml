@@ -1,0 +1,28 @@
+<xml>
+
+	<!-- <append xpath="//window[@name='ingameMenu']/grid[@name='buttons']">
+		<rect width="250" height="46">
+			<simplebutton name="btnSaveManual" depth="3" width="250" height="46" caption_key="xuiSaveManual" font_size="40" enabled="{ManualSaveEnabled}"/>
+			<sprite name="spriteSaveStatus" depth="3" pivot="topright" pos="243,-7" width="32" height="32" sprite="ui_game_symbol_check" color="128,255,128,0"/>
+		</rect>
+	</append> -->
+
+	<append xpath="/windows">
+
+		<window name="wdwSpencerMansionMap" width="1280" height="720" anchor="CenterCenter" controller="CrimsonCore.SpencerMansionMap,CrimsonCore">
+			<sprite depth="1" name="background" pos="-640,360" width="1280" height="720" sprite="menu_empty" color="[black]" type="sliced" fillcenter="true" globalopacity="false"/>
+			<sprite depth="2" name="mapSprite" color="[white]" pos="-630,350" width="1260" height="700" globalopacity="true" atlas="MapsAtlas"/>
+			<sprite depth="3" name="border" sprite="menu_empty3px" color="[white]" type="sliced" fillcenter="false" width="1280" height="720" pivot="center"/>
+		</window>
+
+	</append>
+	
+	<insertbefore xpath="//window[@name='ingameMenu']/grid[@name='buttons']//simplebutton[@name='btnInvite']">
+		<rect> <!-- width="250" height="46" -->
+			<simplebutton name="btnSaveManual" depth="3" width="250" height="46" caption_key="xuiSaveManual" font_size="40" enabled="{ManualSaveEnabled}"/>
+			<sprite name="spriteSaveStatus" depth="3" pivot="topright" pos="243,-7" width="32" height="32" sprite="ui_game_symbol_check" color="128,255,128,0"/>
+		</rect>
+		<rect/>
+	</insertbefore>
+
+</xml>
