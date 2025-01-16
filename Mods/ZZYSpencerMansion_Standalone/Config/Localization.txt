@@ -40,9 +40,9 @@ loadingTipRE6,"Zombies don't feel pain, just like in Resident Evil, so they won'
 loadingTipRE6_title,Zombies Feel No Pain:
 loadingTipRE7,"This devastating weapon can easily take off legs (Shells) and blow off heads (Slugs)."
 loadingTipRE7_title,The Pump Shotgun:
-loadingTipRE8,"A huge thank you to the following people: Mythix, AuroraGiggleFairy, w00kie n00kie, RambunctiousRed, HellsJanitorTV, JaxTeller718, KhaineGB, Khelldon, Chikorina, HaidrGna, AvioseVeAvara, Subquake, Zilox, Redbeard, idc12, Pyrokar420, ocbMaurice, NORDMANN."
+loadingTipRE8,"A huge thank you to the following people: Mythix, AuroraGiggleFairy, w00kie n00kie, RambunctiousRed, HellsJanitor, JaxTeller718, KhaineGB, Khelldon, Chikorina, HaidrGna, AvioseVeAvara, Subquake, Zilox, Redbeard, idc12, Pyrokar420, ocbMaurice, NORDMANN, Closer_ex, M14's ZettaiRyouiki, ChoccyMilk."
 loadingTipRE8_title,Special Thanks!
-SpencerMansionSpawnText,"You're about to experience the Spencer Mansion Incident in a first person perspective.\n\nTo keep the experience true to Resident Evil, please note the following.\n1) You have limited inventory space of 10 slots. There are Item Storage Boxes to store your items. These boxes are not linked like in classic Resident Evil (Real Survival mode) so be mindful of where you store your items.\n2) You cannot jump.\n3) Most enemies don't feel pain, so fighting them will be different to what you're used to.\n4) Ink Ribbons are needed to save your progress! (Found in typewriters)\n\n[FFC800]For an immersive experience, I'd recommend turning up your ambient sound volume and your music to play all the time. The lighting is balanced to have brightness set to 50%.[-]\n\nFor the intended experience, be sure to remove any non-related mods."
+SpencerMansionSpawnText,"You're about to experience the Spencer Mansion Incident in a first person perspective.\n\nTo keep the experience true to Resident Evil, please note the following.\n1) You have limited inventory space of 10 slots. There are Item Storage Boxes to store your items.\n2) You cannot jump.\n3) Most enemies don't feel pain, so fighting them will be different to what you're used to.\n4) Ink Ribbons are needed to save your progress! (Found in typewriters)\n\n[FFC800]For an immersive experience, I'd recommend turning up your ambient sound volume and your music to play all the time.[-]\n\n[FFC800]For the intended experience, be sure to remove any non-related mods.[-]"
 Mod Not Installed Correctly,[FF4F00]Mod Not Installed Correctly[-]
 ModNotInstalledCorrectlyText,"[FF4F00]This mod hasn't been installed correctly and is missing critical files required for the mod to be 100% functional.[-]"
 TwitchAction_SpawnCrawlerCommand,#crawler
@@ -114,7 +114,7 @@ EmptyBaseBottledesc,Craft into specific bottles before filling.
 EmptyBottledesc,A container used to mix chemicals.\n\nFill using the secondary action.
 FilledBottledesc,A bottle filled with liquid
 MixingBottledesc,Two types of liquid mixing together.
-VJoltdesc,A powerful chemical that can weaken Plant 42.\n\nPress the [Interact] button to use.
+VJoltdesc,A powerful chemical that can weaken Plant 42.\n\nPress the [action:permanent:Activate] button to use.
 Crestdesc,A hexagonal shaped crest.
 BrokenShotgundesc,A shotgun that is damaged beyond repair.
 Herbicidedesc,A chemical used to kill plant life.
@@ -133,7 +133,7 @@ RedGemstonedesc,This small rock would be worth a fortune...
 LockedBoxdesc,Securely locked
 PrisonKey,A floppy disk with the word 'MO' on it.
 GyrocopterDesc,"Now you can go to the helipad through the laboratory's exit."
-REkeys,Use by pressing the [Interact] button while looking at a locked door.
+REkeys,Use by pressing the [action:permanent:Activate] button while looking at a locked door.
 Jill's_LockPick,Jill's LockPick
 SwordKey,Sword Key
 TerraceKey,Terrace Key
@@ -326,6 +326,7 @@ AK-47HittoPickup,AK-47\n(Hit to Pickup)
 QuadRocketLauncherHittoPickup,Quad Rocket Launcher\n(Hit to Pickup)
 LockedSuperRocket,Press switch first
 PumpShotgunHittoPickup,Pump Shotgun\n(Hit to Pickup)
+AssaultShotgunBlock,Assault Shotgun\n(Hit to Pickup)
 MagnumRevolverHittoPickup,Magnum Revolver\n(Hit to Pickup)
 RocketLauncherHittoPickup,Grenade Launcher\n(Hit to Pickup)
 HandgunAmmoHittoPickup,Handgun Ammo\n(Hit to Pickup)
@@ -391,11 +392,13 @@ ClassicModeInventoryBlocker,Classic Mode Inventory Blocker
 ClassicModeInventoryBlockerDesc,"You're playing Classic Mode, this inventory slot is permanently blocked."
 SurvivalKnife,Survival Knife
 SurvivalKnifedesc,"Jill's custom made knife, great for close quarter combat and harvesting animals.\n\nSprinting Attack: +15% dismember chance.\nStamina > 50%: +10% dismember chance.\n(Calculates after attack)\n\n\n"
+statStaminaLossPower,Stamina Cost (Power Attack)
 S.T.A.R.SHandgun,S.T.A.R.S Handgun
 Handgundesc,"A Custom S.T.A.R.S. Standard Handgun, fires 9×19mm parabellum rounds.\n\n\n"
 MagnumRevolver,Magnum Revolver
 Magnumdesc,"A heavy magnum revolver, an extremely powerful handgun. It fires .357 magnum rounds.\n\n\n"
 PumpShotgun,Pump Shotgun
+AssaultShotgun,Assault Shotgun
 Shotgundesc,"Fires 12 Gauge Shells and Slugs. A weapon that is capable of firing wide-range.\nIt's old and worn so has a slow fire rate.\n\nA great chance to remove a leg!\n\n\n"
 AK-47,AK-47 Assault Rifle
 Rifledesc,"An automatic assault rifle that can help you in desperate situations.\n\n\n"
@@ -489,7 +492,7 @@ SamuraiEdgeDesc,"Special custom parts that drastically increases fire rate and a
 AssaultShotgunParts,Assault Shotgun Parts
 AssaultShotgunDesc,"A S.T.A.R.S. custom arsenal and also Richard's favourite.\n\nHolds 10 rounds. Has a tighter spread. Longer range and faster fire rate. But slower reload speed.\n\n\n"
 MagnumSpeedloader,Magnum Speedloader
-MagnumSpeedloaderDesc,"This assists in a 25% faster reload and overall makes it easier to wield the revolver.\n\n\n"
+MagnumSpeedloaderDesc,"This assists in a 33% faster reload and overall makes it easier to wield the revolver.\n\n\n"
 AK-47MuzzleBrake,AK-47 Muzzle Brake
 MuzzleBreakDesc,"Makes the assault rifle more accurate and overall easier to wield.\n\n\n"
 modGunMeleeBlessedMetalTyrant,T-Virus neutraliser
@@ -573,13 +576,13 @@ TrainingInformationTip_title,[4FC3F7]Training Information[-]
 TrainingInformationTip,"Your training perks - More in-depth details:\n\nChemist Expert:\nAllows you to craft a lot more ammo with great gunpowder efficiency. Also allows you to dismantle unwanted ammo without losing any resources.\n\nPassive Healing:\nYou heal 900 health per hour, as long as you're not at full health. Great for a long playthrough, bad for speedrunning.\n\nMedical Knowledge:\n35% more medical healing is great for maximising your healing supplies as well as mid-combat healing. Better for speedrunning than Passive Healing is.\n\nKnife Training:\nGreatly improves your ability to use the knife, allows you to save more ammo, kill faster and you won't get exhausted as quickly.\n\nCardio:\nYou can run faster and longer, allowing you to get away from fast enemies without getting hit from behind.\n\nPain Tolerance:\nYou are more resilient than most and can survive more hits before succumbing to your injuries."
 Achievements,[4FC3F7]Achievements[-]
 AchievementsTip_title,[4FC3F7]Achievements[-]
-AchievementsTip,"Below is a list of achievements that you can aim for, if you're looking for an extra challenge.\n\n[4FC3F7]Classics Never Die[-]\nBeat the game in Classic Mode.\n\n[4FC3F7]Samurai 'Jill' Edge[-]\nBeat the game using only the Survival Knife as your weapon.\n(Firearms and throwables can't be used at all)\n\n[4FC3F7]Inventory Management Master[-]\nBeat the game without ever using any Item Storage Boxes to store your items.\n(This includes Typewriters, the Forge and Workbench. Exception: You may only use the Red Bags)\n\n[4FC3F7]Outbreak Prevented?[-]\nBeat the game with at least 260 kills.\n\n[4FC3F7]Speedy Escape[-]\nBeat the game in under:\n - D: 2 Hours 55 Minutes.\n - C: 3 Hours 35 Minutes.\n - B: 4 Hours 25 Minutes.\n - A: 5 Hours 15 Minutes.\n - S: 6 Hours 5 Minutes.\n - S+: 6 Hours 55 Minutes.\n\n[4FC3F7]Skin Allergies[-]\nBeat the game without using any Herbs or First Aid Sprays.\n(Passive Healing is allowed. You cannot cure Poison)\n\n[4FC3F7]I'm Saved![-]\nFind the Infinite Typewriter and save your game as many times as you wish!"
+AchievementsTip,"Below is a list of achievements that you can aim for, if you're looking for an extra challenge.\n\n[4FC3F7]Classics Never Die[-]\nBeat the game in Classic Mode.\n\n[4FC3F7]Samurai 'Jill' Edge[-]\nBeat the game using only the Survival Knife as your weapon.\n(Firearms and throwables can't be used at all)\n\n[4FC3F7]Inventory Management Master[-]\nBeat the game without ever using any Item Storage Boxes to store your items.\n(This includes Typewriters, the Forge and Workbench. Exception: You may only use the Red Bags)\n\n[4FC3F7]Outbreak Prevented?[-]\nBeat the game with at least 260 kills.\n\n[4FC3F7]Speedy Escape[-]\nBeat the game in under:\n - D: 2 Hours 0 Minutes.\n - C: 2 Hours 30 Minutes.\n - B: 3 Hours 0 Minutes.\n - A: 3 Hours 30 Minutes.\n - S: 4 Hours 10 Minutes.\n - S+: 4 Hours 50 Minutes.\n\n[4FC3F7]Skin Allergies[-]\nBeat the game without using any Herbs or First Aid Sprays.\n(Passive Healing is allowed. You cannot cure Poison)\n\n[4FC3F7]I'm Saved![-]\nFind the Infinite Typewriter and save your game as many times as you wish!\n\n[4FC3F7]Real Survival![-]\nComplete the game with interconnected Item Storage Boxes disabled!"
 MeleeCombat,[4FC3F7]Melee Combat Safety[-]
 MeleeCombatTip_title,[4FC3F7]Melee Combat Safety[-]
 MeleeCombatTip,"Zombies have full pain resistance, attacking most zombies will apply a 5-second counter attack threshold. Attacking a zombie before the 5 seconds expire will add another 5 seconds to their counterattack threshold (up to 15 seconds). Spacing out your attacks is the safest way to deal with zombies in melee combat.\n\nIf there is a zombie in your path that does not have an active counterattack threshold and you want to move past it, you can avoid taking damage by hitting the zombie while passing by.\n\nDismemberment:\nYou have a 25% dismemberment chance, sprinting attacks and attacking when you have high stamina further increases your dismemberment chance."
 Herbs,[4FC3F7]Herbs: Efficiency and Regrowth[-]
 HerbsTip_title,[4FC3F7]Herbs: Efficiency and Regrowth[-]
-HerbsTip,"A two green herb mix gains 25% more potency.\n(160 + 160 = 320 x 1.25 = 400)\n\nA three green herb mix gains 50% more potency.\n(160 + 160 + 160 = 480 x 1.5 = 720)\n\nA green + red + blue herb mix is the best combination, providing maximum healing of 800, cures poison, as well as a 30% damage mitigation for 90 seconds, great for mid-combat use.\n\nRegrowing your herbs:\nThere are four green herbs, one red and one blue that will regrow. These 'seed' pots can be picked up and placed indoors for easier access. They will grow indoors."
+HerbsTip,"A two green herb mix gains 25% more potency.\n(160 + 160 = 320 x 1.25 = 400)\n\nA three green herb mix gains 50% more potency.\n(160 + 160 + 160 = 480 x 1.5 = 720)\n\nA green + red + blue herb mix is the best combination, providing maximum healing of 800, cures poison, as well as a 30% damage mitigation for 120 seconds, great for mid-combat use.\n\nRegrowing your herbs:\nThere are four green herbs, one red and one blue that will regrow. These 'seed' pots can be picked up and placed indoors for easier access. They will grow indoors."
 AmmoCrafting,[4FC3F7]Ammo Crafting[-]
 AmmoCraftingTip_title,[4FC3F7]Ammo Crafting[-]
 AmmoCraftingTip,"The base resources for crafting:\n\nCoal:\nBurnt trees are the only source of coal. Going outside you'll find plenty. Avoid zombies if you don't want more Crimson Heads.\n\nNitrate:\nNitrate can be found from (a) zombie animals/rotting corpses, (b) farm plots and (c) drift wood.\n\nLead:\nThere are lead ores outside amongst the trees and zombies.\n\nBrass:\nPick up the radiators around the mansion and smelt them into the forge, the forge can be found somewhere."
@@ -599,7 +602,7 @@ zombieJoe,Glock9's Dealer
 zombieSteve,Draycko
 zombieBusinessMan,Aviose
 zombieBoe,DD1GG
-zombieJanitor,HellsJanitorTV
+zombieJanitor,HellsJanitor
 zombieMoe,TheOrigamiGuru
 zombieLab,Umbrella Scientist
 zombieDarlene,Lois Griffin
@@ -633,7 +636,7 @@ Tyrant,Tyrant
 SuperTyrant,Super Tyrant
 BoeCrawler,Crippled DD1GG
 JoeCrawler,Glock9's Crippled Dealer
-JanitorCrawler,Crippled HellsJanitorTV
+JanitorCrawler,Crippled HellsJanitor
 ArleneCrawler,JaWoodle's Crippled Girl
 LabWorkerCrawler,Crippled Umbrella Scientist
 DarleneCrawler,Crippled Lois Griffin
@@ -647,7 +650,7 @@ HazmatCrawler,Crippled Umbrella Hazmat Technician
 SkateboarderCrawler,Crippled DoctorBest85
 zombieMarleneRadiated,Misterri
 zombieJoeRadiated,Glock9's Dealer
-zombieJanitorRadiated,HellsJanitorTV
+zombieJanitorRadiated,HellsJanitor
 zombieYoRadiated,NotOnly25
 BoeCrimsonHead,Crimson Head
 JoeCrimsonHead,Crimson Head
@@ -776,6 +779,8 @@ BlackTigerLoot,Black Tiger Loot
 TyrantLoot,Tyrant Loot
 buffImmobalisedName,Immobalised
 buffImmobalisedDesc,Read your training books first.
+buffInkRibbonImmobalisedName,Save your game first
+buffInkRibbonImmobalisedDesc,Pause the game and click 'Save Game'.
 H2O,H2O - [ [action:local:Secondary] ]
 UMB-No3,UMB-No3 - [ [action:local:Secondary] ]
 Yellow-6,Yellow-6 - [ [action:local:Secondary] ]
