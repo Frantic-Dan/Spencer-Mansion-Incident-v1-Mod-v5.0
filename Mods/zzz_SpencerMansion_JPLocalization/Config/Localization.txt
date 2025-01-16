@@ -44,9 +44,9 @@ loadingTipRE6,"本家と同じように、ゾンビは痛みを感じません�
 loadingTipRE6_title,ゾンビは痛みを感じない：
 loadingTipRE7,"この破壊的な武器は、足 (貝殻) を簡単に剥がし、頭を吹き飛ばす (ナメクジ) ことができます。"
 loadingTipRE7_title,ポンプショットガン:
-loadingTipRE8,"次の方達に大きな感謝： Mythix,AuroraGiggleFairy, wOOkie nOOkie, RambunctiousRed, HellsJanitorTV, JaxTeller718, KhaineGB, Khelldon, Chikorina, HaidrGna, AvioseVeAvara, Subquake, Zilox, Redbeard, idc12, Pyrokar420, ocbMaurice, Nordmann."
+loadingTipRE8,"次の方達に大きな感謝： Mythix,AuroraGiggleFairy, wOOkie nOOkie, RambunctiousRed, HellsJanitor, JaxTeller718, KhaineGB, Khelldon, Chikorina, HaidrGna, AvioseVeAvara, Subquake, Zilox, Redbeard, idc12, Pyrokar420, ocbMaurice, Nordmann, Closer_ex, M14's ZettaiRyouiki, ChoccyMilk."
 loadingTipRE8_title,スペシャルサンクス！
-SpencerMansionSpawnText,"あなたはこれからスペンサー邸での出来事を一人称視点で体験する事になります。\n\nバイオハザードの体験を忠実に保つために、次の点に注意してください。\n1) 所持品は10スロットのみになるので、館内のアイテムボックスをご利用ください。\nこれらのボックスはクラシックなバイオハザード（リアルサバイバルモード）のようにリンクされていないため、アイテムを保管する場所に注意してください。\n2) ジャンプをする事は出来ません。\n3) ほとんどの敵は痛みを感じないため、いつもの戦い方では難しいかもしれません。\n4) 進行状況を保存するにはインクリボンが必要です。 (タイプライターで発見)\n\n[FFC800]より楽しいチャレンジになる用、周囲の音量を上げて、常に音楽を再生することをお勧めします。 照明は明るさを 50% に設定してバランスをとります。[-]\n\n意図したエクスペリエンスを実現するには、無関係な MOD を必ず削除してください。"
+SpencerMansionSpawnText,"あなたはこれからスペンサー邸での出来事を一人称視点で体験する事になります。\n\nバイオハザードの体験を忠実に保つために、次の点に注意してください。\n1) 所持品は10スロットのみになるので、館内のアイテムボックスをご利用ください。\n2) ジャンプをする事は出来ません。\n3) ほとんどの敵は痛みを感じないため、いつもの戦い方では難しいかもしれません。\n4) 進行状況を保存するにはインクリボンが必要です。 (タイプライターで発見)\n\n[FFC800]より楽しいチャレンジになる用、周囲の音量を上げて、常に音楽を再生することをお勧めします。[-]\n\n[FFC800]意図したエクスペリエンスを実現するには、無関係な MOD を必ず削除してください。[-]"
 Mod Not Installed Correctly,[FF4F00]Modが正しくインストールされていない[-]
 ModNotInstalledCorrectlyText,"[FF4F00]この MOD は正しくインストールされておらず、MOD が 100% 機能するために必要な重要なファイルが欠落しています。[-]"
 TwitchAction_SpawnCrawlerCommand,#crawler
@@ -122,7 +122,7 @@ EmptyBaseBottledesc,充填する前に特定のボトルを作成します。
 EmptyBottledesc,薬品を混ぜる際に使用します。\n\n第二アクションで汲むことが出来ます。
 FilledBottledesc,液体が入っている瓶。
 MixingBottledesc,2種類の液体が混ざっています。
-VJoltdesc,プラント42を弱らせることが出来る薬品。\n\n[インタラクト]ボタンを押してご利用ください。
+VJoltdesc,プラント42を弱らせることが出来る薬品。\n\n[action:permanent:Activate]ボタンを押してご利用ください。
 Crestdesc,六角形のクレスト。
 BrokenShotgundesc,修理することが出来ないほど酷く破損しているショットガン。
 Herbicidedesc,植物を枯らすために使用する薬品。
@@ -333,6 +333,7 @@ QuadRocketLauncherHittoPickup,クアッドロケットランチャー\n(叩い�
 LockedSuperRocket,まずスイッチを押してください
 
 "PumpShotgunHittoPickup",ポンプショットガン\n(叩いて回収)
+"AssaultShotgunBlock",アサルトショットガン\n(叩いて回収)
 "MagnumRevolverHittoPickup",マグナムリボルバー\n(叩いて回収)
 "RocketLauncherHittoPickup",ロケットランチャー\n(叩いて回収)
 "HandgunAmmoHittoPickup",ハンドガンの弾\n(叩いて回収)
@@ -400,11 +401,13 @@ ClassicModeInventoryBlocker,クラシックモードのインベントリブロ�
 ClassicModeInventoryBlockerDesc,"クラシック モードをプレイしています。このインベントリ スロットは永久にブロックされています。"
 SurvivalKnife,サバイバルナイフ
 SurvivalKnifedesc,"ジルのナイフ。\n狭い場所での戦闘や、動物の解体に使用します。\n\nスプリント攻撃: 切断確率 +15%。\nスタミナ > 50%: 切断確率 +10%。\n(攻撃後に計算)\n\n\n"
+statStaminaLossPower,スタミナコスト (パワーアタック)
 S.T.A.R.SHandgun,S.T.A.R.S ハンドガン
 Handgundesc,"S.T.A.R.S の標準装備、　9x19mmパラベラム弾を使用するハンドガン。\n\n\n"
 "MagnumRevolver",マグナムリボルバー
 Magnumdesc,"非常に強力なハンドガン。\n.357マグナム弾を使用します。\n\n\n"
 "PumpShotgun",ポンプショットガン
+AssaultShotgun,アサルトショットガン
 Shotgundesc,"広範囲攻撃が可能な武器。\n12ゲージショットガンシェルを使用します。\n古くて使い古されているため、発射速度が遅いです。\n\n誰かの足を外す絶好のチャンス！\n\n\n"
 AK-47,AK-47アサルトライフル
 Rifledesc,"ピンチの時に役に立つアサルトライフル。\n\n\n"
@@ -500,7 +503,7 @@ SamuraiEdgeDesc,"射撃レートが上がり、3点バーストが可能にな�
 "AssaultShotgunParts",アサルトショットガンパーツ
 AssaultShotgunDesc,"リチャードのお気に入りである、S.T.A.R.S.専用武器。\n\n装弾数は10弾です。\nスプレッドが狭く、射撃レートが速く、射程が長くなっていますが、リロード速度は遅くなります。\n\n\n"
 "MagnumSpeedloader",マグナム・スピードローダー
-MagnumSpeedloaderDesc,"リボルバーのリロード速度が25%上がり、ハンドリングが上がります。\n\n\n"
+MagnumSpeedloaderDesc,"リボルバーのリロード速度が33%上がり、ハンドリングが上がります。\n\n\n"
 "AK-47MuzzleBrake",AK-47マズルブレーキ
 MuzzleBreakDesc,"アサルトライフルの命中精度とハンドリングを上げます。\n\n\n"
 modGunMeleeBlessedMetalTyrant,T-ウイルス中和剤
@@ -583,13 +586,13 @@ TrainingInformationTip_title,[4FC3F7]研修情報[-]
 TrainingInformationTip,"トレーニング特典 - さらに詳しい詳細:\n\n化学の専門家:\n優れた火薬効率でより多くの弾薬を作成できます。 また、リソースを失わずに不要な弾薬を解体することもできます。\n\nパッシブヒーリング:\n体力が完全でない限り、1 時間あたり 900 の体力を回復します。 長時間のプレイには最適ですが、スピードランニングには不向きです。\n\n医学知識:\n医療治癒量が 35% 増加すると、戦闘中の治癒だけでなく、治癒力の供給を最大化するのにも最適です。 パッシブヒーリングよりもスピードランニングに適しています。\n\nナイフトレーニング:\nナイフの使用能力が大幅に向上し、より多くの弾薬を節約し、より速く殺すことができ、すぐに疲れることはありません。\n\n有酸素運動:\nより速く、より長く走ることができるので、後ろから攻撃を受けることなく、速い敵から逃げることができます。\n\n痛みに対する耐性:\nあなたは他の人よりも回復力があり、怪我に負ける前に、より多くの攻撃に耐えることができます。"
 Achievements,[4FC3F7]業績[-]
 AchievementsTip_title,[4FC3F7]業績[-]
-AchievementsTip,"追加の挑戦を探している場合は、以下に目指すことができる実績のリストを示します。\n\n[4FC3F7]クラシックは死なない士官[-]\nクラシック モードでゲームに勝利します。\n\n[4FC3F7]サムライ「ジル」エッジ[-]\nサバイバルナイフのみを武器として使用してゲームに勝利してください。\n(銃器や投擲物は一切使用できません)\n\n[4FC3F7]在庫管理マスター[-]\nアイテムを保管するアイテム保管ボックスを一度も使用せずにゲームをクリアする。\n(これには、タイプライター、フォージ、ワークベンチが含まれます。 例外: 赤いバッグのみを使用できます。)\n\n[4FC3F7]感染拡大は防げた？[-]\n少なくとも 260 キルでゲームに勝利します。\n\n[4FC3F7]スピーディな脱出[-]\nアンダーでゲームに勝つ:\n - D: 2時間55分。\n - C: 3時間35分。\n - B: 4時間25分。\n - A: 5時間15分。\n - S: 6時間5分。\n - S+: 6時間55分。\n\n[4FC3F7]皮膚アレルギー[-]\nハーブや応急処置スプレーを使用せずにゲームをクリアする。\n(パッシブヒーリングは許可されます。 毒を治すことはできません)\n\n[4FC3F7]救われました！[-]\n無限のタイプライターを見つけて、好きなだけゲームを保存してください!"
+AchievementsTip,"追加の挑戦を探している場合は、以下に目指すことができる実績のリストを示します。\n\n[4FC3F7]クラシックは死なない士官[-]\nクラシック モードでゲームに勝利します。\n\n[4FC3F7]サムライ「ジル」エッジ[-]\nサバイバルナイフのみを武器として使用してゲームに勝利してください。\n(銃器や投擲物は一切使用できません)\n\n[4FC3F7]在庫管理マスター[-]\nアイテムを保管するアイテム保管ボックスを一度も使用せずにゲームをクリアする。\n(これには、タイプライター、フォージ、ワークベンチが含まれます。 例外: 赤いバッグのみを使用できます。)\n\n[4FC3F7]感染拡大は防げた？[-]\n少なくとも 260 キルでゲームに勝利します。\n\n[4FC3F7]スピーディな脱出[-]\nアンダーでゲームに勝つ:\n - D: 2時間0分。\n - C: 2時間30分。\n - B: 3時間0分。\n - A: 3時間30分。\n - S: 4時間10分。\n - S+: 4時間50分。\n\n[4FC3F7]皮膚アレルギー[-]\nハーブや応急処置スプレーを使用せずにゲームをクリアする。\n(パッシブヒーリングは許可されます。 毒を治すことはできません)\n\n[4FC3F7]救われました！[-]\n無限のタイプライターを見つけて、好きなだけゲームを保存してください!\n\n[4FC3F7]リアルサバイバル！[-]\n相互接続されたアイテム収納ボックスを無効にしてゲームをクリアしましょう!"
 MeleeCombat,[4FC3F7]近接戦闘の安全性[-]
 MeleeCombatTip_title,[4FC3F7]近接戦闘の安全性[-]
 MeleeCombatTip,"ゾンビには完全な痛み耐性があり、ほとんどのゾンビを攻撃すると 5 秒間の反撃しきい値が適用されます。 5 秒が経過する前にゾンビを攻撃すると、反撃のしきい値にさらに 5 秒追加されます (最大 15 秒)。\n攻撃の間隔を空けることが、近接戦闘でゾンビに対処する最も安全な方法です。\n\nアクティブなカウンター攻撃しきい値を持たないゾンビが進路上にいて、それを通り過ぎたい場合は、通り過ぎながらゾンビに命中すると、ダメージを受けるのを避けることができます。\n\n四肢切断:\n25% の切断確率があり、ダッシュ攻撃やスタミナが高いときに攻撃すると切断の確率がさらに増加し​​ます。"
 Herbs,[4FC3F7]ハーブ: 効率と再成長[-]
 HerbsTip_title,[4FC3F7]ハーブ: 効率と再成長[-]
-HerbsTip,"2 つの緑のハーブを混合すると、効力が 25% 増加します。\n(160 + 160 = 320 x 1.25 = 400)\n\n3 種類の緑のハーブを混合すると、効力が 50% 増加します。\n(160 + 160 + 160 = 480 x 1.5 = 720)\n\n緑 + 赤 + 青のハーブの組み合わせは最高の組み合わせで、最大 800 の治癒を提供し、毒を治療するだけでなく、90 秒間 30% のダメージを軽減し、戦闘中に使用するのに最適です。\n\nハーブを再成長させる:\n緑のハーブが 4 つあり、赤と青が 1 つずつずつ再生されます。これらの「種子」ポットは、簡単にアクセスできるように持ち上げて屋内に置くことができます。 室内でも育ちます。"
+HerbsTip,"2 つの緑のハーブを混合すると、効力が 25% 増加します。\n(160 + 160 = 320 x 1.25 = 400)\n\n3 種類の緑のハーブを混合すると、効力が 50% 増加します。\n(160 + 160 + 160 = 480 x 1.5 = 720)\n\n緑 + 赤 + 青のハーブの組み合わせは最高の組み合わせで、最大 800 の治癒を提供し、毒を治療するだけでなく、120 秒間 30% のダメージを軽減し、戦闘中に使用するのに最適です。\n\nハーブを再成長させる:\n緑のハーブが 4 つあり、赤と青が 1 つずつずつ再生されます。これらの「種子」ポットは、簡単にアクセスできるように持ち上げて屋内に置くことができます。 室内でも育ちます。"
 AmmoCrafting,[4FC3F7]弾薬の作成[-]
 AmmoCraftingTip_title,[4FC3F7]弾薬の作成[-]
 AmmoCraftingTip,"クラフトの基本リソース:\n\n石炭:\n焼けた木が唯一の石炭源です。外に出ればたくさん見つかります。クリムゾンヘッドを増やしたくない場合は、ゾンビを避けてください。\n\n硝酸塩:\n硝酸塩は、(a) ゾンビ動物/腐った死体、(b) 農場、(c) 流木から見つかります。\n\n鉛:\n外の木々やゾンビの中に鉛鉱石があります。\n\n真鍮:\n邸宅の周りにあるラジエーターを拾い、鍛冶場で精錬します。 鍛冶場はどこかにあります。"
@@ -609,7 +612,7 @@ zombieJoe,Glock9's Dealer
 zombieSteve,Draycko
 zombieBusinessMan,Aviose
 zombieBoe,DD1GG
-zombieJanitor,HellsJanitorTV
+zombieJanitor,HellsJanitor
 zombieMoe,TheOrigamiGuru
 zombieLab,アンブレラ社の科学者
 zombieDarlene,Lois Griffin
@@ -643,7 +646,7 @@ Tyrant,タイラント
 "SuperTyrant",スーパータイラント
 "BoeCrawler",Crippled DD1GG
 "JoeCrawler",Glock9's Crippled Dealer
-"JanitorCrawler",Crippled HellsJanitorTV
+"JanitorCrawler",Crippled HellsJanitor
 "ArleneCrawler",JaWoodle's Crippled Girl
 "LabWorkerCrawler",這いずりアンブレラ社の科学者
 "DarleneCrawler",Crippled Lois Griffin
@@ -657,7 +660,7 @@ Tyrant,タイラント
 "SkateboarderCrawler",Crippled DoctorBest85
 zombieMarleneRadiated,Misterri
 zombieJoeRadiated,Glock9's Dealer
-zombieJanitorRadiated,HellsJanitorTV
+zombieJanitorRadiated,HellsJanitor
 zombieYoRadiated,NotOnly25
 BoeCrimsonHead,クリムゾンヘッド
 JoeCrimsonHead,クリムゾンヘッド
@@ -790,3 +793,7 @@ Build_Gyrocopter,ジャイロコプターを作ろう
 H2O,H2O - [ [action:local:Secondary] ]
 UMB-No3,UMB-No3 - [ [action:local:Secondary] ]
 Yellow-6,Yellow-6 - [ [action:local:Secondary] ]
+buffImmobalisedName,あなたはまだ動けない
+buffImmobalisedDesc,まずはトレーニング本を読んでください。
+buffInkRibbonImmobalisedName,まずゲームを保存してください
+buffInkRibbonImmobalisedDesc,ゲームを一時停止し、「ゲームを保存」を押します。
