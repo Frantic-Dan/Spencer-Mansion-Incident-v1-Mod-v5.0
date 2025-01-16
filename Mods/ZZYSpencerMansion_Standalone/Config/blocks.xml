@@ -281,6 +281,7 @@
 	<property name="CreativeMode" value="None"/>
 	<property name="Class" value="Loot"/>
 	<property name="LootList" value="TheVault"/>
+	<property name="SharedStorageKey" value="ItemStorageBox"/>
 	<property name="CustomIcon" value="cntHardenedChestSecureT5"/>
 	<property name="CustomIconTint" value="00FF00"/>
 	<property name="DisplayType" value="blockHardenedMulti"/>
@@ -325,6 +326,42 @@
 	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
 	<property name="FilterTags" value="floot,fdecor,ffurniture"/>
 	<property name="CanPickup" value="true" param1="Lighter"/>
+</block>
+
+<block name="LibraryBookCase">
+	<property name="CreativeMode" value="None"/>
+	<property name="DisplayType" value="blockHardenedMulti"/>
+	<property name="Material" value="MwoodMansion"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:/Config/Resources/xml_victorian_bookshelf.u3d?PF_VictorianBookshelfTall"/>
+	<property name="Place" value="TowardsPlacerInverted"/>
+	<property name="ModelOffset" value="0,0,0"/>
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="ImposterExchange" value="imposterBlock" param1="115"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="Path" value="solid"/>
+	<property name="EconomicValue" value="0"/>
+	<property name="MaxDamage" value="5000"/>
+	<drop event="Destroy" count="0" />
+	<drop event="Fall" name="scrapMetalPile" count="0" prob="0" stick_chance="0"/>
+</block>
+
+<block name="LibraryBookCaseSmall">
+	<property name="CreativeMode" value="None"/>
+	<property name="DisplayType" value="blockHardenedMulti"/>
+	<property name="Material" value="MwoodMansion"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:/Config/Resources/xml_victorian_bookshelf.u3d?PF_VictorianBookshelfSmall"/>
+	<property name="Place" value="TowardsPlacerInverted"/>
+	<property name="ModelOffset" value="0,-.1,0"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property name="ImposterExchange" value="imposterBlock" param1="115"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="Path" value="solid"/>
+	<property name="EconomicValue" value="0"/>
+	<property name="MaxDamage" value="5000"/>
+	<drop event="Destroy" count="0" />
+	<drop event="Fall" name="scrapMetalPile" count="0" prob="0" stick_chance="0"/>
 </block>
 
 <block name="GrandFatherClock">
@@ -621,21 +658,23 @@
 </block>
 
 <block name="AssaultShotgunBlock">
-	<property name="Extends" value="decoEntityMetalMaster"/>
 	<property name="CreativeMode" value="None"/>
-	<property name="MaxDamage" value="5000"/>
 	<property name="Shape" value="ModelEntity"/>
-	<property name="Material" value="Mbedrock"/>
-	<property name="Model" value="@:Entities/LootContainers/loot_satchelPrefab.prefab"/>
+	<property name="DisplayInfo" value="Name"/>
+	<property name="Model" value="@:Entities/LootContainers/weapon_bags_largePrefab.prefab"/>
+	<property name="Place" value="TowardsPlacerInverted"/>
+	<property name="DisplayType" value="blockHardened"/>
+	<property name="Material" value="Mcloth"/>
+	<property name="MaxDamage" value="10"/>
+	<property name="LightOpacity" value="0"/>
 	<property name="ModelOffset" value="0,0,0"/>
-	<property name="AllowAllRotations" value="true"/>
-	<property name="ImposterExclude" value="true"/>
+	<property name="StabilitySupport" value="false"/>
+	<property name="WaterFlow" value="permitted"/>
 	<property name="IsTerrainDecoration" value="true"/>
-	<property name="DescriptionKey" value="furnitureGroupDesc"/>
-	<property class="RepairItems"> <property name="resourceScrapIron" value="1"/> </property>
-	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
-	<property name="FilterTags" value="floot,fdecor,ffurniture"/>
-	<property name="CanPickup" value="true" param1="AssaultShotgunParts"/>
+	<!-- <property name="LootList" value="doorNest"/> -->
+	<property name="Collide" value="melee"/>
+	<drop event="Destroy" name="AssaultShotgun" count="1"/>
+	<property name="FilterTags" value="floot"/>
 </block>
 
 <block name="SpeedLoaderBlock">
@@ -3485,7 +3524,7 @@
 	<property name="IsTerrainDecoration" value="true"/>
 	<property name="Collide" value="melee"/>
 	<drop event="Destroy" name="QuadRocketLauncher" count="1"/>
-	<drop event="Destroy" name="ammoRocketHERE" count="4"/>
+	<drop event="Destroy" name="ammoRocketHERE" count="8"/>
 	<property name="FilterTags" value="floot"/>
 </block>
 
@@ -3716,7 +3755,7 @@
 	<property name="StabilitySupport" value="false"/>
 	<property name="IsTerrainDecoration" value="true"/>
 	<property name="Collide" value="melee"/>
-	<drop event="Destroy" name="ammoRocketHERE" count="1"/>
+	<drop event="Destroy" name="ammoRocketHERE" count="2"/>
 	<!-- <property name="CanPickup" value="true" param1="ammoRocketHERE"/> -->
 	<property name="FilterTags" value="floot"/>
 </block>
