@@ -1,0 +1,18 @@
+Key,English,Japanese,German
+xuiSaveManual,[4FC3F7]Save Game[-],[4FC3F7]ゲームを保存する[-],[4FC3F7]Speichern[-]
+xuiSavingInProgress,"[ffff40]Saving in progress...[-]","[ffff40]保存中です...[-]","[ffff40]Wird gespeichert...[-]"
+xuiGameSaved,"[40ff40]Game saved.[-]","[40ff40]ゲームが保存されました。[-]","[40ff40]Spiel gespeichert.[-]"
+potatoOfManualSaving,"[ff00ff]Almighty Potato Of Manual Saving (Test Item)[-]"
+cntCashRegisterInkRibbon,Typewriter,タイプライター,Schreibmaschine
+cntCashRegisterInkRibbon2,Will be restocked in a few minutes!,数分後に再入荷します！,Wird in ein paar Minuten wieder verfügbar sein!
+cntCashRegisterInfiniteInkRibbon,Infinite Typewriter,無限タイプライター,Unendliche Schreibmaschine
+InkRERibbon,Ink Ribbon,インクリボン,Farbband
+InkRibbonREdesc,"An important item used to save your progress.\n\nBe sure to save your game before ending your play session.\n\nThese are limited in number, so save your game sparingly.","進行状況を保存するための重要なアイテム。\n\nプレイセッションを終了する前に、必ずゲームを保存してください。\n\nこれらは数に制限があるため、ゲームを慎重に保存してください。","Sehr wichtig, um deinen Fortschritt zu speichern.\n\nSpeicher dein Spiel mit einem Farbband, bevor du das Spiel verlässt.\n\nDie Anzahl ist begrenzt, also sei sparsam."
+xuiYouAreDead,"YOU ARE DEAD","あなたは死んでいます","DU BIST TOT"
+xuiReload,"Load Save","ロードセーブ","laden speichern"
+xuiExit,"Exit","出口","Ausfahrt"
+goEnabled,"Enabled","有効","Ermöglicht"
+goDisabled,"Disabled","無効","Deaktiviert"
+goLinkedStorage,"[4FC3F7]Interconnected Storage[-]","[4FC3F7]相互接続されたストレージ[-]","[4FC3F7]Miteinander verbundener Speicher[-]"
+goLinkedStorageDesc,"Your stored items can be accessed from any Item Storage Box.","保管されているアイテムには、どのアイテム保管ボックスからもアクセスできます。","Auf Ihre gelagerten Gegenstände kann von jeder Gegenstandslagerbox aus zugegriffen werden."
+ttCraftedItemDropped,"[FF4F00]You dropped an item you were crafting due to lack of space.[-]","[FF4F00]スペース不足のため、作成していたアイテムを落としてしまいました。[-]","[FF4F00]Sie haben einen Gegenstand, den Sie gerade hergestellt haben, aus Platzmangel fallen lassen.[-]"
