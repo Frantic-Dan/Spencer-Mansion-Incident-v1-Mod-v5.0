@@ -2,46 +2,41 @@
 
 <Servers>
 
-       <ServerGroup Name="Resident Evil Mod (v1.1) - Spencer Mansion Incident" Logo="" Description="">
+       <ServerGroup Name="Resident Evil Mod (v1.2) - Spencer Mansion Incident" Logo="" Description="">
 
-               <Server Name="Resident Evil Mod (v1.1) - Spencer Mansion Incident" Logo="https://raw.githubusercontent.com/Frantic-Dan/Spencer-Mansion-Incident-v1-Mod-v5.0/main/Mods/ZZYSpencerMansion_Standalone/Config/backgrounds/ML-Imagedisplay.png">
+               <Server Name="Resident Evil Mod (v1.2) - Spencer Mansion Incident" Logo="https://raw.githubusercontent.com/Frantic-Dan/Spencer-Mansion-Incident-v1-Mod-v5.0/main/Mods/ZZYSpencerMansion_Standalone/Config/backgrounds/ML-Imagedisplay.png">
 
                        <Description>
 Have you ever wanted to play Resident Evil in first person? Well now you can!
 STORY: Experience the 1998 Spencer Mansion Incident as Jill Valentine. Collect keys, solve puzzles, manage your limited resources and escape from the Survival Horror.
 
 Setup:
-1) Requires version *** v1.1 *** vanilla files to work.
-2) It will always be night, so be sure to change the Zombie Night Speed to your liking. (Walk is recommended)
-3) WARNING: Do NOT delete any of your saves until you have finished playing the mod entirely, or you'll have to load up a vanilla save to gain access to the new game window.
+1 ) Requires version *** v1.1 *** vanilla files to work.
+2 ) It will always be night, so be sure to change the Zombie Night Speed to your liking. (Walk is recommended)
+3 ) WARNING: Do NOT delete any of your saves until you have finished playing the mod entirely, or you'll have to load up a vanilla save to gain access to the new game window.
 Or recreate the folder for the deleted save the game tries to access.
 
 PLEASE NOTE: 
-1) The Spencer Mansion Incident is a unique and challenging mod, and will test your combat and maneuverability skills.
-2) Are your observation skills good enough to make it out alive?
-3) Two-player is NOT supported anymore! (Custom code isn't compatible and bugs out, I'm sorry!)
-4) Twitch Integration is NOT supported!!
+1 ) The Spencer Mansion Incident is a unique and challenging mod, and will test your combat and maneuverability skills.
+2 ) Are your observation skills good enough to make it out alive?
+3 ) Two-player is NOT supported anymore! (Custom code isn't compatible and bugs out, I'm sorry!)
+4 ) Twitch Integration is NOT supported!!
 
 KEY FEATURES:
-1) Limited Inventory: You'll be restricted to the 10 slot toolbelt.
-2) Doors are indestructible, however, zombies can open unlocked doors.
-3) You cannot jump.
-4) Zombies can revive into Crimson heads if not dispatched correctly!
-5) Ink Ribbons for Manual Saving!
-6) If you die, simply exit your game and reload your save (requires saving first).
+1 ) Limited Inventory: You'll be restricted to the 10 slot toolbelt.
+2 ) Doors are indestructible, however, zombies can open unlocked doors.
+3 ) You cannot jump.
+4 ) Zombies can revive into Crimson heads if not dispatched correctly!
+5 ) Ink Ribbons for Manual Saving!
+6 ) If you die, simply reload your save.
+7 ) Interconnected Item Storage Boxes.
+8 ) Custom guns with partial reloading.
+9 ) In-game maps of the mansion.
 
 FOR EXTRA IMMERSION:
-1) Increase the volume of ambient sounds about 50%.
-2) Set music to play 100% of the time.
-3) Lighting is balanced for 50% brightness. There is a portable light source to be found.
-
-Known Issue: DirectoryNotFoundException
-For those who installed using the Mod Launcher, you'll likely get this error.
-Could not find a part of the path
-'C:\7D2D\v1\SpencerMansion_Incident-Resident_Evil\Spencer_Mansion_Incident-_Resident_Evil_Jill_Valentines_Story\Saves\YourPreviousMapYouPlayed\YourPreviousGameNameYouPlayed'.
-
-You will need to navigate your PC directory to the 'Saves' folder, then create both of these new folders that the game is trying to access.
-First folder inside the Saves folder, then open the newly created folder to create the second folder. The spelling needs to be exact.
+1 ) Increase the volume of ambient sounds about 50%.
+2 ) Set music to play 100% of the time.
+3 ) This is a horror mod, there is a portable light source somewhere to help you see.
 
 
 
