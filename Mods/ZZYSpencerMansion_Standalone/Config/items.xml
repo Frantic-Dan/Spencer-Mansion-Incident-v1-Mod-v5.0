@@ -56,10 +56,10 @@
 
 	<!-- <set xpath="/items/item[@name]/effect_group[@name]//passive_effect[@name='DegradationPerUse']/@value">1000</set> -->
 	
-<!-- <insertafter xpath="/items/item[@name]/property[1]">
+<insertafter xpath="/items/item[@name]/property[1]">
 	<property name="CreativeMode" value="None"/>
 </insertafter>
-<set xpath="/items/item[@name]/property[@name='CreativeMode']/@value">None</set> -->
+<set xpath="/items/item[@name]/property[@name='CreativeMode']/@value">None</set>
 
 <insertafter xpath="/items/item[@name='resourceRadiator']/property[@name='Weight']">
 		<property name="NoScrapping" value="true"/>
