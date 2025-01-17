@@ -1496,7 +1496,7 @@
 	<property name="DisplayType" value="rangedHandGun"/>
 	<property name="CreativeMode" value="None"/>
 	<property name="HoldType" value="1"/>
-	<property name="Meshfile" value="#@modfolder:/Config/Resources/SpencerMansionEFTGuns.unity3d?guntarkovm9a3.prefab"/>
+	<property name="Meshfile" value="#@modfolder:/Config/Resources/SpencerMansionPistols.unity3d?guntarkovm9a3.prefab"/>
 	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
 	<property name="DescriptionKey" value="Handgundesc"/>
 	<property name="CustomIcon" value="gunm9a3"/>
@@ -1535,7 +1535,7 @@
 		<property name="Sound_reload" value=""/>
 		<property name="AutoReload" value="false"/>
 		<property name="Particles_muzzle_fire" value="gunfire_SMG"/>
-		<property name="Particles_muzzle_fire_fpv" value="#@modfolder:/Config/Resources/SpencerMansionEFTGuns.unity3d?MuzzleM9A3.prefab"/>
+		<property name="Particles_muzzle_fire_fpv" value="#@modfolder:/Config/Resources/SpencerMansionMuzzleFlashes.unity3d?MuzzleM9A3.prefab"/>
 		<property name="ScopeOffset" value="0,0,0"/>
 		<property name="SideOffset" value="0,0,0"/>
 		<property name="BarrelOffset" value="-.062,.062,.16"/>
@@ -1696,7 +1696,7 @@
 	<property name="DisplayType" value="rangedHandGun"/>
 	<property name="CreativeMode" value="None"/>
 	<property name="HoldType" value="1"/>
-	<property name="Meshfile" value="#@modfolder:/Config/Resources/SpencerMansionEFTGuns.unity3d?guntarkovrsh12.prefab"/>
+	<property name="Meshfile" value="#@modfolder:/Config/Resources/SpencerMansionPistols.unity3d?guntarkovrsh12.prefab"/>
 	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
 	<property name="DescriptionKey" value="Magnumdesc"/>
 	<property name="CustomIcon" value="gunrsh12"/>
@@ -1735,7 +1735,7 @@
 		<property name="Sound_reload" value=""/>
 		<property name="AutoReload" value="false"/>
 		<property name="Particles_muzzle_fire" value="gunfire_SMG"/>
-		<property name="Particles_muzzle_fire_fpv" value="#@modfolder:/Config/Resources/SpencerMansionEFTGuns.unity3d?MuzzleRSH12.prefab"/>
+		<property name="Particles_muzzle_fire_fpv" value="#@modfolder:/Config/Resources/SpencerMansionMuzzleFlashes.unity3d?MuzzleRSH12.prefab"/>
 				<!-- <property name="DamageBonus.head" value="4"/>
 				<property name="DamageBonus.wood" value="5"/>
 				<property name="DamageBonus.earth" value=".2"/> -->
@@ -1897,7 +1897,7 @@
 	<property name="DisplayType" value="rangedOldShotgun"/>
 	<property name="CreativeMode" value="None"/>
 	<property name="HoldType" value="5"/>
-	<property name="Meshfile" value="#@modfolder:/Config/Resources/SpencerMansionEFTGuns.unity3d?guntarkovks23.prefab"/>
+	<property name="Meshfile" value="#@modfolder:/Config/Resources/SpencerMansionKS23.unity3d?guntarkovks23.prefab"/>
 	<property name="DescriptionKey" value="Shotgundesc"/>
 	<property name="CustomIcon" value="gunks23"/>
 	<property name="Material" value="Mmetal"/>
@@ -1939,7 +1939,7 @@
 		<property name="Sound_empty" value="dryfire"/>
 		<property name="AutoReload" value="false"/>
 		<property name="Particles_muzzle_fire" value="gunfire_assault_rifle"/>
-		<property name="Particles_muzzle_fire_fpv" value="#@modfolder:/Config/Resources/SpencerMansionEFTGuns.unity3d?MuzzleKS23.prefab"/>
+		<property name="Particles_muzzle_fire_fpv" value="#@modfolder:/Config/Resources/SpencerMansionMuzzleFlashes.unity3d?MuzzleKS23.prefab"/>
 		<property name="ScopeOffset" value="0,0,0"/>
 		<property name="SideOffset" value="0,0,0"/>
 		<property name="BarrelOffset" value="0,0,0"/>
@@ -1999,7 +1999,7 @@
 	<property name="DisplayType" value="rangedOldShotgun"/>
 	<property name="CreativeMode" value="None"/>
 	<property name="HoldType" value="5"/>
-	<property name="Meshfile" value="#@modfolder:/Config/Resources/SpencerMansionEFTGuns.unity3d?guntarkovm590.prefab"/>
+	<property name="Meshfile" value="#@modfolder:/Config/Resources/SpencerMansionM590.unity3d?guntarkovm590.prefab"/>
 	<property name="DescriptionKey" value="AssaultShotgunDesc"/>
 	<property name="CustomIcon" value="gunm590"/>
 	<property name="Material" value="Mmetal"/>
@@ -2041,7 +2041,7 @@
 		<property name="Sound_empty" value="dryfire"/>
 		<property name="AutoReload" value="false"/>
 		<property name="Particles_muzzle_fire" value="gunfire_assault_rifle"/>
-		<property name="Particles_muzzle_fire_fpv" value="#@modfolder:/Config/Resources/SpencerMansionEFTGuns.unity3d?MuzzleM590.prefab"/>
+		<property name="Particles_muzzle_fire_fpv" value="#@modfolder:/Config/Resources/SpencerMansionMuzzleFlashes.unity3d?MuzzleM590.prefab"/>
 		<property name="ScopeOffset" value="0,0,0"/>
 		<property name="SideOffset" value="0,0,0"/>
 		<property name="BarrelOffset" value="0,0,0"/>
@@ -2353,7 +2353,7 @@
 	<property name="CreativeMode" value="None"/>
 	<property name="DisplayType" value="rangedStarsLauncher"/>
 	<property name="HoldType" value="5"/>
-	<property name="Meshfile" value="#@modfolder:/Config/Resources/SpencerMansionEFTGuns.unity3d?guntarkovm32a1mgl.prefab"/>
+	<property name="Meshfile" value="#@modfolder:/Config/Resources/SpencerMansionLaunchers.unity3d?guntarkovm32a1mgl.prefab"/>
 	<property name="CustomIcon" value="gunm32a1mgl"/>
 	<property name="DescriptionKey" value="Launcherdesc"/>
 	<property name="Material" value="Mmetal"/>
@@ -2392,7 +2392,7 @@
 		<property name="Sound_empty" value="dryfire"/>
 		<property name="AutoReload" value="false"/>
 		<property name="Particles_muzzle_fire" value="gunfire_assault_rifle"/>
-		<property name="Particles_muzzle_fire_fpv" value="#@modfolder:/Config/Resources/SpencerMansionEFTGuns.unity3d?MuzzleM32A1.prefab"/>
+		<property name="Particles_muzzle_fire_fpv" value="#@modfolder:/Config/Resources/SpencerMansionMuzzleFlashes.unity3d?MuzzleM32A1.prefab"/>
 		<property name="ScopeOffset" value="0,0,0"/>
 		<property name="SideOffset" value="0,0,0"/>
 		<property name="BarrelOffset" value="0,0,0"/>
@@ -2536,7 +2536,7 @@
 	<property name="DisplayType" value="rangedStarsLauncher"/>
 	<property name="HoldType" value="85"/>
 	<property name="CustomIcon" value="gunchinalake"/>
-	<property name="Meshfile" value="#@modfolder:/Config/Resources/SpencerMansionEFTGuns.unity3d?guntarkovchinalake.prefab"/>
+	<property name="Meshfile" value="#@modfolder:/Config/Resources/SpencerMansionLaunchers.unity3d?guntarkovchinalake.prefab"/>
 	<property name="Material" value="Mmetal"/>
 	<!-- <property name="TintColor" value="80, 80, 80"/> -->
 	<property name="Weight" value="0"/>
@@ -2575,7 +2575,7 @@
 		<property name="Sound_empty" value="dryfire"/>
 		<property name="AutoReload" value="false"/>
 		<property name="Particles_muzzle_fire" value="gunfire_assault_rifle"/>
-		<property name="Particles_muzzle_fire_fpv" value="#@modfolder:/Config/Resources/SpencerMansionEFTGuns.unity3d?MuzzleChinaLake.prefab"/>
+		<property name="Particles_muzzle_fire_fpv" value="#@modfolder:/Config/Resources/SpencerMansionMuzzleFlashes.unity3d?MuzzleChinaLake.prefab"/>
 		<property name="ScopeOffset" value="0,0,0"/>
 		<property name="SideOffset" value="0,0,0"/>
 		<property name="BarrelOffset" value="0,0,0"/>
@@ -2928,7 +2928,7 @@
 	<property name="DisplayType" value="ammoLauncher"/>
 	<property name="CustomIcon" value="ammoRocketFrag"/>
 	<!-- <property name="CustomIconTint" value="333333"/> -->
-	<property name="Meshfile" value="#@modfolder:/Config/Resources/SpencerMansionEFTGuns.unity3d?patron_40x46_m381.prefab"/>
+	<property name="Meshfile" value="#@modfolder:/Config/Resources/SpencerMansionLaunchers.unity3d?patron_40x46_m381.prefab"/>
 	<property name="HoldType" value="45"/>
 	<property name="HandMeshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
 	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
@@ -2975,7 +2975,7 @@
 	<property name="DisplayType" value="ammoLauncher"/>
 	<property name="CustomIcon" value="ammoRocketFrag"/>
 	<property name="HoldType" value="45"/>
-	<property name="Meshfile" value="#@modfolder:/Config/Resources/SpencerMansionEFTGuns.unity3d?patron_40x46_m381.prefab"/>
+	<property name="Meshfile" value="#@modfolder:/Config/Resources/SpencerMansionLaunchers.unity3d?patron_40x46_m381.prefab"/>
 	<property name="HandMeshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
 	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
 	<property name="Material" value="MmetalMansion"/>
@@ -3064,7 +3064,7 @@
 	<property name="DisplayType" value="ammoGrenadeExplosive"/>
 	<property name="CustomIcon" value="grenade-shells"/>
 	<property name="DescriptionKey" value="GrenadeExplosiveDesc"/>
-	<property name="Meshfile" value="#@modfolder:/Config/Resources/SpencerMansionEFTGuns.unity3d?patron_40x46_m381.prefab"/>
+	<property name="Meshfile" value="#@modfolder:/Config/Resources/SpencerMansionLaunchers.unity3d?patron_40x46_m381.prefab"/>
 	<property name="HoldType" value="45"/>
 	<property name="HandMeshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
 	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
@@ -3113,7 +3113,7 @@
 	<property name="CustomIcon" value="grenade-shells"/>
 	<property name="DescriptionKey" value="GrenadeExplosiveDesc"/>
 	<property name="HoldType" value="45"/>
-	<property name="Meshfile" value="#@modfolder:/Config/Resources/SpencerMansionEFTGuns.unity3d?patron_40x46_m381.prefab"/>
+	<property name="Meshfile" value="#@modfolder:/Config/Resources/SpencerMansionLaunchers.unity3d?patron_40x46_m381.prefab"/>
 	<property name="HandMeshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
 	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
 	<property name="Material" value="MmetalMansion"/>
@@ -3167,7 +3167,7 @@
 	<property name="DisplayType" value="ammoGrenadeAcid"/>
 	<property name="CustomIcon" value="acid-shells"/>
 	<property name="DescriptionKey" value="GrenadeAcidDesc"/>
-	<property name="Meshfile" value="#@modfolder:/Config/Resources/SpencerMansionEFTGuns.unity3d?patron_40x46_m381.prefab"/>
+	<property name="Meshfile" value="#@modfolder:/Config/Resources/SpencerMansionLaunchers.unity3d?patron_40x46_m381.prefab"/>
 	<property name="HoldType" value="45"/>
 	<property name="HandMeshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
 	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
@@ -3237,7 +3237,7 @@
 	<property name="CustomIcon" value="acid-shells"/>
 	<property name="DescriptionKey" value="GrenadeAcidDesc"/>
 	<property name="HoldType" value="45"/>
-	<property name="Meshfile" value="#@modfolder:/Config/Resources/SpencerMansionEFTGuns.unity3d?patron_40x46_m381.prefab"/>
+	<property name="Meshfile" value="#@modfolder:/Config/Resources/SpencerMansionLaunchers.unity3d?patron_40x46_m381.prefab"/>
 	<property name="HandMeshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
 	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
 	<property name="Material" value="MmetalMansion"/>
@@ -3308,7 +3308,7 @@
 	<property name="DisplayType" value="ammoGrenadeFlame"/>
 	<property name="CustomIcon" value="incendiary-shells"/>
 	<property name="DescriptionKey" value="GrenadeFlameDesc"/>
-	<property name="Meshfile" value="#@modfolder:/Config/Resources/SpencerMansionEFTGuns.unity3d?patron_40x46_m381.prefab"/>
+	<property name="Meshfile" value="#@modfolder:/Config/Resources/SpencerMansionLaunchers.unity3d?patron_40x46_m381.prefab"/>
 	<property name="HoldType" value="45"/>
 	<property name="HandMeshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
 	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
@@ -3377,7 +3377,7 @@
 	<property name="CustomIcon" value="incendiary-shells"/>
 	<property name="DescriptionKey" value="GrenadeFlameDesc"/>
 	<property name="HoldType" value="45"/>
-	<property name="Meshfile" value="#@modfolder:/Config/Resources/SpencerMansionEFTGuns.unity3d?patron_40x46_m381.prefab"/>
+	<property name="Meshfile" value="#@modfolder:/Config/Resources/SpencerMansionLaunchers.unity3d?patron_40x46_m381.prefab"/>
 	<property name="HandMeshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
 	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
 	<property name="Material" value="MmetalMansion"/>
@@ -3714,7 +3714,7 @@
 	<property name="HoldType" value="45"/>
 	<property name="Tags" value="junk,BrokenShotgun"/>
 	<property name="DescriptionKey" value="BrokenShotgundesc"/>
-	<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+	<property name="Meshfile" value="#@modfolder:/Config/Resources/SpencerMansionKS23.unity3d?guntarkovks23.prefab"/>
 	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
 	<property name="CustomIcon" value="broken-shotgun"/>
 	<property name="Material" value="Mmetal"/>
