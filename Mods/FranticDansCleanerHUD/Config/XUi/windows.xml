@@ -87,6 +87,17 @@
 	<!-- <set xpath="/windows/window[@name='windowSkillList']/panel[2]/rect[2]/rect[@name='tableHeader']/@pos">5,260</set> -->
 	
 	
+	<set xpath="//window[@name='windowTip']/@width">843</set>
+	<set xpath="//window[@name='windowTip']/@height">463</set>
+	<set xpath="//window[@name='windowTip']/@pos">-420,250</set>
+	<setattribute xpath="//window[@name='windowTip']/panel[@name='header']" name="pos">0,0</setattribute>
+	<set xpath="//window[@name='windowTip']/rect[@name='content']/@width">843</set>
+	<set xpath="//window[@name='windowTip']/rect[@name='content']/@height">463</set>
+	<set xpath="//window[@name='windowTip']/rect[@name='content']/sprite[@depth='8']/@width">843</set>
+	<set xpath="//window[@name='windowTip']/rect[@name='content']/label[@depth='3']/@width">830</set>
+	<set xpath="//window[@name='windowTip']/rect[@name='content']/label[@depth='3']/@height">433</set>
+	<set xpath="//window[@name='windowTip']/rect[@name='content']/rect[@name='btnContinue']/@pos">0,-463</set>
+	
 	<!-- Journal entry -->
 	<!-- <set xpath="/windows/window[@name='windowJournalEntryDescription']/@width">783</set>
 	<set xpath="/windows/window[@name='windowJournalEntryDescription']/@height">720</set>
