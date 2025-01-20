@@ -167,8 +167,8 @@
 	</insertafter>
 	
 	<set xpath="/windows/window[@name='newContinueGame']/rect[3]//simplebutton[@name='btnDefaults']/@pos">960, -3000</set>
-	<set xpath="/windows/window[@name='newContinueGame']/rect[3]//simplebutton[@name='btnDataManagement']/@pos">960, -3000</set>
-	<set xpath="/windows/window[@name='newContinueGame']/rect[1]//simplebutton[@name='btnDeleteSave']/@pos">960, -3000</set>
+	<!-- <set xpath="/windows/window[@name='newContinueGame']/rect[3]//simplebutton[@name='btnDataManagement']/@pos">960, -3000</set>
+	<set xpath="/windows/window[@name='newContinueGame']/rect[1]//simplebutton[@name='btnDeleteSave']/@pos">960, -3000</set> -->
 	
 	<remove xpath="/windows/window[@name='newContinueGame']/rect[2]/rect[2]/rect[1]/grid[@pos='6,-77']//gameoption[@name='GameDifficulty']"/>
 	
