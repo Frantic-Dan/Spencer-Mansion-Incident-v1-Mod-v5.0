@@ -35,7 +35,7 @@
 
 	</insertAfter>
 
-	<remove xpath="//window[@name='spawnselection'][1]"/>
+	<!-- <remove xpath="//window[@name='spawnselection'][1]"/> -->
 	
 	<!-- <insertAfter xpath="//gameoption[@name='ZombieMoveNight']">
 		<gameoption name="UNUSED_ControlPanelEnabled" title="goLinkedStorage" value_wrap="false" value_type="bool" values="" display_names="goEnabled,goDisabled" value_localization_prefix="" visible="false" has_default="true"/>
