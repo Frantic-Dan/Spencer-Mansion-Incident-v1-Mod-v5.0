@@ -784,5 +784,5 @@ buffImmobalisedName,Beweglichkeit
 buffImmobalisedDesc,Lies zuerst die Trainingshandbücher.
 buffInkRibbonImmobalisedName,Speicher das Spiel zunächst, um fortzufahren
 buffInkRibbonImmobalisedDesc,Pausiere das Spiel und klicke auf „Spiel speichern“.
-SaveGamebuff,Erst Speichern 
+SaveGamebuff,Erst speichern 
 ReadTrainingbuff,Bücher lesen
