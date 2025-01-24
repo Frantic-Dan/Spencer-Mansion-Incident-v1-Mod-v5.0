@@ -784,3 +784,5 @@ buffInkRibbonImmobalisedDesc,Pause the game and click 'Save Game'.
 H2O,H2O - [ [action:local:Secondary] ]
 UMB-No3,UMB-No3 - [ [action:local:Secondary] ]
 Yellow-6,Yellow-6 - [ [action:local:Secondary] ]
+SaveGamebuff,Save First
+ReadTrainingbuff,Read Books
