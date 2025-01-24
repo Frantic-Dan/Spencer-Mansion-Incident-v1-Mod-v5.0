@@ -797,3 +797,5 @@ buffImmobalisedName,あなたはまだ動けない
 buffImmobalisedDesc,まずはトレーニング本を読んでください。
 buffInkRibbonImmobalisedName,まずゲームを保存してください
 buffInkRibbonImmobalisedDesc,ゲームを一時停止し、「ゲームを保存」を押します。
+SaveGamebuff,最初に保存
+ReadTrainingbuff,本を読む
