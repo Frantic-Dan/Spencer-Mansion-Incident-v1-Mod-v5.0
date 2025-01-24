@@ -168,6 +168,8 @@
 	</buff>	
 	
 	<buff name="buffImmobalised" name_key="buffImmobalisedName" description_key="buffImmobalisedDesc" icon="ui_game_symbol_twitch_history" icon_color="155,155,255" icon_blink="true">
+		<display_value_key value="ReadTrainingbuff"/>
+		<display_value value="xxx"/>
 		<stack_type value="ignore"/>
 		<duration value="0"/>
 
@@ -219,6 +221,8 @@
 	</buff>
 	
 	<buff name="buffInkRibbonImmobalised" name_key="buffInkRibbonImmobalisedName" description_key="buffInkRibbonImmobalisedDesc" icon="ui_game_symbol_other" icon_color="155,155,255" icon_blink="true">
+		<display_value_key value="SaveGamebuff"/>
+		<display_value value="xxx"/>
 		<stack_type value="ignore"/>
 		<duration value="0"/>
 
