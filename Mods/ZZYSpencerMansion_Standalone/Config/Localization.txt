@@ -786,3 +786,4 @@ UMB-No3,UMB-No3 - [ [action:local:Secondary] ]
 Yellow-6,Yellow-6 - [ [action:local:Secondary] ]
 SaveGamebuff,Save First
 ReadTrainingbuff,Read Books
+GameOverbuff,Exit & Load
