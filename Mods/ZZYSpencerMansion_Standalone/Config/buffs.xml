@@ -376,6 +376,8 @@
 		<!-- <damage_type value="bloodloss"/> -->
 		<!-- <damage_source value="Internal"/> -->
 		<stack_type value="ignore"/>
+		<display_value_key value="GameOverbuff"/>
+		<display_value value="xxx"/>
 		<duration value="0"/>
 		<!-- <display_value value=""/><display_value_format value="time"/> -->
 
