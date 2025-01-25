@@ -786,3 +786,4 @@ buffInkRibbonImmobalisedName,Speicher das Spiel zunächst, um fortzufahren
 buffInkRibbonImmobalisedDesc,Pausiere das Spiel und klicke auf „Spiel speichern“.
 SaveGamebuff,Erst speichern 
 ReadTrainingbuff,Bücher lesen
+GameOverbuff,Ausfahrt und laden
