@@ -67,7 +67,7 @@ TwitchAction_SupplyFirstAidSprayCommand,#firstaidspray
 TwitchAction_SupplyAmmo762Command,#rifle_x12
 buffNewbieCoatNameRE,General Information for The Spencer Mansion Incident
 buffNewbieCoatDescRE,"The Spencer Mansion Incident will give you a unique 7 Days to Die experience like no other mod.\nHere's some information to help you settle in.\n\nThere are no critical injuries, so you don't have to worry about bleeding out, knowing this you can focus on making the most of the limited healing supplies available.\n\nBe mindful of your inventory, don't try to gather herbs or ammo when full, as they will drop on the floor and go to waste.\n\nYou don't have to worry about food and water here, they'll always remain full. However, getting set on fire will make you thirsty. If you become completely dehydrated, then you'll have to drink from a water source and risk getting sick.\n\nZombies can open doors, so never assume you're safe!"
-xuiInventory,Jill Valentine's Inventory
+
 tooltipJammed,([DECEA3]Jammed[-])
 tooltipLocked,{1}
 tooltipUnlocked,{1}
@@ -214,101 +214,101 @@ MasterKey,Master Key
 
 doors
 ttLockpickMissing,It won't budge...
-DoubleMansionDoorBrown,Unlocked
-DoubleMansionLockedDoorBrown,Jammed
-DoubleShieldDoorBrown,Locked
-DoubleMansionDoorBrownOld,Unlocked
-commercialMansionWindowDoorBlue,Unlocked
-commercialLockedMansionWindowDoorBlue,Jammed
-commercialMansionWindowDoorGrey,Unlocked
-commercialMansionDoorDoubleBlue,Unlocked
-commercialLockedMansionDoubleDoorBlue,Jammed
-commercialMansionDoorDoubleGrey,Unlocked
-commercialMansionDoorBlue,Unlocked
-commercialMansionMetalObjectDoorBlue,Locked
-commercialLabMansionDoorBlue,Locked
-commercialMansionDoorGrey,Unlocked
-commercialMansionMasterDoorGrey,Locked
-commercialMansionLockedDoorBlue,Jammed
-ironMansionDoorGrey,Unlocked
-ironMansionMOdisc1DoorGrey,Locked
-ironMansionMOdisc2DoorGrey,Locked
-ironMansionMOdisc3DoorGrey,Locked
-ironMansionDoorOrange,Unlocked
-ironMansionLockedDoorOrange,Jammed
-ironControlDoorOrange,Locked
-ironMansionLockableDoorGrey,Jammed
-ironMansionDoorBlack,Unlocked
-DoorThatSeesSpeaksSmellsNoEvil,Locked
-DoorThatSmellsNoEvil,Locked
-DoorThatSpeaksNoEvil,Locked
-DoorThatSeesNoEvil,Locked
-SingleMansionDoorBrown,Unlocked
-SingleMansionDoorGrey,Unlocked
-SingleArmourDoorGrey,Locked
-SingleMansionDoorBrown2,Unlocked
-SingleMansionDoorGrey2,Unlocked
-SinglePlantRoomDoorGrey2,Locked
-SingleLockedMansionDoorBrown,Jammed
-SingleSwordDoorBrown,Locked
-SingleSwordDoorWhite,Locked
-SingleSwordDoorBrown2,Locked
-SingleArmourDoorBrown,Locked
-SingleTerraceDoorBrown,Locked
-SingleClosetDoorBrown,Locked
-SingleMansionDoorOldBrown,Unlocked
-MansionArmourDoorOldBrown,Locked
-MansionRoom001DoorOldBrown,Locked
-MansionRoom003DoorOldBrown,Locked
-MansionGalleryDoorOldBrown,Locked
-SingleMansionDoorOldGrey,Unlocked
-SingleSwordMansionDoorOldGrey,Locked
-SingleSwordDoorOldBrown,Locked
-SingleHelmetDoorWhite,Locked
-SingleHelmetDoorBrown,Locked
-SingleMansionDoorOldOak2,Unlocked
-SingleMansionDoorOldGrey2,Unlocked
-SingleLockedDoorOldGrey2,Locked
-SingleLockedDoorOldoak2,Locked
-SingleShieldDoorOldOak2,Locked
-SingleBookDoorOldOak2,Locked
-SingleEmblemDoorOldOak2,Locked
-SinglePianoDoorOldOak2,Locked
-IronLockedMansionDoorWhite,Locked
-IronArmourMansionDoorWhite,Locked
-jailMansionDoorWhite,Unlocked
-DoubleMansionDoorWhite,Unlocked
-DoubleMansionDoorWhiteOld,Unlocked
-commercialMansionWindowDoorWhite,Unlocked
-commercialMansionDoorDoubleWhite,Unlocked
-commercialMansionDoorWhite,Unlocked
-ironMansionDoorWhite,Unlocked
-SingleMansionDoorWhite,Unlocked
-SingleMansionDoorWhite2,Unlocked
-SingleMansionDoorOldWhite,Unlocked
-SingleMansionDoorOldWhite2,Unlocked
-jailMansionDoorGrey,Unlocked
-jailMansionUnpoweredDoorGrey,Unpowered
-jailMansionLockedDoorGrey,Jammed
-jailMansionDoorDoubleWhite,Unlocked
-jailMansionDoorDoubleGrey,Unlocked
-jailMansionLockedDoorDoubleGrey,Jammed
-jailStoneObjectDoorDoubleGrey,Locked
-oldMansionDoor,Unlocked
-oldShieldDoor,Locked
-oldMansionDoubleDoor,Unlocked
-ironMansionDoorDoubleWhite,Unlocked
-ironMansionDoorDoubleArmyGreen,Unlocked
-ironMansionDoorDoubleBlack,Unlocked
-ironMansionLabDoorDoubleBlack,Locked
-ironMansionWD40DoorDoubleBlack,Rusted
-ironMansionLockedDoorDoubleBlack,Jammed
-ironArmourDoorDoubleArmyGreen,Locked
-SingleWolfDoorBrown,Locked
-SingleEagleDoorBrown,Locked
+DoubleMansionDoorBrown,[4FC3F7]Unlocked[-]
+DoubleMansionLockedDoorBrown,[DD4F00]Jammed[-]
+DoubleShieldDoorBrown,[DD4F00]Locked[-]
+DoubleMansionDoorBrownOld,[4FC3F7]Unlocked[-]
+commercialMansionWindowDoorBlue,[4FC3F7]Unlocked[-]
+commercialLockedMansionWindowDoorBlue,[DD4F00]Jammed[-]
+commercialMansionWindowDoorGrey,[4FC3F7]Unlocked[-]
+commercialMansionDoorDoubleBlue,[4FC3F7]Unlocked[-]
+commercialLockedMansionDoubleDoorBlue,[DD4F00]Jammed[-]
+commercialMansionDoorDoubleGrey,[4FC3F7]Unlocked[-]
+commercialMansionDoorBlue,[4FC3F7]Unlocked[-]
+commercialMansionMetalObjectDoorBlue,[DD4F00]Locked[-]
+commercialLabMansionDoorBlue,[DD4F00]Locked[-]
+commercialMansionDoorGrey,[4FC3F7]Unlocked[-]
+commercialMansionMasterDoorGrey,[DD4F00]Locked[-]
+commercialMansionLockedDoorBlue,[DD4F00]Jammed[-]
+ironMansionDoorGrey,[4FC3F7]Unlocked[-]
+ironMansionMOdisc1DoorGrey,[DD4F00]Locked[-]
+ironMansionMOdisc2DoorGrey,[DD4F00]Locked[-]
+ironMansionMOdisc3DoorGrey,[DD4F00]Locked[-]
+ironMansionDoorOrange,[4FC3F7]Unlocked[-]
+ironMansionLockedDoorOrange,[DD4F00]Jammed[-]
+ironControlDoorOrange,[DD4F00]Locked[-]
+ironMansionLockableDoorGrey,[DD4F00]Jammed[-]
+ironMansionDoorBlack,[4FC3F7]Unlocked[-]
+DoorThatSeesSpeaksSmellsNoEvil,[DD4F00]Locked[-]
+DoorThatSmellsNoEvil,[DD4F00]Locked[-]
+DoorThatSpeaksNoEvil,[DD4F00]Locked[-]
+DoorThatSeesNoEvil,[DD4F00]Locked[-]
+SingleMansionDoorBrown,[4FC3F7]Unlocked[-]
+SingleMansionDoorGrey,[4FC3F7]Unlocked[-]
+SingleArmourDoorGrey,[DD4F00]Locked[-]
+SingleMansionDoorBrown2,[4FC3F7]Unlocked[-]
+SingleMansionDoorGrey2,[4FC3F7]Unlocked[-]
+SinglePlantRoomDoorGrey2,[DD4F00]Locked[-]
+SingleLockedMansionDoorBrown,[DD4F00]Jammed[-]
+SingleSwordDoorBrown,[DD4F00]Locked[-]
+SingleSwordDoorWhite,[DD4F00]Locked[-]
+SingleSwordDoorBrown2,[DD4F00]Locked[-]
+SingleArmourDoorBrown,[DD4F00]Locked[-]
+SingleTerraceDoorBrown,[DD4F00]Locked[-]
+SingleClosetDoorBrown,[DD4F00]Locked[-]
+SingleMansionDoorOldBrown,[4FC3F7]Unlocked[-]
+MansionArmourDoorOldBrown,[DD4F00]Locked[-]
+MansionRoom001DoorOldBrown,[DD4F00]Locked[-]
+MansionRoom003DoorOldBrown,[DD4F00]Locked[-]
+MansionGalleryDoorOldBrown,[DD4F00]Locked[-]
+SingleMansionDoorOldGrey,[4FC3F7]Unlocked[-]
+SingleSwordMansionDoorOldGrey,[DD4F00]Locked[-]
+SingleSwordDoorOldBrown,[DD4F00]Locked[-]
+SingleHelmetDoorWhite,[DD4F00]Locked[-]
+SingleHelmetDoorBrown,[DD4F00]Locked[-]
+SingleMansionDoorOldOak2,[4FC3F7]Unlocked[-]
+SingleMansionDoorOldGrey2,[4FC3F7]Unlocked[-]
+SingleLockedDoorOldGrey2,[DD4F00]Locked[-]
+SingleLockedDoorOldoak2,[DD4F00]Locked[-]
+SingleShieldDoorOldOak2,[DD4F00]Locked[-]
+SingleBookDoorOldOak2,[DD4F00]Locked[-]
+SingleEmblemDoorOldOak2,[DD4F00]Locked[-]
+SinglePianoDoorOldOak2,[DD4F00]Locked[-]
+IronLockedMansionDoorWhite,[DD4F00]Locked[-]
+IronArmourMansionDoorWhite,[DD4F00]Locked[-]
+jailMansionDoorWhite,[4FC3F7]Unlocked[-]
+DoubleMansionDoorWhite,[4FC3F7]Unlocked[-]
+DoubleMansionDoorWhiteOld,[4FC3F7]Unlocked[-]
+commercialMansionWindowDoorWhite,[4FC3F7]Unlocked[-]
+commercialMansionDoorDoubleWhite,[4FC3F7]Unlocked[-]
+commercialMansionDoorWhite,[4FC3F7]Unlocked[-]
+ironMansionDoorWhite,[4FC3F7]Unlocked[-]
+SingleMansionDoorWhite,[4FC3F7]Unlocked[-]
+SingleMansionDoorWhite2,[4FC3F7]Unlocked[-]
+SingleMansionDoorOldWhite,[4FC3F7]Unlocked[-]
+SingleMansionDoorOldWhite2,[4FC3F7]Unlocked[-]
+jailMansionDoorGrey,[4FC3F7]Unlocked[-]
+jailMansionUnpoweredDoorGrey,[DD4F00]Unpowered[-]
+jailMansionLockedDoorGrey,[DD4F00]Jammed[-]
+jailMansionDoorDoubleWhite,[4FC3F7]Unlocked[-]
+jailMansionDoorDoubleGrey,[4FC3F7]Unlocked[-]
+jailMansionLockedDoorDoubleGrey,[DD4F00]Jammed[-]
+jailStoneObjectDoorDoubleGrey,[DD4F00]Locked[-]
+oldMansionDoor,[4FC3F7]Unlocked[-]
+oldShieldDoor,[DD4F00]Locked[-]
+oldMansionDoubleDoor,[4FC3F7]Unlocked[-]
+ironMansionDoorDoubleWhite,[4FC3F7]Unlocked[-]
+ironMansionDoorDoubleArmyGreen,[4FC3F7]Unlocked[-]
+ironMansionDoorDoubleBlack,[4FC3F7]Unlocked[-]
+ironMansionLabDoorDoubleBlack,[DD4F00]Locked[-]
+ironMansionWD40DoorDoubleBlack,[DD4F00]Rusted[-]
+ironMansionLockedDoorDoubleBlack,[DD4F00]Jammed[-]
+ironArmourDoorDoubleArmyGreen,[DD4F00]Locked[-]
+SingleWolfDoorBrown,[DD4F00]Locked[-]
+SingleEagleDoorBrown,[DD4F00]Locked[-]
 GyrocopterRE,Gyrocopter
-elevatorMansionGyroDoorDouble,Locked
-elevatorMansionDoorDouble,Unlocked
+elevatorMansionGyroDoorDouble,[DD4F00]Locked[-]
+elevatorMansionDoorDouble,[4FC3F7]Unlocked[-]
 GrandPiano,Grand Piano
 InsertWindCrest,Insert Wind Crest
 InsertMoonCrest,Insert Moon Crest
@@ -317,11 +317,11 @@ InsertSunCrest,Insert Sun Crest
 InsertBrokenShotgun,Insert Broken Shotgun
 Plant42'sRoots,Plant 42's Roots - {0}
 Plant42'sPoisonedRootsHittoDestroy,Plant 42's Poisoned Roots\n(Hit to Destroy)
-MineshaftHatchControlInsertCylinderShaft,Locked
-MineshaftHatchControl,Mineshaft Hatch Control
-LaboratoryComputer,Laboratory Computer
-UnpoweredRollerShutterNeedsRefueling,Unpowered
-PoweredRollerShutter,Powered Roller Shutter
+MineshaftHatchControlInsertCylinderShaft,[DD4F00]Locked[-]
+MineshaftHatchControl,[4FC3F7]Mineshaft Hatch Control[-]
+LaboratoryComputer,[4FC3F7]Laboratory Computer[-]
+UnpoweredRollerShutterNeedsRefueling,[DD4F00]Unpowered[-]
+PoweredRollerShutter,[4FC3F7]Powered Roller Shutter[-]
 AK-47HittoPickup,AK-47\n(Hit to Pickup)
 QuadRocketLauncherHittoPickup,Quad Rocket Launcher\n(Hit to Pickup)
 LockedSuperRocket,Press switch first
@@ -391,7 +391,7 @@ Torchdesc,Turn on/off with [F]
 ClassicModeInventoryBlocker,Classic Mode Inventory Blocker
 ClassicModeInventoryBlockerDesc,"You're playing Classic Mode, this inventory slot is permanently blocked."
 SurvivalKnife,Survival Knife
-SurvivalKnifedesc,"Jill's custom made knife, great for close quarter combat and harvesting animals.\n\nSprinting Attack: +15% dismember chance.\nStamina > 50%: +10% dismember chance.\n(Calculates after attack)\n\n\n"
+SurvivalKnifedesc,"Jill's custom made knife, great for close quarter combat and harvesting animals.\n\nSprinting Attack: +15% dismember chance.\nStamina > 50%: +10% dismember chance.\n(Calculates after attack)"
 statStaminaLossPower,Stamina Cost (Power Attack)
 S.T.A.R.SHandgun,S.T.A.R.S Handgun
 Handgundesc,"A Custom S.T.A.R.S. Standard Handgun, fires 9×19mm parabellum rounds.\n\n\n"
@@ -475,7 +475,7 @@ buffDeadlyPoisonedDesc,Jill Valentine was never heard from again...
 buffTarnishedIntegrityName,Tarnished Integrity
 buffTarnishedIntegrityDesc,"You just had to do it, didn't you?\n\nI balanced the lighting for aesthetics and provided a lighter so you could see.\n\nUltimately, you've cheated yourself out of the intended experience."
 questStartup_offer,Quest
-questStartup_desc,"It's July 1998, you're Jill Valentine, a member of the S.T.A.R.S Alpha Team. Your team was sent in to investigate the disappearance of your fellow Bravo Team after you lost contact with them.\n\nYour team flew over the forest area in the Arklay Mountains and discovered a crashed helicopter.\nThe helicopter belongs to Bravo Team and everyone is dead. Your team is attacked by vicious dogs and are chased through the forest, you see a mansion in the distance and call it out to your team and you all make a break for it!\n\nYou're now trapped inside, it's too dangerous out there!"
+questStartup_desc,"It's July 1998, you're Jill Valentine, a member of the S.T.A.R.S Alpha Team. Your team was sent in to investigate the disappearance of your fellow Bravo Team after you lost contact with them.\n\nYour team flew over the forest area in the Arklay Mountains and discovered a crashed helicopter.\nThe helicopter belongs to Bravo Team and everyone is dead. Your team is attacked by vicious dogs and are chased through the forest, you see a mansion in the distance and call it out to your team and you all make a break for it!\n\nYou're now trapped inside, it's too dangerous out there!\n\n\n[4FC3F7]Training Information[-]\n[4FC3F7]Melee Combat Safety[-]\n[4FC3F7]Achievements[-]"
 BookOfCurses_offer,"The four masks.\n\nA mask that speaks no evil...\nA mask that smells no evil...\nA mask that sees no evil...\nA mask that cannot speak, smell, or see evil...\n\nWhen all four fall into place, evil will awaken.\n\n\nYou see a key embedded on the back, Will you remove it?"
 Quest_SwordKey_tip_title,Cracked Key
 Quest_SwordKey_tip,"As you remove the key, it slips and falls onto the floor. You notice that it has a crack now and looks like it could snap easily."
@@ -492,11 +492,11 @@ SamuraiEdgeDesc,"Special custom parts that drastically increases fire rate and a
 AssaultShotgunParts,Assault Shotgun Parts
 AssaultShotgunDesc,"A S.T.A.R.S. custom arsenal and also Richard's favourite.\n\nHolds 10 rounds. Has a tighter spread. Longer range and faster fire rate. But slower reload speed.\n\n\n"
 MagnumSpeedloader,Magnum Speedloader
-MagnumSpeedloaderDesc,"This assists in a 33% faster reload and overall makes it easier to wield the revolver.\n\n\n"
+MagnumSpeedloaderDesc,"This assists in a 33% faster reload and overall makes it easier to wield the revolver."
 AK-47MuzzleBrake,AK-47 Muzzle Brake
-MuzzleBreakDesc,"Makes the assault rifle more accurate and overall easier to wield.\n\n\n"
+MuzzleBreakDesc,"Makes the assault rifle more accurate and overall easier to wield."
 modGunMeleeBlessedMetalTyrant,T-Virus neutraliser
-modGunMeleeBlessedMetalTyrantDesc,"Greatly increases damage to Tyrant\n\nKnife Only.\n\n\n"
+modGunMeleeBlessedMetalTyrantDesc,"Greatly increases damage to Tyrant\n\nKnife Only."
 modGunMeleeBlessedMetalPlant,V-Jolt Chemical
 modGunMeleeBlessedMetalPlantDesc,"Soak your knife in V-Jolt to inflict extra damage to Plant 42.\n\n\n"
 drugBoulderBusters,"Chris Redfield secretly has these in his protein shake.\n\nIncreases brawling damage by 400%.\nStacks with Skull Crushers and Beer!"
@@ -527,7 +527,7 @@ BotanyBookTip_title,Botany Book
 BotanyBookTip,"Uses of Medicinal Herbs\n\nIt is a well-known fact that there exist many plants that are credited with medicinal healing powers. Since ancient times, mankind has been healing wounds and diseases using various plants.\n\nIn this book, we will sample three herbs that are native of the Arklay Mountains and briefly outline each of their medicinal qualities. Each herb has a distinct colour and a distinct medicinal quality.\n\nThe green herb recovers physical strength. The blue herb neutralizes natural toxins. However, the red herb has no real effect by itself. We have found that mixing green and red herbs results in a magnified effect.\n\nWe will outline the effects of red herbs when mixed with other herbs when we have more data. Meanwhile feel free to experiment on your own, for true knowledge is best acquired through own experience."
 BodyDisposal,[FF4F00]Body Disposal[-]
 BodyDisposalTip_title,[FF4F00]Body Disposal[-]
-BodyDisposalTip,"Special instructions when disposing of dead bodies.\n\nWe have new information regarding those 'beings'. They may appear to be dead but in fact they are able to come back to life. However, there are ways to prevent them from becoming active again.\n\nCurrently there are three known methods to cease their resurrection.\n\n1. DESTRUCTION OF THE HEAD ([FF4F00]Cause of death[-])\n2. DISMEMBERMENT OF EITHER LEG ([FF4F00]Pre-mortem[-] / [FF4F00]Cause of death[-])\n3. INCINERATION ([FF4F00]Cause of death[-])\n\nIf further methods are discovered, they will be notified immediately.\n\nMeanwhile to those of you who still have the will to live, kerosene has been placed around the mansion and surrounding areas. Take as much as you need.\n\nYou'll need something to light it with, which you'll need to find by yourself."
+BodyDisposalTip,"Special instructions when disposing of dead bodies.\n\nWe have new information regarding those 'beings'. They may appear to be dead but in fact they are able to come back to life. However, there are ways to prevent them from becoming active again.\n\nCurrently there are three known methods to cease their resurrection.\n\n1. DESTRUCTION OF THE HEAD ([FF4F00]Cause of death[-])\n2. DISMEMBERMENT OF EITHER LEG ([FF4F00]Pre-mortem[-] / [FF4F00]Cause of death[-])\n3. INCINERATION ([FF4F00]Cause of death[-]/[FF4F00]Post-mortem[-])\n\nIf further methods are discovered, they will be notified immediately.\n\nMeanwhile to those of you who still have the will to live, kerosene has been placed around the mansion and surrounding areas. Take as much as you need.\n\nYou'll need something to light it with, which you'll need to find by yourself."
 Keeper'sDiary,Keeper's Diary
 KeeperDiaryTip_title,Keeper's Diary
 KeeperDiaryTip,"9th May, 1998\nPlayed poker tonight with Scott and Alias from Security, and Steve from Research. Steve was the big winner, but I think he was cheating. Scumbag.\n\n10th May, 1998\nOne of the higher-ups assigned me to take care of a new creature. It looks like a skinned gorilla. Feeding instructions were to give it live animals. When I threw in a pig, the creature seemed to play with it... tearing off the pig's legs and pulling out the guts before it actually started eating.\n\n11th May, 1998\nAt around 5 A.M., Scott woke me up. Scared the shit out me, too. He was wearing a protective suit. He handed me another one and told me to put it on. Said there'd been an accident in the basement lab. I just knew something like this would happen. Those bastards in Research never sleep, even on holiday\n\n12th May, 1998\nI've been wearing the damn space suit since yesterday. My skin's getting grimy and feels itchy all over. The goddamn dogs have been looking at me funny, so I decided not to feed them today. Screw 'em.\n\n13th May, 1998\nWent to the Infirmary because my back is all swollen and feels itchy. They put a big bandage on it and told me I didn't need to wear the suit anymore. All I wanna do is sleep.\n\n14th May, 1998\nFound another big blister on my foot this morning. I ended up dragging my foot all the way to the dog's pen. They were quiet all day, which is weird. Then I realized some of them had escaped. Maybe this is their way of getting back at me for not feeding them the last three days. If anybody finds out, I'll have my head handed to me.\n\n16th May, 1998\nRumors going around that a researcher who tried to escape the estate last night was shot. My entire body feels hot and itchy and I'm sweating all the time now. I scratched the swelling on my arm and a piece of rotten flesh just dropped off. What the hell's happening to me?\n\n19th May, 1998\nFever gone but itchy. Today hungry and eat doggie food.\n\n21st May, 1998\n Itchy itchy Scott came ugly face so killed him. Tasty. 4 / / Itchy. Tasty."
@@ -593,8 +593,8 @@ CrimsonPrevention,[4FC3F7]Crimson Head Prevention[-]
 CrimsonPreventionTip_title,[4FC3F7]Crimson Head Prevention[-]
 CrimsonPreventionTip,"Crimson Heads can't exist if zombies aren't killed, so allowing zombies to live where convenient is one way to avoid unwanted guests. Doors help slow down zombies from catching up to you.\n\nDecapitation:\nThe best chance of decapitating a zombie's head is with a handgun with a suppressor installed (gives a 4x chance), assuming you can find it and choose it as one of your three 'Military Goods' options. Shotgun slugs are the next best option.\n\nRemoval of legs:\nThe best chance to remove a zombies leg is with the shotgun, however it can be a little tricky to do, allow me to explain.\n\nShells and slugs both have a very high chance, but work differently.\nShells require the target to be hurt, the less health remaining on your target, the greater the chance shells have of removing their leg.\n\nSlugs require the target to be at full health, the less health they have, the less likely you'll remove a leg.\n\nIf you're feeling lucky, you can nearly kill a zombie with your knife, then use your handgun on their leg."
 Quest_Completion_tip_title,You successfully escaped!
-Completion_desc,Jill Valentine managed to escape the mansion. Little did she know that the nightmare has only just begun!\n\nCongratulations!!\nYou have successfully completed the Spencer Mansion Incident.\n\nI hope you had a blast playing it as much as I did creating it!\n\nFrantic Dan
-Quest_Completion_tip,Jill Valentine managed to escape the mansion. Little did she know that the nightmare has only just begun!\n\nCongratulations!!\nYou have successfully completed the Spencer Mansion Incident.\n\nI hope you had a blast playing it as much as I did creating it!\n\nFrantic Dan
+Completion_desc,Jill Valentine managed to escape the mansion. Little did she know that the nightmare has only just begun!\n\nCongratulations!!\nYou have successfully completed the Spencer Mansion Incident.\n\nI hope you had a blast playing it as much as I did creating it!\n\nFrantic Dan\n\nYou can continue the story by playing as Wesker. Select Wesker Scenario on a new game.
+Quest_Completion_tip,Jill Valentine managed to escape the mansion. Little did she know that the nightmare has only just begun!\n\nCongratulations!!\nYou have successfully completed the Spencer Mansion Incident.\n\nI hope you had a blast playing it as much as I did creating it!\n\nFrantic Dan\n\nYou can continue the story by playing as Wesker. Select Wesker Scenario on a new game.
 zombieArlene,JaWoodle's Girl
 zombieMarlene,Misterri
 zombieNurse,Umbrella Surgeon
@@ -787,3 +787,49 @@ Yellow-6,Yellow-6 - [ [action:local:Secondary] ]
 SaveGamebuff,Save First
 ReadTrainingbuff,Read Books
 GameOverbuff,Exit & Load
+buffWeskerEscapeName,Self-Destruct System
+buffWeskerEscapeDesc,"The self-destruct system has been activated, Escape the mansion before it is too late!"
+buffWeskerEscapeTooltip,[FF4F00]The self-destruct system has been activated![-]
+SpencerMansionSpawnTextWesker,"You're Albert Wesker, a double agent, you worked for both S.T.A.R.S and Umbrella.\n\nYou were killed by the Tyrant, but due to infecting yourself earlier with the Prototype Virus, your body has bonded well with the T-virus. You have just regained consciousness.\n\nThe Laboratory's self-destruct system will soon wipe the Spencer Mansion off the map. Your mission is to gather B.O.W Tissue Samples and escape before detonation!\n\n\nPlease Note: Wesker is able to jump.\nYou are able to drop weapons in this scenario."
+The_Spencer_Mansion_IncidentWesker,Wesker's Escape Scenario
+Enter_The_Survival_HorrorWesker,Gather B.O.W Tissue Samples
+questStartupWesker_desc,"You're Albert Wesker, a double agent, you worked for both S.T.A.R.S and Umbrella.\n\nYou were killed by the Tyrant, but due to infecting yourself earlier with the Prototype Virus, your body has bonded well with the T-virus. You have just regained consciousness.\n\nThe Laboratory's self-destruct system will soon wipe the Spencer Mansion off the map. Your mission is to gather B.O.W Tissue Samples and escape before detonation!\n\n\nPlease Note: Wesker is able to jump.\nYou are able to drop weapons in this scenario."
+FinalEscapeWeskername,"Escape With The Samples!!"
+FinalEscapeWeskerkey,"Escape With The Samples!!"
+FinalEscapeWeskerdesc,"You've obtained all of the B.O.W samples. Time to Escape!"
+CompletionWesker_desc,"Wesker escapes the mansion with more than enough B.O.W Tissue Samples. His evil plans are only just beginning!\n\nCongratulations!!\nYou have successfully completed Wesker's Escape Scenario.\n\nI hope you had a blast playing it as much as I did creating it!\n\nFrantic Dan"
+armorWeskerOutfit,Wesker's Uniform
+armorWeskerGloves,Wesker's Gloves
+armorWeskerBoots,Wesker's Boots
+SurvivalKnifeWesker,Wesker's Survival Knife
+modGunMeleeBlessedMetalTyrantWesker,T-Virus neutraliser
+modGunMeleeBlessedMetalTyrantWeskerDesc,"Greatly increases damage to Tyrant and can help kill the unkillable.\n\nKnife Only."
+SamuraiEdgeWesker,Wesker's Samurai Edge
+PumpShotgunWesker,Pump Shotgun
+GrenadeLauncherWesker,Grenade Launcher
+Weskerammo9mmBulletBallRE,9x19mm Parabellum Bullet
+WeskerammoShotgunShellRE,12 Gauge Shotgun Shell
+WeskerammoGrenadeExplosiveRE,Grenade Shell
+ClassicModeWesker,Wesker's Training Manual
+perkClassicModeWeskerDesc,"Wesker is now a super human, having bonded with both the Prototype Virus and T-Virus.\n\nWesker is also very well trained in knives, cardio, pain tolerance, passive healing and medical knowledge."
+WeskerAmmoCraftingBundle,Box of Ammo
+SurvivalKnifeWeskerdesc,"Wesker's custom made knife, great for close quarter combat.\n\nSprinting Attack: +15% dismember chance.\nStamina > 50%: +10% dismember chance.\n(Calculates after attack)"
+AmmoHittoPickup,Box of Ammo\n(Hit to Pickup)
+WeskerGrenadeExplosiveHittoPickup,Grenade Shells\n(Hit to Pickup)
+WeskerLauncherHittoPickup,Grenade Launcher\n(Hit to Pickup)
+BOWTissueSample(Plant),Plant 42's Tissue Sample
+BOWTissueSample(Lisa),Lisa Trevor's Tissue Sample
+BOWTissueSample(Wolf),Yawn The Wolf's Tissue Sample
+BOWTissueSample(Spider),Black Tiger's Tissue Sample
+BOWTissueSample(Crimson),Crimson Head Prototype's Tissue Sample
+TissueSampleCollection,Tissue Sample Collection
+elevatorMansionTissueSampleDoorDouble,Locked
+LisaTrevorWesker,Lisa Trevor
+TyrantWesker,Tyrant
+SuperTyrantWesker,Super Tyrant
+CrimsonHeadPrototypeWesker,Crimson Head Prototype
+Plant42Wesker,Plant 42
+animalYawntheWolfWesker,Yawn the Wolf
+BlackTigerSpiderWesker,Black Tiger Spider
+JillMission,Jill's Diary
+WeskerScenario,Wesker's Mission
