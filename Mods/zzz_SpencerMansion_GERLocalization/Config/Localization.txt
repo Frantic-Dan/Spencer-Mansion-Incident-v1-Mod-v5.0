@@ -67,7 +67,7 @@ TwitchAction_SupplyFirstAidSprayCommand,#firstaidspray
 TwitchAction_SupplyAmmo762Command,#rifle_x12
 buffNewbieCoatNameRE,Allgemeine Informationen zu dem Spencer Mansion Vorfall
 buffNewbieCoatDescRE,"Der Spencer Mansion Vorfall bietet dir ein einzigartiges 7 Days to Die-Erlebnis wie keine andere Mod.\nHier einige Informationen, die dir die Eingewöhnung erleichtern.\n\nDa es keine kritischen Verletzungen gibt, musst du dir keine Sorgen machen, dass du verblutest und kannst dich darauf konzentrieren, dass Beste aus den begrenzten Heilungsvorräten zu machen.\n\nAchte auf dein Inventar, versuche nicht Kräuter oder Munition zu sammeln, wenn dein Inventar voll ist, da sie auf den Boden fallen und verschwinden werden.\n\nDu musst dir keine Sorgen um Nahrung und Wasser machen. Wenn du jedoch in Brand gesetzt wirst, wirst du durstig. Wenn du völlig dehydriert bist, musst du von einer Wasserquelle trinken und riskierst krank zu werden.\n\nZombies können Türen öffnen, also gehe nie davon aus, dass du in Sicherheit bist!"
-xuiInventory,Jill Valentine's Inventar
+
 tooltipJammed,([DECEA3]Blockiert[-])
 tooltipLocked,{1}
 tooltipUnlocked,{1}
@@ -527,7 +527,7 @@ BotanyBookTip_title,Botanikbuch
 BotanyBookTip,"Verwendung von Heilkräutern\n\nEs ist allgemein bekannt, dass es viele Pflanzen gibt, denen medizinische Heilkräfte zugeschrieben werden. Seit der Antike heilt die Menschheit Wunden und Krankheiten mit verschiedenen Pflanzen.\n\nIn diesem Buch werden wir drei Kräuter probieren, die in den Arklay Mountains heimisch sind, und ihre jeweiligen medizinischen Eigenschaften kurz beschreiben. Jedes Kraut hat eine eigene Farbe und eine eigene medizinische Qualität.\n\nDas grüne Kraut stellt die körperliche Kraft wieder her. Das blaue Kraut neutralisiert natürliche Giftstoffe. Das rote Kraut hat jedoch allein keine wirkliche Wirkung. Wir haben festgestellt, dass das Mischen von grünen und roten Kräutern eine verstärkte Wirkung hat.\n\nWir werden die Wirkung von roten Kräutern in Kombination mit anderen Kräutern beschreiben, wenn wir mehr Daten haben. In der Zwischenzeit können Sie gerne selbst experimentieren, denn wahres Wissen erlangt man am besten durch eigene Erfahrung."
 BodyDisposal,[FF4F00]Körper Entsorgung[-]
 BodyDisposalTip_title,[FF4F00]Körper Entsorgung[-]
-BodyDisposalTip,"Besondere Anweisungen zum Entsorgen von Leichen.\n\nWir haben neue Informationen über diese 'Wesen'. Sie mögen wie tot erscheinen, können jedoch tatsächlich wieder zum Leben erwachen. Es gibt jedoch Möglichkeiten, sie daran zu hindern, erneut aktiv zu werden.\n\nDerzeit gibt es drei bekannte Methoden, um ihre Wiederbelebung zu stoppen.\n\n1. ZERSTÖRUNG DES KOPFES ([FF4F00]Todesursache[-])\n2. BEIN AMPUTIEREN ([FF4F00]Vor dem Tod[-] / [FF4F00]Todesursache[-])\n3. EINÄSCHERN ([FF4F00]Todesursache[-])\n\nSollten weitere Methoden entdeckt werden, werden sie umgehend mitgeteilt.\n\nIn der Zwischenzeit, für diejenigen von euch, die noch den Willen zum Überleben haben, wurde Kerosin im Herrenhaus und den umliegenden Gebieten platziert. Nimm so viel, wie du benötigst.\n\nDu wirst etwas zum Anzünden brauchen, was du selbst finden musst."
+BodyDisposalTip,"Besondere Anweisungen zum Entsorgen von Leichen.\n\nWir haben neue Informationen über diese 'Wesen'. Sie mögen wie tot erscheinen, können jedoch tatsächlich wieder zum Leben erwachen. Es gibt jedoch Möglichkeiten, sie daran zu hindern, erneut aktiv zu werden.\n\nDerzeit gibt es drei bekannte Methoden, um ihre Wiederbelebung zu stoppen.\n\n1. ZERSTÖRUNG DES KOPFES ([FF4F00]Todesursache[-])\n2. BEIN AMPUTIEREN ([FF4F00]Vor dem Tod[-] / [FF4F00]Todesursache[-])\n3. EINÄSCHERN ([FF4F00]Todesursache[-]/[FF4F00]Nach dem Tod[-])\n\nSollten weitere Methoden entdeckt werden, werden sie umgehend mitgeteilt.\n\nIn der Zwischenzeit, für diejenigen von euch, die noch den Willen zum Überleben haben, wurde Kerosin im Herrenhaus und den umliegenden Gebieten platziert. Nimm so viel, wie du benötigst.\n\nDu wirst etwas zum Anzünden brauchen, was du selbst finden musst."
 Keeper'sDiary,Wächter Tagebuch
 KeeperDiaryTip_title,Wächter Tagebuch
 KeeperDiaryTip,"9. Mai, 1998\nHabe heute Abend mit Scott und Alias von der Sicherheit sowie Steve aus der Forschung Poker gespielt. Steve war der große Gewinner, aber ich denke, er hat geschummelt. Schuft.\n\n10. Mai 1998\nEiner der Vorgesetzten hat mich beauftragt, mich um ein neues Wesen zu kümmern. Es sieht aus wie ein gehäuteter Gorilla. Die Fütterungsanweisungen besagten, dem Wesen lebende Tiere zu geben. Als ich ein Schwein hineinwarf, schien das Wesen damit zu spielen... indem es dem Schwein die Beine abriss und die Eingeweide herauszog, bevor es tatsächlich anfing zu fressen.\n\n11. Mai 1998\nUm etwa 5 Uhr morgens weckte mich Scott auf. Hatte mich auch ganz schön erschreckt. Er trug einen Schutzanzug. Er reichte mir einen weiteren Anzug und sagte mir, ich solle ihn anziehen. Er sagte, dass es im unteren Labor einen Unfall gegeben habe. Ich wusste einfach, dass so etwas passieren würde. Diese Schweine in der Forschung schlafen nie, nicht einmal an Feiertagen.\n\n12. Mai 1998\nIch trage diesen verdammten Raumanzug seit gestern. Meine Haut wird immer schmieriger und überall juckt es mich. Die verdammten Hunde haben mich komisch angeguckt, also entschied ich mich, sie heute nicht zu füttern. Es ist mir egal.\n\n13. Mai 1998\nGing ins Krankenhaus, weil mein Rücken geschwollen und juckend war. Sie legten einen großen Verband darauf und sagten mir, dass ich den Anzug nicht mehr tragen müsste. Alles, was ich jetzt möchte, ist schlafen.\n\n14. Mai 1998\nFand heute Morgen eine weitere große Blase an meinem Fuß. Ich schleppte mich bis zum Hundezwinger. Sie waren den ganzen Tag ruhig, was seltsam war. Dann wurde mir klar, dass einige von ihnen entkommen waren. Vielleicht ist das ihre Art, sich bei mir dafür zu rächen, dass ich sie die letzten drei Tage nicht gefüttert habe. Wenn jemand davon erfährt, werde ich Ärger bekommen.\n\n16. Mai 1998\nEs kursieren Gerüchte, dass ein Forscher, der versucht hat, gestern Nacht aus dem Anwesen zu fliehen, erschossen wurde. Mein ganzer Körper fühlt sich heiß und juckend an, und ich schwitze jetzt die ganze Zeit. Ich kratzte an der Schwellung an meinem Arm, und ein Stück faulendes Fleisch fiel einfach ab. Was zum Teufel passiert hier mit mir?\n\n19. Mai 1998\nDas Fieber ist weg, aber es juckt. Heute bin ich hungrig und esse Hundefutter.\n\n21. Mai 1998\n Juckt, es juckt. Scott hatte ein hässliches Gesicht, deshalb habe ich ihn getötet. Lecker. 4 / / Es juckt. Lecker."
@@ -787,3 +787,50 @@ buffInkRibbonImmobalisedDesc,Pausiere das Spiel und klicke auf „Spiel speicher
 SaveGamebuff,Erst speichern 
 ReadTrainingbuff,Bücher lesen
 GameOverbuff,Ausfahrt und laden
+Completion_desc,"Jill Valentine hat es geschafft, aus dem Herrenhaus zu entkommen. Sie ahnt nicht, dass der Albtraum gerade erst begonnen hat!\n\nGlückwunsch!!!\nDu hast den Spencer Mansion Vorfall erfolgreich abgeschlossen.\n\nIch hoffe, du hattest genauso viel Spaß beim Spielen wie ich bei der Entwicklung!\n\nFrantic Dan\n\nDu kannst die Geschichte fortsetzen, indem du als Wesker spielst. Wähle bei einem neuen Spiel das Wesker-Szenario."
+buffWeskerEscapeName,Selbstzerstörungssystem
+buffWeskerEscapeDesc,"Das Selbstzerstörungssystem ist aktiviert worden. Entkomme aus der Villa, bevor es zu spät ist!"
+buffWeskerEscapeTooltip,[FF4F00]Das Selbstzerstörungssystem wurde aktiviert![-]
+SpencerMansionSpawnTextWesker,"Du bist Albert Wesker, ein Doppelagent, der sowohl für S.T.A.R.S. als auch für Umbrella gearbeitet hat.\n\nDu wurdest von dem Tyrannen getötet, aber da du dich zuvor mit dem Prototyp-Virus infiziert hast, hat sich dein Körper gut mit dem T-Virus verbunden. Du hast soeben dein Bewusstsein wiedererlangt.\n\nDie Selbstzerstörung des Labors wird die Spencer-Mansion bald von der Landkarte tilgen. Deine Aufgabe ist es, B.O.W.-Gewebeproben zu sammeln und vor der Detonation zu entkommen!\n\n\nBitte beachte: Wesker kann springen.\nDu kannst in diesem Szenario Waffen fallen lassen."
+The_Spencer_Mansion_IncidentWesker,Wesker's Flucht Szenario
+Enter_The_Survival_HorrorWesker,Sammel B.O.W.-Gewebeproben
+questStartupWesker_desc,"Du bist Albert Wesker, ein Doppelagent, der sowohl für S.T.A.R.S. als auch für Umbrella gearbeitet hat.\n\nDu wurdest von dem Tyrannen getötet, aber da du dich zuvor mit dem Prototyp-Virus infiziert hast, hat sich dein Körper gut mit dem T-Virus verbunden. Du hast soeben dein Bewusstsein wiedererlangt.\n\nDie Selbstzerstörung des Labors wird die Spencer-Mansion bald von der Landkarte tilgen. Deine Aufgabe ist es, B.O.W.-Gewebeproben zu sammeln und vor der Detonation zu entkommen!\n\n\nBitte beachte: Wesker kann springen.\nDu kannst in diesem Szenario Waffen fallen lassen."
+FinalEscapeWeskername,"Fliehe mit den Proben!!!"
+FinalEscapeWeskerkey,"Fliehe mit den Proben!!!"
+FinalEscapeWeskerdesc,"Du hast alle B.O.W.-Proben gesammelt. Zeit zu fliehen!"
+CompletionWesker_desc,"Wesker entkommt aus der Villa mit mehr als genug B.O.W.-Gewebeproben. Seine bösen Pläne fangen gerade erst an!\n\nGlückwunsch!!\nDu hast Weskers Fluchtszenario erfolgreich abgeschlossen.\n\nIch hoffe, Du hattest genauso viel Spaß beim Spielen wie ich beim Entwickeln.!\n\nFrantic Dan"
+armorWeskerOutfit,Wesker's Uniform
+armorWeskerGloves,Wesker's Handschuhe
+armorWeskerBoots,Wesker's Stiefel
+SurvivalKnifeWesker,Wesker's Survival-Messer
+modGunMeleeBlessedMetalTyrantWesker,T-Virus Neutralisator
+modGunMeleeBlessedMetalTyrantWeskerDesc,"Erhöht den Schaden am Tyrannen erheblich und kann dabei helfen, die Untötbaren zu töten.\n\nNur Messer."
+SamuraiEdgeWesker,Wesker's Samurai Edge
+PumpShotgunWesker,Pump Shotgun
+GrenadeLauncherWesker,Granatenwerfer
+Weskerammo9mmBulletBallRE,9x19mm Parabellum Kugel
+WeskerammoShotgunShellRE,Schrotpatronen Kaliber 12
+WeskerammoGrenadeExplosiveRE,Granatengeschoss
+ClassicModeWesker,Wesker's Trainingshandbuch
+perkClassicModeWeskerDesc,"Wesker ist jetzt ein Übermensch, der sich sowohl mit dem Prototyp-Virus als auch mit dem T-Virus verbunden hat.\n\nWesker ist außerdem sehr gut ausgebildet in den Bereichen Messer, Kardio, Schmerztoleranz, passive Heilung und medizinisches Wissen."
+WeskerAmmoCraftingBundle,Kiste mit Munition
+SurvivalKnifeWeskerdesc,"Weskers speziell angefertigtes Messer, ideal für den Nahkampf.\n\nSprint-Angriff: +15% Zerstückelungschance.\nAusdauer > 50%: +10% Zerstückelungschance.\n(Wird nach dem Angriff berechnet)"
+AmmoHittoPickup,Kiste mit Munition\n(Schlagen zum Aufheben)
+WeskerGrenadeExplosiveHittoPickup,Granatengeschosse\n(Schlagen zum Aufheben)
+WeskerLauncherHittoPickup,Granatenwerfer\n(Schlagen zum Aufheben)
+BOWTissueSample(Plant),Gewebeprobe Pflanze 42
+BOWTissueSample(Lisa),Lisa Trevor's Gewebeprobe
+BOWTissueSample(Wolf), Gewebeprobe gähnender Wolf
+BOWTissueSample(Spider),Gewebeprobe schwarze Tigerspinne
+BOWTissueSample(Crimson),Gewebeprobe scharlachroter Kopf Prototyp
+TissueSampleCollection,Sammlung der Gewebeproben
+elevatorMansionTissueSampleDoorDouble,Verschlossen
+LisaTrevorWesker,Lisa Trevor
+TyrantWesker,Tyrann
+SuperTyrantWesker,Super Tyrann
+CrimsonHeadPrototypeWesker,Scharlachroter Kopf Prototyp
+Plant42Wesker,Pflanze 42
+animalYawntheWolfWesker,Gähnender Wolf
+BlackTigerSpiderWesker,Schwarze Tigerspinne
+JillMission,Jill's Tagebuch
+WeskerScenario,Wesker's Auftrag
