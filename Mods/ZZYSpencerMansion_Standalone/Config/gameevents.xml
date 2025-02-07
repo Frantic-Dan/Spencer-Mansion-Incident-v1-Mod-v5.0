@@ -5,6 +5,8 @@
 
 <set xpath="/gameevents/action_sequence[@name='game_first_spawn']/action[@class='Delay']/property[@name='time']/@value">4</set>
 
+<conditional>
+	<if cond="gamepref('GameWorld') == 'Spencer Mansion Incident'">
 <insertafter xpath="/gameevents/action_sequence[@name='game_first_spawn']/action[@class='Delay']">
 		<action class="ShowMessageWindow">
 			<property name="message" value="SpencerMansionSpawnText" />
@@ -23,7 +25,7 @@
 				<property name="item_counts" value="1-1,1-1,1-1" />
 			</action>
 
-		<action class="AddQuest">
+		<!-- <action class="AddQuest">
 			<property name="quest" value="SpencerMansionQuest" />
 			<property name="phase" value="3" />
 		</action>
@@ -36,18 +38,48 @@
 		<action class="AddBuff">
 			<property name="phase" value="5" />
 			<property name="buff_name" value="I probably should not cheat" />
+		</action> -->
+</insertafter>
+	</if>
+</conditional>
+
+<conditional>
+	<if cond="gamepref('GameWorld') == 'Wesker Scenario'">
+<insertafter xpath="/gameevents/action_sequence[@name='game_first_spawn']/action[@class='Delay']">
+		<action class="ShowMessageWindow">
+			<property name="message" value="SpencerMansionSpawnTextWesker" />
+			<property name="title" value="Wesker's Scenario" />
+			<property name="phase" value="1" />
+		</action>
+
+		<action class="Delay">
+			<property name="time" value="1" />
+			<property name="phase" value="2" />
+		</action>
+
+		<action class="SetItemSlots">
+				<property name="items_location" value="Equipment" />
+				<property name="items" value="BulletProofVest,armorWeskerGloves,armorWeskerBoots" />
+				<property name="item_counts" value="1-1,1-1,1-1" />
+			</action>
+
+		<!-- <action class="AddQuest">
+			<property name="quest" value="SpencerMansionQuestWesker" />
+			<property name="phase" value="3" />
 		</action>
 		
 		<action class="Delay">
 			<property name="time" value="1" />
-			<property name="phase" value="6" />
+			<property name="phase" value="4" />
 		</action>
 		
 		<action class="AddBuff">
-			<property name="phase" value="7" />
-			<property name="buff_name" value="buff SpawnManualSave" />
-		</action>
+			<property name="phase" value="5" />
+			<property name="buff_name" value="I probably should not cheat" />
+		</action> -->
 </insertafter>
+	</if>
+</conditional>
 
 		
 
@@ -376,7 +408,7 @@
 	</conditional>
 	
 	<conditional>
-      <if cond="mod_loaded('ZombieDifficultyAdjustments') == false">
+      <if cond="mod_loaded('DifficultyMod') == false">
 			<insertafter xpath="/gameevents/action_sequence[@name='game_first_spawn']/action[@class='Delay']">
 		<action class="ShowMessageWindow">
 			<property name="message" value="ModNotInstalledCorrectlyText" />
@@ -599,6 +631,50 @@
 		
 		<action class="ShowMessageWindow" >
 			<property name="message" value="Completion_desc"/>
+			<property name="title" value="Quest_Completion_tip_title"/>
+			<property name="phase" value="5"/>
+		</action>
+	
+	</action_sequence>
+	
+	<action_sequence name="BeatGameWesker">
+		
+		<action class="Delay">
+			<property name="time" value="4" />
+			<property name="phase" value="1" />
+		</action>
+		
+		<action class="RemoveBuff">
+			<property name="phase" value="2" />
+			<property name="buff_name" value="buffWeskerEscape" />
+		</action>
+		
+		<action class="AddBuff">
+			<property name="phase" value="2" />
+			<property name="buff_name" value="buffDontMove" />
+			<property name="duration" value="300" />
+		</action>
+		
+		<action class="AddBuff">
+			<property name="phase" value="2" />
+			<property name="buff_name" value="buffInvincibilityFrames" />
+			<property name="duration" value="300" />
+		</action>
+		
+		<action class="SetScreenEffect">
+			<property name="phase" value="3" />
+			<property name="screen_effect" value="FadeToBlack" />
+			<property name="intensity" value="1" />
+			<property name="fade_time" value="4" />
+		</action>
+		
+		<action class="Delay">
+			<property name="time" value="5" />
+			<property name="phase" value="4" />
+		</action>
+		
+		<action class="ShowMessageWindow" >
+			<property name="message" value="CompletionWesker_desc"/>
 			<property name="title" value="Quest_Completion_tip_title"/>
 			<property name="phase" value="5"/>
 		</action>
@@ -1084,6 +1160,8 @@
         </action>
     </action_sequence>
 	
+<conditional>
+	<if cond="gamepref('GameWorld') == 'Spencer Mansion Incident'">	
 	<action_sequence name="RemoveMasterKey">
         <property name="category" value="twitch_actions" />
         <property name="target_type" value="Block" />
@@ -1095,6 +1173,207 @@
 			<property name="count" value="1"/>			
         </action>
     </action_sequence>
+	</if>
+</conditional>	
+	
+<conditional>
+	<if cond="gamepref('GameWorld') == 'Wesker Scenario' and gamepref('GameDifficulty') == '0'">
+	<action_sequence name="RemoveMasterKey">
+        <property name="category" value="twitch_actions" />
+        <property name="target_type" value="Block" />
+        
+        <action class="RemoveItems">
+            <property name="items_location" value="Toolbelt" />
+            <property name="items_tags" value="MasterKey"/>
+			<property name="count_type" value="Items"/>
+			<property name="count" value="1"/>
+			<property name="phase" value="1" />
+        </action>
+		
+		<action class="Delay">
+			<property name="time" value="1" />
+			<property name="phase" value="2" />
+		</action>
+
+		<action class="AddBuff">
+			<property name="phase" value="3" />
+			<property name="buff_name" value="buffWeskerEscape" />
+			<property name="duration" value="3605" />
+		</action>
+		
+		<action class="AddBuff">
+			<property name="phase" value="4" />
+			<property name="buff_name" value="buffWeskerMusic" />
+			<property name="duration" value="3600" />
+		</action>
+    </action_sequence>
+	</if>
+</conditional>	
+
+<conditional>
+	<if cond="gamepref('GameWorld') == 'Wesker Scenario' and gamepref('GameDifficulty') == '1'">
+	<action_sequence name="RemoveMasterKey">
+        <property name="category" value="twitch_actions" />
+        <property name="target_type" value="Block" />
+        
+        <action class="RemoveItems">
+            <property name="items_location" value="Toolbelt" />
+            <property name="items_tags" value="MasterKey"/>
+			<property name="count_type" value="Items"/>
+			<property name="count" value="1"/>
+			<property name="phase" value="1" />
+        </action>
+		
+		<action class="Delay">
+			<property name="time" value="1" />
+			<property name="phase" value="2" />
+		</action>
+
+		<action class="AddBuff">
+			<property name="phase" value="3" />
+			<property name="buff_name" value="buffWeskerEscape" />
+			<property name="duration" value="3965" />
+		</action>
+		<action class="AddBuff">
+			<property name="phase" value="4" />
+			<property name="buff_name" value="buffWeskerMusic" />
+			<property name="duration" value="3965" />
+		</action>
+    </action_sequence>
+	</if>
+</conditional>
+
+<conditional>
+	<if cond="gamepref('GameWorld') == 'Wesker Scenario' and gamepref('GameDifficulty') == '2'">
+	<action_sequence name="RemoveMasterKey">
+        <property name="category" value="twitch_actions" />
+        <property name="target_type" value="Block" />
+        
+        <action class="RemoveItems">
+            <property name="items_location" value="Toolbelt" />
+            <property name="items_tags" value="MasterKey"/>
+			<property name="count_type" value="Items"/>
+			<property name="count" value="1"/>
+			<property name="phase" value="1" />
+        </action>
+		
+		<action class="Delay">
+			<property name="time" value="1" />
+			<property name="phase" value="2" />
+		</action>
+
+		<action class="AddBuff">
+			<property name="phase" value="3" />
+			<property name="buff_name" value="buffWeskerEscape" />
+			<property name="duration" value="4325" />
+		</action>
+		<action class="AddBuff">
+			<property name="phase" value="4" />
+			<property name="buff_name" value="buffWeskerMusic" />
+			<property name="duration" value="4325" />
+		</action>
+    </action_sequence>
+	</if>
+</conditional>
+
+<conditional>
+	<if cond="gamepref('GameWorld') == 'Wesker Scenario' and gamepref('GameDifficulty') == '3'">
+	<action_sequence name="RemoveMasterKey">
+        <property name="category" value="twitch_actions" />
+        <property name="target_type" value="Block" />
+        
+        <action class="RemoveItems">
+            <property name="items_location" value="Toolbelt" />
+            <property name="items_tags" value="MasterKey"/>
+			<property name="count_type" value="Items"/>
+			<property name="count" value="1"/>
+			<property name="phase" value="1" />
+        </action>
+		
+		<action class="Delay">
+			<property name="time" value="1" />
+			<property name="phase" value="2" />
+		</action>
+
+		<action class="AddBuff">
+			<property name="phase" value="3" />
+			<property name="buff_name" value="buffWeskerEscape" />
+			<property name="duration" value="4685" />
+		</action>
+		<action class="AddBuff">
+			<property name="phase" value="4" />
+			<property name="buff_name" value="buffWeskerMusic" />
+			<property name="duration" value="4685" />
+		</action>
+    </action_sequence>
+	</if>
+</conditional>
+
+<conditional>
+	<if cond="gamepref('GameWorld') == 'Wesker Scenario' and gamepref('GameDifficulty') == '4'">
+	<action_sequence name="RemoveMasterKey">
+        <property name="category" value="twitch_actions" />
+        <property name="target_type" value="Block" />
+        
+        <action class="RemoveItems">
+            <property name="items_location" value="Toolbelt" />
+            <property name="items_tags" value="MasterKey"/>
+			<property name="count_type" value="Items"/>
+			<property name="count" value="1"/>
+			<property name="phase" value="1" />
+        </action>
+		
+		<action class="Delay">
+			<property name="time" value="1" />
+			<property name="phase" value="2" />
+		</action>
+
+		<action class="AddBuff">
+			<property name="phase" value="3" />
+			<property name="buff_name" value="buffWeskerEscape" />
+			<property name="duration" value="5045" />
+		</action>
+		<action class="AddBuff">
+			<property name="phase" value="4" />
+			<property name="buff_name" value="buffWeskerMusic" />
+			<property name="duration" value="5045" />
+		</action>
+    </action_sequence>
+	</if>
+</conditional>
+
+<conditional>
+	<if cond="gamepref('GameWorld') == 'Wesker Scenario' and gamepref('GameDifficulty') == '5'">
+	<action_sequence name="RemoveMasterKey">
+        <property name="category" value="twitch_actions" />
+        <property name="target_type" value="Block" />
+        
+        <action class="RemoveItems">
+            <property name="items_location" value="Toolbelt" />
+            <property name="items_tags" value="MasterKey"/>
+			<property name="count_type" value="Items"/>
+			<property name="count" value="1"/>
+			<property name="phase" value="1" />
+        </action>
+		
+		<action class="Delay">
+			<property name="time" value="1" />
+			<property name="phase" value="2" />
+		</action>
+
+		<action class="AddBuff">
+			<property name="phase" value="3" />
+			<property name="buff_name" value="buffWeskerEscape" />
+			<property name="duration" value="5405" />
+		</action>
+		<action class="AddBuff">
+			<property name="phase" value="4" />
+			<property name="buff_name" value="buffWeskerMusic" />
+			<property name="duration" value="5405" />
+		</action>
+    </action_sequence>
+	</if>
+</conditional>
 	
 	<action_sequence name="RemoveGyrocopter">
         <property name="category" value="twitch_actions" />
@@ -1106,6 +1385,21 @@
 			<property name="count_type" value="Items"/>
 			<property name="count" value="1"/>			
         </action>
+    </action_sequence>
+	
+	<action_sequence name="RemoveWeskerMusic">
+		<property name="category" value="twitch_actions" />
+        <property name="target_type" value="Block" />
+		
+		<action class="Delay">
+			<property name="time" value="1" />
+			<property name="phase" value="1" />
+		</action>
+		
+		<action class="AddBuff">
+			<property name="phase" value="2" />
+			<property name="removes_buff" value="buffWeskerMusic" param1="removebuff" />
+		</action>
     </action_sequence>
 
 	</append>
