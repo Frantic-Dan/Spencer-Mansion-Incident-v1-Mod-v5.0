@@ -38,8 +38,9 @@
 	<set xpath="/windows/window[@name='toolTipPopups']/@pos">0,55</set>
 	<set xpath="/windows/window[@name='interactionPrompt']/@pos">0,110</set>
 	<set xpath="/windows/window[@name='interactionPrompt']/@anchor">CenterBottom</set>
-	<set xpath="/windows/window[@name='interactionPrompt']/label[@name='lblText']/@font_size">32</set>
-	<set xpath="/windows/window[@name='interactionPrompt']/label[@name='lblText']/@effect_color">150,150,50</set>
+	<set xpath="/windows/window[@name='interactionPrompt']/label[@name='lblText']/@font_size">40</set>
+	<!-- <set xpath="/windows/window[@name='interactionPrompt']/label[@name='lblText']/@effect_color">150,150,50</set> -->
+	<set xpath="/windows/window[@name='interactionPrompt']/label[@name='lblText']/@effect_color">50,50,50,200</set>
 	<set xpath="/windows/window[@name='focusedBlockHealth']/@pos">0,-1200</set>
 	<!-- <set xpath="/windows/window[@name='windowShapeMaterial']/rect[@pos='0,-25']/rect[@depth='2']//button[1]/@sprite">ui_game_symbol_party</set> -->
 	<set xpath="/windows/window[@name='windowCompass']/@pos">-240,509</set>
