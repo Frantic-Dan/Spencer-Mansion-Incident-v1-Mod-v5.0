@@ -7,9 +7,9 @@
 	<set xpath="/windows/window[@name='mainMenu']">
 	
 		
-			<mainmenubutton name="btnNewGame" anchor="LeftBottom" pivot="center" pos="800,-270" width="160" height="50" caption_key="xuiNewGame" />
-			<mainmenubutton name="btnContinueGame" anchor="LeftBottom" pivot="center" pos="800,-330" width="220" height="50" caption_key="xuiContinueGame" enabled="{has_saved_game}"/>
-			<mainmenubutton name="btnConnectToServer" anchor="LeftBottom" pivot="center" pos="-800,-2900" width="190" height="50" caption_key="xuiConnectToServer" enabled="false" gamepad_selectable="false"/>
+			<mainmenubutton name="btnNewGame" anchor="LeftBottom" pivot="center" pos="800,-210" width="160" height="50" caption_key="xuiNewGame" />
+			<mainmenubutton name="btnContinueGame" anchor="LeftBottom" pivot="center" pos="800,-270" width="220" height="50" caption_key="xuiContinueGame" enabled="{has_saved_game}"/>
+			<mainmenubutton name="btnConnectToServer" anchor="LeftBottom" pivot="center" pos="800,-330" width="190" height="50" caption_key="xuiConnectToServer" enabled="true" gamepad_selectable="false"/>
 			<mainmenubutton name="btnEditingTools" anchor="LeftTop" pivot="center" pos="-800,-3000" width="200" height="50" caption_key="xuiEditingTools" enabled="false" gamepad_selectable="false"/>
 			<mainmenubutton name="btnOptions" anchor="RightBottom" pivot="center" pos="810,-390" width="160" height="50" caption_key="xuiOptions" />
 			<mainmenubutton name="btnCredits" anchor="LeftTop" pivot="center" pos="-800,-2800" width="160" height="50" caption_key="xuiCredits" enabled="false" gamepad_selectable="false"/>
@@ -54,14 +54,14 @@
 	<!-- <remove xpath="/windows/window[@name='newContinueGame']/rect[2]/rect[2]/rect[1]/grid[@pos='6,-77']//gameoption[@name='ServerVisibility']"/> -->
 	<!-- <remove xpath="/windows/window[@name='newContinueGame']/rect[2]/rect[2]/rect[1]/grid[@pos='6,-77']//gameoption[@name='ServerPassword']"/> -->
 	<!-- <remove xpath="/windows/window[@name='newContinueGame']/rect[2]/rect[2]/rect[1]/grid[@pos='6,-77']//gameoption[@name='ServerMaxPlayerCount']"/> -->
-	<set xpath="/windows/window[@name='newContinueGame']/rect[2]/rect[2]/rect[1]/grid[@pos='6,-77']//gameoption[@name='ServerMaxPlayerCount']/@values">1</set>/>
+	<set xpath="/windows/window[@name='newContinueGame']/rect[2]/rect[2]/rect[1]/grid[@pos='6,-77']//gameoption[@name='ServerMaxPlayerCount']/@values">1,2</set>/>
 	<remove xpath="/windows/window[@name='newContinueGame']/rect[2]/rect[2]/rect[1]/grid[@pos='6,-77']//gameoption[@name='DayNightLength']"/>
 	<remove xpath="/windows/window[@name='newContinueGame']/rect[2]/rect[2]/rect[1]/grid[@pos='6,-77']//gameoption[@name='DayLightLength']"/>
-	<remove xpath="/windows/window[@name='newContinueGame']/rect[2]/rect[2]/rect[1]/grid[@pos='6,-77']//gameoption[@name='ServerEnabled']"/>
+	<!-- <remove xpath="/windows/window[@name='newContinueGame']/rect[2]/rect[2]/rect[1]/grid[@pos='6,-77']//gameoption[@name='ServerEnabled']"/>
 	<remove xpath="/windows/window[@name='newContinueGame']/rect[2]/rect[2]/rect[1]/grid[@pos='6,-77']//gameoption[@name='Region']"/>
 	<remove xpath="/windows/window[@name='newContinueGame']/rect[2]/rect[2]/rect[1]/grid[@pos='6,-77']//gameoption[@name='ServerVisibility']"/>
 	<remove xpath="/windows/window[@name='newContinueGame']/rect[2]/rect[2]/rect[1]/grid[@pos='6,-77']//gameoption[@name='ServerPassword']"/>
-	<remove xpath="/windows/window[@name='newContinueGame']/rect[2]/rect[2]/rect[1]/grid[@pos='6,-77']//gameoption[@name='ServerMaxPlayerCount']"/>
+	<remove xpath="/windows/window[@name='newContinueGame']/rect[2]/rect[2]/rect[1]/grid[@pos='6,-77']//gameoption[@name='ServerMaxPlayerCount']"/> -->
 	<remove xpath="/windows/window[@name='newContinueGame']/rect[2]/rect[2]/rect[1]/grid[@pos='6,-77']//gameoption[@name='ServerEACPeerToPeer']"/>
 	<remove xpath="/windows/window[@name='newContinueGame']/rect[2]/rect[2]/rect[1]/grid[@pos='6,-77']//gameoption[@name='ServerAllowCrossplay']"/>
 	
@@ -125,28 +125,32 @@
 	<remove xpath="/windows/window[@name='newContinueGame']/rect[2]/rect[2]/rect[@tab_key='xuiGameSettingsAdvanced']"/>
 	<remove xpath="/windows/window[@name='newContinueGame']/rect[2]/rect[2]/rect[@tab_key='xuiGameSettingsMultiplayer']"/>
 	
-	<insertbefore xpath="/windows/window[@name='newContinueGame']/rect[2]/rect[2]/rect[1]/grid[@pos='6,-77']//gameoption[@name='GameDifficulty']">
+	<!-- <insertbefore xpath="/windows/window[@name='newContinueGame']/rect[2]/rect[2]/rect[1]/grid[@pos='6,-77']//gameoption[@name='GameDifficulty']">
 		<rect/><rect/>
-	</insertbefore>
+	</insertbefore> -->
 	
 	<insertafter xpath="/windows/window[@name='newContinueGame']/rect[2]/rect[2]/rect[1]/grid[@pos='6,-77']//gameoption[@name='GameDifficulty']">
 		<gameoption name="ZombieMoveNight" title="goZombieMoveNightRE" value_wrap="false" value_type="int" values="" display_names="goZMWalk,goZMJog,goZMRun,goZMSprint" value_localization_prefix="" visible="{isnewgame}"/>
+		<!-- <gameoption name="ServerEnabled" title="goServerEnabled" value_wrap="false" value_type="bool" values="" display_names="goServerEnabledOff,goServerEnabledOn" value_localization_prefix="" gamepad_selectable="false"/>
+		<gameoption name="Region" title="goRegion" value_wrap="true" value_type="string" values="NorthAmericaEast,NorthAmericaWest,CentralAmerica,SouthAmerica,Europe,Russia,Asia,MiddleEast,Africa,Oceania" display_names="" value_localization_prefix="goRegionName" has_default="false" always_show="true" gamepad_selectable="false"/>
+		<gameoption name="ServerVisibility" title="goServerVisibility" value_wrap="false" value_type="int" values="" display_names="goServerVisibility0,goServerVisibility1,goServerVisibility2" value_localization_prefix="" gamepad_selectable="false"/> -->
+		<!-- <gameoption name="ServerEACPeerToPeer" title="goEacEnabled" value_wrap="false" value_type="bool" values="" display_names="" value_localization_prefix="" has_default="true" enabled="{servereacpeertopeer}"/>
+		<gameoption name="ServerAllowCrossplay" title="goServerAllowCrossplay" value_wrap="false" value_type="bool" values="" display_names="" value_localization_prefix=""  tooltip_key="{crossplayTooltip}"/> -->
+		<!-- <gameoption name="ServerPassword" title="goPassword" value_wrap="false" value_type="string" values="" display_names="" value_localization_prefix="" is_textinput="true" password_field="true" character_limit="30" gamepad_selectable="false"/>
+		<gameoption name="ServerMaxPlayerCount" title="goMaxPlayers" value_wrap="false" value_type="int" values="1,2" display_names="" value_localization_prefix="goPlayer" platform="!PS5,!XBOX_S,!XBOX_X" gamepad_selectable="false"/>
+		<gameoption name="ServerMaxPlayerCount" title="goMaxPlayers" value_wrap="false" value_type="int" values="1,2" values_enforced="true" display_names="" value_localization_prefix="goPlayer" platform="PS5,XBOX_X" gamepad_selectable="false"/>
+		<gameoption name="ServerMaxPlayerCount" title="goMaxPlayers" value_wrap="false" value_type="int" values="1,2" values_enforced="true" display_names="" value_localization_prefix="goPlayer" platform="XBOX_S" gamepad_selectable="false"/> -->
+		<rect/><rect/><rect/>
+		<gameoption name="ServerPort" title="goPort" value_wrap="false" value_type="int" values="" display_names="" value_localization_prefix="" is_textinput="true" character_limit="5" gamepad_selectable="false"/>
 		<!-- <gameoption name="BloodMoonFrequency" title="goBloodMoonFrequencyRE" value_wrap="false" value_type="int" values="0" display_names="goDisabled" value_localization_prefix="goDay" /> -->
 		<!-- <gameoption name="LootRespawnDays" title="goLootRespawnDaysRE" value_wrap="false" value_type="int" values="-1" display_names="goDisabled" value_localization_prefix="goLootRespawnDaysValue" /> -->
 		<!-- <gameoption name="BloodMoonRange" title="goBloodMoonRange" value_wrap="false" value_type="int" values="0" display_names="" value_localization_prefix="goDay" /> -->
 		<rect/><rect/><rect/><rect/><rect/><rect/><rect/><rect/><rect/><rect/><rect/><rect/>
 		<rect/><rect/><rect/><rect/><rect/><rect/><rect/><rect/><rect/><rect/><rect/><rect/>
 		<rect/><rect/><rect/><rect/><rect/><rect/><rect/><rect/><rect/><rect/><rect/><rect/>
-		<gameoption name="ServerEnabled" title="goServerEnabled" value_wrap="false" value_type="bool" values="" display_names="goServerEnabledOff,goServerEnabledOn" value_localization_prefix="" gamepad_selectable="false"/>
-		<gameoption name="Region" title="goRegion" value_wrap="true" value_type="string" values="NorthAmericaEast,NorthAmericaWest,CentralAmerica,SouthAmerica,Europe,Russia,Asia,MiddleEast,Africa,Oceania" display_names="" value_localization_prefix="goRegionName" has_default="false" always_show="true" gamepad_selectable="false"/>
-		<gameoption name="ServerVisibility" title="goServerVisibility" value_wrap="false" value_type="int" values="" display_names="goServerVisibility0,goServerVisibility1,goServerVisibility2" value_localization_prefix="" gamepad_selectable="false"/>
 		<gameoption name="ServerEACPeerToPeer" title="goEacEnabled" value_wrap="false" value_type="bool" values="" display_names="" value_localization_prefix="" has_default="true" enabled="{servereacpeertopeer}"/>
 		<gameoption name="ServerAllowCrossplay" title="goServerAllowCrossplay" value_wrap="false" value_type="bool" values="" display_names="" value_localization_prefix=""  tooltip_key="{crossplayTooltip}"/>
-		<gameoption name="ServerPassword" title="goPassword" value_wrap="false" value_type="string" values="" display_names="" value_localization_prefix="" is_textinput="true" password_field="true" character_limit="30" gamepad_selectable="false"/>
-		<gameoption name="ServerMaxPlayerCount" title="goMaxPlayers" value_wrap="false" value_type="int" values="2, 4, 8, 16" display_names="" value_localization_prefix="goPlayer" platform="!PS5,!XBOX_S,!XBOX_X" gamepad_selectable="false"/>
-		<gameoption name="ServerMaxPlayerCount" title="goMaxPlayers" value_wrap="false" value_type="int" values="2, 3, 4" values_enforced="true" display_names="" value_localization_prefix="goPlayer" platform="PS5,XBOX_X" gamepad_selectable="false"/>
-		<gameoption name="ServerMaxPlayerCount" title="goMaxPlayers" value_wrap="false" value_type="int" values="2" values_enforced="true" display_names="" value_localization_prefix="goPlayer" platform="XBOX_S" gamepad_selectable="false"/>
-		<gameoption name="ServerPort" title="goPort" value_wrap="false" value_type="int" values="" display_names="" value_localization_prefix="" is_textinput="true" character_limit="5" gamepad_selectable="false"/>
+		<gameoption name="PlayerKillingMode" title="goPlayerKillingMode" value_wrap="false" value_type="int" values="" display_names="goPlayerKillingModeNoKilling" value_localization_prefix="" />
 		<gameoption name="LootRespawnDays" title="goLootRespawnDays" value_wrap="false" value_type="int" values="-1,1" display_names="goDisabled" value_localization_prefix="goLootRespawnDaysValue" gamepad_selectable="false"/>
 		<gameoption name="DeathPenalty" title="goDeathPenalty" value_wrap="false" value_type="int" values="" display_names="goNone" value_localization_prefix="" gamepad_selectable="false"/>
 		<gameoption name="DropOnDeath" title="goDropOnDeath" value_wrap="false" value_type="int" values="" display_names="goToolbelt" value_localization_prefix="" gamepad_selectable="false"/>
@@ -174,7 +178,7 @@
 	
 	<insertbefore xpath="/windows/window[@name='newContinueGame']/rect[2]/rect[2]/rect[1]/grid[@pos='6,-77']//gameoption[@name='ZombieMoveNight']">
 		<gameoption name="GameDifficulty" title="goDifficultyRE" value_wrap="false" value_type="int" values="" display_names="goDifficulty1RE,goDifficulty2RE,goDifficulty3RE,goDifficulty4RE,goDifficulty5RE,goDifficulty6RE" value_localization_prefix="" visible="{isnewgame}"/>
-		<rect/>
+		<!-- <rect/> -->
 	</insertbefore>
 	
 	<!-- <insertafter xpath="/windows/window[@name='spawnselection']/rect[2]//simplebutton[3]">
