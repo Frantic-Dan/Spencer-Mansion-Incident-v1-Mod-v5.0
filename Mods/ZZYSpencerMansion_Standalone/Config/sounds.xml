@@ -39,6 +39,10 @@
 	<SoundDataNode name="music_SuperTyrant"> <AudioSource name="Sounds/AudioSource_Notifications"/>
 	<AudioClip ClipName="#@modfolder:/Config/Resources/REBossMusic.unity3d?RETyrant2.mp3" Loop="true"/>
 	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="1.0"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="0.01"/> </SoundDataNode>
+	
+	<SoundDataNode name="music_Wesker"> <AudioSource name="Sounds/AudioSource_Notifications"/>
+	<AudioClip ClipName="#@modfolder:/Config/Resources/WeskerTheme.unity3d?WeskerThemeMusic.mp3" Loop="true"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="1.0"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="0.01"/> </SoundDataNode>
 
 </append>
 
