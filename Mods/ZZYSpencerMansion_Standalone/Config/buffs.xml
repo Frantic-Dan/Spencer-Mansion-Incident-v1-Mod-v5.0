@@ -209,6 +209,10 @@
 			<requirement name="PlayerItemCount" item_name="ClassicModeChris" operation="GTE" value="1"/>
 			<passive_effect name="Mobility" operation="base_add" value="-1"/>
 		</effect_group>
+		<effect_group>
+			<requirement name="PlayerItemCount" item_name="ClassicModeWesker" operation="GTE" value="1"/>
+			<passive_effect name="Mobility" operation="base_add" value="-1"/>
+		</effect_group>
 	</buff>
 	
 	<buff name="buffImmobalisedImmune" hidden="true">
@@ -269,6 +273,19 @@
 
             <triggered_effect trigger="onSelfBuffFinish" action="CallGameEvent" event="action_FuelSupplyCapsule_Explode"/>
             <requirement name="EntityHasMovementTag" tags="running"/>
+        </effect_group>        
+    </buff>
+	
+	<buff name="buffWeskerEscape" name_key="buffWeskerEscapeName" description_key="buffWeskerEscapeDesc" tooltip_key="buffWeskerEscapeTooltip" icon="ui_game_symbol_speed" icon_color="255,128,0">
+        <stack_type value="replace"/>
+        <duration value="3600"/>
+		<display_value value="duration"/>
+
+        <effect_group>
+            <passive_effect name="BuffBlink" operation="base_set" value="2" duration="0,3" tags="buffWeskerEscape"/>
+            <triggered_effect trigger="onSelfEnteredGame" action="RemoveBuff" buff="buffWeskerEscape"/>
+
+            <triggered_effect trigger="onSelfBuffFinish" action="CallGameEvent" event="action_FuelSupplyCapsule_Explode"/>
         </effect_group>        
     </buff>
 
@@ -398,7 +415,7 @@
 
 	</buff>	
 	
-	<buff name="buffIsOnFire" name_key="buffIsOnFireName" description_key="buffIsOnFireDesc" tooltip_key="buffIsOnFireTooltip" icon="ui_game_symbol_fire" icon_color="255,0,0" icon_blink="true">
+	<buff name="buffIsOnFire" name_key="buffIsOnFireName" description_key="buffIsOnFireDesc" tooltip_key="buffIsOnFireTooltip" icon="ui_game_symbol_fire" icon_color="255,0,0" icon_blink="true" remove_on_death="false">
 		<damage_type value="Heat"/>
 		<stack_type value="ignore"/>
 		<duration value="0"/>
@@ -463,9 +480,10 @@
 			<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".buffIsOnFireDisplay"/>
 
 			<triggered_effect trigger="onSelfBuffRemove" action="RemoveParticleEffectFromEntity" particle="p_onFire"/>
-			<triggered_effect trigger="onSelfDied" action="RemoveParticleEffectFromEntity" particle="p_onFire"/>
+			<!-- <triggered_effect trigger="onSelfDied" action="RemoveParticleEffectFromEntity" particle="p_onFire"/> -->
 
 			<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="buff_burn_lp"/>
+			<triggered_effect trigger="onSelfDied"      action="PlaySound" sound="buff_burn_lp"/>
 			<triggered_effect trigger="onSelfBuffRemove" action="StopSound" sound="buff_burn_lp"/>
 			<triggered_effect trigger="onSelfBuffRemove" action="PlaySound" sound="buff_burn_extinguish"/>
 		</effect_group>
@@ -483,7 +501,7 @@
 		</effect_group>
 	</buff>
 	
-	<buff name="buffBurningMolotov" hidden="true">
+	<buff name="buffBurningMolotov" hidden="true" remove_on_death="false">
 		<damage_type value="heat"/>
 		<stack_type value="ignore"/><duration value="0"/>
 		<effect_group>
@@ -544,7 +562,7 @@
 		</effect_group>
 	</buff>
 	
-	<buff name="buffBurningMolotov2" hidden="true">
+	<buff name="buffBurningMolotov2" hidden="true" remove_on_death="false">
 		<damage_type value="heat"/>
 		<stack_type value="ignore"/>
 		<duration value="0"/>
@@ -615,20 +633,40 @@
 		<update_rate value="1"/>
 		<effect_group>
 		
-			<passive_effect name="HealthChangeOT" operation="base_subtract" value="8">
+			<passive_effect name="HealthChangeOT" operation="base_subtract" value="13">
 				<requirement name="EntityTagCompare" tags="player"/>
 				<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="0"/>
 			</passive_effect>
 			
 			<passive_effect name="HealthChangeOT" operation="base_subtract" value="16">
 				<requirement name="EntityTagCompare" tags="player"/>
-				<requirement name="CVarCompare" cvar="_difficulty" operation="GTE" value="1"/>
+				<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="1"/>
+			</passive_effect>
+			
+			<passive_effect name="HealthChangeOT" operation="base_subtract" value="24">
+				<requirement name="EntityTagCompare" tags="player"/>
+				<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="2"/>
+			</passive_effect>
+			
+			<passive_effect name="HealthChangeOT" operation="base_subtract" value="32">
+				<requirement name="EntityTagCompare" tags="player"/>
+				<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="3"/>
+			</passive_effect>
+			
+			<passive_effect name="HealthChangeOT" operation="base_subtract" value="40">
+				<requirement name="EntityTagCompare" tags="player"/>
+				<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="4"/>
+			</passive_effect>
+			
+			<passive_effect name="HealthChangeOT" operation="base_subtract" value="48">
+				<requirement name="EntityTagCompare" tags="player"/>
+				<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="5"/>
 			</passive_effect>
 
 			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyScreenEffect" intensity="0" fade=".5" effect_name="Hot" />
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" fade=".7" effect_name="Hot"/>
 
-			<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" effect_name="Radiation" intensity=".2" fade="1"/>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" effect_name="Radiation" intensity=".12" fade="1"/>
 			<triggered_effect trigger="onSelfDied" action="ModifyScreenEffect" effect_name="Radiation" intensity="0" fade="0"/>
 			<triggered_effect trigger="onSelfDied" action="RemoveBuff" buff="buffRadiationPool" />
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" effect_name="Radiation" intensity="0" fade="1"/>
@@ -975,7 +1013,27 @@
 			<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="music_Lisa" />
 		</effect_group>
 	</buff>
+	
+	<buff name="buffWeskerMusic" hidden="true">
+		<duration value="0"/>
 
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="music_Wesker" />
+		</effect_group>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffRemove" action="FadeOutSound" sound="music_Wesker" />
+		</effect_group>
+	</buff>
+
+	<buff name="buffInvincibilityFramesTrigger" hidden="true">
+        <stack_type value="replace"/>
+        <duration value="0.01"/>
+
+        <effect_group>
+            <triggered_effect trigger="onSelfEnteredGame" action="RemoveBuff" buff="buffInvincibilityFramesTrigger"/>
+            <triggered_effect trigger="onSelfBuffFinish" action="AddBuff" buff="buffInvincibilityFrames"/>
+        </effect_group>        
+    </buff>
 
 <buff name="buffInvincibilityFrames" name_key="buffInvincibilityFramesName" description_key="buffInvincibilityFramesDesc" icon="ui_game_symbol_twitch_tough" icon_color="155,155,255">
 		<stack_type value="ignore"/>
@@ -991,9 +1049,11 @@
 
 		<!-- <effect_group>
 			<passive_effect name="PhysicalDamageResist" operation="base_add" value="100"/>
+			<passive_effect name="ElementalDamageResist" operation="base_add" value="100" tags="heat,electrical"/>
 		</effect_group> -->
 		<effect_group>
 			<passive_effect name="GeneralDamageResist" operation="base_add" value="1"/>
+			<passive_effect name="BuffResistance" operation="base_set" value="100" tags="buffInvincibilityFramesTrigger"/>
 		</effect_group>
 	</buff>
 	
@@ -1008,45 +1068,40 @@
 
 		</effect_group>
 		
-		<effect_group>
+		<!-- <effect_group>
 			<passive_effect name="GeneralDamageResist" operation="base_add" value=".48">
 				<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="0"/>
 			</passive_effect>
-		</effect_group>
+		</effect_group> -->
 		
 		<effect_group>
 			<passive_effect name="GeneralDamageResist" operation="base_add" value=".3">
-				<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="1"/>
-			</passive_effect>
-		</effect_group>
-		
-		<effect_group>
-			<passive_effect name="GeneralDamageResist" operation="base_add" value=".45">
-				<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="2"/>
-			</passive_effect>
-		</effect_group>
-		
-		<effect_group>
-			<passive_effect name="GeneralDamageResist" operation="base_add" value=".6">
-				<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="3"/>
-			</passive_effect>
-		</effect_group>
-		
-		<effect_group>
-			<passive_effect name="GeneralDamageResist" operation="base_add" value=".75">
-				<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="4"/>
-			</passive_effect>
-		</effect_group>
-		
-		<effect_group>
-			<passive_effect name="GeneralDamageResist" operation="base_add" value=".9">
-				<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="5"/>
+				<requirement name="!HasBuff" buff="buffInvincibilityFrames"/>
 			</passive_effect>
 		</effect_group>
 		
 		<!-- <effect_group>
-			<passive_effect name="PhysicalDamageResist" operation="base_add" value="20"/>
-			<passive_effect name="ElementalDamageResist" operation="base_add" value="20" tags="heat,electrical"/>
+			<passive_effect name="GeneralDamageResist" operation="base_add" value=".45">
+				<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="2"/>
+			</passive_effect>
+		</effect_group> -->
+		
+		<!-- <effect_group>
+			<passive_effect name="GeneralDamageResist" operation="base_add" value=".6">
+				<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="3"/>
+			</passive_effect>
+		</effect_group> -->
+		
+		<!-- <effect_group>
+			<passive_effect name="GeneralDamageResist" operation="base_add" value=".75">
+				<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="4"/>
+			</passive_effect>
+		</effect_group> -->
+		
+		<!-- <effect_group>
+			<passive_effect name="GeneralDamageResist" operation="base_add" value=".9">
+				<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="5"/>
+			</passive_effect>
 		</effect_group> -->
 	</buff>
 	
