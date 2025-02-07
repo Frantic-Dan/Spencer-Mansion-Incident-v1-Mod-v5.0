@@ -2,8 +2,9 @@
 
 	<append xpath="//environment">
         <property name="SaveItemName"       value="InkRERibbon"/>
+		<!-- <property name="DotCrosshairTexture" value="#@modfolder(SpencerMansionCrimsonCore):/AssetBundles/xml_main.u3d?DotCrosshair"/> -->
         <property name="DotCrosshairTexture"   value="#@modfolder:/Config/Resources/xml_main.u3d?DotCrosshair"/>
-        <property name="DotCrosshairColour" value="255,255,255,192"/>
+        <property name="DotCrosshairColour" value="255,0,255,255"/>
     </append>
 
 	<!-- <append xpath="//environment">
