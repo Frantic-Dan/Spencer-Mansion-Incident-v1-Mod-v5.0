@@ -224,7 +224,7 @@
 </recipe> -->
 
 <recipe name="FirstAidSprayBox" count="1" craft_time="0" craft_exp_gain="0" is_trackable="false" tags="learnable">
-	<ingredient name="ReloadingTool" count="1"/>
+	<ingredient name="ReloadingTool" count="2000"/>
 </recipe>
 
 <recipe name="resourceBuckshot" count="1" craft_time="3" craft_exp_gain="0" is_trackable="false" material_based="true" craft_area="forge">
@@ -270,7 +270,7 @@
 	<ingredient name="resourceGunPowder" count="40"/>
 	<ingredient name="resourceBulletCasing" count="1"/>
 	<ingredient name="ReloadingTool" count="1"/>
-	<output name="ReloadingTool" count="1"/>
+	<!-- <output name="ReloadingTool" count="1"/> -->
 	<effect_group>
 		<passive_effect name="CraftingIngredientCount" level="1" operation="base_add" value="-10" tags="resourceGunPowder"/>
 	</effect_group>
@@ -293,7 +293,7 @@
 	<ingredient name="resourceGunPowder" count="52"/>
 	<ingredient name="resourceBulletCasing" count="1"/>
 	<ingredient name="ReloadingTool" count="1"/>
-	<output name="ReloadingTool" count="1"/>
+	<!-- <output name="ReloadingTool" count="1"/> -->
 	<effect_group>
 		<passive_effect name="CraftingIngredientCount" level="1" operation="base_add" value="-13" tags="resourceGunPowder"/>
 	</effect_group>
@@ -304,7 +304,7 @@
 	<ingredient name="resourceGunPowder" count="160"/>
 	<ingredient name="resourceBulletCasing" count="4"/>
 	<ingredient name="ReloadingTool" count="1"/>
-	<output name="ReloadingTool" count="1"/>
+	<!-- <output name="ReloadingTool" count="1"/> -->
 	<effect_group>
 		<passive_effect name="CraftingIngredientCount" level="1" operation="base_add" value="-40" tags="resourceGunPowder"/>
 	</effect_group>
@@ -327,7 +327,7 @@
 	<ingredient name="resourceGunPowder" count="208"/>
 	<ingredient name="resourceBulletCasing" count="4"/>
 	<ingredient name="ReloadingTool" count="1"/>
-	<output name="ReloadingTool" count="1"/>
+	<!-- <output name="ReloadingTool" count="1"/> -->
 	<effect_group>
 		<passive_effect name="CraftingIngredientCount" level="1" operation="base_add" value="-52" tags="resourceGunPowder"/>
 	</effect_group>
@@ -364,7 +364,7 @@
 	<ingredient name="resourceGunPowder" count="120"/>
 	<ingredient name="resourcePaper" count="1"/>
 	<ingredient name="ReloadingTool" count="1"/>
-	<output name="ReloadingTool" count="1"/>
+	<!-- <output name="ReloadingTool" count="1"/> -->
 	<effect_group>
 		<passive_effect name="CraftingIngredientCount" level="1" operation="base_add" value="-30" tags="resourceGunPowder"/>
 	</effect_group>
@@ -387,7 +387,7 @@
 	<ingredient name="resourceGunPowder" count="156"/>
 	<ingredient name="resourceScrapPolymers" count="1"/>
 	<ingredient name="ReloadingTool" count="1"/>
-	<output name="ReloadingTool" count="1"/>
+	<!-- <output name="ReloadingTool" count="1"/> -->
 	<effect_group>
 		<passive_effect name="CraftingIngredientCount" level="1" operation="base_add" value="-39" tags="resourceGunPowder"/>
 	</effect_group>
@@ -397,7 +397,7 @@
 	<ingredient name="resourceCoal" count="10"/>
 	<ingredient name="resourcePotassiumNitratePowder" count="10"/>
 	<ingredient name="ReloadingTool" count="1"/>
-	<output name="ReloadingTool" count="1"/>
+	<!-- <output name="ReloadingTool" count="1"/> -->
 	<effect_group>
 		<passive_effect name="CraftingIngredientCount" level="1" operation="base_add" value="-2" tags="resourceCoal,resourcePotassiumNitratePowder"/>
 	</effect_group>
@@ -469,38 +469,60 @@
 	<ingredient name="LockedJewelryBox" count="1"/>
 </recipe>
 
-<recipe name="PainToleranceTraining" craft_time="1" is_trackable="false" craft_exp_gain="0">
+<recipe name="PainToleranceTraining" craft_time="0" is_trackable="false" craft_exp_gain="0">
 	<ingredient name="STARSTrainingManual"/>
 </recipe>
 
-<recipe name="PassiveHealingTraining" craft_time="1" is_trackable="false" craft_exp_gain="0">
+<recipe name="PassiveHealingTraining" craft_time="0" is_trackable="false" craft_exp_gain="0">
 	<ingredient name="STARSTrainingManual"/>
 </recipe>
 
-<recipe name="MedicalKnowledgeTraining" craft_time="1" is_trackable="false" craft_exp_gain="0">
+<recipe name="MedicalKnowledgeTraining" craft_time="0" is_trackable="false" craft_exp_gain="0">
 	<ingredient name="STARSTrainingManual"/>
 </recipe>
 
-<recipe name="KnifeTrainedTraining" craft_time="1" is_trackable="false" craft_exp_gain="0">
+<recipe name="KnifeTrainedTraining" craft_time="0" is_trackable="false" craft_exp_gain="0">
 	<ingredient name="STARSTrainingManual"/>
 </recipe>
 
-<recipe name="ChemistExpertTraining" craft_time="1" is_trackable="false" craft_exp_gain="0">
+<recipe name="ChemistExpertTraining" craft_time="0" is_trackable="false" craft_exp_gain="0">
 	<ingredient name="STARSTrainingManual"/>
 </recipe>
 
-<recipe name="CardioTraining" craft_time="1" is_trackable="false" craft_exp_gain="0">
+<recipe name="CardioTraining" craft_time="0" is_trackable="false" craft_exp_gain="0">
 	<ingredient name="STARSTrainingManual"/>
 </recipe>
 
-<recipe name="ClassicModeJill" craft_time="1" is_trackable="false" craft_exp_gain="0">
+<recipe name="ClassicModeJill" craft_time="0" is_trackable="false" craft_exp_gain="0">
 	<ingredient name="STARSTrainingManual" count="3"/>
 </recipe>
 
-<recipe name="ClassicModeChris" craft_time="1" is_trackable="false" craft_exp_gain="0">
+<recipe name="ClassicModeChris" craft_time="0" is_trackable="false" craft_exp_gain="0">
 	<ingredient name="STARSTrainingManual" count="3"/>
 </recipe>
 
 
 	</set>
+	
+	<conditional>
+      <if cond="gamepref('GameWorld') == 'Wesker Scenario'">
+			<set xpath="/recipes">
+				<recipe name="Weskerammo9mmBulletBallRE" count="3" craft_time="0" is_trackable="false" craft_exp_gain="0">
+					<ingredient name="WeskerAmmoCraftingBundle" count="1"/>
+				</recipe>
+
+				<recipe name="WeskerammoShotgunShellRE" count="1" craft_time="0" is_trackable="false" craft_exp_gain="0">
+					<ingredient name="WeskerAmmoCraftingBundle" count="1"/>
+				</recipe>
+				<recipe name="TissueSampleCollection" count="1" craft_time="0" craft_area="workbench" is_trackable="false" craft_exp_gain="0" tags="workbenchCrafting">
+					<ingredient name="BOWTissueSample(Crimson)" count="1"/>
+					<ingredient name="BOWTissueSample(Lisa)" count="1"/>
+					<ingredient name="BOWTissueSample(Plant)" count="1"/>
+					<ingredient name="BOWTissueSample(Wolf)" count="1"/>
+					<ingredient name="BOWTissueSample(Spider)" count="1"/>
+				</recipe>
+			</set>
+		</if>
+	</conditional>
+	
 </FranticDan>
