@@ -1,4 +1,6 @@
 <FranticDan>
+<conditional>
+	<if cond="gamepref('GameWorld') == 'Spencer Mansion Incident'">
 <append xpath="/lootcontainers">
 <!--<configs>-->
 
@@ -105,4 +107,126 @@
 
 
 </append>
+	</if>
+</conditional>
+
+<conditional>
+	<if cond="gamepref('GameWorld') == 'Wesker Scenario'">
+<append xpath="/lootcontainers">
+<!--<configs>-->
+
+<!-- Locked Doors -->
+<lootcontainer name="doorNest" count="0" size="6,1" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage">
+	<item name="cobweb" count="0"/>
+</lootcontainer>
+
+<lootgroup name="DogLoot" count="all">
+	<item name="DogCollar"/>
+	<item name="modMeleeErgonomicGripRE"/>
+</lootgroup>
+
+<!-- Dog with Collar -->
+<lootcontainer name="ZombieDogLoot" size="5,1" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="0">
+	<item group="DogLoot"/>
+</lootcontainer>
+
+<lootgroup name="ForestLoot" count="1">
+	<item name="WeskerAmmoCraftingBundle" count="15"/>
+</lootgroup>
+
+<!-- Forest Speyer -->
+<lootcontainer name="ForestSpeyer" size="5,1" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="0">
+	<item group="ForestLoot"/>
+</lootcontainer>
+
+<lootgroup name="PrototypeLoot" count="all">
+	<item name="BOWTissueSample(Crimson)" count="1"/>
+</lootgroup>
+
+<!-- First boss -->
+<lootcontainer name="CrimsonPrototype" size="5,1" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="0">
+	<item group="PrototypeLoot"/>
+</lootcontainer>
+
+<lootgroup name="Plant42Loot" count="all">
+	<item name="ShieldKey" count="1"/>
+	<item name="BOWTissueSample(Plant)" count="1"/>
+</lootgroup>
+
+<!-- Second boss -->
+<lootcontainer name="Plant42" size="5,1" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="0">
+	<item group="Plant42Loot"/>
+</lootcontainer>
+
+<lootgroup name="YawnLoot" count="all">
+	<item name="ClawHammer" count="3"/>
+	<item name="BOWTissueSample(Wolf)" count="1"/>
+</lootgroup>
+
+<!-- Third boss -->
+<lootcontainer name="Yawn" size="5,1" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="0">
+	<item group="YawnLoot"/>
+</lootcontainer>
+
+<lootgroup name="BlackTigerLoot" count="all">
+	<item name="WD-40Spray" count="1"/>
+	<item name="BOWTissueSample(Spider)" count="1"/>
+</lootgroup>
+
+<!-- Fourth boss -->
+<lootcontainer name="BlackTiger" size="5,1" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="0">
+	<item group="BlackTigerLoot"/>
+</lootcontainer>
+
+<lootgroup name="TyrantLoot" count="all">
+	<item name="modGunMeleeBlessedMetalTyrantWesker"/>
+	<item name="MasterKey"/>
+</lootgroup>
+
+<!-- Fifth boss -->
+<lootcontainer name="Tyrant" size="5,1" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="0">
+	<item group="TyrantLoot"/>
+</lootcontainer>
+
+<lootgroup name="LisaLoot" count="all">
+	<item name="BOWTissueSample(Lisa)" count="1"/>
+</lootgroup>
+
+<!-- Lisa Trevor -->
+<lootcontainer name="LisaTrevorW" size="5,1" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="0">
+	<item group="LisaLoot"/>
+</lootcontainer>
+
+<lootgroup name="HiPowerBooks" count="all">
+<!-- 	<item name="bookPistolPeteHPAmmo" count="2"/>
+	<item name="bookShotgunMessiahSlugs" count="2"/>
+	<item name="bookEnforcerHPAmmo" count="2"/>
+	<item name="bookSniperHPAmmo" count="2"/> -->
+</lootgroup>
+
+<lootcontainer name="HiPowerAmmo" size="6,1" destroy_on_close="true" sound_open="UseActions/chest_tier2_open" sound_close="UseActions/chest_tier2_close" open_time="0">
+	<item group="HiPowerBooks"/>
+</lootcontainer>
+
+<lootgroup name="SpecialClothes" count="all">
+<!-- 	<item name="apparelToughGuySunglasses"/>
+	<item name="apparelToughGuySunglasses"/>
+	<item name="AthleticJacketModSchematic" count="2"/>
+	<item name="HighPermormanceRunningSolesSchematic" count="2"/>
+	<item name="modArmorBandolierSchematic" count="2"/> -->
+</lootgroup>
+
+<lootcontainer name="SpecialClothing" size="6,1" destroy_on_close="true" sound_open="UseActions/chest_tier2_open" sound_close="UseActions/chest_tier2_close" open_time="0">
+	<item group="SpecialClothes"/>
+</lootcontainer>
+
+<lootcontainer name="TheVault" size="7,10" destroy_on_close="false" sound_open="UseActions/crate_iron_open" sound_close="UseActions/crate_iron_close" open_time="0">
+	<item name="cobweb" count="0"/>
+</lootcontainer>
+
+
+</append>
+	</if>
+</conditional>
+
 </FranticDan>
