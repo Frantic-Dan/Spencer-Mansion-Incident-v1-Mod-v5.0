@@ -222,7 +222,7 @@
 	<property name="CustomIcon" value="reloading-tool"/>
 	<property name="Material" value="Mmetal"/>
 	<property name="Weight" value="0"/>
-	<property name="Stacknumber" value="1000"/>
+	<property name="Stacknumber" value="1200"/>
 	<property name="DescriptionKey" value="Reloading_Tooldesc"/>
 	<property name="SellableToTrader" value="false"/>
 	<property name="EconomicValue" value="0"/>
@@ -3154,8 +3154,8 @@
 		<property name="Delay" value="0"/>
 		<property name="Use_time" value="0"/>
 		<property name="Sound_start" value="close_garbage"/>
-		<property name="Create_item" value="resourceBulletCasing,resourceGunPowder,resourceBulletTip"/>
-		<property name="Create_item_count" value="1,30,1"/>
+		<property name="Create_item" value="resourceBulletCasing,resourceGunPowder,resourceBulletTip,ReloadingTool"/>
+		<property name="Create_item_count" value="1,30,1,1"/>
 		<requirement name="PlayerItemCount" item_name="ReloadingTool" operation="GTE" value="1"/>
 	</property>
 	<effect_group name="ammo9mmBulletBall" tiered="false">
@@ -3183,8 +3183,8 @@
 		<property name="Delay" value="0"/>
 		<property name="Use_time" value="0"/>
 		<property name="Sound_start" value="close_garbage"/>
-		<property name="Create_item" value="resourceBulletCasing,resourceGunPowder,resourceBulletTip"/>
-		<property name="Create_item_count" value="1,39,1"/>
+		<property name="Create_item" value="resourceBulletCasing,resourceGunPowder,resourceBulletTip,ReloadingTool"/>
+		<property name="Create_item_count" value="1,39,1,1"/>
 		<requirement name="PlayerItemCount" item_name="ReloadingTool" operation="GTE" value="1"/>
 	</property>
 	<effect_group name="ammo9mmBulletHP" tiered="false">
@@ -3234,8 +3234,8 @@
 		<property name="Delay" value="0"/>
 		<property name="Use_time" value="0"/>
 		<property name="Sound_start" value="close_garbage"/>
-		<property name="Create_item" value="resourceBulletCasing,resourceGunPowder,resourceBulletTip"/>
-		<property name="Create_item_count" value="4,120,4"/>
+		<property name="Create_item" value="resourceBulletCasing,resourceGunPowder,resourceBulletTip,ReloadingTool"/>
+		<property name="Create_item_count" value="4,120,4,1"/>
 		<requirement name="PlayerItemCount" item_name="ReloadingTool" operation="GTE" value="1"/>
 	</property>
 	<effect_group name="ammo44MagnumBulletBall" tiered="false">
@@ -3268,8 +3268,8 @@
 		<property name="Delay" value="0"/>
 		<property name="Use_time" value="0"/>
 		<property name="Sound_start" value="close_garbage"/>
-		<property name="Create_item" value="resourceBulletCasing,resourceGunPowder,resourceBulletTip"/>
-		<property name="Create_item_count" value="4,156,4"/>
+		<property name="Create_item" value="resourceBulletCasing,resourceGunPowder,resourceBulletTip,ReloadingTool"/>
+		<property name="Create_item_count" value="4,156,4,1"/>
 		<requirement name="PlayerItemCount" item_name="ReloadingTool" operation="GTE" value="1"/>
 	</property>
 	<effect_group name="ammo44MagnumBulletHP" tiered="false">
@@ -3357,8 +3357,8 @@
 		<property name="Delay" value="0"/>
 		<property name="Use_time" value="0"/>
 		<property name="Sound_start" value="close_garbage"/>
-		<property name="Create_item" value="resourceBuckshot,resourceGunPowder,resourcePaper"/>
-		<property name="Create_item_count" value="1,90,1"/>
+		<property name="Create_item" value="resourceBuckshot,resourceGunPowder,resourcePaper,ReloadingTool"/>
+		<property name="Create_item_count" value="1,90,1,1"/>
 		<requirement name="PlayerItemCount" item_name="ReloadingTool" operation="GTE" value="1"/>
 	</property>
 	<effect_group name="ammoShotgunShell" tiered="false">
@@ -3410,8 +3410,8 @@
 		<property name="Delay" value="0"/>
 		<property name="Use_time" value="0"/>
 		<property name="Sound_start" value="close_garbage"/>
-		<property name="Create_item" value="resourceBulletTip,resourceGunPowder,resourceScrapPolymers"/>
-		<property name="Create_item_count" value="3,117,1"/>
+		<property name="Create_item" value="resourceBulletTip,resourceGunPowder,resourceScrapPolymers,ReloadingTool"/>
+		<property name="Create_item_count" value="3,117,1,1"/>
 		<requirement name="PlayerItemCount" item_name="ReloadingTool" operation="GTE" value="1"/>
 	</property>
 	<effect_group name="ammoShotgunSlug" tiered="false">
