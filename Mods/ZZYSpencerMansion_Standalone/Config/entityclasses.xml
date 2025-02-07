@@ -296,10 +296,20 @@
 	<remove xpath="entity_classes/entity_class[@name='playerMale']/property[@name='ItemsOnEnterGame.GameModeSurvivalMP']"/>
 
 	<append xpath="entity_classes/entity_class[@name='playerMale']">
-	<property name="ItemsOnEnterGame.GameModeSurvival" value="SurvivalKnife,S.T.A.R.SHandgun,ammo9mmBulletBallRE=15,FirstAidSpray,InkRERibbon,STARSTrainingManual=3"/>
-	<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="SurvivalKnife,S.T.A.R.SHandgun,ammo9mmBulletBallRE=15,FirstAidSpray,InkRERibbon,STARSTrainingManual=3"/>
-	<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="SurvivalKnife,S.T.A.R.SHandgun,ammo9mmBulletBallRE=15,FirstAidSpray,InkRERibbon,STARSTrainingManual=3"/>
+	<property name="ItemsOnEnterGame.GameModeSurvival" value="SurvivalKnife,S.T.A.R.SHandgun,ammo9mmBulletBallRE=15,FirstAidSpray,JillMission,STARSTrainingManual=3"/>
+	<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="SurvivalKnife,S.T.A.R.SHandgun,ammo9mmBulletBallRE=15,FirstAidSpray,JillMission,STARSTrainingManual=3"/>
+	<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="SurvivalKnife,S.T.A.R.SHandgun,ammo9mmBulletBallRE=15,FirstAidSpray,JillMission,STARSTrainingManual=3"/>
 	</append>
+	
+	<conditional>
+	<if cond="gamepref('GameWorld') == 'Wesker Scenario'">
+		<append xpath="entity_classes/entity_class[@name='playerMale']">
+		<property name="ItemsOnEnterGame.GameModeSurvival" value="SurvivalKnifeWesker,SamuraiEdgeWesker,Weskerammo9mmBulletBallRE=60,PumpShotgunWesker,WeskerammoShotgunShellRE=18,FirstAidSpray,WeskerScenario,ClassicModeWesker"/>
+		<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="SurvivalKnifeWesker,SamuraiEdgeWesker,Weskerammo9mmBulletBallRE=60,PumpShotgunWesker,WeskerammoShotgunShellRE=18,FirstAidSpray,WeskerScenario,ClassicModeWesker"/>
+		<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="SurvivalKnifeWesker,SamuraiEdgeWesker,Weskerammo9mmBulletBallRE=60,PumpShotgunWesker,WeskerammoShotgunShellRE=18,FirstAidSpray,WeskerScenario,ClassicModeWesker"/>
+		</append>
+	</if>
+	</conditional>
 
 	<!-- apparelPressboyCap,apparelArmyShirt,apparelArmyPants,apparelWornBoots, -->
 
@@ -319,6 +329,11 @@
 <set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[1]//passive_effect[14]/@value">1.23</set>
 <set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[1]//passive_effect[15]/@value">0.88</set>
 <set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[1]//passive_effect[20]/@value">0.05</set>
+<conditional>
+	<if cond="gamepref('GameWorld') == 'Wesker Scenario'">
+		<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[1]//passive_effect[20]/@value">0.14</set>
+	</if>
+</conditional>		
 <set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[2]//passive_effect[1]/@value">0</set>
 <set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[2]//passive_effect[2]/@operation">base_add</set>
 <set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[2]//passive_effect[2]/@value">0.05</set>
@@ -328,9 +343,14 @@
 <set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[2]//passive_effect[7]/@value">0</set>
 <set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[3]//passive_effect[1]/@value">-1.4</set>
 <set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[4]//passive_effect[5]/@value">1</set>
+<conditional>
+	<if cond="gamepref('GameWorld') == 'Wesker Scenario'">
+		<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[4]//passive_effect[5]/@value">15</set>
+	</if>
+</conditional>
 <set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[4]//passive_effect[@name='CarryCapacity']/@value">0</set>
 <set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[4]//passive_effect[@name='BagSize']/@value">0</set>
-<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[4]//triggered_effect[4]/@buff">buffStatusCheck01,buffStatusCheck02,buffHealthStatusCheck,buffNoTimeRE,buffCritImmuneRE,buffTimeREvert,buffImmobalised,buffInkRibbonImmobalised,buffExplosionTrigger,buffClassicAimingTrigger,buffClassicAimingTriggerChris</set>
+<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[4]//triggered_effect[4]/@buff">buffStatusCheck01,buffStatusCheck02,buffHealthStatusCheck,buffNoTimeRE,buffCritImmuneRE,buffTimeREvert,buffImmobalised,buffExplosionTrigger,buffClassicAimingTrigger,buffClassicAimingTriggerChris</set>
 
 <insertafter xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[1]//passive_effect[@name='JumpStrength'][@value='0.05']">
 		<passive_effect name="DamageModifier" operation="perc_add" value=".5" tags="upperbody"/>
@@ -338,6 +358,17 @@
 		<!-- <passive_effect name="ExplosionIncomingDamage" operation="perc_add" value="-.1"/> -->
 		<passive_effect name="ElementalDamageResist" operation="base_add" value="60" tags="heat,electrical"/>
 </insertafter>
+
+<conditional>
+	<if cond="gamepref('GameWorld') == 'Wesker Scenario'">
+	<insertafter xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[1]//passive_effect[@name='JumpStrength'][@value='0.14']">
+		<passive_effect name="DamageModifier" operation="perc_add" value=".5" tags="upperbody"/>
+		<!-- <passive_effect name="DamageModifier" operation="perc_add" value="-.5" tags="arms,legs"/> -->
+		<!-- <passive_effect name="ExplosionIncomingDamage" operation="perc_add" value="-.1"/> -->
+		<passive_effect name="ElementalDamageResist" operation="base_add" value="60" tags="heat,electrical"/>
+	</insertafter>
+	</if>
+</conditional>
 
 <insertafter xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[1]//passive_effect[7][@name='DismemberChance']">
 <passive_effect name="HarvestCount" operation="base_set" value="1" tags="REMansionAmmoPickup"/>
@@ -615,7 +646,7 @@
 	</conditional>
 	
 	<conditional>
-      <if cond="mod_loaded('ZombieDifficultyAdjustments') == false">
+      <if cond="mod_loaded('DifficultyMod') == false">
 			<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[1]//passive_effect[5]/@value">.6</set>
 			<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[1]//passive_effect[6]/@value">.6</set>
 			<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[1]//passive_effect[23]/@value">.8</set>
@@ -681,6 +712,35 @@
 	</effect_group>
 </entity_class>
 
+<entity_class name="TyrantWesker" extends="zombieWightFeral">
+	<property name="Tags" value="entity,zombie,walker,feral,tyrant"/>
+	<property name="SizeScale" value="1.25"/>
+	<property name="MaxViewAngle" value="350"/>
+	<property name="SightRange" value="90"/> <!-- distance in m -->
+	<property name="DismemberMultiplierHead" value="0"/><property name="DismemberMultiplierArms" value="0"/><property name="DismemberMultiplierLegs" value="0"/><!-- Feral -->
+	<property name="PainResistPerHit" value="1.01"/><!-- Feral -->
+	<property name="KnockdownProneDamageThreshold" value="0"/>
+	<property name="KnockdownKneelDamageThreshold" value="0"/>
+	
+
+	<!-- Gameplay -->
+	<property name="MoveSpeedAggro" value=".5, .9"/> <!-- 1.35 -->
+	<property name="HandItem" value="meleeHandTyrant"/>
+	<property name="JumpMaxDistance" value="4.6, 5"/>
+	<property name="OpenDoorPercentage" value="1"/>
+	<property name="ExperienceGain" value="0"/> <!-- XP strong -->
+	<property name="TimeStayAfterDeath" value="1200"/>
+	<property name="LootDropProb" value="1"/> <!-- Feral -->
+	<property name="LootDropEntityClass" value="TyrantLoot"/>
+	<property name="is_boss" value="true" />
+
+	<effect_group name="Base Effects">
+		<passive_effect name="DistractionResistance" operation="base_set" value="0,0"/>
+		<passive_effect name="HealthMax" operation="base_set" value="18000"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="buffTyrantMusic"/>
+	</effect_group>
+</entity_class>
+
 <entity_class name="SuperTyrant" extends="zombieWightFeral">
 	<property name="Tags" value="entity,zombie,walker,feral,tyrant"/>
 	<property name="SizeScale" value="1.35"/>
@@ -698,6 +758,31 @@
 
 	<effect_group name="Base Effects">
 		<passive_effect name="HealthMax" operation="base_set" value="100000"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="buffSuperTyrantMusic"/>
+		
+		<!-- <passive_effect action="PlaySound" sound="buff_stunned" play_in_head="true"/> -->
+		<!-- <triggered_effect trigger="onSelfEnteredGame" action="PlaySound" sound="buff_stunned" play_in_head="true"/> -->
+		<!-- <triggered_effect trigger="isDead" action="FadeOutSound" sound="buff_stunned" play_in_head="true"/> -->
+	</effect_group>
+</entity_class>
+
+<entity_class name="SuperTyrantWesker" extends="zombieWightFeral">
+	<property name="Tags" value="entity,zombie,walker,feral,tyrant"/>
+	<property name="SizeScale" value="1.35"/>
+	<property name="MaxViewAngle" value="350"/>
+	<property name="SightRange" value="90"/> <!-- distance in m -->
+	<property name="DismemberMultiplierHead" value="0"/><property name="DismemberMultiplierArms" value="0"/><property name="DismemberMultiplierLegs" value="0"/><!-- Feral -->
+	<property name="PainResistPerHit" value="1.01"/><!-- Feral -->
+	<!-- Gameplay -->
+	<property name="MoveSpeedAggro" value="1.13, 1.13"/>
+	<property name="HandItem" value="meleeHandTyrant"/>
+	<property name="JumpMaxDistance" value="6.6, 7"/>
+	<property name="ExperienceGain" value="0"/> <!-- XP strong -->
+	<property name="TimeStayAfterDeath" value="1200"/>
+	<property name="is_boss" value="true" />
+
+	<effect_group name="Base Effects">
+		<passive_effect name="HealthMax" operation="base_set" value="80000"/>
 		<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="buffSuperTyrantMusic"/>
 		
 		<!-- <passive_effect action="PlaySound" sound="buff_stunned" play_in_head="true"/> -->
@@ -757,6 +842,25 @@
 	</effect_group>
 </entity_class>
 
+<entity_class name="CrimsonHeadPrototypeWesker" extends="zombieBurntFeral">
+	<property name="WalkType" value="5"/>
+	<property name="DismemberMultiplierHead" value="0"/><property name="DismemberMultiplierArms" value="0"/><property name="DismemberMultiplierLegs" value="0"/><!-- Feral -->
+	<property name="PainResistPerHit" value="-1"/><!-- Feral -->
+	<property name="KnockdownProneDamageThreshold" value="0"/>
+	<property name="KnockdownKneelDamageThreshold" value="0"/>
+	<!-- Gameplay -->
+	<property name="MoveSpeedAggro" value="1.28, 1.28"/>
+	<property name="HandItem" value="meleeHandZombieRElaboratory"/>
+
+	<property name="ExperienceGain" value="0"/> <!-- XP strong -->
+	<property name="TimeStayAfterDeath" value="300"/>
+	<property name="LootDropEntityClass" value="PrototypeLoot"/>
+	<property name="LootDropProb" value="1"/> <!-- Feral -->
+	<effect_group name="Base Effects">
+		<passive_effect name="HealthMax" operation="base_set" value="7500"/>
+	</effect_group>
+</entity_class>
+
 <entity_class name="CrimsonHeadPrototype2" extends="zombieBurntFeral">
 	<property name="WalkType" value="5"/>
 	<property name="DismemberMultiplierHead" value="0"/><property name="DismemberMultiplierArms" value="0"/><property name="DismemberMultiplierLegs" value="0"/><!-- Feral -->
@@ -791,6 +895,7 @@
 	Wander|
 	"/>
 	<property name="Explosion.RadiusBlocks" value="10"/>
+	<property name="Explosion.RadiusEntities" value="10"/>
 	<property name="Explosion.BlockDamage" value="100"/>
 	<property name="Explosion.EntityDamage" value="3000"/>
 	<property name="ExplodeDelay" value="3"/>
@@ -819,17 +924,29 @@
 	<property name="HandItem" value="meleeHandZombieREhunter"/>
 	<property name="JumpMaxDistance" value="1, 2"/>
 	<property name="PainResistPerHit" value="1.01"/>
-	<property name="Explosion.RadiusBlocks" value="5"/>
+	<property name="AITask" value="
+	BreakBlock|
+	ApproachAndAttackTarget class=EntityPlayer,0,EntityBandit,0,EntityEnemyAnimal|
+	ApproachSpot|
+	Look|
+	Wander|
+	"/>
+	<property name="Explosion.ParticleIndex" value="2"/>
+	<property name="Explosion.RadiusBlocks" value="10"/>
+	<property name="Explosion.RadiusEntities" value="20"/>
 	<property name="Explosion.BlockDamage" value="100"/>
-	<property name="Explosion.EntityDamage" value="300"/>
+	<property name="Explosion.EntityDamage" value="30000"/>
 	<property name="ExplodeDelay" value="3"/>
 	<property name="ExplodeHealthThreshold" value=".15"/> <!-- Disable Health explosion -->
 
 	<property name="ExperienceGain" value="0"/>
 	<property name="TimeStayAfterDeath" value="30"/>
 	<property name="OpenDoorPercentage" value="0.4"/>
+	<property name="LootDropEntityClass" value="ForestLoot"/>
+	<property name="LootDropProb" value="1"/>
 	<property name="CrimsonHeadEntityName" value=""/>
 	<effect_group name="Base Effects">
+		<passive_effect name="BuffResistance" operation="base_set" value="999" tags="buffRandomWalk"/>
 		<passive_effect name="HealthMax" operation="base_set" value="3500"/>
 		<passive_effect name="DamageModifier" operation="perc_set" value="1" tags="head"/>
 		<passive_effect name="PhysicalDamageResist" operation="base_set" value="0"/>
@@ -1029,6 +1146,57 @@
 	</effect_group>
 </entity_class>
 
+<entity_class name="Plant42Wesker" extends="zombieMutated">
+	<property name="Tags" value="entity,zombie,walker,boss,plant"/>
+	<property name="SizeScale" value="2"/>
+	<!-- <property name="WalkType" value="0"/> -->
+	<property name="LookAtAngle" value="355"/>
+	<property name="MaxViewAngle" value="355"/>
+	<property name="DismemberMultiplierHead" value="0"/><property name="DismemberMultiplierArms" value="0"/><property name="DismemberMultiplierLegs" value="0"/>
+	<property name="PainResistPerHit" value="1"/>
+	<property name="KnockdownProneDamageThreshold" value="0"/>
+	<property name="KnockdownKneelDamageThreshold" value="0"/>
+	<property name="AITask" value="
+	BreakBlock|
+	RangedAttackTarget itemType=1;cooldown=4;duration=2;minRange=1;maxRange=18;unreachableRange=18|
+	ApproachAndAttackTarget class=EntityPlayer,0,EntityBandit,0,EntityEnemyAnimal|
+	ApproachSpot|
+	Look|
+	"/>
+
+	<property class="FallLandBehavior">
+		<property name="1None" data="anim=None;height=0,15;weight=0.4"/>
+		<property name="1Land" data="anim=Land;height=0,15;weight=0.4"/>
+		<property name="1LandLow" data="anim=LandLow;height=0,1;weight=0"/>
+		<property name="1Stumble" data="anim=Stumble;height=0,1;weight=0"/>
+
+		<property name="LowLand" data="anim=LandLow;height=1,3;weight=0"/>
+		<property name="LowStumble" data="anim=Stumble;height=1,3;weight=0"/>
+
+		<property name="MidStumble" data="anim=Stumble;height=3,5;weight=0"/>
+		<property name="MidStumbleAndRage" data="anim=Stumble;height=3,5;weight=0;ragePer=0;rageTime=0"/>
+		<property name="MidLandHard" data="anim=LandHard;height=3,5;weight=0"/>
+		<property name="MidLandHardAndRage" data="anim=LandHard;height=3,5;weight=0;ragePer=0;rageTime=0"/>
+
+		<property name="HighStumbleAndRage" data="anim=Stumble;height=5,13;weight=0;ragePer=0;rageTime=0"/>
+		<property name="Ragdoll" data="anim=Ragdoll;height=3;weight=0"/>
+	</property>
+
+	<!-- Gameplay zombieMutated -->
+	<property name="HandItem" value="meleeHandPlant42"/>
+	<property name="ExplodeHealthThreshold" value="0"/>
+	<property name="MoveSpeed" value="0.1"/> <!-- 0.25 -->
+	<property name="MoveSpeedAggro" value="0.1,0.1"/> <!-- .4, 1.3 -->
+	<property name="ExperienceGain" value="0"/>
+	<property name="TimeStayAfterDeath" value="30"/>
+	<property name="OpenDoorPercentage" value="0"/>
+	<property name="LootDropProb" value="1"/> <!-- Feral -->
+	<property name="LootDropEntityClass" value="Plant42Loot"/>
+	<effect_group name="Base Effects">
+		<passive_effect name="HealthMax" operation="base_set" value="13500"/>
+	</effect_group>
+</entity_class>
+
 <entity_class name="animalYawntheWolf" extends="animalDireWolf">
 <!-- <entity_class name="YawntheBoar" extends="animalBossGrace"> -->
 	<property name="SizeScale" value="1.5"/>
@@ -1062,6 +1230,41 @@
 
 	<effect_group name="Base Effects">
 		<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="buffYawnMusic"/>
+		<passive_effect name="HealthMax" operation="base_set" value="15000"/>
+	</effect_group>
+</entity_class>
+
+<entity_class name="animalYawntheWolfWesker" extends="animalDireWolf">
+<!-- <entity_class name="YawntheBoar" extends="animalBossGrace"> -->
+	<property name="SizeScale" value="1.5"/>
+		<property name="Tags" value="entity,animal,zombie,hostile,wolf,perkAT03,boss,yawn"/>
+	<property name="AITask-1" value="Territorial"/>
+	<property name="AITask-2" value="RangedAttackTarget" data="itemType=1;cooldown=4;duration=5"/>
+	<property name="AITask-3" value="ApproachAndAttackTarget" data="class=EntityPlayer,30,EntityZombie,10"/>
+	<property name="AITask-4" value="ApproachSpot"/>
+	<property name="AITask-5" value="Look"/>
+	<property name="AITask-6" value="Wander"/>
+	<property name="AITask-7" value=""/>
+	<property name="AITarget-1" value="SetAsTargetIfHurt"/>
+	<property name="AITarget-2" value="BlockingTargetTask"/>
+	<property name="AITarget-3" value="SetNearestCorpseAsTarget" data="class=EntityPlayer"/>
+	<property name="AITarget-4" value="SetNearestEntityAsTarget" data="class=EntityPlayer,0,0,EntityZombie,0,3"/>
+	<property name="AITarget-5" value=""/>
+
+	<!-- Gameplay -->
+	<property name="PainResistPerHit" value=".5"/>
+	<property name="MoveSpeed" value=".04"/>
+	<property name="MoveSpeedAggro" value=".75,.75"/>
+	<property name="MoveSpeedPanic" value="1.2"/>
+
+	<property name="HandItem" value="meleeHandYawnBoar"/>
+
+	<property name="ExperienceGain" value="0"/> <!-- XP strong -->
+	<property name="LootDropProb" value="1"/> <!-- Feral -->
+	<property name="LootDropEntityClass" value="YawnLoot"/>
+	<drop event="Harvest" name="foodRottingFlesh" count="0" tool_category="Butcher"/>
+
+	<effect_group name="Base Effects">
 		<passive_effect name="HealthMax" operation="base_set" value="15000"/>
 	</effect_group>
 </entity_class>
@@ -1113,6 +1316,52 @@
 	</effect_group>
 </entity_class>
 
+<entity_class name="BlackTigerSpiderWesker" extends="zombieSpider">
+	<property name="SizeScale" value="1.55"/>
+	<property name="Tags" value="entity,zombie,spider,livingEntity"/>
+	<property name="WalkType" value="22"/>
+	<property name="HandItem" value="meleeHandBlackTigerSpider"/>
+	<property name="ExperienceGain" value="0"/>
+	<property name="TimeStayAfterDeath" value="30"/>
+	<property name="OpenDoorPercentage" value="1"/>
+	<property name="LootDropProb" value="1"/> <!-- Feral -->
+	<property name="LootDropEntityClass" value="BlackTigerLoot"/>
+	<property name="PainResistPerHit" value="-1"/>
+	<property name="DismemberMultiplierHead" value="0"/>
+	<property name="DismemberMultiplierArms" value="0"/>
+	<property name="DismemberMultiplierLegs" value="0"/>
+	<property name="SoundHurt" value="snakepain"/>
+	<property name="SoundDeath" value="snakedeath"/>
+	<property name="SoundRandom" value="snakeroam"/>
+	<property name="SoundSense" value="snakeroam"/>
+	<property name="SoundAlert" value="snakeroam"/>
+	<property name="SoundAttack" value="snakepain"/>
+	<property name="AINoiseSeekDist" value="3"/>
+	<property name="AIPathCostScale" value=".6, 1"/>
+	<property name="AITask" value="
+	BreakBlock|
+	RangedAttackTarget itemType=1;cooldown=6;duration=2|
+	Territorial|
+	ApproachAndAttackTarget class=EntityPlayer,0,EntityBandit,0,EntityEnemyAnimal|
+	ApproachSpot|
+	Look|
+	Wander|
+	"/>
+
+	<!-- Gameplay zombieSpider -->
+	<property name="MoveSpeed" value="0.04"/>
+	<property name="MoveSpeedAggro" value="0.15, 0.15"/> <!-- slim, regular -->
+	<property name="MoveSpeedPanic" value="1.2"/>
+	<property name="SwimSpeed" value="1.3"/>
+	<property name="SwimStrokeRate" value="1.5,1.7"/>
+	<property name="CanClimbVertical" value="true"/>
+	<property name="JumpMaxDistance" value="7, 9"/>
+
+	<effect_group name="Base Effects">
+		<passive_effect name="HealthMax" operation="base_set" value="15000"/>
+	</effect_group>
+</entity_class>
+
 <entity_class name="LisaTrevor" extends="zombieSpider">
 	<property name="SizeScale" value="1.1"/>
 	<!-- Gameplay zombieSpiderFeral -->
@@ -1149,6 +1398,47 @@
 		<passive_effect name="BuffResistance" operation="base_set" value="5" tags="buffBurningMolotov,buffBurningMolotov2"/>
 		<passive_effect name="PhysicalDamageResist" operation="base_set" value="95"/>
 		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="100"/>
+		<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+	</effect_group>
+</entity_class>
+
+<entity_class name="LisaTrevorWesker" extends="zombieSpider">
+	<property name="Tags" value="entity,zombie,walker,feral,lisa"/>
+	<property name="SizeScale" value="1.1"/>
+	<!-- Gameplay zombieSpiderFeral -->
+	<property name="DismemberMultiplierHead" value="0"/><property name="DismemberMultiplierArms" value="0"/><property name="DismemberMultiplierLegs" value="0"/><!-- Feral -->
+	<property name="PainResistPerHit" value="3"/><!-- Feral -->
+	<property name="MoveSpeedAggro" value=".35, .35"/> <!-- slim, feral -->
+	<property name="JumpMaxDistance" value="11, 13"/>
+	<property name="SoundRandom" value="Enemies/Base_Zombie_Female/zombiefemalescoutroam"/>
+	<property name="SoundAlert" value="Enemies/Scout_Zombie/zombiefemalescoutalert"/>
+	<property name="SoundAttack" value="Enemies/Base_Zombie_Female/zombiefemalescoutattack"/>
+	<property name="SoundSense" value="Enemies/Base_Zombie_Female/zombiefemalescoutsense"/>
+	<property name="SoundHurt" value=""/>
+	<property name="WalkType" value="2"/>
+	<property name="HandItem" value="meleeHandLisaTrevor"/>
+	<property name="ExperienceGain" value="0"/><!-- XP grunt feral -->
+	<property name="OpenDoorPercentage" value="1"/>
+	<property name="LootDropProb" value="1"/> <!-- Feral -->
+	<property name="LootDropEntityClass" value="LisaLoot"/>
+	<property name="KnockdownProneDamageThreshold" value="0.025"/>
+	<property name="KnockdownKneelDamageThreshold" value="0.01"/>
+	
+	<property name="AITask" value="
+	BreakBlock|
+	Territorial|
+	ApproachDistraction|
+	ApproachAndAttackTarget class=EntityPlayer,0,EntityBandit,0,EntityEnemyAnimal|
+	ApproachSpot|
+	Look|
+	Wander|
+	"/>
+
+	<effect_group name="Base Effects">
+		<passive_effect name="HealthMax" operation="base_set" value="30000"/>
+		<passive_effect name="BuffResistance" operation="base_set" value="5" tags="buffBurningMolotov,buffBurningMolotov2"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_set" value="95"/>
+		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="50"/>
 		<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
 	</effect_group>
 </entity_class>
@@ -2074,6 +2364,19 @@
 	<property name="IsEnemyEntity" value="false"/>
 	<property name="TimeStayAfterDeath" value="1800"/>
 	<property name="LootListOnDeath" value="Tyrant"/>
+	<property name="Faction" value="none"/>
+</entity_class>
+
+<entity_class name="LisaLoot">
+	<property name="HideInSpawnMenu" value="true"/>
+	<property name="Mesh" value="@:Entities/LootContainers/zpackRedPrefab.prefab"/>
+	<property name="ModelType" value="Custom"/>
+	<property name="Prefab" value="Backpack"/>
+	<property name="Class" value="EntityLootContainer"/>
+	<property name="Parent" value="Backpack"/>
+	<property name="IsEnemyEntity" value="false"/>
+	<property name="TimeStayAfterDeath" value="1800"/>
+	<property name="LootListOnDeath" value="LisaTrevorW"/>
 	<property name="Faction" value="none"/>
 </entity_class>
 
