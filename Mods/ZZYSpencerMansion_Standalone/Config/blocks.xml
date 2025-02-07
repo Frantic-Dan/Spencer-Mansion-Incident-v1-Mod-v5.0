@@ -308,6 +308,34 @@
 	<property name="FilterTags" value="MC_building,SC_loot"/>
 </block>
 
+<block name="TheVaultUnused">
+	<property name="CreativeMode" value="None"/>
+	<property name="CustomIcon" value="cntHardenedChestSecureT5"/>
+	<property name="CustomIconTint" value="00FF00"/>
+	<property name="DisplayType" value="blockHardenedMulti"/>
+	<property name="Material" value="MmetalMansion"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="@:Entities/LootContainers/super_chestPrefab.prefab"/>
+	<!-- <property name="Model" value="@:Entities/LootContainers/tier5LootChestPrefab.prefab"/> -->
+	<property name="Place" value="TowardsPlacerInverted"/>
+	<property name="ModelOffset" value="0.5,0.5,0"/>
+	<!-- <property name="ModelOffset" value="0,0.5,0"/> -->
+	<property name="MultiBlockDim" value="2,1,1"/>
+	<property name="ImposterExchange" value="imposterBlock" param1="115"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="AllowAllRotations" value="true"/>
+	<property name="Path" value="solid"/>
+	<property name="EconomicValue" value="0"/>
+	<property name="MaxDamage" value="50000"/>
+	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+	<drop event="Destroy" count="0" />
+	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+	<property name="SortOrder1" value="B104"/>
+	<property name="SortOrder2" value="0006"/>
+	<property name="Tags" value="safes"/>
+	<property name="FilterTags" value="MC_building,SC_loot"/>
+</block>
+
 <block name="LighterBlock">
 	<property name="Extends" value="decoEntityMetalMaster"/>
 	<property name="CreativeMode" value="None"/>
@@ -440,7 +468,7 @@
 	<property name="CreativeMode" value="None"/>
 	<property name="DisplayType" value="blockHardenedMulti"/>
 	<property name="Material" value="MwoodMansion"/>
-	<property name="ActivationDistance" value="1"/>
+	<property name="ActivationDistance" value="2"/>
 	<property name="Class" value="Activate"/>
 	<property name="ActivateSound" value="REPiano"/>
 	<property name="Shape" value="ModelEntity"/>
@@ -3201,6 +3229,17 @@
 		<property name="LockPickSuccessEvent" value="RemoveGyrocopter"/>
 </block>
 
+<block name="elevatorMansionTissueSampleDoorDouble">
+	<property name="CreativeMode" value="None"/>
+	<property name="Extends" value="elevatorMansionDoorDouble"/>
+ 	<property name="Class" value="SecureLoot"/>
+	<property name="LootList" value="doorNest"/>
+	<property name="DowngradeBlock" value="elevatorMansionDoorDouble"/>
+		<property name="LockPickItem" value="TissueSampleCollection"/>
+		<property name="LockPickTime" value="0.1"/>
+		<property name="LockPickSuccessEvent" value="RemoveWeskerMusic"/>
+</block>
+
 <block name="elevatorMansionLockedDoorDouble">
 	<property name="CreativeMode" value="None"/>
 	<property name="Extends" value="elevatorMansionDoorDouble"/>
@@ -3489,6 +3528,27 @@
 	<property name="FilterTags" value="floot"/>
 </block>
 
+<block name="WeskerLauncherHittoPickup">
+	<property name="CreativeMode" value="None"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="DisplayInfo" value="Name"/>
+	<property name="Model" value="@:Entities/LootContainers/weapon_bags_largePrefab.prefab"/>
+	<property name="Place" value="TowardsPlacerInverted"/>
+	<property name="DisplayType" value="blockHardened"/>
+	<property name="Material" value="Mcloth"/>
+	<property name="MaxDamage" value="10"/>
+	<property name="ModelOffset" value="0,0,0"/>
+	<property name="LightOpacity" value="0"/>
+	<property name="StabilitySupport" value="false"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="Collide" value="melee"/>
+	<drop event="Harvest" name="GrenadeLauncherWesker" count="1" tag="REMansionHarvest"/>
+	<drop event="Harvest" name="WeskerammoGrenadeExplosiveRE" count="5" tag="REMansionAmmoPickup"/>
+	<drop event="Destroy" name="WeskerammoGrenadeExplosiveRE" count="1"/>
+	<drop event="Fall" name="scrapMetalPile" count="0" prob="0" stick_chance="0"/>
+	<property name="FilterTags" value="floot"/>
+</block>
+
 <block name="AK-47HittoPickup">
 	<property name="CreativeMode" value="None"/>
 	<property name="Shape" value="ModelEntity"/>
@@ -3526,6 +3586,26 @@
 	<drop event="Destroy" name="QuadRocketLauncher" count="1"/>
 	<drop event="Destroy" name="ammoRocketHERE" count="8"/>
 	<property name="FilterTags" value="floot"/>
+</block>
+
+<block name="AmmoHittoPickup">
+	<property name="CreativeMode" value="None"/>
+	<property name="Material" value="Mcloth"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="DisplayInfo" value="Name"/>
+	<property name="MaxDamage" value="10"/>
+	<property name="Model" value="@:Entities/LootContainers/AmmoPiles_SmallPrefab.prefab"/>
+	<property name="Collide" value="melee"/>
+	<property name="ModelOffset" value="0,0,0"/>
+	<property name="GndAlign" value="1"/>
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="ImposterExclude" value="true"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<drop event="Harvest" name="WeskerAmmoCraftingBundle" count="5" tag="REMansionAmmoPickup"/>
+	<drop event="Destroy" count="0"/>
+	<property name="ShowModelOnFall" value="false"/>
+	<property name="FilterTags" value="floot,ftrash"/>
+	<property name="DescriptionKey" value="cntLootPileGroupDesc"/>
 </block>
 
 <block name="HandgunAmmoHittoPickup">
@@ -3659,6 +3739,26 @@
 	<property name="Collide" value="melee"/>
 	<drop event="Harvest" name="ammoGrenadeFlameRE" count="5" tag="REMansionAmmoPickup"/>
 	<drop event="Destroy" name="ammoGrenadeFlameRE" count="1" />
+	<property name="FilterTags" value="floot"/>
+</block>
+
+<block name="WeskerGrenadeExplosiveHittoPickup">
+	<property name="CreativeMode" value="None"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="DisplayInfo" value="Name"/>
+	<property name="Model" value="@:Entities/LootContainers/AmmoPiles_MediumPrefab.prefab"/>
+	<property name="Place" value="TowardsPlacerInverted"/>
+	<property name="DisplayType" value="blockHardened"/>
+	<property name="Material" value="Mcloth"/>
+	<property name="MaxDamage" value="10"/>
+	<property name="ModelOffset" value="0,0,0"/>
+	<property name="GndAlign" value="1"/>
+	<property name="LightOpacity" value="0"/>
+	<property name="StabilitySupport" value="false"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="Collide" value="melee"/>
+	<drop event="Harvest" name="WeskerammoGrenadeExplosiveRE" count="5" tag="REMansionAmmoPickup"/>
+	<drop event="Destroy" name="WeskerammoGrenadeExplosiveRE" count="1" />
 	<property name="FilterTags" value="floot"/>
 </block>
 
