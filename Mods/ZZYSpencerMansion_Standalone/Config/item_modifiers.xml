@@ -328,7 +328,43 @@
 			<requirement name="EntityTagCompare" target="other" tags="tyrant"/>
 			<passive_effect name="EntityDamage" operation="base_add" value="312"/>
 			<passive_effect name="EntityDamage" operation="base_add" value="208" tags="secondary"/>
+			
 		</effect_group>
+		<effect_group tiered="false">
+			<requirement name="EntityTagCompare" target="other" tags="lisa"/>
+			<passive_effect name="TargetArmor" operation="perc_add" value="-1" />
+			<!-- <passive_effect name="PhysicalDamageResist" operation="perc_subtract" value="1"/> -->
+			<passive_effect name="EntityDamage" operation="base_add" value="156"/>
+			<passive_effect name="EntityDamage" operation="base_add" value="104" tags="secondary"/>
+		</effect_group>
+		
+		<!-- <effect_group tiered="false">
+			<passive_effect name="EntityDamage" operation="perc_add" value="-.25"/>
+		</effect_group> -->
+	</item_modifier>
+	
+	<item_modifier name="modGunMeleeBlessedMetalTyrantWesker" installable_tags="knife" modifier_tags="specialDamage" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster"/>
+		<property name="CustomIcon" value="modMeleeSerratedBlade"/>
+		<property name="CustomIconTint" value="00AA00"/>
+		<property name="CreativeMode" value="None"/>
+		<property name="Candrop" value="false"/>
+		<property name="Weight" value="0"/>
+		
+		<effect_group tiered="false">
+			<requirement name="EntityTagCompare" target="other" tags="tyrant"/>
+			<passive_effect name="EntityDamage" operation="base_add" value="312"/>
+			<passive_effect name="EntityDamage" operation="base_add" value="208" tags="secondary"/>
+			
+		</effect_group>
+		<effect_group tiered="false">
+			<requirement name="EntityTagCompare" target="other" tags="lisa"/>
+			<passive_effect name="TargetArmor" operation="perc_add" value="-1" />
+			<!-- <passive_effect name="PhysicalDamageResist" operation="perc_subtract" value="1"/> -->
+			<passive_effect name="EntityDamage" operation="base_add" value="156"/>
+			<passive_effect name="EntityDamage" operation="base_add" value="104" tags="secondary"/>
+		</effect_group>
+		
 		<!-- <effect_group tiered="false">
 			<passive_effect name="EntityDamage" operation="perc_add" value="-.25"/>
 		</effect_group> -->
