@@ -204,7 +204,7 @@
 	</conditional>
 	
 	<conditional>
-      <if cond="mod_loaded('ZombieDifficultyAdjustments') == false">
+      <if cond="mod_loaded('DifficultyMod') == false">
 			<set xpath="/doc/tips//tip[1]/@key">ModNotInstalledCorrectlyText</set>
 			<set xpath="/doc/tips//tip[2]/@key">ModNotInstalledCorrectlyText</set>
 			<set xpath="/doc/tips//tip[3]/@key">ModNotInstalledCorrectlyText</set>
