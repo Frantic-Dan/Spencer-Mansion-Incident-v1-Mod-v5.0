@@ -8,4 +8,16 @@
 <set xpath="/worldglobal/environment//property[@name='ambientInsideEquatorScale']/@value">0.35,0.35</set>
 <set xpath="/worldglobal/environment//property[@name='ambientInsideSkyScale']/@value">0.35,0.35</set>
 
+<conditional>
+	<if cond="gamepref('GameWorld') == 'Wesker Scenario'">
+		<set xpath="/worldglobal/environment//property[@name='ambientEquatorScale']/@value">0.55,0.55</set>
+		<set xpath="/worldglobal/environment//property[@name='ambientSkyScale']/@value">0.55,0.55</set>
+		<set xpath="/worldglobal/environment//property[@name='ambientMoon']/@value">0.55,0.55</set>
+		<set xpath="/worldglobal/environment//property[@name='ambientInsideSpeed']/@value">0</set>
+		<set xpath="/worldglobal/environment//property[@name='ambientInsideThreshold']/@value">0</set>
+		<set xpath="/worldglobal/environment//property[@name='ambientInsideEquatorScale']/@value">0.55,0.55</set>
+		<set xpath="/worldglobal/environment//property[@name='ambientInsideSkyScale']/@value">0.55,0.55</set>
+	</if>
+</conditional>
+
 </configs>
