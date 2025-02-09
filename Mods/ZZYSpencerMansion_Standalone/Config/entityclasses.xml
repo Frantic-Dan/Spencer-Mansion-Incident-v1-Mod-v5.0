@@ -1215,7 +1215,7 @@
 	<property name="AITarget-5" value=""/>
 
 	<!-- Gameplay -->
-	<property name="PainResistPerHit" value=".5"/>
+	<property name="PainResistPerHit" value=".6"/>
 	<property name="MoveSpeed" value=".04"/>
 	<property name="MoveSpeedAggro" value=".75,.75"/>
 	<property name="MoveSpeedPanic" value="1.2"/>
