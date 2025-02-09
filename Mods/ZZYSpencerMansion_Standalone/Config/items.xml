@@ -5,6 +5,7 @@
 	<set xpath="/items/item[@name='meleeHandPlayer']/effect_group[1]//passive_effect[4]/@value">-.8</set>
 	<set xpath="/items/item[@name='meleeHandPlayer']/effect_group[1]//passive_effect[5]/@value">-.95</set>
 	<set xpath="/items/item[@name='meleeHandPlayer']/effect_group[1]//passive_effect[7]/@value">16</set>
+	<set xpath="/items/item[@name='meleeHandPlayer']/effect_group[1]//passive_effect[8]/@value">2.1</set>
 	<set xpath="/items/item[@name='meleeHandPlayer']/effect_group[2]//passive_effect[1]/@value">0.72</set>
 	<set xpath="/items/item[@name='meleeHandPlayer']/effect_group[2]//passive_effect[2]/@value">0.6</set>
 	<set xpath="/items/item[@name='meleeHandPlayer']/effect_group[2]//passive_effect[3]/@value">28</set>
@@ -5017,7 +5018,7 @@
 	<property name="HoldType" value="35"/>
 	<property class="Action0">
 		<property name="Delay" value=".85"/>
-		<property name="Range" value="2.2"/>
+		<property name="Range" value="2.1"/>
 		<property name="Sphere" value=".2"/>
 		<property name="DamageEntity" value="280"/>
 		<property name="DamageBlock" value="1"/>
