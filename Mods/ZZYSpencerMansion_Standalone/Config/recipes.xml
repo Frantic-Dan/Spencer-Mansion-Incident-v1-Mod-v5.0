@@ -224,7 +224,7 @@
 </recipe> -->
 
 <recipe name="FirstAidSprayBox" count="1" craft_time="0" craft_exp_gain="0" is_trackable="false" tags="learnable">
-	<ingredient name="ReloadingTool" count="2000"/>
+	<ingredient name="ReloadingTool" count="1000"/>
 </recipe>
 
 <recipe name="resourceBuckshot" count="1" craft_time="3" craft_exp_gain="0" is_trackable="false" material_based="true" craft_area="forge">
