@@ -1,9 +1,11 @@
-﻿using HarmonyLib;
+﻿using GearsAPI.Settings;
+using GearsAPI.Settings.Global;
+using GearsAPI.Settings.World;
+using HarmonyLib;
 using KFCommonUtilityLib.Scripts.StaticManagers;
 using KFCommonUtilityLib.Scripts.Utilities;
 using System.Reflection;
 using System.Runtime.InteropServices;
-using UnityEngine;
 
 public class CommonUtilityLibInit : IModApi
 {
@@ -50,6 +52,8 @@ public class CommonUtilityLibInit : IModApi
         CustomEnums.onReloadAboutToStart = CustomEffectEnumManager.RegisterOrGetEnum<MinEventTypes>("onReloadAboutToStart");
         CustomEnums.onRechargeValueUpdate = CustomEffectEnumManager.RegisterOrGetEnum<MinEventTypes>("onRechargeValueUpdate");
         CustomEnums.onSelfItemSwitchMode = CustomEffectEnumManager.RegisterOrGetEnum<MinEventTypes>("onSelfItemSwitchMode");
+        CustomEnums.onSelfBurstModeChanged = CustomEffectEnumManager.RegisterOrGetEnum<MinEventTypes>("onSelfBurstModeChanged");
+        CustomEnums.onSelfFirstCVarSync = CustomEffectEnumManager.RegisterOrGetEnum<MinEventTypes>("onSelfFirstCVarSync");
 
         CustomEnums.ReloadSpeedRatioFPV2TPV = CustomEffectEnumManager.RegisterOrGetEnum<PassiveEffects>("ReloadSpeedRatioFPV2TPV");
         CustomEnums.RecoilSnappiness = CustomEffectEnumManager.RegisterOrGetEnum<PassiveEffects>("RecoilSnappiness");
@@ -62,6 +66,27 @@ public class CommonUtilityLibInit : IModApi
         CustomEnums.KickDegreeHorizontalModifier = CustomEffectEnumManager.RegisterOrGetEnum<PassiveEffects>("KickDegreeHorizontalModifier");
         CustomEnums.KickDegreeVerticalModifier = CustomEffectEnumManager.RegisterOrGetEnum<PassiveEffects>("KickDegreeVerticalModifier");
         CustomEnums.WeaponErgonomics = CustomEffectEnumManager.RegisterOrGetEnum<PassiveEffects>("WeaponErgonomics");
+        CustomEnums.RecoilCameraShakeStrength = CustomEffectEnumManager.RegisterOrGetEnum<PassiveEffects>("RecoilCameraShakeStrength");
+        CustomEnums.BurstShotInterval = CustomEffectEnumManager.RegisterOrGetEnum<PassiveEffects>("BurstShotInterval");
+        CustomEnums.MaxWeaponSpread = CustomEffectEnumManager.RegisterOrGetEnum<PassiveEffects>("MaxWeaponSpread");
+    }
+}
+
+public class GearsImpl : IGearsModApi
+{
+    public void InitMod(IGearsMod modInstance)
+    {
+
+    }
+
+    public void OnGlobalSettingsLoaded(IModGlobalSettings modSettings)
+    {
+        RecoilManager.InitRecoilSettings(modSettings);
+    }
+
+    public void OnWorldSettingsLoaded(IModWorldSettings worldSettings)
+    {
+
     }
 }
 
