@@ -2,6 +2,9 @@
 
 public class PlayerActionToggleMode : CustomPlayerActionVersionBase
 {
+    public static PlayerActionToggleMode Instance { get; private set; }
+    public override ControllerActionType ControllerActionDisplay => ControllerActionType.OnFoot;
+
     public PlayerAction Toggle;
 
     public PlayerActionToggleMode()
@@ -32,7 +35,4 @@ public class PlayerActionToggleMode : CustomPlayerActionVersionBase
     {
         Toggle.AddDefaultBinding(new Key[] { Key.X });
     }
-
-    public static PlayerActionToggleMode Instance { get; private set; }
-    public override ControllerActionType ControllerActionDisplay => ControllerActionType.OnFoot;
 }
