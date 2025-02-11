@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 [AddComponentMenu("KFAttachments/Binding Helpers/Transform Activation Binding")]
@@ -17,7 +18,7 @@ public class TransformActivationBinding : MonoBehaviour
     private GameObject[] disableOnDisable;
     [SerializeField]
     private string[] animatorParamBindings;
-    internal Animator animator;
+    internal AnimationTargetsAbs targets;
 
     private void OnEnable()
     {
@@ -26,7 +27,7 @@ public class TransformActivationBinding : MonoBehaviour
         {
             foreach (GameObject t in bindings)
             {
-                if (t != null)
+                if (t)
                     t.SetActive(true);
             }
         }
@@ -34,7 +35,7 @@ public class TransformActivationBinding : MonoBehaviour
         {
             foreach (GameObject t in inverseBindings)
             {
-                if (t != null)
+                if (t)
                     t.SetActive(false);
             }
         }
@@ -42,7 +43,7 @@ public class TransformActivationBinding : MonoBehaviour
         {
             foreach (GameObject t in disableOnEnable)
             {
-                if (t != null)
+                if (t)
                     t.SetActive(false);
             }
         }
@@ -50,11 +51,15 @@ public class TransformActivationBinding : MonoBehaviour
         {
             foreach (GameObject t in enableOnEnable)
             {
-                if (t != null)
+                if (t)
                     t.SetActive(true);
             }
         }
-        UpdateBool(true);
+#if NotEditor
+        ThreadManager.StartCoroutine(UpdateBool(true));
+#else
+        StartCoroutine(UpdateBool(true));
+#endif
     }
 
     private void OnDisable()
@@ -63,14 +68,14 @@ public class TransformActivationBinding : MonoBehaviour
         if (bindings != null)
         {
             foreach (GameObject t in bindings)
-                if (t != null)
+                if (t)
                     t.SetActive(false);
         }
         if (inverseBindings != null)
         {
             foreach (GameObject t in inverseBindings)
             {
-                if (t != null)
+                if (t)
                     t.SetActive(true);
             }
         }
@@ -78,7 +83,7 @@ public class TransformActivationBinding : MonoBehaviour
         {
             foreach (GameObject t in enableOnDisable)
             {
-                if (t != null)
+                if (t)
                     t.SetActive(true);
             }
         }
@@ -86,17 +91,28 @@ public class TransformActivationBinding : MonoBehaviour
         {
             foreach (GameObject t in disableOnDisable)
             {
-                if (t != null)
+                if (t)
                     t.SetActive(true);
             }
         }
-        UpdateBool(false);
+#if NotEditor
+        ThreadManager.StartCoroutine(UpdateBool(false));
+#else
+        StartCoroutine(UpdateBool(false));
+#endif
     }
 
-    internal void UpdateBool(bool enabled)
+    internal IEnumerator UpdateBool(bool enabled)
     {
-        if (animatorParamBindings != null && animator != null)
+        yield return new WaitForEndOfFrame();
+        if (animatorParamBindings != null && targets && targets.IsAnimationSet)
         {
+            IAnimatorWrapper animator = targets.GraphBuilder.WeaponWrapper;
+            if (animator == null || !animator.IsValid)
+            {
+                Log.Warning($"animator wrapper invalid!");
+                yield break;
+            }
             foreach (string str in animatorParamBindings)
             {
                 if (str != null)
