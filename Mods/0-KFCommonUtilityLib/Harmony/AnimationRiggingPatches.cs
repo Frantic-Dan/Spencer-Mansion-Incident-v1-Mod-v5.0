@@ -2,42 +2,72 @@
 using KFCommonUtilityLib.Scripts.StaticManagers;
 using KFCommonUtilityLib.Scripts.Utilities;
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Reflection.Emit;
 using System.Xml.Linq;
 using UniLinq;
 using UnityEngine;
+using UnityEngine.Animations;
 using UnityEngine.Animations.Rigging;
 
 [HarmonyPatch]
 static class AnimationRiggingPatches
 {
-    ///// <summary>
-    ///// compatibility patch for launcher projectile joint
-    ///// </summary>
-    ///// <param name="__instance"></param>
-    ///// <param name="_invData"></param>
-    //[HarmonyPatch(typeof(ItemActionLauncher.ItemActionDataLauncher), MethodType.Constructor, new Type[] { typeof(ItemInventoryData), typeof(int) })]
-    //[HarmonyPostfix]
-    //private static void Postfix_ctor_ItemActionDataLauncher(ItemActionLauncher.ItemActionDataLauncher __instance, ItemInventoryData _invData)
+    [HarmonyPatch(typeof(SDCSUtils), nameof(SDCSUtils.setupEquipmentCommon))]
+    [HarmonyPrefix]
+    private static bool Prefix_setupEquipmentCommon_SDCSUtils(GameObject _rigObj, out bool __state)
+    {
+        __state = false;
+        if (_rigObj.TryGetComponent<Animator>(out var animator))
+        {
+            __state = true;
+            animator.UnbindAllStreamHandles();
+            animator.UnbindAllSceneHandles();
+        }
+        return true;
+    }
+
+    [HarmonyPatch(typeof(SDCSUtils), nameof(SDCSUtils.setupEquipmentCommon))]
+    [HarmonyPostfix]
+    private static void Postfix_setupEquipmentCommon_SDCSUtils(GameObject _rigObj, bool __state)
+    {
+        if (__state && _rigObj.TryGetComponent<Animator>(out var animator))
+        {
+            animator.Rebind();
+        }
+    }
+
+    [HarmonyPatch(typeof(SDCSUtils), nameof(SDCSUtils.setupRig))]
+    [HarmonyPrefix]
+    private static bool Prefix_setupRig_SDCSUtils(ref RuntimeAnimatorController animController, ref GameObject _rigObj)
+    {
+        if (_rigObj && _rigObj.TryGetComponent<AnimationGraphBuilder>(out var builder) && builder.HasWeaponOverride)
+        {
+            animController = null;
+        }
+        return true;
+    }
+
+    //[HarmonyPatch(typeof(UMACharacterBodyAnimator), nameof(UMACharacterBodyAnimator.assignLayerWeights))]
+    //[HarmonyPrefix]
+    //private static bool Prefix_assignLayerWeights_UMACharacterBodyAnimator(UMACharacterBodyAnimator __instance)
     //{
-    //    __instance.projectileJoint = AnimationRiggingManager.GetTransformOverrideByName("ProjectileJoint", _invData.model);
+    //    if (__instance.Animator && __instance.Animator.TryGetComponent<AnimationGraphBuilder>(out var builder) && builder.HasWeaponOverride)
+    //    {
+    //        return false;
+    //    }
+    //    return true;
     //}
 
-    //[HarmonyPatch(typeof(ItemActionRanged.ItemActionDataRanged), MethodType.Constructor, new Type[] { typeof(ItemInventoryData), typeof(int) })]
-    //[HarmonyPostfix]
-    //private static void Postfix_ctor_ItemActionDataRanged(ItemActionRanged.ItemActionDataRanged __instance, ItemInventoryData _invData)
+    //[HarmonyPatch(typeof(AvatarSDCSController), nameof(AvatarSDCSController.setLayerWeights))]
+    //[HarmonyPrefix]
+    //private static bool Prefix_setLayerWeights_AvatarSDCSController(AvatarSDCSController __instance)
     //{
-    //    if (__instance.IsDoubleBarrel)
+    //    if (__instance.anim && __instance.anim.TryGetComponent<AnimationGraphBuilder>(out var builder) && builder.HasWeaponOverride)
     //    {
-    //        __instance.muzzle = AnimationRiggingManager.GetTransformOverrideByName("Muzzle_L", _invData.model);
-    //        __instance.muzzle2 = AnimationRiggingManager.GetTransformOverrideByName("Muzzle_R", _invData.model);
+    //        return false;
     //    }
-    //    else
-    //    {
-    //        __instance.muzzle = AnimationRiggingManager.GetTransformOverrideByName("Muzzle", _invData.model);
-    //    }
+    //    return true;
     //}
 
     [HarmonyPatch(typeof(ItemActionRanged), nameof(ItemActionRanged.OnModificationsChanged))]
@@ -191,6 +221,13 @@ static class AnimationRiggingPatches
         }
     }
 
+    [HarmonyPatch(typeof(EntityAlive), nameof(EntityAlive.OnHoldingItemChanged))]
+    [HarmonyPostfix]
+    private static void Postfix_OnHoldingItemChanged_EntityAlive(EntityAlive __instance)
+    {
+        AnimationRiggingManager.OnHoldingItemIndexChanged(__instance as EntityPlayer);
+    }
+
     [HarmonyPatch(typeof(EntityPlayerLocal), nameof(EntityPlayerLocal.OnHoldingItemChanged))]
     [HarmonyPostfix]
     private static void Postfix_OnHoldingItemChanged_EntityPlayerLocal(EntityPlayerLocal __instance)
@@ -227,41 +264,37 @@ static class AnimationRiggingPatches
         ParseTakeOverReloadTime(_node);
     }
 
-    [HarmonyPatch(typeof(Inventory), nameof(Inventory.ShowHeldItem))]
-    [HarmonyPostfix]
-    private static void Postfix_ShowHeldItem_Inventory(Inventory __instance, bool show)
-    {
-        if (!show && __instance.GetHoldingItemTransform() && __instance.GetHoldingItemTransform().TryGetComponent<RigTargets>(out var targets) && !targets.Destroyed)
-        {
-            targets.SetEnabled(false, true);
-        }
-    }
-
-    [HarmonyPatch(typeof(ItemClass), nameof(ItemClass.StopHolding))]
-    [HarmonyPostfix]
-    private static void Postfix_StopHolding_ItemClass(Transform _modelTransform)
-    {
-        if (_modelTransform != null && _modelTransform.TryGetComponent<RigTargets>(out var targets) && !targets.Destroyed)
-        {
-            targets.SetEnabled(false, true);
-        }
-    }
+    //[HarmonyPatch(typeof(ItemClass), nameof(ItemClass.StopHolding))]
+    //[HarmonyPostfix]
+    //private static void Postfix_StopHolding_ItemClass(Transform _modelTransform)
+    //{
+    //    if (_modelTransform != null && _modelTransform.TryGetComponent<AnimationTargetsAbs>(out var targets) && !targets.Destroyed)
+    //    {
+    //        targets.SetEnabled(false);
+    //    }
+    //}
 
     [HarmonyPatch(typeof(Inventory), nameof(Inventory.createHeldItem))]
     [HarmonyPostfix]
     private static void Postfix_createHeldItem_Inventory(Inventory __instance, Transform __result)
     {
-        if (__result != null && __result.TryGetComponent<RigTargets>(out var targets) && !targets.Destroyed)
+        if (__result && __result.TryGetComponent<AnimationTargetsAbs>(out var targets) && !targets.Destroyed)
         {
-            if (GameManager.IsDedicatedServer || !(__instance.entity is EntityPlayerLocal player))
+            if (GameManager.IsDedicatedServer || !(__instance.entity is EntityPlayer player))
             {
                 targets.Destroy();
             }
             else
             {
-                Transform fpsArms = (player.emodel.avatarController as AvatarLocalPlayerController)?.FPSArms?.Parts.BodyObj.transform;
-                if (fpsArms != null)
-                    targets.Init(fpsArms);
+                if (player is EntityPlayerLocal localPlayer)
+                {
+                    targets.Init(localPlayer.emodel.avatarController.GetActiveModelRoot(), localPlayer.bFirstPersonView);
+                }
+                else
+                {
+                    targets.DestroyFpv();
+                    targets.Init(player.emodel.avatarController.GetActiveModelRoot(), false);
+                }
             }
         }
     }
@@ -270,7 +303,7 @@ static class AnimationRiggingPatches
     [HarmonyPrefix]
     private static bool Prefix_ForceHoldingItemUpdate(Inventory __instance)
     {
-        if (__instance.entity is EntityPlayerLocal)
+        if (__instance.entity is EntityPlayer)
             AnimationRiggingManager.OnClearInventorySlot(__instance, __instance.holdingItemIdx);
         return true;
     }
@@ -336,7 +369,7 @@ static class AnimationRiggingPatches
     [HarmonyPrefix]
     private static bool Prefix_clearSlotByIndex(Inventory __instance, int _idx)
     {
-        if (__instance.entity is EntityPlayerLocal)
+        if (__instance.entity is EntityPlayer)
             AnimationRiggingManager.OnClearInventorySlot(__instance, _idx);
         return true;
     }
@@ -345,6 +378,7 @@ static class AnimationRiggingPatches
     [HarmonyPostfix]
     private static void Postfix_Update_AvatarMultiBodyController(AvatarMultiBodyController __instance)
     {
+        AnimationRiggingManager.UpdatePlayerAvatar(__instance);
         if (__instance is AvatarLocalPlayerController avatarLocalPlayer)
         {
             //if ((avatarLocalPlayer.entity as EntityPlayerLocal).bFirstPersonView && !avatarLocalPlayer.entity.inventory.GetIsFinishedSwitchingHeldItem())
@@ -353,14 +387,61 @@ static class AnimationRiggingPatches
             //    avatarLocalPlayer.UpdateBool("Holstered", false, false);
             //    avatarLocalPlayer.FPSArms.Animator.Play("idle", 0, 0f);
             //}
-            AnimationRiggingManager.UpdateLocalPlayerAvatar(avatarLocalPlayer);
             var mapping = MultiActionManager.GetMappingForEntity(__instance.entity.entityId);
             if (mapping != null)
             {
                 avatarLocalPlayer.UpdateInt(MultiActionUtils.ExecutingActionIndexHash, mapping.CurActionIndex, true);
             }
+
+            if (__instance.entity.inventory?.holdingItemData?.actionData != null)
+            {
+                foreach (var actionData in __instance.entity.inventory.holdingItemData.actionData)
+                {
+                    if (actionData is IModuleContainerFor<ActionModuleFireModeSelector.FireModeData> data)
+                    {
+                        avatarLocalPlayer.UpdateInt(ActionModuleFireModeSelector.FireModeParamHashes[actionData.indexInEntityOfAction], data.Instance.currentFireMode, true);
+                    }
+                }
+            }
+        }
+        if (__instance.entity.AttachedToEntity)
+        {
+            __instance.SetVehicleAnimation(AvatarController.vehiclePoseHash, __instance.entity.vehiclePoseMode);
         }
     }
+
+    [HarmonyPatch(typeof(LegacyAvatarController), nameof(LegacyAvatarController.Update))]
+    [HarmonyPostfix]
+    private static void Postfix_Update_LegacyAvatarController(LegacyAvatarController __instance)
+    {
+        AnimationRiggingManager.UpdatePlayerAvatar(__instance);
+        if (__instance.entity.AttachedToEntity)
+        {
+            __instance.SetVehicleAnimation(AvatarController.vehiclePoseHash, __instance.entity.vehiclePoseMode);
+        }
+    }
+
+    //[HarmonyPatch(typeof(AvatarLocalPlayerController), nameof(AvatarLocalPlayerController.LateUpdate))]
+    //[HarmonyPostfix]
+    //private static void Postfix_LateUpdate_AvatarLocalPlayerController(AvatarLocalPlayerController __instance)
+    //{
+    //    var targets = AnimationRiggingManager.GetRigTargetsFromPlayer(__instance.entity as EntityPlayer);
+    //    if (targets && !targets.Destroyed)
+    //    {
+    //        targets.UpdateTpvSpineRotation(__instance.entity as EntityPlayer);
+    //    }
+    //}
+
+    //[HarmonyPatch(typeof(AvatarSDCSController), nameof(AvatarSDCSController.LateUpdate))]
+    //[HarmonyPostfix]
+    //private static void Postfix_LateUpdate_AvatarSDCSController(AvatarSDCSController __instance)
+    //{
+    //    var targets = AnimationRiggingManager.GetRigTargetsFromPlayer(__instance.entity as EntityPlayer);
+    //    if (targets && !targets.Destroyed)
+    //    {
+    //        targets.UpdateTpvSpineRotation(__instance.entity as EntityPlayer);
+    //    }
+    //}
 
     [HarmonyPatch(typeof(AvatarMultiBodyController), nameof(AvatarMultiBodyController.StartAnimationReloading))]
     [HarmonyPrefix]
@@ -374,7 +455,7 @@ static class AnimationRiggingPatches
     [HarmonyPostfix]
     private static void Postfix_StartAnimationReloading_AvatarMultibodyController(AvatarMultiBodyController __instance)
     {
-        if (__instance.HeldItemTransform != null && __instance.HeldItemTransform.TryGetComponent<RigTargets>(out var targets) && !targets.Destroyed)
+        if (__instance.HeldItemTransform != null && __instance.HeldItemTransform.TryGetComponent<AnimationTargetsAbs>(out var targets) && !targets.Destroyed)
         {
             EntityAlive entity = __instance.Entity;
             ItemValue holdingItemItemValue = entity.inventory.holdingItemItemValue;
@@ -485,42 +566,92 @@ static class AnimationRiggingPatches
     //        AnimationRiggingManager.FpvWeaponFire();
     //}
 
+    [HarmonyPatch(typeof(EntityPlayerLocal), nameof(EntityPlayerLocal.SetFirstPersonView))]
+    [HarmonyPrefix]
+    private static bool Prefix_SetFirstPersonView_EntityPlayerLocal(EntityPlayerLocal __instance, bool _bFirstPersonView)
+    {
+        var targets = AnimationRiggingManager.GetRigTargetsFromPlayer(__instance);
+        if (_bFirstPersonView != __instance.bFirstPersonView && targets && !targets.Destroyed && targets.IsAnimationSet)
+        {
+            //targets.SetEnabled(false);
+            //targets.GraphBuilder.SetCurrentTarget(null);
+            Log.Out($"Switch view destroy slot {__instance.inventory.holdingItemIdx}");
+            targets.Destroy();
+        }
+        return true;
+    }
+
+    [HarmonyPatch(typeof(AvatarLocalPlayerController), nameof(AvatarLocalPlayerController.SwitchModelAndView))]
+    [HarmonyPostfix]
+    private static void Postfix_SwitchModelAndView_AvatarLocalPlayerController(AvatarLocalPlayerController __instance, bool _bFPV)
+    {
+        if (_bFPV)
+        {
+            __instance.hasTurnRate = false;
+        }
+    }
+
     [HarmonyPatch(typeof(AvatarLocalPlayerController), nameof(AvatarLocalPlayerController.SetInRightHand))]
     [HarmonyPostfix]
     private static void Postfix_SetInRightHand_AvatarLocalPlayerController(Transform _transform, AvatarLocalPlayerController __instance)
     {
-        if (_transform != null && _transform.TryGetComponent<RigTargets>(out var targets) && !targets.Destroyed)
+        if (_transform != null && _transform.TryGetComponent<AnimationTargetsAbs>(out var targets) && !targets.Destroyed && targets.ItemCurrent)
         {
-            targets.SetEnabled(__instance.isFPV);
-            _transform.SetParent(__instance.CharacterBody.Parts.RightHandT, false);
-            _transform.localPosition = Vector3.zero;
-            _transform.localRotation = Quaternion.identity;
+            //targets.SetEnabled(true);
+            targets.GraphBuilder.SetCurrentTarget(targets);
+        }
+        else if (__instance.PrimaryBody?.Animator && __instance.PrimaryBody.Animator.TryGetComponent<AnimationGraphBuilder>(out var builder))
+        {
+            builder.SetCurrentTarget(null);
         }
     }
 
-    [HarmonyPatch(typeof(Inventory), nameof(Inventory.setHoldingItemTransform))]
-    [HarmonyPrefix]
-    private static bool Prefix_setHoldingItemTransform_Inventory(Inventory __instance)
+    [HarmonyPatch(typeof(LegacyAvatarController), nameof(LegacyAvatarController.SetInRightHand))]
+    [HarmonyPostfix]
+    private static void Postfix_SetInRightHand_LegacyAvatarController(Transform _transform, LegacyAvatarController __instance)
     {
-        if (__instance.lastdrawnHoldingItemTransform && __instance.lastdrawnHoldingItemTransform.TryGetComponent<RigTargets>(out var targets) && !targets.Destroyed)
+        if (_transform != null && _transform.TryGetComponent<AnimationTargetsAbs>(out var targets) && !targets.Destroyed && targets.ItemCurrent)
         {
-            targets.SetEnabled(false, true);
+            //targets.SetEnabled(true);
+            targets.GraphBuilder.SetCurrentTarget(targets);
         }
-        return true;
+        else if (__instance.anim && __instance.anim.TryGetComponent<AnimationGraphBuilder>(out var builder))
+        {
+            builder.SetCurrentTarget(null);
+        }
     }
+
+    //[HarmonyPatch(typeof(Inventory), nameof(Inventory.setHoldingItemTransform))]
+    //[HarmonyPrefix]
+    //private static bool Prefix_setHoldingItemTransform_Inventory(Inventory __instance)
+    //{
+    //    if (__instance.lastdrawnHoldingItemTransform && __instance.lastdrawnHoldingItemTransform.TryGetComponent<AnimationTargetsAbs>(out var targets) && !targets.Destroyed)
+    //    {
+    //        targets.SetEnabled(false);
+    //    }
+    //    return true;
+    //}
 
     [HarmonyPatch(typeof(vp_FPWeapon), nameof(vp_FPWeapon.Start))]
     [HarmonyPostfix]
     private static void Postfix_Start_vp_FPWeapon(vp_FPWeapon __instance)
     {
         var player = __instance.GetComponentInParent<EntityPlayerLocal>();
-        if (player != null)
+        if (player && player.inventory != null)
         {
-            foreach (var model in player.inventory.models)
+            for (int i = 0; i < player.inventory.models.Length; i++)
             {
-                if (model != null && model.TryGetComponent<RigTargets>(out var targets) && !targets.Destroyed)
+                Transform model = player.inventory.models[i];
+                if (model != null && model.TryGetComponent<AnimationTargetsAbs>(out var targets) && !targets.Destroyed)
                 {
-                    targets.Init(__instance.transform);
+                    if (i == player.inventory.holdingItemIdx)
+                    {
+                        player.inventory.ForceHoldingItemUpdate();
+                    }
+                    else
+                    {
+                        targets.Init(__instance.transform, true);
+                    }
                 }
             }
         }
@@ -534,12 +665,27 @@ static class AnimationRiggingPatches
         var codes = instructions.ToList();
 
         var mtd_setparent = AccessTools.Method(typeof(Transform), nameof(Transform.SetParent), new[] { typeof(Transform), typeof(bool) });
+        var mtd_startholding = AccessTools.Method(typeof(ItemClass), nameof(ItemClass.StartHolding));
+        var mtd_showrighthand = AccessTools.Method(typeof(Inventory), nameof(Inventory.ShowRightHand));
 
         for (int i = 0; i < codes.Count; i++)
         {
             if (codes[i].Calls(mtd_setparent))
             {
                 codes[i - 1].opcode = OpCodes.Ldc_I4_1;
+            }
+            else if (codes[i].Calls(mtd_startholding))
+            {
+                for (int j = i + 1; j < codes.Count; j++)
+                {
+                    if (codes[j].Calls(mtd_showrighthand))
+                    {
+                        var take = codes.GetRange(i - 9, 10);
+                        codes.InsertRange(j + 1, take);
+                        codes.RemoveRange(i - 9, 10);
+                        break;
+                    }
+                }
                 break;
             }
         }
@@ -662,13 +808,112 @@ static class AnimationRiggingPatches
     {
         if (_entity is EntityItem _entityItem)
         {
-            var targets = _entityItem.GetComponentInChildren<RigTargets>(true);
-            if (targets != null && !targets.Destroyed)
+            var targets = _entityItem.GetComponentInChildren<AnimationTargetsAbs>(true);
+            if (targets && !targets.Destroyed)
             {
                 targets.Destroy();
             }
         }
         return true;
+    }
+
+    [HarmonyPatch(typeof(World), nameof(World.SpawnEntityInWorld))]
+    [HarmonyPostfix]
+    private static void Postfix_SpawnEntityInWorld_World(Entity _entity)
+    {
+        if (_entity is EntityPlayer player && !(_entity is EntityPlayerLocal) && player.inventory != null)
+        {
+            foreach (var model in player.inventory.models)
+            {
+                if (model && model.TryGetComponent<AnimationTargetsAbs>(out var targets) && !targets.Destroyed)
+                {
+                    targets.DestroyFpv();
+                    targets.Init(player.emodel.avatarController.GetActiveModelRoot(), false);
+                }
+            }
+        }
+    }
+
+    [HarmonyPatch(typeof(EntityItem), nameof(EntityItem.createMesh))]
+    [HarmonyTranspiler]
+    private static IEnumerable<CodeInstruction> Transpiler_createMesh_EntityItem(IEnumerable<CodeInstruction> instructions)
+    {
+        var codes = instructions.ToList();
+        codes[codes.Count - 1].WithLabels(codes[codes.Count - 11].labels);
+        codes.RemoveRange(codes.Count - 11, 10);
+        return codes;
+    }
+
+    [HarmonyPatch(typeof(EntityItem), nameof(EntityItem.createMesh))]
+    [HarmonyPostfix]
+    private static void Postfix_createMesh_EntityItem(EntityItem __instance)
+    {
+        if (__instance.itemTransform)
+        {
+            __instance.itemTransform.tag = "Item";
+            if (__instance.itemTransform.TryGetComponent<AnimationTargetsAbs>(out var targets) && !targets.Destroyed)
+            {
+                targets.Destroy();
+            }
+        }
+        __instance.meshRenderers = __instance.itemTransform.GetComponentsInChildren<Renderer>(true);
+        __instance.VisiblityCheck(0, false);
+    }
+
+    [HarmonyPatch(typeof(EModelBase), nameof(EModelBase.SwitchModelAndView))]
+    [HarmonyPostfix]
+    private static void Postfix_SwitchModelAndView_EModelBase(EModelBase __instance)
+    {
+        if (__instance.entity is EntityPlayerLocal player && player.inventory != null)
+        {
+            foreach (var model in player.inventory.models)
+            {
+                if (model && model.TryGetComponent<AnimationTargetsAbs>(out var targets) && !targets.Destroyed)
+                {
+                    targets.Init(player.emodel.avatarController.GetActiveModelRoot(), player.bFirstPersonView);
+                }
+            }
+        }
+    }
+
+    [HarmonyPatch(typeof(EntityAlive), nameof(EntityAlive.Detach))]
+    [HarmonyTranspiler]
+    private static IEnumerable<CodeInstruction> Transpiler_Detach_EntityAlive(IEnumerable<CodeInstruction> instructions)
+    {
+        var codes = instructions.ToList();
+
+        var fld_inv = AccessTools.Field(typeof(EntityAlive), nameof(EntityAlive.inventory));
+        for (int i = 0; i < codes.Count; i++)
+        {
+            if (codes[i].StoresField(fld_inv))
+            {
+                codes.InsertRange(i + 1, new[]
+                {
+                    new CodeInstruction(OpCodes.Ldarg_0),
+                    CodeInstruction.Call(typeof(AnimationRiggingPatches), nameof(AnimationRiggingPatches.DetachInitInventory))
+                });
+                break;
+            }
+        }
+        return codes;
+    }
+
+    private static void DetachInitInventory(EntityAlive __instance)
+    {
+        if (!(__instance is EntityPlayer player))
+        {
+            return;
+        }
+        if (__instance.inventory != null)
+        {
+            foreach (var model in __instance.inventory.models)
+            {
+                if (model && model.TryGetComponent<AnimationTargetsAbs>(out var targets) && !targets.Destroyed)
+                {
+                    targets.Init(__instance.emodel.avatarController.GetActiveModelRoot(), player is EntityPlayerLocal localPlayer ? localPlayer.bFirstPersonView : false);
+                }
+            }
+        }
     }
 
     [HarmonyPatch(typeof(SDCSUtils), nameof(SDCSUtils.cleanupEquipment))]
@@ -718,7 +963,7 @@ static class AnimationRiggingPatches
             ItemActionRanged.ItemActionDataRanged _actionData = _entity.inventory.holdingItemData.actionData[__instance.ActionIndex] as ItemActionRanged.ItemActionDataRanged;
             if (!_entity.MovementRunning && !_entity.AimingGun && !player.bLerpCameraFlag && _actionData != null && !_entity.inventory.holdingItem.IsActionRunning(_entity.inventory.holdingItemData) && !__instance.CanReload(_actionData) && (_entity.inventory.holdingItemItemValue.Meta > 0 || inspectable.Instance.allowEmptyInspect))
             {
-                _entity.emodel.avatarController._setTrigger("weaponInspect", false);
+                _entity.emodel.avatarController._setTrigger("weaponInspect", true);
                 return false;
             }
         }
@@ -732,7 +977,7 @@ static class AnimationRiggingPatches
         if (_actionData is ItemActionRanged.ItemActionDataRanged rangedData)
         {
             int burstCount = __instance.GetBurstCount(_actionData);
-            _actionData.invData.holdingEntity.emodel.avatarController._setBool("TriggerPulled", rangedData.bPressed && rangedData.curBurstCount < burstCount, false);
+            _actionData.invData.holdingEntity.emodel.avatarController._setBool("TriggerPulled", rangedData.bPressed && rangedData.curBurstCount < burstCount, true);
         }
     }
 
@@ -782,115 +1027,75 @@ static class AnimationRiggingPatches
     //    Log.Out($"HIT TARGET! IsGrazing: {_isGrazingHit}\n{StackTraceUtility.ExtractStackTrace()}");
     //}
 
-    //[HarmonyPatch(typeof(XUiC_CameraWindow), nameof(XUiC_CameraWindow.OnOpen))]
-    //[HarmonyPrefix]
-    //private static bool Prefix_OnOpen_XuiC_CameraWindow(XUiC_CameraWindow __instance)
-    //{
-    //    AnimationRiggingManager.IsCameraWindowOpen = true;
-    //    Inventory inventory = __instance.xui.playerUI.localPlayer.entityPlayerLocal.inventory;
-    //    AnimationRiggingManager.OnClearInventorySlot(inventory, inventory.holdingItemIdx);
-    //    return true;
-    //}
-
-    //[HarmonyPatch(typeof(XUiC_CameraWindow), nameof(XUiC_CameraWindow.OnClose))]
-    //[HarmonyPrefix]
-    //private static bool Prefix_OnClose_XuiC_CameraWindow()
-    //{
-    //    AnimationRiggingManager.IsCameraWindowOpen = false;
-    //    return true;
-    //}
-
-    /// <summary>
-    /// Changed in A22?
-    /// </summary>
-    /// <param name="___sensorCamera"></param>
-    //[HarmonyPatch(typeof(XUiC_CameraWindow), nameof(XUiC_CameraWindow.OnOpen))]
-    //[HarmonyTranspiler]
-    //private static IEnumerable<CodeInstruction> Transpiler_OnOpen_XuiC_CameraWindow(IEnumerable<CodeInstruction> instructions)
-    //{
-    //    var codes = instructions.ToList();
-
-    //    var mtd_switch = AccessTools.Method(typeof(EntityAlive), nameof(EntityAlive.switchModelView));
-    //    for (int i = 0; i < codes.Count; i++)
-    //    {
-    //        if (codes[i].Calls(mtd_switch))
-    //        {
-    //            //codes[i - 1].opcode = OpCodes.Ldc_I4_0;
-    //            //codes[i].opcode = OpCodes.Call;
-    //            //codes[i].operand = AccessTools.Method(typeof(EntityPlayerLocal), "setFirstPersonView");
-    //            //codes.Insert(i, new CodeInstruction(OpCodes.Ldc_I4_1));
-    //            codes.Insert(i - 5, new CodeInstruction(OpCodes.Br_S, codes[i - 6].operand));
-    //            break;
-    //        }
-    //    }
-
-    //    return codes;
-    //}
-
-    //[HarmonyPatch(typeof(XUiC_CameraWindow), nameof(XUiC_CameraWindow.OnClose))]
-    //[HarmonyTranspiler]
-    //private static IEnumerable<CodeInstruction> Transpiler_OnClose_XuiC_CameraWindow(IEnumerable<CodeInstruction> instructions)
-    //{
-    //    var codes = instructions.ToList();
-
-    //    var mtd_switch = AccessTools.Method(typeof(EntityAlive), nameof(EntityAlive.switchModelView));
-    //    for (int i = 0; i < codes.Count; i++)
-    //    {
-    //        if (codes[i].Calls(mtd_switch))
-    //        {
-    //            //codes[i - 1].opcode = OpCodes.Ldc_I4_1;
-    //            //codes[i].opcode = OpCodes.Call;
-    //            //codes[i].operand = AccessTools.Method(typeof(EntityPlayerLocal), "setFirstPersonView");
-    //            //codes.Insert(i, new CodeInstruction(OpCodes.Ldc_I4_1));
-    //            codes.RemoveRange(i - 5, 6);
-    //            break;
-    //        }
-    //    }
-
-    //    return codes;
-    //}
-
-    //[HarmonyPatch(typeof(XUiC_CameraWindow), "CreateCamera")]
+    //[HarmonyPatch(typeof(AvatarLocalPlayerController), nameof(AvatarLocalPlayerController._setTrigger))]
     //[HarmonyPostfix]
-    //private static void Postfix_CreateCamera_XUiC_CameraWindow(Camera ___sensorCamera)
+    //private static void Postfix_AvatarLocalPlayerController_SetTrigger(int _pid, AvatarLocalPlayerController __instance)
     //{
-    //    ___sensorCamera.cullingMask &= ~(1 << 24 | 1 << 10);
+    //    AnimationRiggingManager.SetTrigger(_pid, __instance.entity as EntityPlayer);
     //}
 
-    [HarmonyPatch(typeof(AvatarLocalPlayerController), nameof(AvatarLocalPlayerController._setTrigger))]
-    [HarmonyPostfix]
-    private static void Postfix_Avatar_SetTrigger(int _pid)
-    {
-        AnimationRiggingManager.SetTrigger(_pid);
-    }
+    //[HarmonyPatch(typeof(AvatarLocalPlayerController), nameof(AvatarLocalPlayerController._resetTrigger))]
+    //[HarmonyPostfix]
+    //private static void Postfix_AvatarLocalPlayerController_ResetTrigger(int _pid, AvatarLocalPlayerController __instance)
+    //{
+    //    AnimationRiggingManager.ResetTrigger(_pid, __instance.entity as EntityPlayer);
+    //}
 
-    [HarmonyPatch(typeof(AvatarLocalPlayerController), nameof(AvatarLocalPlayerController._resetTrigger))]
-    [HarmonyPostfix]
-    private static void Postfix_Avatar_ResetTrigger(int _pid)
-    {
-        AnimationRiggingManager.ResetTrigger(_pid);
-    }
+    //[HarmonyPatch(typeof(AvatarLocalPlayerController), nameof(AvatarLocalPlayerController._setFloat))]
+    //[HarmonyPostfix]
+    //private static void Postfix_AvatarLocalPlayerController_SetFloat(int _pid, float _value, AvatarLocalPlayerController __instance)
+    //{
+    //    AnimationRiggingManager.SetFloat(_pid, _value, __instance.entity as EntityPlayer);
+    //}
 
-    [HarmonyPatch(typeof(AvatarLocalPlayerController), nameof(AvatarLocalPlayerController._setFloat))]
-    [HarmonyPostfix]
-    private static void Postfix_Avatar_SetFloat(int _pid, float _value)
-    {
-        AnimationRiggingManager.SetFloat(_pid, _value);
-    }
+    //[HarmonyPatch(typeof(AvatarLocalPlayerController), nameof(AvatarLocalPlayerController._setBool))]
+    //[HarmonyPostfix]
+    //private static void Postfix_AvatarLocalPlayerController_SetBool(int _pid, bool _value, AvatarLocalPlayerController __instance)
+    //{
+    //    AnimationRiggingManager.SetBool(_pid, _value, __instance.entity as EntityPlayer);
+    //}
 
-    [HarmonyPatch(typeof(AvatarLocalPlayerController), nameof(AvatarLocalPlayerController._setBool))]
-    [HarmonyPostfix]
-    private static void Postfix_Avatar_SetBool(int _pid, bool _value)
-    {
-        AnimationRiggingManager.SetBool(_pid, _value);
-    }
+    //[HarmonyPatch(typeof(AvatarLocalPlayerController), nameof(AvatarLocalPlayerController._setInt))]
+    //[HarmonyPostfix]
+    //private static void Postfix_AvatarLocalPlayerController_SetInt(int _pid, int _value, AvatarLocalPlayerController __instance)
+    //{
+    //    AnimationRiggingManager.SetInt(_pid, _value, __instance.entity as EntityPlayer);
+    //}
 
-    [HarmonyPatch(typeof(AvatarLocalPlayerController), nameof(AvatarLocalPlayerController._setInt))]
-    [HarmonyPostfix]
-    private static void Postfix_Avatar_SetInt(int _pid, int _value)
-    {
-        AnimationRiggingManager.SetInt(_pid, _value);
-    }
+    //[HarmonyPatch(typeof(LegacyAvatarController), nameof(LegacyAvatarController._setTrigger))]
+    //[HarmonyPostfix]
+    //private static void Postfix_LegacyAvatarController_SetTrigger(int _propertyHash, LegacyAvatarController __instance)
+    //{
+    //    AnimationRiggingManager.SetTrigger(_propertyHash, __instance.entity as EntityPlayer);
+    //}
+
+    //[HarmonyPatch(typeof(LegacyAvatarController), nameof(LegacyAvatarController._resetTrigger))]
+    //[HarmonyPostfix]
+    //private static void Postfix_LegacyAvatarController_ResetTrigger(int _propertyHash, LegacyAvatarController __instance)
+    //{
+    //    AnimationRiggingManager.ResetTrigger(_propertyHash, __instance.entity as EntityPlayer);
+    //}
+
+    //[HarmonyPatch(typeof(LegacyAvatarController), nameof(LegacyAvatarController._setFloat))]
+    //[HarmonyPostfix]
+    //private static void Postfix_LegacyAvatarController_SetFloat(int _propertyHash, float _value, LegacyAvatarController __instance)
+    //{
+    //    AnimationRiggingManager.SetFloat(_propertyHash, _value, __instance.entity as EntityPlayer);
+    //}
+
+    //[HarmonyPatch(typeof(LegacyAvatarController), nameof(LegacyAvatarController._setBool))]
+    //[HarmonyPostfix]
+    //private static void Postfix_LegacyAvatarController_SetBool(int _propertyHash, bool _value, LegacyAvatarController __instance)
+    //{
+    //    AnimationRiggingManager.SetBool(_propertyHash, _value, __instance.entity as EntityPlayer);
+    //}
+
+    //[HarmonyPatch(typeof(LegacyAvatarController), nameof(LegacyAvatarController._setInt))]
+    //[HarmonyPostfix]
+    //private static void Postfix_LegacyAvatarController_SetInt(int _propertyHash, int _value, LegacyAvatarController __instance)
+    //{
+    //    AnimationRiggingManager.SetInt(_propertyHash, _value, __instance.entity as EntityPlayer);
+    //}
 
     [HarmonyPatch(typeof(AvatarLocalPlayerController), nameof(AvatarLocalPlayerController._resetTrigger), typeof(int), typeof(bool))]
     [HarmonyReversePatch(HarmonyReversePatchType.Original)]
@@ -898,4 +1103,489 @@ static class AnimationRiggingPatches
     {
 
     }
+
+    [HarmonyPatch(typeof(AvatarController), nameof(AvatarController.TryGetTrigger), new[] { typeof(int), typeof(bool) }, new[] { ArgumentType.Normal, ArgumentType.Out })]
+    [HarmonyTranspiler]
+    private static IEnumerable<CodeInstruction> Transpiler_TryGetTrigger_AvatarController(IEnumerable<CodeInstruction> instructions)
+    {
+        return instructions.MethodReplacer(
+                AccessTools.Method(typeof(Animator), nameof(Animator.GetBool), new[] { typeof(int) }), 
+                AccessTools.Method(typeof(KFExtensions), nameof(KFExtensions.GetWrappedBool)));
+    }
+
+    [HarmonyPatch(typeof(AvatarController), nameof(AvatarController.TryGetBool), new[] { typeof(int), typeof(bool) }, new[] { ArgumentType.Normal, ArgumentType.Out })]
+    [HarmonyTranspiler]
+    private static IEnumerable<CodeInstruction> Transpiler_TryGetBool_AvatarController(IEnumerable<CodeInstruction> instructions)
+    {
+        return instructions.MethodReplacer(
+                AccessTools.Method(typeof(Animator), nameof(Animator.GetBool), new[] { typeof(int) }), 
+                AccessTools.Method(typeof(KFExtensions), nameof(KFExtensions.GetWrappedBool)));
+    }
+
+    [HarmonyPatch(typeof(AvatarController), nameof(AvatarController.TryGetInt), new[] { typeof(int), typeof(int) }, new[] { ArgumentType.Normal, ArgumentType.Out })]
+    [HarmonyTranspiler]
+    private static IEnumerable<CodeInstruction> Transpiler_TryGetInt_AvatarController(IEnumerable<CodeInstruction> instructions)
+    {
+        return instructions.MethodReplacer(
+                AccessTools.Method(typeof(Animator), nameof(Animator.GetInteger), new[] { typeof(int) }), 
+                AccessTools.Method(typeof(KFExtensions), nameof(KFExtensions.GetWrappedInt)));
+    }
+
+    [HarmonyPatch(typeof(AvatarController), nameof(AvatarController.TryGetFloat), new[] { typeof(int), typeof(float) }, new[] { ArgumentType.Normal, ArgumentType.Out })]
+    [HarmonyTranspiler]
+    private static IEnumerable<CodeInstruction> Transpiler_TryGetFloat_AvatarController(IEnumerable<CodeInstruction> instructions)
+    {
+        return instructions.MethodReplacer(
+                AccessTools.Method(typeof(Animator), nameof(Animator.GetFloat), new[] { typeof(int) }), 
+                AccessTools.Method(typeof(KFExtensions), nameof(KFExtensions.GetWrappedFloat)));
+    }
+
+    [HarmonyPatch(typeof(AvatarMultiBodyController), nameof(AvatarMultiBodyController.TryGetTrigger), new[] { typeof(int), typeof(bool) }, new[] { ArgumentType.Normal, ArgumentType.Out })]
+    [HarmonyTranspiler]
+    private static IEnumerable<CodeInstruction> Transpiler_TryGetTrigger_AvatarMultiBodyController(IEnumerable<CodeInstruction> instructions)
+    {
+        return instructions.MethodReplacer(
+                AccessTools.Method(typeof(Animator), nameof(Animator.GetBool), new[] { typeof(int) }), 
+                AccessTools.Method(typeof(KFExtensions), nameof(KFExtensions.GetWrappedBool)));
+    }
+
+    [HarmonyPatch(typeof(AvatarMultiBodyController), nameof(AvatarMultiBodyController.TryGetBool), new[] { typeof(int), typeof(bool) }, new[] { ArgumentType.Normal, ArgumentType.Out })]
+    [HarmonyTranspiler]
+    private static IEnumerable<CodeInstruction> Transpiler_TryGetBool_AvatarMultiBodyController(IEnumerable<CodeInstruction> instructions)
+    {
+        return instructions.MethodReplacer(
+                AccessTools.Method(typeof(Animator), nameof(Animator.GetBool), new[] { typeof(int) }), 
+                AccessTools.Method(typeof(KFExtensions), nameof(KFExtensions.GetWrappedBool)));
+    }
+
+    [HarmonyPatch(typeof(AvatarMultiBodyController), nameof(AvatarMultiBodyController.TryGetInt), new[] { typeof(int), typeof(int) }, new[] { ArgumentType.Normal, ArgumentType.Out })]
+    [HarmonyTranspiler]
+    private static IEnumerable<CodeInstruction> Transpiler_TryGetInt_AvatarMultiBodyController(IEnumerable<CodeInstruction> instructions)
+    {
+        return instructions.MethodReplacer(
+                AccessTools.Method(typeof(Animator), nameof(Animator.GetInteger), new[] { typeof(int) }), 
+                AccessTools.Method(typeof(KFExtensions), nameof(KFExtensions.GetWrappedInt)));
+    }
+
+    [HarmonyPatch(typeof(AvatarMultiBodyController), nameof(AvatarMultiBodyController.TryGetFloat), new[] { typeof(int), typeof(float) }, new[] { ArgumentType.Normal, ArgumentType.Out })]
+    [HarmonyTranspiler]
+    private static IEnumerable<CodeInstruction> Transpiler_TryGetFloat_AvatarMultiBodyController(IEnumerable<CodeInstruction> instructions)
+    {
+        return instructions.MethodReplacer(
+                AccessTools.Method(typeof(Animator), nameof(Animator.GetFloat), new[] { typeof(int) }), 
+                AccessTools.Method(typeof(KFExtensions), nameof(KFExtensions.GetWrappedFloat)));
+    }
+
+    [HarmonyPatch(typeof(AvatarController), nameof(AvatarController._setBool), new[] { typeof(int), typeof(bool), typeof(bool) })]
+    [HarmonyTranspiler]
+    private static IEnumerable<CodeInstruction> Transpiler_setBool_AvatarController(IEnumerable<CodeInstruction> instructions)
+    {
+        return instructions.MethodReplacer(
+                AccessTools.Method(typeof(Animator), nameof(Animator.GetBool), new[] { typeof(int) }), 
+                AccessTools.Method(typeof(KFExtensions), nameof(KFExtensions.GetWrappedBool)))
+                           .MethodReplacer(
+                AccessTools.Method(typeof(Animator), nameof(Animator.SetBool), new[] { typeof(int), typeof(bool) }),
+                AccessTools.Method(typeof(KFExtensions), nameof(KFExtensions.SetWrappedBool)));
+    }
+
+    [HarmonyPatch(typeof(AvatarController), nameof(AvatarController._setTrigger), new[] { typeof(int), typeof(bool) })]
+    [HarmonyTranspiler]
+    private static IEnumerable<CodeInstruction> Transpiler_setTrigger_AvatarController(IEnumerable<CodeInstruction> instructions)
+    {
+        return instructions.MethodReplacer(
+                AccessTools.Method(typeof(Animator), nameof(Animator.GetBool), new[] { typeof(int) }), 
+                AccessTools.Method(typeof(KFExtensions), nameof(KFExtensions.GetWrappedBool)))
+                           .MethodReplacer(
+                AccessTools.Method(typeof(Animator), nameof(Animator.SetTrigger), new[] { typeof(int)}),
+                AccessTools.Method(typeof(KFExtensions), nameof(KFExtensions.SetWrappedTrigger)));
+    }
+
+    [HarmonyPatch(typeof(AvatarController), nameof(AvatarController._resetTrigger), new[] { typeof(int), typeof(bool) })]
+    [HarmonyTranspiler]
+    private static IEnumerable<CodeInstruction> Transpiler_resetTrigger_AvatarController(IEnumerable<CodeInstruction> instructions)
+    {
+        return instructions.MethodReplacer(
+                AccessTools.Method(typeof(Animator), nameof(Animator.GetBool), new[] { typeof(int) }), 
+                AccessTools.Method(typeof(KFExtensions), nameof(KFExtensions.GetWrappedBool)))
+                           .MethodReplacer(
+                AccessTools.Method(typeof(Animator), nameof(Animator.ResetTrigger), new[] { typeof(int) }),
+                AccessTools.Method(typeof(KFExtensions), nameof(KFExtensions.ResetWrappedTrigger)));
+    }
+
+    [HarmonyPatch(typeof(AvatarController), nameof(AvatarController._setInt), new[] { typeof(int), typeof(int), typeof(bool) })]
+    [HarmonyTranspiler]
+    private static IEnumerable<CodeInstruction> Transpiler_setInt_AvatarController(IEnumerable<CodeInstruction> instructions)
+    {
+        return instructions.MethodReplacer(
+                AccessTools.Method(typeof(Animator), nameof(Animator.GetInteger), new[] { typeof(int) }), 
+                AccessTools.Method(typeof(KFExtensions), nameof(KFExtensions.GetWrappedInt)))
+                           .MethodReplacer(
+                AccessTools.Method(typeof(Animator), nameof(Animator.SetInteger), new[] { typeof(int), typeof(int) }),
+                AccessTools.Method(typeof(KFExtensions), nameof(KFExtensions.SetWrappedInt)));
+    }
+
+    [HarmonyPatch(typeof(AvatarController), nameof(AvatarController._setFloat), new[] { typeof(int), typeof(float), typeof(bool) })]
+    [HarmonyTranspiler]
+    private static IEnumerable<CodeInstruction> Transpiler_setFloat_AvatarController(IEnumerable<CodeInstruction> instructions)
+    {
+        return instructions.MethodReplacer(
+                AccessTools.Method(typeof(Animator), nameof(Animator.GetFloat), new[] { typeof(int) }), 
+                AccessTools.Method(typeof(KFExtensions), nameof(KFExtensions.GetWrappedFloat)))
+                           .MethodReplacer(
+                AccessTools.Method(typeof(Animator), nameof(Animator.SetFloat), new[] { typeof(int), typeof(float) }),
+                AccessTools.Method(typeof(KFExtensions), nameof(KFExtensions.SetWrappedFloat)));
+    }
+
+    [HarmonyPatch(typeof(AvatarCharacterController), nameof(AvatarCharacterController._setBool), new[] { typeof(int), typeof(bool), typeof(bool) })]
+    [HarmonyTranspiler]
+    private static IEnumerable<CodeInstruction> Transpiler_setBool_AvatarCharacterController(IEnumerable<CodeInstruction> instructions)
+    {
+        return instructions.MethodReplacer(
+                AccessTools.Method(typeof(Animator), nameof(Animator.SetBool), new[] { typeof(int), typeof(bool) }),
+                AccessTools.Method(typeof(KFExtensions), nameof(KFExtensions.SetWrappedBool)));
+    }
+
+    [HarmonyPatch(typeof(AvatarCharacterController), nameof(AvatarCharacterController._setTrigger), new[] { typeof(int), typeof(bool) })]
+    [HarmonyTranspiler]
+    private static IEnumerable<CodeInstruction> Transpiler_setTrigger_AvatarCharacterController(IEnumerable<CodeInstruction> instructions)
+    {
+        return instructions.MethodReplacer(
+                AccessTools.Method(typeof(Animator), nameof(Animator.SetTrigger), new[] { typeof(int)}),
+                AccessTools.Method(typeof(KFExtensions), nameof(KFExtensions.SetWrappedTrigger)));
+    }
+
+    [HarmonyPatch(typeof(AvatarCharacterController), nameof(AvatarCharacterController._resetTrigger), new[] { typeof(int), typeof(bool) })]
+    [HarmonyTranspiler]
+    private static IEnumerable<CodeInstruction> Transpiler_resetTrigger_AvatarCharacterController(IEnumerable<CodeInstruction> instructions)
+    {
+        return instructions.MethodReplacer(
+                AccessTools.Method(typeof(Animator), nameof(Animator.ResetTrigger), new[] { typeof(int) }),
+                AccessTools.Method(typeof(KFExtensions), nameof(KFExtensions.ResetWrappedTrigger)));
+    }
+
+    [HarmonyPatch(typeof(AvatarCharacterController), nameof(AvatarCharacterController._setInt), new[] { typeof(int), typeof(int), typeof(bool) })]
+    [HarmonyTranspiler]
+    private static IEnumerable<CodeInstruction> Transpiler_setInt_AvatarCharacterController(IEnumerable<CodeInstruction> instructions)
+    {
+        return instructions.MethodReplacer(
+                AccessTools.Method(typeof(Animator), nameof(Animator.SetInteger), new[] { typeof(int), typeof(int) }),
+                AccessTools.Method(typeof(KFExtensions), nameof(KFExtensions.SetWrappedInt)));
+    }
+
+    [HarmonyPatch(typeof(AvatarCharacterController), nameof(AvatarCharacterController._setFloat), new[] { typeof(int), typeof(float), typeof(bool) })]
+    [HarmonyTranspiler]
+    private static IEnumerable<CodeInstruction> Transpiler_setFloat_AvatarCharacterController(IEnumerable<CodeInstruction> instructions)
+    {
+        return instructions.MethodReplacer(
+                AccessTools.Method(typeof(Animator), nameof(Animator.SetFloat), new[] { typeof(int), typeof(float) }),
+                AccessTools.Method(typeof(KFExtensions), nameof(KFExtensions.SetWrappedFloat)));
+    }
+
+    [HarmonyPatch(typeof(AvatarMultiBodyController), nameof(AvatarMultiBodyController._setBool), new[] { typeof(int), typeof(bool), typeof(bool) })]
+    [HarmonyTranspiler]
+    private static IEnumerable<CodeInstruction> Transpiler_setBool_AvatarMultiBodyController(IEnumerable<CodeInstruction> instructions)
+    {
+        return instructions.MethodReplacer(
+                AccessTools.Method(typeof(Animator), nameof(Animator.GetBool), new[] { typeof(int) }), 
+                AccessTools.Method(typeof(KFExtensions), nameof(KFExtensions.GetWrappedBool)))
+                           .MethodReplacer(
+                AccessTools.Method(typeof(Animator), nameof(Animator.SetBool), new[] { typeof(int), typeof(bool) }),
+                AccessTools.Method(typeof(KFExtensions), nameof(KFExtensions.SetWrappedBool)));
+    }
+
+    [HarmonyPatch(typeof(AvatarMultiBodyController), nameof(AvatarMultiBodyController._setTrigger), new[] { typeof(int), typeof(bool) })]
+    [HarmonyTranspiler]
+    private static IEnumerable<CodeInstruction> Transpiler_setTrigger_AvatarMultiBodyController(IEnumerable<CodeInstruction> instructions)
+    {
+        return instructions.MethodReplacer(
+                AccessTools.Method(typeof(Animator), nameof(Animator.GetBool), new[] { typeof(int) }), 
+                AccessTools.Method(typeof(KFExtensions), nameof(KFExtensions.GetWrappedBool)))
+                           .MethodReplacer(
+                AccessTools.Method(typeof(Animator), nameof(Animator.SetTrigger), new[] { typeof(int) }),
+                AccessTools.Method(typeof(KFExtensions), nameof(KFExtensions.SetWrappedTrigger)));
+    }
+
+    [HarmonyPatch(typeof(AvatarMultiBodyController), nameof(AvatarMultiBodyController._resetTrigger), new[] { typeof(int), typeof(bool) })]
+    [HarmonyTranspiler]
+    private static IEnumerable<CodeInstruction> Transpiler_resetTrigger_AvatarMultiBodyController(IEnumerable<CodeInstruction> instructions)
+    {
+        return instructions.MethodReplacer(
+                AccessTools.Method(typeof(Animator), nameof(Animator.GetBool), new[] { typeof(int) }), 
+                AccessTools.Method(typeof(KFExtensions), nameof(KFExtensions.GetWrappedBool)))
+                           .MethodReplacer(
+                AccessTools.Method(typeof(Animator), nameof(Animator.ResetTrigger), new[] { typeof(int) }),
+                AccessTools.Method(typeof(KFExtensions), nameof(KFExtensions.ResetWrappedTrigger)));
+    }
+
+    [HarmonyPatch(typeof(AvatarMultiBodyController), nameof(AvatarMultiBodyController._setInt), new[] { typeof(int), typeof(int), typeof(bool) })]
+    [HarmonyTranspiler]
+    private static IEnumerable<CodeInstruction> Transpiler_setInt_AvatarMultiBodyController(IEnumerable<CodeInstruction> instructions)
+    {
+        return instructions.MethodReplacer(
+                AccessTools.Method(typeof(Animator), nameof(Animator.GetInteger), new[] { typeof(int) }), 
+                AccessTools.Method(typeof(KFExtensions), nameof(KFExtensions.GetWrappedInt)))
+                           .MethodReplacer(
+                AccessTools.Method(typeof(Animator), nameof(Animator.SetInteger), new[] { typeof(int), typeof(int) }),
+                AccessTools.Method(typeof(KFExtensions), nameof(KFExtensions.SetWrappedInt)));
+    }
+
+    [HarmonyPatch(typeof(AvatarMultiBodyController), nameof(AvatarMultiBodyController._setFloat), new[] { typeof(int), typeof(float), typeof(bool) })]
+    [HarmonyTranspiler]
+    private static IEnumerable<CodeInstruction> Transpiler_setFloat_AvatarMultiBodyController(IEnumerable<CodeInstruction> instructions)
+    {
+        return instructions.MethodReplacer(
+                AccessTools.Method(typeof(Animator), nameof(Animator.GetFloat), new[] { typeof(int) }), 
+                AccessTools.Method(typeof(KFExtensions), nameof(KFExtensions.GetWrappedFloat)))
+                           .MethodReplacer(
+                AccessTools.Method(typeof(Animator), nameof(Animator.SetFloat), new[] { typeof(int), typeof(float) }),
+                AccessTools.Method(typeof(KFExtensions), nameof(KFExtensions.SetWrappedFloat)));
+    }
+
+    [HarmonyPatch(typeof(AvatarController), nameof(AvatarController.GetParameterName))]
+    [HarmonyTranspiler]
+    private static IEnumerable<CodeInstruction> Transpiler_GetParameterName_AvatarController(IEnumerable<CodeInstruction> instructions)
+    {
+        return instructions.MethodReplacer(
+                AccessTools.PropertyGetter(typeof(Animator), nameof(Animator.parameters)),
+                AccessTools.Method(typeof(KFExtensions), nameof(KFExtensions.GetWrappedParameters)));
+    }
+
+    [HarmonyPatch(typeof(AvatarController), nameof(AvatarController.SyncAnimParameters))]
+    [HarmonyTranspiler]
+    private static IEnumerable<CodeInstruction> Transpiler_SyncAnimParameters_AvatarController(IEnumerable<CodeInstruction> instructions, ILGenerator generator)
+    {
+        var codes = instructions.MethodReplacer(
+                                    AccessTools.PropertyGetter(typeof(Animator), nameof(Animator.parameters)), 
+                                    AccessTools.Method(typeof(KFExtensions), nameof(KFExtensions.GetWrappedParameters)))
+                                .MethodReplacer(
+                                    AccessTools.Method(typeof(Animator), nameof(Animator.GetBool), new[] { typeof(int) }),
+                                    AccessTools.Method(typeof(KFExtensions), nameof(KFExtensions.GetWrappedBool)))
+                                .MethodReplacer(
+                                    AccessTools.Method(typeof(Animator), nameof(Animator.GetInteger), new[] { typeof(int) }), 
+                                    AccessTools.Method(typeof(KFExtensions), nameof(KFExtensions.GetWrappedInt)))
+                                .MethodReplacer(
+                                    AccessTools.Method(typeof(Animator), nameof(Animator.GetFloat), new[] { typeof(int) }), 
+                                    AccessTools.Method(typeof(KFExtensions), nameof(KFExtensions.GetWrappedFloat)))
+                                .ToList();
+
+        //var lbd_wrapper = generator.DeclareLocal(typeof(IAnimatorWrapper));
+
+        //var fld_anim = AccessTools.Field(typeof(AvatarController), nameof(AvatarController.anim));
+
+        //for (int i = 1; i < codes.Count; i++)
+        //{
+        //    if (codes[i].opcode == OpCodes.Stloc_0)
+        //    {
+        //        codes.InsertRange(i + 1, new[]
+        //        {
+        //            new CodeInstruction(OpCodes.Ldarg_0),
+        //            CodeInstruction.LoadField(typeof(AvatarController), nameof(AvatarController.anim)),
+        //            CodeInstruction.Call(typeof(KFExtensions), nameof(KFExtensions.GetAnimatorWrapper)),
+        //            new CodeInstruction(OpCodes.Stloc_S, lbd_wrapper)
+        //        });
+        //        i += 4;
+        //    }
+        //    else if (codes[i].opcode == OpCodes.Ldloc_3 && codes[i - 1].LoadsField(fld_anim))
+        //    {
+        //        codes.Insert(i - 2, new CodeInstruction(OpCodes.Ldloc_S, lbd_wrapper).WithLabels(codes[i - 2].ExtractLabels()));
+        //        codes.RemoveRange(i - 1, 2);
+        //        i--;
+        //    }
+        //}
+
+        return codes;
+    }
+
+    [HarmonyPatch(typeof(AvatarSDCSController), nameof(AvatarSDCSController.LateUpdate))]
+    [HarmonyTranspiler]
+    private static IEnumerable<CodeInstruction> Transpiler_LateUpdate_AvatarSDCSController(IEnumerable<CodeInstruction> instructions, ILGenerator generator)
+    {
+        var mtd_getbool = AccessTools.Method(typeof(Animator), nameof(Animator.GetBool), new[] { typeof(int) });
+        var mtd_getint = AccessTools.Method(typeof(Animator), nameof(Animator.GetInteger), new[] { typeof(int) });
+        var mtd_getfloat = AccessTools.Method(typeof(Animator), nameof(Animator.GetFloat), new[] { typeof(int) });
+        var mtd_istransition = AccessTools.Method(typeof(Animator),nameof(Animator.IsInTransition), new[] { typeof(int) });
+        var mtd_updatespine = AccessTools.Method(typeof(LegacyAvatarController), nameof(LegacyAvatarController.updateSpineRotation));
+        var fld_reload = AccessTools.Field(typeof(AvatarController), nameof(AvatarController.reloadHash));
+        var mtd_getvanillabool = AccessTools.Method(typeof(KFExtensions), nameof(KFExtensions.GetWrappedBool));
+        var mtd_getvanillaint = AccessTools.Method(typeof(KFExtensions), nameof(KFExtensions.GetWrappedInt));
+        var mtd_getvanillafloat = AccessTools.Method(typeof(KFExtensions), nameof(KFExtensions.GetWrappedFloat));
+        var mtd_isvanillatransition = AccessTools.Method(typeof(KFExtensions), nameof(KFExtensions.IsVanillaInTransition));
+        var codes = instructions.Manipulator(ins => ins.opcode == OpCodes.Ldstr, ins =>
+        {
+            switch (ins.operand)
+            {
+                case "Reload":
+                    ins.opcode = OpCodes.Ldsfld;
+                    ins.operand = fld_reload;
+                    break;
+            }
+        }).MethodReplacer(AccessTools.Method(typeof(Animator), nameof(Animator.GetBool), new[] { typeof(string) }), mtd_getbool)
+          .MethodReplacer(AccessTools.Method(typeof(Animator), nameof(Animator.GetInteger), new[] { typeof(string) }), mtd_getint)
+          .MethodReplacer(AccessTools.Method(typeof(Animator), nameof(Animator.GetFloat), new[] { typeof(string) }), mtd_getfloat)
+          .MethodReplacer(AccessTools.Method(typeof(Animator), nameof(Animator.SetBool), new[] { typeof(string), typeof(bool) }), AccessTools.Method(typeof(Animator), nameof(Animator.SetBool), new[] { typeof(int), typeof(bool) }))
+          .MethodReplacer(mtd_getbool, mtd_getvanillabool)
+          .MethodReplacer(mtd_getint, mtd_getvanillaint)
+          .MethodReplacer(mtd_getfloat, mtd_getvanillafloat)
+          .MethodReplacer(mtd_istransition, mtd_isvanillatransition)
+          .ToList();
+
+        //var lbd_wrapper = generator.DeclareLocal(typeof(IAnimatorWrapper));
+
+        //for (var i = 0; i < codes.Count; i++)
+        //{
+        //    if (codes[i].Calls(mtd_updatespine))
+        //    {
+        //        codes.InsertRange(i + 1, new[]
+        //        {
+        //            new CodeInstruction(OpCodes.Ldarg_0),
+        //            CodeInstruction.LoadField(typeof(AvatarController), nameof(AvatarController.anim)),
+        //            CodeInstruction.Call(typeof(KFExtensions), nameof(KFExtensions.GetItemAnimatorWrapper)),
+        //            new CodeInstruction(OpCodes.Stloc_S, lbd_wrapper)
+        //        });
+        //        i += 4;
+        //    }
+        //    else if (codes[i].Calls(mtd_getvanillabool) || codes[i].Calls(mtd_getvanillafloat) || codes[i].Calls(mtd_getvanillaint) || codes[i].Calls(mtd_isvanillatransition))
+        //    {
+        //        codes.Insert(i - 3, new CodeInstruction(OpCodes.Ldloc_S, lbd_wrapper).WithLabels(codes[i - 3].ExtractLabels()));
+        //        codes.RemoveRange(i - 2, 2);
+        //        i--;
+        //    }
+        //}
+        //foreach (var code in codes)
+        //{
+        //    Log.Out(code.ToString());
+        //}
+        return codes;
+    }
+
+    [HarmonyPatch(typeof(AvatarSDCSController), nameof(AvatarSDCSController.updateLayerStateInfo))]
+    [HarmonyTranspiler]
+    private static IEnumerable<CodeInstruction> Transpiler_updateLayerStateInfo_AvatarSDCSController(IEnumerable<CodeInstruction> instructions)
+    {
+        return instructions.MethodReplacer(
+                AccessTools.Method(typeof(Animator), nameof(Animator.GetCurrentAnimatorStateInfo)), 
+                AccessTools.Method(typeof(KFExtensions), nameof(KFExtensions.GetCurrentVanillaStateInfo)));
+    }
+
+    [HarmonyPatch(typeof(AvatarUMAController), nameof(AvatarUMAController.updateLayerStateInfo))]
+    [HarmonyTranspiler]
+    private static IEnumerable<CodeInstruction> Transpiler_updateLayerStateInfo_AvatarUMAController(IEnumerable<CodeInstruction> instructions)
+    {
+        return instructions.MethodReplacer(
+                AccessTools.Method(typeof(Animator), nameof(Animator.GetCurrentAnimatorStateInfo)), 
+                AccessTools.Method(typeof(KFExtensions), nameof(KFExtensions.GetCurrentVanillaStateInfo)));
+    }
+
+    [HarmonyPatch(typeof(LegacyAvatarController), nameof(LegacyAvatarController.updateLayerStateInfo))]
+    [HarmonyTranspiler]
+    private static IEnumerable<CodeInstruction> Transpiler_updateLayerStateInfo_LegacyAvatarController(IEnumerable<CodeInstruction> instructions)
+    {
+        return instructions.MethodReplacer(
+                AccessTools.Method(typeof(Animator), nameof(Animator.GetCurrentAnimatorStateInfo)), 
+                AccessTools.Method(typeof(KFExtensions), nameof(KFExtensions.GetCurrentVanillaStateInfo)));
+    }
+
+    [HarmonyPatch(typeof(AvatarSDCSController), nameof(AvatarSDCSController.setLayerWeights))]
+    [HarmonyTranspiler]
+    private static IEnumerable<CodeInstruction> Transpiler_setLayerWeights_AvatarSDCSController(IEnumerable<CodeInstruction> instructions)
+    {
+        int id = Animator.StringToHash("MinibikeIdle");
+        return instructions.MethodReplacer(
+                AccessTools.Method(typeof(Animator), nameof(Animator.SetLayerWeight)),
+                AccessTools.Method(typeof(KFExtensions), nameof(KFExtensions.SetVanillaLayerWeight)))
+                           .MethodReplacer(
+                AccessTools.Method(typeof(Animator), nameof(Animator.IsInTransition)),
+                AccessTools.Method(typeof(KFExtensions), nameof(KFExtensions.IsVanillaInTransition)))
+                           .MethodReplacer(
+                AccessTools.Method(typeof(Animator), nameof(Animator.GetBool), new[] { typeof(string) }), 
+                AccessTools.Method(typeof(KFExtensions), nameof(KFExtensions.GetWrappedBool)))
+                           .Manipulator(ins => ins.opcode == OpCodes.Ldstr, ins => { ins.opcode = OpCodes.Ldc_I4; ins.operand = id; });
+    }
+
+    [HarmonyPatch(typeof(LegacyAvatarController), nameof(LegacyAvatarController.setLayerWeights))]
+    [HarmonyTranspiler]
+    private static IEnumerable<CodeInstruction> Transpiler_setLayerWeights_LegacyAvatarController(IEnumerable<CodeInstruction> instructions)
+    {
+        return instructions.MethodReplacer(
+                AccessTools.Method(typeof(Animator), nameof(Animator.SetLayerWeight)), 
+                AccessTools.Method(typeof(KFExtensions), nameof(KFExtensions.SetVanillaLayerWeight)));
+    }
+
+    [HarmonyPatch(typeof(AvatarUMAController), nameof(AvatarUMAController.setLayerWeights))]
+    [HarmonyTranspiler]
+    private static IEnumerable<CodeInstruction> Transpiler_setLayerWeights_AvatarUMAController(IEnumerable<CodeInstruction> instructions)
+    {
+        return instructions.MethodReplacer(
+                AccessTools.Method(typeof(Animator), nameof(Animator.SetLayerWeight)), 
+                AccessTools.Method(typeof(KFExtensions), nameof(KFExtensions.SetVanillaLayerWeight)))
+                           .MethodReplacer(
+                AccessTools.Method(typeof(Animator), nameof(Animator.GetInteger), new[] { typeof(int) }), 
+                AccessTools.Method(typeof(KFExtensions), nameof(KFExtensions.GetWrappedInt)))
+                           .MethodReplacer(
+                AccessTools.Method(typeof(Animator), nameof(Animator.IsInTransition)), 
+                AccessTools.Method(typeof(KFExtensions), nameof(KFExtensions.IsVanillaInTransition)));
+    }
+
+    [HarmonyPatch(typeof(UMACharacterBodyAnimator), nameof(UMACharacterBodyAnimator.assignLayerWeights))]
+    [HarmonyTranspiler]
+    private static IEnumerable<CodeInstruction> Transpiler_assignLayerWeights_UMACharacterBodyAnimator(IEnumerable<CodeInstruction> instructions)
+    {
+        return instructions.MethodReplacer(
+                AccessTools.Method(typeof(Animator), nameof(Animator.SetLayerWeight)), 
+                AccessTools.Method(typeof(KFExtensions), nameof(KFExtensions.SetVanillaLayerWeight)))
+                           .MethodReplacer(
+                AccessTools.Method(typeof(Animator), nameof(Animator.GetInteger), new[] { typeof(int) }), 
+                AccessTools.Method(typeof(KFExtensions), nameof(KFExtensions.GetWrappedInt)))
+                           .MethodReplacer(
+                AccessTools.Method(typeof(Animator), nameof(Animator.IsInTransition)), 
+                AccessTools.Method(typeof(KFExtensions), nameof(KFExtensions.IsVanillaInTransition)));
+    }
+
+    [HarmonyPatch(typeof(AvatarController), nameof(AvatarController.Update))]
+    [HarmonyTranspiler]
+    private static IEnumerable<CodeInstruction> Transpiler_Update_AvatarController(IEnumerable<CodeInstruction> instructions)
+    {
+        return instructions.MethodReplacer(
+                AccessTools.Method(typeof(Animator), nameof(Animator.SetLayerWeight)), 
+                AccessTools.Method(typeof(KFExtensions), nameof(KFExtensions.SetVanillaLayerWeight)));
+    }
+
+    [HarmonyPatch(typeof(AvatarController), nameof(AvatarController.InitHitDuration))]
+    [HarmonyTranspiler]
+    private static IEnumerable<CodeInstruction> Transpiler_InitHitDuration_AvatarController(IEnumerable<CodeInstruction> instructions)
+    {
+        return instructions.MethodReplacer(
+                AccessTools.Method(typeof(Animator), nameof(Animator.SetLayerWeight)), 
+                AccessTools.Method(typeof(KFExtensions), nameof(KFExtensions.SetVanillaLayerWeight)));
+    }
+
+    private static int drunkHash = Animator.StringToHash("drunk");
+    [HarmonyPatch(typeof(FirstPersonAnimator), nameof(FirstPersonAnimator.SetDrunk))]
+    [HarmonyTranspiler]
+    private static IEnumerable<CodeInstruction> Transpiler_SetDrunk_FirstPersonAnimator(IEnumerable<CodeInstruction> instructions)
+    {
+        return instructions.MethodReplacer(
+                AccessTools.Method(typeof(Animator), nameof(Animator.SetFloat), new[] { typeof(string), typeof(float) }),
+                AccessTools.Method(typeof(KFExtensions), nameof(KFExtensions.SetWrappedFloat)))
+                           .Manipulator(ins => ins.LoadsConstant("drunk"),
+                            ins => 
+                            {
+                                ins.opcode = OpCodes.Ldsfld;
+                                ins.operand = AccessTools.Field(typeof(AnimationRiggingPatches), nameof(AnimationRiggingPatches.drunkHash));
+                            });
+    }
+
+    [HarmonyPatch(typeof(AvatarMultiBodyController), nameof(AvatarMultiBodyController.SetVehicleAnimation))]
+    [HarmonyTranspiler]
+    private static IEnumerable<CodeInstruction> Transpiler_SetVehicleAnimation_AvatarMultiBodyController(IEnumerable<CodeInstruction> instructions)
+    {
+        return instructions.MethodReplacer(
+                AccessTools.Method(typeof(Animator), nameof(Animator.SetInteger), new[] { typeof(string), typeof(int) }),
+                AccessTools.Method(typeof(KFExtensions), nameof(KFExtensions.SetWrappedInt)));
+    }
+    //BodyAnimator.LateUpdate
+    //UMACharacterBodyAnimator.LateUpdate
+    //BodyAnimator.cacheLayerStateInfo
+    //UMACharacterBodyAnimator.cacheLayerStateInfo
+    //not used
 }
