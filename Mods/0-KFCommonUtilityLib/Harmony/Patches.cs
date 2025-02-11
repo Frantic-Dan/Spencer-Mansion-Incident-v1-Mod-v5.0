@@ -3,11 +3,12 @@ using KFCommonUtilityLib.Scripts.StaticManagers;
 using KFCommonUtilityLib.Scripts.Utilities;
 using System;
 using System.Collections.Generic;
-using System.Linq;
+using UniLinq;
 using System.Reflection;
 using System.Reflection.Emit;
 using System.Xml.Linq;
 using UnityEngine;
+using KFCommonUtilityLib.Scripts.NetPackages;
 
 [HarmonyPatch]
 public static class CommonUtilityPatch
@@ -27,10 +28,7 @@ public static class CommonUtilityPatch
         _actionData.isWeaponReloadCancelled = false;
         holdingEntity.FireEvent(MinEventTypes.onReloadStop);
 
-        if (holdingEntity is EntityPlayerLocal && AnimationRiggingManager.FpvTransformReference != null)
-        {
-            AnimationAmmoUpdateState.SetAmmoCountForEntity(holdingEntity, holdingEntity.inventory.holdingItemIdx);
-        }
+        AnimationAmmoUpdateState.SetAmmoCountForEntity(holdingEntity, holdingEntity.inventory.holdingItemIdx);
     }
 
     [HarmonyPatch(typeof(ItemActionRanged), nameof(ItemActionRanged.SwapAmmoType))]
@@ -132,6 +130,9 @@ public static class CommonUtilityPatch
 
         ItemActionRanged.ItemActionDataRanged _rangedData;
         if ((_rangedData = __instance.inventory.holdingItemData.actionData[0] as ItemActionRanged.ItemActionDataRanged) == null && (_rangedData = __instance.inventory.holdingItemData.actionData[1] as ItemActionRanged.ItemActionDataRanged) == null)
+            return;
+
+        if (_rangedData.invData.model.TryGetComponent<AnimationTargetsAbs>(out var targets) && targets.ItemFpv)
             return;
 
         var anim = (__instance.emodel.avatarController as AvatarLocalPlayerController).FPSArms.Animator;
@@ -1120,6 +1121,71 @@ public static class CommonUtilityPatch
 
         return codes;
     }
+
+    [HarmonyPatch(typeof(ItemActionRanged), nameof(ItemActionRanged.onHoldingEntityFired))]
+    [HarmonyTranspiler]
+    private static IEnumerable<CodeInstruction> Transpiler_onHoldingEntityFired_ItemActionRanged(IEnumerable<CodeInstruction> instructions)
+    {
+        var codes = instructions.ToList();
+
+        for (int i = 0; i < codes.Count; i++)
+        {
+            if (codes[i].opcode == OpCodes.Ldc_R4 && codes[i].operand is 5f)
+            {
+                codes.RemoveAt(i);
+                codes.InsertRange(i, new[]
+                {
+                    new CodeInstruction(OpCodes.Ldarg_1),
+                    CodeInstruction.Call(typeof(CommonUtilityPatch), nameof(CommonUtilityPatch.GetMaxSpread))
+                });
+                break;
+            }
+        }
+        return codes;
+    }
+
+    private static float GetMaxSpread(ItemActionData _data)
+    {
+        return EffectManager.GetValue(CustomEnums.MaxWeaponSpread, _data.invData.itemValue, 5f, _data.invData.holdingEntity);
+    }
+
+    [HarmonyPatch(typeof(NetEntityDistributionEntry), nameof(NetEntityDistributionEntry.getSpawnPacket))]
+    [HarmonyPrefix]
+    private static bool Prefix_getSpawnPacket_NetEntityDistributionEntry(NetEntityDistributionEntry __instance, ref NetPackage __result)
+    {
+        if (__instance.trackedEntity is EntityAlive ea)
+        { 
+            __result = NetPackageManager.GetPackage<NetPackageEntitySpawnWithCVar>().Setup(new EntityCreationData(__instance.trackedEntity, true), (EntityAlive)__instance.trackedEntity);
+            return false;
+        }
+        return true;
+    }
+
+    [HarmonyPatch(typeof(World), nameof(World.SpawnEntityInWorld))]
+    [HarmonyPostfix]
+    private static void Postfix_SpawnEntityInWorld_World(Entity _entity)
+    {
+        if (_entity is EntityAlive ea && !ea.isEntityRemote)
+        {
+            ea.FireEvent(CustomEnums.onSelfFirstCVarSync);
+        }
+    }
+
+    //[HarmonyPatch(typeof(EntityBuffs), nameof(EntityBuffs.AddBuff), typeof(string), typeof(Vector3i), typeof(int), typeof(bool), typeof(bool), typeof(float))]
+    //[HarmonyPostfix]
+    //private static void Postfix_AddBuff_EntityBuffs(string _name, EntityBuffs __instance, EntityBuffs.BuffStatus __result, bool _netSync)
+    //{
+    //    if (_name.StartsWith("eftZombieRandomArmor") || _name.StartsWith("eftZombieArmor"))
+    //        Log.Out($"AddBuff [{_name}] on entity {__instance.parent.GetDebugName()} should sync {_netSync} result {__result.ToStringCached()}\n{StackTraceUtility.ExtractStackTrace()}");
+    //}
+
+    //[HarmonyPatch(typeof(EntityBuffs), nameof(EntityBuffs.RemoveBuff))]
+    //[HarmonyPostfix]
+    //private static void Postfix_RemoveBuff_EntityBuffs(string _name, EntityBuffs __instance, bool _netSync)
+    //{
+    //    if (_name.StartsWith("eftZombieRandomArmor") || _name.StartsWith("eftZombieArmor"))
+    //        Log.Out($"RemoveBuff [{_name}] on entity {__instance.parent.GetDebugName()} should sync {_netSync}\n{StackTraceUtility.ExtractStackTrace()}");
+    //}
 
     //[HarmonyPatch(typeof(Inventory), nameof(Inventory.Execute))]
     //[HarmonyPrefix]
