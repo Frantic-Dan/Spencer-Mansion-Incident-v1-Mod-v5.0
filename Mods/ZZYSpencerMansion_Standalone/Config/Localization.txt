@@ -833,3 +833,4 @@ animalYawntheWolfWesker,Yawn the Wolf
 BlackTigerSpiderWesker,Black Tiger Spider
 JillMission,Jill's Diary
 WeskerScenario,Wesker's Mission
+lblContextActionOpen,Extract
