@@ -964,6 +964,9 @@
 		<effect_group>
 			<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="music_CrimsonHead" />
 		</effect_group>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffRemove" action="FadeOutSound" sound="music_CrimsonHead" />
+		</effect_group>
 	</buff>
 	
 	<buff name="buffPlantMusic" hidden="true">
@@ -971,6 +974,9 @@
 
 		<effect_group>
 			<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="music_Plant42" />
+		</effect_group>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffRemove" action="FadeOutSound" sound="music_Plant42" />
 		</effect_group>
 	</buff>
 	
@@ -980,6 +986,9 @@
 		<effect_group>
 			<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="music_Yawn" />
 		</effect_group>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffRemove" action="FadeOutSound" sound="music_Yawn" />
+		</effect_group>
 	</buff>
 	
 	<buff name="buffBlackTigerMusic" hidden="true">
@@ -987,6 +996,9 @@
 
 		<effect_group>
 			<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="music_BlackTiger" />
+		</effect_group>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffRemove" action="FadeOutSound" sound="music_BlackTiger" />
 		</effect_group>
 	</buff>
 	
@@ -996,6 +1008,9 @@
 		<effect_group>
 			<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="music_Tyrant" />
 		</effect_group>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffRemove" action="FadeOutSound" sound="music_Tyrant" />
+		</effect_group>
 	</buff>
 	
 	<buff name="buffSuperTyrantMusic" hidden="true">
@@ -1004,6 +1019,9 @@
 		<effect_group>
 			<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="music_SuperTyrant" />
 		</effect_group>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffRemove" action="FadeOutSound" sound="music_SuperTyrant" />
+		</effect_group>
 	</buff>
 	
 	<buff name="buffLisaMusic" hidden="true">
@@ -1011,6 +1029,9 @@
 
 		<effect_group>
 			<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="music_Lisa" />
+		</effect_group>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffRemove" action="FadeOutSound" sound="music_Lisa" />
 		</effect_group>
 	</buff>
 	
