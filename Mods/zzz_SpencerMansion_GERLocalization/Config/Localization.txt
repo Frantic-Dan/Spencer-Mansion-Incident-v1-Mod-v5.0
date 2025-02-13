@@ -834,3 +834,4 @@ animalYawntheWolfWesker,Gähnender Wolf
 BlackTigerSpiderWesker,Schwarze Tigerspinne
 JillMission,Jill's Tagebuch
 WeskerScenario,Wesker's Auftrag
+lblContextActionOpen,Extrakt
