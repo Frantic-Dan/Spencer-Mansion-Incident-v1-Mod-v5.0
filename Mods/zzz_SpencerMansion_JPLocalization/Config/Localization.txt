@@ -846,3 +846,4 @@ animalYawntheWolfWesker,オオカミのあくび
 BlackTigerSpiderWesker,ブラックタイガースパイダー
 JillMission,ジルの日記
 WeskerScenario,ウェスカーの使命
+lblContextActionOpen,抽出する
