@@ -21,6 +21,8 @@
 <!-- Tier 1 Zombies, Mansion -->
 <!-- Apply to all zombies -->
 
+<set xpath="/entity_classes/entity_class[@name='zombieTemplateMale']/property[@name='MoveSpeedRand']/@value">0, 0</set>
+
 <insertafter xpath="/entity_classes/entity_class[@name='zombieArlene']/property[@name='MoveSpeedAggro']">
 		<property name="HandItem" value="meleeHandZombieREmansion"/>
 		<property name="HandItemCrawler" value="meleeHandZombieREcrawler"/>
@@ -143,13 +145,13 @@
 </insertafter>
 
 <!-- Zombie Speed -->
-<set xpath="/entity_classes/entity_class[@name='zombieTemplateSlimFemale']//property[@name='MoveSpeedAggro']/@value">0.3, 1.25</set>
+<!-- <set xpath="/entity_classes/entity_class[@name='zombieTemplateSlimFemale']//property[@name='MoveSpeedAggro']/@value">0.3, 1.25</set>
 <set xpath="/entity_classes/entity_class[@name='zombieArlene']//property[@name='MoveSpeedAggro']/@value">0.3, 1.25</set>
 <set xpath="/entity_classes/entity_class[@name='zombieNurse']//property[@name='MoveSpeedAggro']/@value">0.3, 1.25</set>
 <set xpath="/entity_classes/entity_class[@name='zombieSteve']//property[@name='MoveSpeedAggro']/@value">0.3, 1.25</set>
 <set xpath="/entity_classes/entity_class[@name='zombieTomClark']//property[@name='MoveSpeedAggro']/@value">0.3, 1.25</set>
 <set xpath="/entity_classes/entity_class[@name='zombieBusinessMan']//property[@name='MoveSpeedAggro']/@value">0.3, 1.25</set>
-<set xpath="/entity_classes/entity_class[@name='zombieBurnt']//property[@name='MoveSpeedAggro']/@value">0.3, 1.25</set>
+<set xpath="/entity_classes/entity_class[@name='zombieBurnt']//property[@name='MoveSpeedAggro']/@value">0.3, 1.25</set> -->
 
 <!-- Health -->
 <set xpath="/entity_classes/entity_class[@name='zombieBoe']/effect_group[@name='Base Effects']/passive_effect[@name='HealthMax'][@operation='base_set']/@value">1400</set>
@@ -695,7 +697,8 @@
 	
 
 	<!-- Gameplay -->
-	<property name="MoveSpeedAggro" value=".5, .9"/> <!-- 1.35 -->
+	<!-- <property name="MoveSpeedAggro" value=".5, .9"/> -->
+	<property name="MoveSpeedAggro" value=".6, 1"/>
 	<property name="HandItem" value="meleeHandTyrant"/>
 	<property name="JumpMaxDistance" value="4.6, 5"/>
 	<property name="OpenDoorPercentage" value="1"/>
@@ -724,7 +727,8 @@
 	
 
 	<!-- Gameplay -->
-	<property name="MoveSpeedAggro" value=".5, .9"/> <!-- 1.35 -->
+	<!-- <property name="MoveSpeedAggro" value=".5, .9"/> -->
+	<property name="MoveSpeedAggro" value=".6, 1"/>
 	<property name="HandItem" value="meleeHandTyrant"/>
 	<property name="JumpMaxDistance" value="4.6, 5"/>
 	<property name="OpenDoorPercentage" value="1"/>
@@ -749,7 +753,8 @@
 	<property name="DismemberMultiplierHead" value="0"/><property name="DismemberMultiplierArms" value="0"/><property name="DismemberMultiplierLegs" value="0"/><!-- Feral -->
 	<property name="PainResistPerHit" value="1.01"/><!-- Feral -->
 	<!-- Gameplay -->
-	<property name="MoveSpeedAggro" value="1.13, 1.13"/>
+	<!-- <property name="MoveSpeedAggro" value="1.13, 1.13"/> -->
+	<property name="MoveSpeedAggro" value="1.2, 1.2"/>
 	<property name="HandItem" value="meleeHandTyrant"/>
 	<property name="JumpMaxDistance" value="6.6, 7"/>
 	<property name="ExperienceGain" value="0"/> <!-- XP strong -->
@@ -774,7 +779,8 @@
 	<property name="DismemberMultiplierHead" value="0"/><property name="DismemberMultiplierArms" value="0"/><property name="DismemberMultiplierLegs" value="0"/><!-- Feral -->
 	<property name="PainResistPerHit" value="1.01"/><!-- Feral -->
 	<!-- Gameplay -->
-	<property name="MoveSpeedAggro" value="1.13, 1.13"/>
+	<!-- <property name="MoveSpeedAggro" value="1.13, 1.13"/> -->
+	<property name="MoveSpeedAggro" value="1.2, 1.2"/>
 	<property name="HandItem" value="meleeHandTyrant"/>
 	<property name="JumpMaxDistance" value="6.6, 7"/>
 	<property name="ExperienceGain" value="0"/> <!-- XP strong -->
@@ -829,7 +835,8 @@
 	<property name="KnockdownProneDamageThreshold" value="0"/>
 	<property name="KnockdownKneelDamageThreshold" value="0"/>
 	<!-- Gameplay -->
-	<property name="MoveSpeedAggro" value="1.28, 1.28"/>
+	<!-- <property name="MoveSpeedAggro" value="1.28, 1.28"/> -->
+	<property name="MoveSpeedAggro" value="1.35, 1.35"/>
 	<property name="HandItem" value="meleeHandZombieRElaboratory"/>
 
 	<property name="ExperienceGain" value="0"/> <!-- XP strong -->
@@ -849,7 +856,8 @@
 	<property name="KnockdownProneDamageThreshold" value="0"/>
 	<property name="KnockdownKneelDamageThreshold" value="0"/>
 	<!-- Gameplay -->
-	<property name="MoveSpeedAggro" value="1.28, 1.28"/>
+	<!-- <property name="MoveSpeedAggro" value="1.28, 1.28"/> -->
+	<property name="MoveSpeedAggro" value="1.35, 1.35"/>
 	<property name="HandItem" value="meleeHandZombieRElaboratory"/>
 
 	<property name="ExperienceGain" value="0"/> <!-- XP strong -->
@@ -1023,7 +1031,8 @@
 	<property name="TintShaderProperties" value="_EmissiveColor"/>
 	<property name="DismemberMultiplierHead" value=".6"/><property name="DismemberMultiplierArms" value=".6"/><property name="DismemberMultiplierLegs" value=".6"/><!-- Feral -->
 	<property name="PainResistPerHit" value="1.01"/><!-- Feral -->
-	<property name="MoveSpeedAggro" value="1.30, 1.30"/> <!-- slim, feral -->
+	<!-- <property name="MoveSpeedAggro" value="1.30, 1.30"/> -->
+	<property name="MoveSpeedAggro" value="1.35, 1.35"/>
 	<property name="JumpMaxDistance" value="17, 19"/>
 	<property name="WalkType" value="2"/>
 	<property name="HandItem" value="meleeHandZombieREhunter"/>
@@ -1688,7 +1697,8 @@
 	<property name="TintColor" value="#880C25"/> 
 	<property name="TintShaderProperties" value="_EmissiveColor"/>
 	<!-- <property name="MoveSpeed" value="0.25"/> -->
-	<property name="MoveSpeedAggro" value="1.24,1.24"/>
+	<!-- <property name="MoveSpeedAggro" value="1.24,1.24"/> -->
+	<property name="MoveSpeedAggro" value="1.3,1.3"/>
 	<property name="PainResistPerHit" value="1.01"/>
 	<property name="WalkType" value="7"/>
 	<property name="DismemberMultiplierHead" value=".5"/><property name="DismemberMultiplierArms" value=".5"/><property name="DismemberMultiplierLegs" value=".5"/><!-- Feral -->
@@ -1716,7 +1726,8 @@
 	<property name="TintColor" value="#880C25"/> 
 	<property name="TintShaderProperties" value="_EmissiveColor"/>
 	<!-- <property name="MoveSpeed" value="0.25"/> -->
-	<property name="MoveSpeedAggro" value="1.28,1.28"/>
+	<!-- <property name="MoveSpeedAggro" value="1.28,1.28"/> -->
+	<property name="MoveSpeedAggro" value="1.3,1.3"/>
 	<property name="PainResistPerHit" value="1.01"/>
 	<property name="WalkType" value="7"/>
 	<property name="DismemberMultiplierHead" value=".5"/><property name="DismemberMultiplierArms" value=".5"/><property name="DismemberMultiplierLegs" value=".5"/><!-- Feral -->
@@ -1744,7 +1755,8 @@
 	<property name="TintColor" value="#880C25"/> 
 	<property name="TintShaderProperties" value="_EmissiveColor"/>
 	<!-- <property name="MoveSpeed" value="0.25"/> -->
-	<property name="MoveSpeedAggro" value="1.28,1.28"/>
+	<!-- <property name="MoveSpeedAggro" value="1.28,1.28"/> -->
+	<property name="MoveSpeedAggro" value="1.3,1.3"/>
 	<property name="PainResistPerHit" value="1.01"/>
 	<property name="WalkType" value="7"/>
 	<property name="DismemberMultiplierHead" value=".5"/><property name="DismemberMultiplierArms" value=".5"/><property name="DismemberMultiplierLegs" value=".5"/><!-- Feral -->
@@ -1772,7 +1784,8 @@
 	<property name="TintColor" value="#880C25"/> 
 	<property name="TintShaderProperties" value="_EmissiveColor"/>
 	<!-- <property name="MoveSpeed" value="0.25"/> -->
-	<property name="MoveSpeedAggro" value="1.28,1.28"/>
+	<!-- <property name="MoveSpeedAggro" value="1.28,1.28"/> -->
+	<property name="MoveSpeedAggro" value="1.3,1.3"/>
 	<property name="PainResistPerHit" value="1.01"/>
 	<property name="WalkType" value="7"/>
 	<property name="DismemberMultiplierHead" value=".5"/><property name="DismemberMultiplierArms" value=".5"/><property name="DismemberMultiplierLegs" value=".5"/><!-- Feral -->
@@ -1800,7 +1813,8 @@
 	<property name="TintColor" value="#880C25"/> 
 	<property name="TintShaderProperties" value="_EmissiveColor"/>
 	<!-- <property name="MoveSpeed" value="0.25"/> -->
-	<property name="MoveSpeedAggro" value="1.25,1.25"/>
+	<!-- <property name="MoveSpeedAggro" value="1.25,1.25"/> -->
+	<property name="MoveSpeedAggro" value="1.3,1.3"/>
 	<property name="PainResistPerHit" value="1.01"/>
 	<property name="WalkType" value="7"/>
 	<property name="DismemberMultiplierHead" value=".5"/><property name="DismemberMultiplierArms" value=".5"/><property name="DismemberMultiplierLegs" value=".5"/><!-- Feral -->
@@ -1828,7 +1842,8 @@
 	<property name="TintColor" value="#880C25"/> 
 	<property name="TintShaderProperties" value="_EmissiveColor"/>
 	<!-- <property name="MoveSpeed" value="0.25"/> -->
-	<property name="MoveSpeedAggro" value="1.25,1.25"/>
+	<!-- <property name="MoveSpeedAggro" value="1.25,1.25"/> -->
+	<property name="MoveSpeedAggro" value="1.3,1.3"/>
 	<property name="PainResistPerHit" value="1.01"/>
 	<property name="WalkType" value="7"/>
 	<property name="DismemberMultiplierHead" value=".5"/><property name="DismemberMultiplierArms" value=".5"/><property name="DismemberMultiplierLegs" value=".5"/><!-- Feral -->
@@ -1856,7 +1871,8 @@
 	<property name="TintColor" value="#880C25"/> 
 	<property name="TintShaderProperties" value="_EmissiveColor"/>
 	<!-- <property name="MoveSpeed" value="0.25"/> -->
-	<property name="MoveSpeedAggro" value="1.28,1.28"/>
+	<!-- <property name="MoveSpeedAggro" value="1.28,1.28"/> -->
+	<property name="MoveSpeedAggro" value="1.3,1.3"/>
 	<property name="PainResistPerHit" value="1.01"/>
 	<property name="WalkType" value="7"/>
 	<property name="DismemberMultiplierHead" value=".5"/><property name="DismemberMultiplierArms" value=".5"/><property name="DismemberMultiplierLegs" value=".5"/><!-- Feral -->
@@ -1884,7 +1900,8 @@
 	<property name="TintColor" value="#880C25"/> 
 	<property name="TintShaderProperties" value="_EmissiveColor"/>
 	<!-- <property name="MoveSpeed" value="0.25"/> -->
-	<property name="MoveSpeedAggro" value="1.28,1.28"/>
+	<!-- <property name="MoveSpeedAggro" value="1.28,1.28"/> -->
+	<property name="MoveSpeedAggro" value="1.3,1.3"/>
 	<property name="PainResistPerHit" value="1.01"/>
 	<property name="WalkType" value="7"/>
 	<property name="DismemberMultiplierHead" value=".5"/><property name="DismemberMultiplierArms" value=".5"/><property name="DismemberMultiplierLegs" value=".5"/><!-- Feral -->
@@ -1912,7 +1929,8 @@
 	<property name="TintColor" value="#880C25"/> 
 	<property name="TintShaderProperties" value="_EmissiveColor"/>
 	<!-- <property name="MoveSpeed" value="0.25"/> -->
-	<property name="MoveSpeedAggro" value="1.28,1.28"/>
+	<!-- <property name="MoveSpeedAggro" value="1.28,1.28"/> -->
+	<property name="MoveSpeedAggro" value="1.3,1.3"/>
 	<property name="PainResistPerHit" value="1.01"/>
 	<property name="WalkType" value="7"/>
 	<property name="DismemberMultiplierHead" value=".5"/><property name="DismemberMultiplierArms" value=".5"/><property name="DismemberMultiplierLegs" value=".5"/><!-- Feral -->
@@ -1940,7 +1958,8 @@
 	<property name="TintColor" value="#880C25"/> 
 	<property name="TintShaderProperties" value="_EmissiveColor"/>
 	<!-- <property name="MoveSpeed" value="0.25"/> -->
-	<property name="MoveSpeedAggro" value="1.25,1.25"/>
+	<!-- <property name="MoveSpeedAggro" value="1.25,1.25"/> -->
+	<property name="MoveSpeedAggro" value="1.3,1.3"/>
 	<property name="PainResistPerHit" value="1.01"/>
 	<property name="WalkType" value="7"/>
 	<property name="DismemberMultiplierHead" value=".5"/><property name="DismemberMultiplierArms" value=".5"/><property name="DismemberMultiplierLegs" value=".5"/><!-- Feral -->
@@ -1969,7 +1988,8 @@
 	<property name="TintColor" value="#880C25"/> 
 	<property name="TintShaderProperties" value="_EmissiveColor"/>
 	<!-- <property name="MoveSpeed" value="0.25"/> -->
-	<property name="MoveSpeedAggro" value="1.25,1.25"/>
+	<!-- <property name="MoveSpeedAggro" value="1.25,1.25"/> -->
+	<property name="MoveSpeedAggro" value="1.3,1.3"/>
 	<property name="PainResistPerHit" value="1.01"/>
 	<property name="WalkType" value="7"/>
 	<property name="DismemberMultiplierHead" value=".5"/><property name="DismemberMultiplierArms" value=".5"/><property name="DismemberMultiplierLegs" value=".5"/><!-- Feral -->
@@ -1997,7 +2017,8 @@
 	<property name="TintColor" value="#880C25"/> 
 	<property name="TintShaderProperties" value="_EmissiveColor"/>
 	<!-- <property name="MoveSpeed" value="0.25"/> -->
-	<property name="MoveSpeedAggro" value="1.25,1.25"/>
+	<!-- <property name="MoveSpeedAggro" value="1.25,1.25"/> -->
+	<property name="MoveSpeedAggro" value="1.3,1.3"/>
 	<property name="PainResistPerHit" value="1.01"/>
 	<property name="WalkType" value="7"/>
 	<property name="DismemberMultiplierHead" value=".5"/><property name="DismemberMultiplierArms" value=".5"/><property name="DismemberMultiplierLegs" value=".5"/><!-- Feral -->
@@ -2025,7 +2046,8 @@
 	<property name="TintColor" value="#880C25"/> 
 	<property name="TintShaderProperties" value="_EmissiveColor"/>
 	<!-- <property name="MoveSpeed" value="0.25"/> -->
-	<property name="MoveSpeedAggro" value="1.25,1.25"/>
+	<!-- <property name="MoveSpeedAggro" value="1.25,1.25"/> -->
+	<property name="MoveSpeedAggro" value="1.3,1.3"/>
 	<property name="PainResistPerHit" value="1.01"/>
 	<property name="WalkType" value="7"/>	
 	<property name="DismemberMultiplierHead" value=".5"/><property name="DismemberMultiplierArms" value=".5"/><property name="DismemberMultiplierLegs" value=".5"/><!-- Feral -->
@@ -2053,7 +2075,8 @@
 	<property name="TintColor" value="#880C25"/> 
 	<property name="TintShaderProperties" value="_EmissiveColor"/>
 	<!-- <property name="MoveSpeed" value="0.25"/> -->
-	<property name="MoveSpeedAggro" value="1.25,1.25"/>
+	<!-- <property name="MoveSpeedAggro" value="1.25,1.25"/> -->
+	<property name="MoveSpeedAggro" value="1.3,1.3"/>
 	<property name="PainResistPerHit" value="1.01"/>
 	<property name="WalkType" value="7"/>	
 	<property name="DismemberMultiplierHead" value=".5"/><property name="DismemberMultiplierArms" value=".5"/><property name="DismemberMultiplierLegs" value=".5"/><!-- Feral -->
@@ -2081,7 +2104,8 @@
 	<property name="TintColor" value="#880C25"/> 
 	<property name="TintShaderProperties" value="_EmissiveColor"/>
 	<!-- <property name="MoveSpeed" value="0.25"/> -->
-	<property name="MoveSpeedAggro" value="1.25,1.25"/>
+	<!-- <property name="MoveSpeedAggro" value="1.25,1.25"/> -->
+	<property name="MoveSpeedAggro" value="1.3,1.3"/>
 	<property name="PainResistPerHit" value="1.01"/>
 	<property name="WalkType" value="7"/>	
 	<property name="DismemberMultiplierHead" value=".5"/><property name="DismemberMultiplierArms" value=".5"/><property name="DismemberMultiplierLegs" value=".5"/><!-- Feral -->
@@ -2109,7 +2133,8 @@
 	<property name="TintColor" value="#880C25"/> 
 	<property name="TintShaderProperties" value="_EmissiveColor"/>
 	<!-- <property name="MoveSpeed" value="0.25"/> -->
-	<property name="MoveSpeedAggro" value="1.25,1.25"/>
+	<!-- <property name="MoveSpeedAggro" value="1.25,1.25"/> -->
+	<property name="MoveSpeedAggro" value="1.3,1.3"/>
 	<property name="PainResistPerHit" value="1.01"/>
 	<property name="WalkType" value="7"/>	
 	<property name="DismemberMultiplierHead" value=".5"/><property name="DismemberMultiplierArms" value=".5"/><property name="DismemberMultiplierLegs" value=".5"/><!-- Feral -->
@@ -2137,7 +2162,8 @@
 	<property name="TintColor" value="#880C25"/> 
 	<property name="TintShaderProperties" value="_EmissiveColor"/>
 	<!-- <property name="MoveSpeed" value="0.25"/> -->
-	<property name="MoveSpeedAggro" value="1.28,1.28"/>
+	<!-- <property name="MoveSpeedAggro" value="1.28,1.28"/> -->
+	<property name="MoveSpeedAggro" value="1.3,1.3"/>
 	<property name="PainResistPerHit" value="1.01"/>
 	<property name="WalkType" value="7"/>
 	<property name="DismemberMultiplierHead" value=".5"/><property name="DismemberMultiplierArms" value=".5"/><property name="DismemberMultiplierLegs" value=".5"/><!-- Feral -->
@@ -2166,7 +2192,8 @@
 	<property name="TintColor" value="#880C25"/> 
 	<property name="TintShaderProperties" value="_EmissiveColor"/>
 	<!-- <property name="MoveSpeed" value="0.25"/> -->
-	<property name="MoveSpeedAggro" value="1.28,1.28"/>
+	<!-- <property name="MoveSpeedAggro" value="1.28,1.28"/> -->
+	<property name="MoveSpeedAggro" value="1.3,1.3"/>
 	<property name="PainResistPerHit" value="1.01"/>
 	<property name="WalkType" value="7"/>	
 	<property name="DismemberMultiplierHead" value=".5"/><property name="DismemberMultiplierArms" value=".5"/><property name="DismemberMultiplierLegs" value=".5"/><!-- Feral -->
@@ -2194,7 +2221,8 @@
 	<property name="TintColor" value="#880C25"/> 
 	<property name="TintShaderProperties" value="_EmissiveColor"/>
 	<!-- <property name="MoveSpeed" value="0.25"/> -->
-	<property name="MoveSpeedAggro" value="1.28,1.28"/>
+	<!-- <property name="MoveSpeedAggro" value="1.28,1.28"/> -->
+	<property name="MoveSpeedAggro" value="1.3,1.3"/>
 	<property name="PainResistPerHit" value="1.01"/>
 	<property name="WalkType" value="7"/>
 	<property name="DismemberMultiplierHead" value=".5"/><property name="DismemberMultiplierArms" value=".5"/><property name="DismemberMultiplierLegs" value=".5"/><!-- Feral -->
@@ -2222,7 +2250,8 @@
 	<property name="TintColor" value="#880C25"/> 
 	<property name="TintShaderProperties" value="_EmissiveColor"/>
 	<!-- <property name="MoveSpeed" value="0.25"/> -->
-	<property name="MoveSpeedAggro" value="1.23,1.23"/>
+	<!-- <property name="MoveSpeedAggro" value="1.23,1.23"/> -->
+	<property name="MoveSpeedAggro" value="1.3,1.3"/>
 	<property name="PainResistPerHit" value="1.01"/>
 	<property name="WalkType" value="7"/>	
 	<property name="DismemberMultiplierHead" value=".5"/><property name="DismemberMultiplierArms" value=".5"/><property name="DismemberMultiplierLegs" value=".5"/><!-- Feral -->
@@ -2250,7 +2279,8 @@
 	<property name="TintColor" value="#880C25"/> 
 	<property name="TintShaderProperties" value="_EmissiveColor"/>
 	<!-- <property name="MoveSpeed" value="0.25"/> -->
-	<property name="MoveSpeedAggro" value="1.25,1.25"/>
+	<!-- <property name="MoveSpeedAggro" value="1.25,1.25"/> -->
+	<property name="MoveSpeedAggro" value="1.3,1.3"/>
 	<property name="PainResistPerHit" value="1.01"/>
 	<property name="WalkType" value="7"/>	
 	<property name="DismemberMultiplierHead" value=".5"/><property name="DismemberMultiplierArms" value=".5"/><property name="DismemberMultiplierLegs" value=".5"/><!-- Feral -->
