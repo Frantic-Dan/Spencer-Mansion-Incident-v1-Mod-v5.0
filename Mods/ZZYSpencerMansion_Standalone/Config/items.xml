@@ -3890,7 +3890,7 @@
 		<property name="Class" value="Projectile"/>
 		<property name="CustomProjectileType" value="GameObject,FullautoLauncher"/>	
 		<property name="Explosion.BlockDamage" value="1"/>
-		<property name="Explosion.EntityDamage" value="1"/>
+		<property name="Explosion.EntityDamage" value="100"/>
 		<property name="Explosion.DamageType" value="Heat"/>
 		<property name="Explosion.Duration" value="4"/>
 		<property name="Explosion.RadiusBlocks" value="1"/>
