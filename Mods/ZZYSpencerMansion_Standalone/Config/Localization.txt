@@ -42,6 +42,8 @@ loadingTipRE7,"This devastating weapon can easily take off legs (Shells) and blo
 loadingTipRE7_title,The Pump Shotgun:
 loadingTipRE8,"A huge thank you to the following people: Mythix, AuroraGiggleFairy, w00kie n00kie, RambunctiousRed, HellsJanitor, JaxTeller718, KhaineGB, Khelldon, Chikorina, HaidrGna, AvioseVeAvara, Subquake, Zilox, Redbeard, idc12, Pyrokar420, ocbMaurice, NORDMANN, Closer_ex, M14's ZettaiRyouiki, ChoccyMilk."
 loadingTipRE8_title,Special Thanks!
+loadingTipRE9,"There is a lighter somewhere to be found, it is the only light source that will help you see in the darkness."
+loadingTipRE9_title,Dark Areas:
 SpencerMansionSpawnText,"You're about to experience the Spencer Mansion Incident in a first person perspective.\n\nTo keep the experience true to Resident Evil, please note the following.\n1) You have limited inventory space of 10 slots. There are Item Storage Boxes to store your items.\n2) You cannot jump.\n3) Most enemies don't feel pain, so fighting them will be different to what you're used to.\n4) Ink Ribbons are needed to save your progress! (Found in typewriters)\n\n[FFC800]For an immersive experience, I'd recommend turning up your ambient sound volume and your music to play all the time.[-]\n\n[FFC800]For the intended experience, be sure to remove any non-related mods.[-]\n\n[4FC3F7]To get started, read your blue buffs![-]"
 Mod Not Installed Correctly,[FF4F00]Mod Not Installed Correctly[-]
 ModNotInstalledCorrectlyText,"[FF4F00]This mod hasn't been installed correctly and is missing critical files required for the mod to be 100% functional.[-]"
