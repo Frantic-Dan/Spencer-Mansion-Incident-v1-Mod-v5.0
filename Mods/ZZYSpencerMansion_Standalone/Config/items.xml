@@ -3894,7 +3894,7 @@
 		<property name="Explosion.DamageType" value="Heat"/>
 		<property name="Explosion.Duration" value="4"/>
 		<property name="Explosion.RadiusBlocks" value="1"/>
-		<property name="Explosion.RadiusEntities" value="3"/>
+		<property name="Explosion.RadiusEntities" value="2"/>
 		<property name="Explosion.ParticleIndex" value="10"/>
 		<property name="Explosion.DamageBonus.water" value="0"/>
 		<property name="Explosion.Buff" value="buffBurningMolotov2"/>
@@ -3964,7 +3964,7 @@
 		<property name="Explosion.DamageType" value="Heat"/>
 		<property name="Explosion.Duration" value="4"/>
 		<property name="Explosion.RadiusBlocks" value="1"/>
-		<property name="Explosion.RadiusEntities" value="3"/>
+		<property name="Explosion.RadiusEntities" value="2"/>
 		<property name="Explosion.BlastPower" value="35"/>
 		<property name="Explosion.DamageBonus.water" value="0"/>
 		<property name="Gravity" value="-15"/>
@@ -4123,7 +4123,7 @@
 	<property name="Explosion.EntityDamage" value="100"/>
 	<property name="Explosion.RadiusBlocks" value="1"/>
 	<property name="Explosion.DamageType" value="Heat"/>
-	<property name="Explosion.RadiusEntities" value="3"/>
+	<property name="Explosion.RadiusEntities" value="2"/>
 	<property name="Explosion.BlastPower" value="35"/>
 	<property name="Explosion.DamageBonus.stone" value=".1"/>
 	<property name="Explosion.DamageBonus.metal" value="0"/>
