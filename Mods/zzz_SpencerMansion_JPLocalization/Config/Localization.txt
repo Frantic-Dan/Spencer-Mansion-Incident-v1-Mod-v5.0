@@ -46,6 +46,8 @@ loadingTipRE7,"この破壊的な武器は、足 (貝殻) を簡単に剥がし�
 loadingTipRE7_title,ポンプショットガン:
 loadingTipRE8,"次の方達に大きな感謝： Mythix,AuroraGiggleFairy, wOOkie nOOkie, RambunctiousRed, HellsJanitor, JaxTeller718, KhaineGB, Khelldon, Chikorina, HaidrGna, AvioseVeAvara, Subquake, Zilox, Redbeard, idc12, Pyrokar420, ocbMaurice, Nordmann, Closer_ex, M14's ZettaiRyouiki, ChoccyMilk."
 loadingTipRE8_title,スペシャルサンクス！
+loadingTipRE9,"どこかにライターがあり、それが暗闇の中で物を見るのに役立つ唯一の光源です。"
+loadingTipRE9_title,暗い領域:
 SpencerMansionSpawnText,"あなたはこれからスペンサー邸での出来事を一人称視点で体験する事になります。\n\nバイオハザードの体験を忠実に保つために、次の点に注意してください。\n1) 所持品は10スロットのみになるので、館内のアイテムボックスをご利用ください。\n2) ジャンプをする事は出来ません。\n3) ほとんどの敵は痛みを感じないため、いつもの戦い方では難しいかもしれません。\n4) 進行状況を保存するにはインクリボンが必要です。 (タイプライターで発見)\n\n[FFC800]より楽しいチャレンジになる用、周囲の音量を上げて、常に音楽を再生することをお勧めします。[-]\n\n[FFC800]意図したエクスペリエンスを実現するには、無関係な MOD を必ず削除してください。[-]\n\n[4FC3F7]まずは、青いバフを読んでください![-]"
 Mod Not Installed Correctly,[FF4F00]Modが正しくインストールされていない[-]
 ModNotInstalledCorrectlyText,"[FF4F00]この MOD は正しくインストールされておらず、MOD が 100% 機能するために必要な重要なファイルが欠落しています。[-]"
