@@ -20,13 +20,14 @@
 
 
 <set xpath="/doc/tips//tip[1]/@key">loadingTipRE1</set>
-<set xpath="/doc/tips//tip[2]/@key">loadingTipRE2</set>
-<set xpath="/doc/tips//tip[3]/@key">loadingTipRE3</set>
-<set xpath="/doc/tips//tip[4]/@key">loadingTipRE4</set>
-<set xpath="/doc/tips//tip[5]/@key">loadingTipRE5</set>
-<set xpath="/doc/tips//tip[6]/@key">loadingTipRE6</set>
-<set xpath="/doc/tips//tip[7]/@key">loadingTipRE7</set>
-<set xpath="/doc/tips//tip[8]/@key">loadingTipRE8</set>
+<set xpath="/doc/tips//tip[2]/@key">loadingTipRE9</set>
+<set xpath="/doc/tips//tip[3]/@key">loadingTipRE2</set>
+<set xpath="/doc/tips//tip[4]/@key">loadingTipRE3</set>
+<set xpath="/doc/tips//tip[5]/@key">loadingTipRE4</set>
+<set xpath="/doc/tips//tip[6]/@key">loadingTipRE5</set>
+<set xpath="/doc/tips//tip[7]/@key">loadingTipRE6</set>
+<set xpath="/doc/tips//tip[8]/@key">loadingTipRE7</set>
+<set xpath="/doc/tips//tip[9]/@key">loadingTipRE8</set>
 
 <!-- <remove xpath="/doc/tips//tip[@key='loadingTipMainHUD']"/>
 <remove xpath="/doc/tips//tip[@key='loadingStoneAxe']"/>
