@@ -42,6 +42,8 @@ loadingTipRE7,"Diese starke Waffe kann leicht Beine abtrennen (Kugeln) und Köpf
 loadingTipRE7_title,Die Schrottflite:
 loadingTipRE8,"Ein großes Dankeschön an die folgenden Personen: Mythix, AuroraGiggleFairy, w00kie n00kie, RambunctiousRed, HellsJanitor, JaxTeller718, KhaineGB, Khelldon, Chikorina, HaidrGna, AvioseVeAvara, Subquake, Zilox, Redbeard, idc12, Pyrokar420, ocbMaurice, NORDMANN, Closer_ex, M14's ZettaiRyouiki, ChoccyMilk."
 loadingTipRE8_title,Besonderen Dank!
+loadingTipRE9,"Irgendwo muss ein Feuerzeug zu finden sein, denn es ist die einzige Lichtquelle, mit der man in der Dunkelheit sehen kann."
+loadingTipRE9_title,Dunkle Bereiche:
 SpencerMansionSpawnText,"Du wirst den Vorfall in der Spencer-Manison aus der Ich-Perspektive erleben.\n\nUm das Erlebnis von Resident Evil beizubehalten, beachte bitte die folgenden Punkte.\n1) Du hast einen begrenzten Inventarplatz von 10 Slots. Es gibt Lagerkisten, in denen du deine Gegenstände aufbewahren kannst.\n2) Du kannst nicht springen.\n3) Die meisten Feinde empfinden keinen Schmerz, also wird der Kampf gegen sie anders sein,\nals du es gewohnt bist.\n4) Farbbänder werden benötigt, um deinen Fortschritt zu sichern! (Zu finden in den Schreibmaschinen)\n\n[FFC800]Für ein intensives Erlebnis empfehle ich, die Lautstärke der Umgebungsgeräusche und der Musik auf Max.[-]\n\n[FFC800]Um die gewünschte Erfahrung zu machen, solltest du alle anderen Mods entfernen.[-]\n\n[4FC3F7]Bitte lies zunächst deine blauen Buffs![-]"
 Mod Not Installed Correctly,[FF4F00]Mod wurde nicht korrekt installiert[-]
 ModNotInstalledCorrectlyText,"[FF4F00]Diese Mod wurde nicht korrekt installiert und es fehlen wichtige Dateien, die für eine 100%ige Funktion dieser Mod erforderlich sind.[-]"
