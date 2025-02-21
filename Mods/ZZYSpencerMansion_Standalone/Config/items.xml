@@ -4823,7 +4823,7 @@
 	<property name="CreativeMode" value="None"/>
 	<property name="Degradation" value="99999" param1="true"/>
 	<property class="Action0">
-		<property name="Range" value="1.5"/>
+		<property name="Range" value="1.55"/>
 		<property name="DamageEntity" value="160"/>
 		<property name="DamageBlock" value="10"/>
 	</property>
@@ -5077,7 +5077,7 @@
 	<property name="CreativeMode" value="None"/>
 	<property name="Degradation" value="99999" param1="true"/>
 	<property class="Action0">
-		<property name="Range" value="1.5"/>
+		<property name="Range" value="1.7"/>
 		<property name="DamageEntity" value="200"/>
 		<property name="DamageBlock" value="10"/>
 	</property>
