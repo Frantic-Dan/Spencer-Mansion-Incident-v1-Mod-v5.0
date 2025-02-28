@@ -31,20 +31,22 @@
 	<property name="CustomIcon" value="GreenHerb_Growing" />
 	<property name="DescriptionKey" value="HerbGrowingDesc"/>
 	<property name="Shape" value="ModelEntity"/>
-	<property name="Model" value="#@modfolder:Resources/ResidentEvilHerbs.unity3d?GreenHerb_Growing"/>
+	<!-- <property name="Model" value="#@modfolder:Resources/ResidentEvilHerbs.unity3d?GreenHerb_Growing"/> -->
+	<property name="Model" value="#@modfolder:Resources/herbs.u3d?GreenHerbGrowing"/>
 	<property name="PlantGrowing.Next" value="GreenHerb_Harvest"/>
 	<property name="PlantGrowing.LightLevelGrow" value="0"/>
 	<property name="PlantGrowing.LightLevelStay" value="0"/>
 	<property name="PlantGrowing.FertileLevel" value="0"/>
 	<property name="IsRandom" value="false" />
-	<property name="ModelOffset" value="0.25,0.5,0.21"/>
+	<property name="ModelOffset" value="0.25,0,0.21"/>
 	<drop event="Harvest" name="GreenHerb_Growing" count="1" tag="REMansionHarvest"/>
 </block>
 
 <block name="GreenHerb_Harvest">
 	<property name="Extends" value="cropsHarvestableMaster"/>
 	<property name="Shape" value="ModelEntity"/>
-	<property name="Model" value="#@modfolder:Resources/ResidentEvilHerbs.unity3d?GreenHerb"/>
+	<!-- <property name="Model" value="#@modfolder:Resources/ResidentEvilHerbs.unity3d?GreenHerb"/> -->
+	<property name="Model" value="#@modfolder:Resources/herbs.u3d?GreenHerb"/>
 	<property name="CreativeMode" value="None"/>
 	<property name="Material" value="Mcorn"/>
 	<property name="MaxDamage" value="1"/>
@@ -52,7 +54,7 @@
 	<property name="DescriptionKey" value="HerbHarvestDesc"/>
 	<property name="CropsGrown.BonusHarvestDivisor" value="16"/>
 	<property name="HarvestOverdamage" value="false"/>
-	<property name="ModelOffset" value="0.25,0.5,0.21"/>
+	<property name="ModelOffset" value="0.25,0,0.21"/>
     <drop event="Harvest" name="Green_Herb" count="1" tag="REMansionHarvest"/>
     <property name="DowngradeBlock" value="HerbPot_Green"/>
 	<property name="DisplayInfo" value="Name"/>
@@ -61,7 +63,8 @@
 <block name="GreenHerb_Wild">
 	<property name="Extends" value="cropsHarvestableMaster"/>
 	<property name="Shape" value="ModelEntity"/>
-	<property name="Model" value="#@modfolder:Resources/ResidentEvilHerbs.unity3d?GreenHerb"/>
+	<!-- <property name="Model" value="#@modfolder:Resources/ResidentEvilHerbs.unity3d?GreenHerb"/> -->
+	<property name="Model" value="#@modfolder:Resources/herbs.u3d?GreenHerb"/>
 	<property name="CreativeMode" value="None"/>
 	<property name="Material" value="Mcorn"/>
 	<property name="MaxDamage" value="1"/>
@@ -69,7 +72,7 @@
 	<property name="DescriptionKey" value="HerbHarvestDesc"/>
 	<property name="CropsGrown.BonusHarvestDivisor" value="16"/>
 	<property name="HarvestOverdamage" value="false"/>
-	<property name="ModelOffset" value="0.25,0.5,0.21"/>
+	<property name="ModelOffset" value="0.25,0,0.21"/>
     <drop event="Harvest" name="Green_Herb" tag="REMansionHarvest" count="1" />
     <!-- <property name="DowngradeBlock" value="Empty_Pot"/> -->
 	<property name="DisplayInfo" value="Name"/>
@@ -106,20 +109,22 @@
 	<property name="CustomIcon" value="BlueHerb_Growing" />
 	<property name="DescriptionKey" value="HerbGrowingDesc"/>
 	<property name="Shape" value="ModelEntity"/>
-	<property name="Model" value="#@modfolder:Resources/ResidentEvilHerbs.unity3d?BlueHerb_Growing"/>
+	<!-- <property name="Model" value="#@modfolder:Resources/ResidentEvilHerbs.unity3d?BlueHerb_Growing"/> -->
+	<property name="Model" value="#@modfolder:Resources/herbs.u3d?BlueHerbGrowing"/>
 	<property name="PlantGrowing.Next" value="BlueHerb_Harvest"/>
 	<property name="PlantGrowing.LightLevelGrow" value="0"/>
 	<property name="PlantGrowing.LightLevelStay" value="0"/>
 	<property name="PlantGrowing.FertileLevel" value="0"/>
 	<property name="IsRandom" value="false" />
-	<property name="ModelOffset" value="0.25,0.5,0.21"/>
+	<property name="ModelOffset" value="0.25,0,0.21"/>
 	<drop event="Harvest" name="BlueHerb_Growing" count="1" tag="REMansionHarvest"/>
 </block>
 
 <block name="BlueHerb_Harvest">
 	<property name="Extends" value="cropsHarvestableMaster"/>
 	<property name="Shape" value="ModelEntity"/>
-	<property name="Model" value="#@modfolder:Resources/ResidentEvilHerbs.unity3d?BlueHerb"/>
+	<!-- <property name="Model" value="#@modfolder:Resources/ResidentEvilHerbs.unity3d?BlueHerb"/> -->
+	<property name="Model" value="#@modfolder:Resources/herbs.u3d?BlueHerb"/>
 	<property name="CreativeMode" value="None"/>
 	<property name="Material" value="Mcorn"/>
 	<property name="MaxDamage" value="1"/>
@@ -127,7 +132,7 @@
 	<property name="DescriptionKey" value="HerbHarvestDesc"/>
 	<property name="CropsGrown.BonusHarvestDivisor" value="16"/>
 	<property name="HarvestOverdamage" value="false"/>
-	<property name="ModelOffset" value="0.25,0.5,0.21"/>
+	<property name="ModelOffset" value="0.25,0,0.21"/>
     <drop event="Harvest" name="Blue_Herb" count="1" tag="REMansionHarvest"/>
     <property name="DowngradeBlock" value="HerbPot_Blue"/>
 	<property name="DisplayInfo" value="Name"/>
@@ -136,7 +141,8 @@
 <block name="BlueHerb_Wild">
 	<property name="Extends" value="cropsHarvestableMaster"/>
 	<property name="Shape" value="ModelEntity"/>
-	<property name="Model" value="#@modfolder:Resources/ResidentEvilHerbs.unity3d?BlueHerb"/>
+	<!-- <property name="Model" value="#@modfolder:Resources/ResidentEvilHerbs.unity3d?BlueHerb"/> -->
+	<property name="Model" value="#@modfolder:Resources/herbs.u3d?BlueHerb"/>
 	<property name="CreativeMode" value="None"/>
 	<property name="Material" value="Mcorn"/>
 	<property name="MaxDamage" value="1"/>
@@ -144,7 +150,7 @@
 	<property name="DescriptionKey" value="HerbHarvestDesc"/>
 	<property name="CropsGrown.BonusHarvestDivisor" value="16"/>
 	<property name="HarvestOverdamage" value="false"/>
-	<property name="ModelOffset" value="0.25,0.5,0.21"/>
+	<property name="ModelOffset" value="0.25,0,0.21"/>
     <drop event="Harvest" name="Blue_Herb" count="1" tag="REMansionHarvest"/>
     <!-- <property name="DowngradeBlock" value="Empty_Pot"/> -->
 	<property name="DisplayInfo" value="Name"/>
@@ -181,20 +187,22 @@
 	<property name="CustomIcon" value="RedHerb_Growing" />
 	<property name="DescriptionKey" value="HerbGrowingDesc"/>
 	<property name="Shape" value="ModelEntity"/>
-	<property name="Model" value="#@modfolder:Resources/ResidentEvilHerbs.unity3d?RedHerb_Growing"/>
+	<!-- <property name="Model" value="#@modfolder:Resources/ResidentEvilHerbs.unity3d?RedHerb_Growing"/> -->
+	<property name="Model" value="#@modfolder:Resources/herbs.u3d?RedHerbGrowing"/>
 	<property name="PlantGrowing.Next" value="RedHerb_Harvest"/>
 	<property name="PlantGrowing.LightLevelGrow" value="0"/>
 	<property name="PlantGrowing.LightLevelStay" value="0"/>
 	<property name="PlantGrowing.FertileLevel" value="0"/>
 	<property name="IsRandom" value="false" />
-	<property name="ModelOffset" value="0.25,0.5,0.21"/>
+	<property name="ModelOffset" value="0.25,0,0.21"/>
 	<drop event="Harvest" name="RedHerb_Growing" count="1" tag="REMansionHarvest"/>
 </block>
 
 <block name="RedHerb_Harvest">
 	<property name="Extends" value="cropsHarvestableMaster"/>
 	<property name="Shape" value="ModelEntity"/>
-	<property name="Model" value="#@modfolder:Resources/ResidentEvilHerbs.unity3d?RedHerb"/>
+	<!-- <property name="Model" value="#@modfolder:Resources/ResidentEvilHerbs.unity3d?RedHerb"/> -->
+	<property name="Model" value="#@modfolder:Resources/herbs.u3d?RedHerb"/>
 	<property name="CreativeMode" value="None"/>
 	<property name="Material" value="Mcorn"/>
 	<property name="CustomIcon" value="RedHerb_Harvest" />
@@ -202,7 +210,7 @@
 	<property name="MaxDamage" value="1"/>
 	<property name="CropsGrown.BonusHarvestDivisor" value="16"/>
 	<property name="HarvestOverdamage" value="false"/>
-	<property name="ModelOffset" value="0.25,0.5,0.21"/>
+	<property name="ModelOffset" value="0.25,0,0.21"/>
     <drop event="Harvest" name="Red_Herb" count="1" tag="REMansionHarvest"/>
     <property name="DowngradeBlock" value="HerbPot_Red"/>
 	<property name="DisplayInfo" value="Name"/>
@@ -211,7 +219,8 @@
 <block name="RedHerb_Wild">
 	<property name="Extends" value="cropsHarvestableMaster"/>
 	<property name="Shape" value="ModelEntity"/>
-	<property name="Model" value="#@modfolder:Resources/ResidentEvilHerbs.unity3d?RedHerb"/>
+	<!-- <property name="Model" value="#@modfolder:Resources/ResidentEvilHerbs.unity3d?RedHerb"/> -->
+	<property name="Model" value="#@modfolder:Resources/herbs.u3d?RedHerb"/>
 	<property name="CreativeMode" value="None"/>
 	<property name="Material" value="Mcorn"/>
 	<property name="CustomIcon" value="RedHerb_Harvest" />
@@ -219,7 +228,7 @@
 	<property name="MaxDamage" value="1"/>
 	<property name="CropsGrown.BonusHarvestDivisor" value="16"/>
 	<property name="HarvestOverdamage" value="false"/>
-	<property name="ModelOffset" value="0.25,0.5,0.21"/>
+	<property name="ModelOffset" value="0.25,0,0.21"/>
     <drop event="Harvest" name="Red_Herb" count="1" tag="REMansionHarvest"/>
     <!-- <property name="DowngradeBlock" value="Empty_Pot"/> -->
 	<property name="DisplayInfo" value="Name"/>
