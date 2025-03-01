@@ -1027,7 +1027,7 @@
 	<property name="SizeScale" value="1.1"/>
 	<property name="Tags" value="entity,zombie,feral,hunter,livingEntity"/>
 	<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZSpiderFeral.prefab"/>
-	<property name="TintColor" value="#5C4033"/> 
+	<property name="TintColor" value="#636B2F"/>
 	<property name="TintShaderProperties" value="_EmissiveColor"/>
 	<property name="DismemberMultiplierHead" value=".6"/><property name="DismemberMultiplierArms" value=".6"/><property name="DismemberMultiplierLegs" value=".6"/><!-- Feral -->
 	<property name="PainResistPerHit" value="1.01"/><!-- Feral -->
