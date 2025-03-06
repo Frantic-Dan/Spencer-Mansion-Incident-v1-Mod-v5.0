@@ -138,7 +138,13 @@
 		<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attTraining" operation="GTE" value="1" /></level_requirements>
 
 		<effect_group>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="0,1" value="1,0" tags="ammo9mmBulletBallRE,ammo44MagnumBulletBallRE,ammoShotgunShellRE,resourceGunPowder,modGunSoundSuppressorSilencerRE,modMeleeSerratedBladeRE,BulletProofVest,modArmorBandolier,Yellow_Herb,FirstAidSpray,thrownAmmoMolotovCocktailRE,thrownGrenadeRE,ammoGrenadeExplosiveRE,ammoGrenadeAcidRE,ammoGrenadeFlameRE,questRewardAmmoCraftingBundle"/>
+			<requirement name="ProgressionLevel" progression_name="perkClassicMode" operation="Equals" value="0"/>
+			<requirement name="ProgressionLevel" progression_name="perkClassicModeChris" operation="Equals" value="0"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="0" value="1" tags="ammo9mmBulletBallRE,ammo44MagnumBulletBallRE,ammoShotgunShellRE,resourceGunPowder,modGunSoundSuppressorSilencerRE,modMeleeSerratedBladeRE,BulletProofVest,modArmorBandolier,Yellow_Herb,FirstAidSpray,thrownAmmoMolotovCocktailRE,thrownGrenadeRE,ammoGrenadeExplosiveRE,ammoGrenadeAcidRE,ammoGrenadeFlameRE,questRewardAmmoCraftingBundle"/>
+		</effect_group>
+		
+		<effect_group>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="0" tags="ammo9mmBulletBallRE,ammo44MagnumBulletBallRE,ammoShotgunShellRE,resourceGunPowder,modGunSoundSuppressorSilencerRE,modMeleeSerratedBladeRE,BulletProofVest,modArmorBandolier,Yellow_Herb,FirstAidSpray,thrownAmmoMolotovCocktailRE,thrownGrenadeRE,ammoGrenadeExplosiveRE,ammoGrenadeAcidRE,ammoGrenadeFlameRE,questRewardAmmoCraftingBundle"/>
 		</effect_group>
 		
 		<effect_group>
@@ -168,7 +174,13 @@
 		<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attTraining" operation="GTE" value="1" /></level_requirements>
 		
 		<effect_group>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="0,1" value="1,0" tags="ammo9mmBulletBallRE,ammo44MagnumBulletBallRE,ammoShotgunShellRE,resourceGunPowder,modGunSoundSuppressorSilencerRE,modMeleeSerratedBladeRE,BulletProofVest,modArmorBandolier,Yellow_Herb,FirstAidSpray,thrownAmmoMolotovCocktailRE,thrownGrenadeRE,ammoGrenadeExplosiveRE,ammoGrenadeAcidRE,ammoGrenadeFlameRE,questRewardAmmoCraftingBundle"/>
+			<requirement name="ProgressionLevel" progression_name="perkClassicMode" operation="Equals" value="0"/>
+			<requirement name="ProgressionLevel" progression_name="perkClassicModeChris" operation="Equals" value="0"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="0" value="1" tags="ammo9mmBulletBallRE,ammo44MagnumBulletBallRE,ammoShotgunShellRE,resourceGunPowder,modGunSoundSuppressorSilencerRE,modMeleeSerratedBladeRE,BulletProofVest,modArmorBandolier,Yellow_Herb,FirstAidSpray,thrownAmmoMolotovCocktailRE,thrownGrenadeRE,ammoGrenadeExplosiveRE,ammoGrenadeAcidRE,ammoGrenadeFlameRE,questRewardAmmoCraftingBundle"/>
+		</effect_group>
+		
+		<effect_group>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="0" tags="ammo9mmBulletBallRE,ammo44MagnumBulletBallRE,ammoShotgunShellRE,resourceGunPowder,modGunSoundSuppressorSilencerRE,modMeleeSerratedBladeRE,BulletProofVest,modArmorBandolier,Yellow_Herb,FirstAidSpray,thrownAmmoMolotovCocktailRE,thrownGrenadeRE,ammoGrenadeExplosiveRE,ammoGrenadeAcidRE,ammoGrenadeFlameRE,questRewardAmmoCraftingBundle"/>
 		</effect_group>
 		
 		<effect_group>
